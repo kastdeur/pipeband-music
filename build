@@ -1,0 +1,42 @@
+#!/bin/bash
+
+MKDRUMCOMMAND="./lily_files/makedrum"
+MKDRUMOPTIONS="-i ./lily_files/defs.ly -x ./lily_files/lilydrum.ly -c ./lily_files/bagpipe_new.ly"
+MUSIC_DIR="./music"
+
+trap "echo Aborted!; exit;" SIGINT SIGTERM
+
+another_dir() {
+	d=$1
+	for f in $d/*
+	do
+		if [ -d "$f" ]; then
+			if [ "$f" == "template" ]; then
+				continue
+			fi
+
+			another_dir $f
+			continue
+		fi
+		if [ ! -f "$f" ]; then
+			continue
+		fi
+
+		if [[ ! "$f" == *.ly ]]; then
+			continue
+		fi
+
+		$MKDRUMCOMMAND $MKDRUMOPTIONS "$f"
+	done;
+}
+
+if [ "$1" == "-a" ]; then
+	echo "Build all"
+	another_dir $MUSIC_DIR
+elif [ -f "$1" ]; then
+	echo "Build file"
+	$MKDRUMCOMMAND $MKDRUMOPTIONS "$1"
+elif [ -d "$1" ]; then
+	echo "Build files in directory"
+	another_dir "$1"
+fi

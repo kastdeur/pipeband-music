@@ -1,0 +1,12 @@
+*.bww
+*.ps
+*.pdf
+*.png
+*.log
+*tmp*
+*.py
+*.toc
+*.aux
+_output/
+pdf/
+fullscores/*
