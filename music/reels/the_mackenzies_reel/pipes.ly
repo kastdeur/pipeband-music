@@ -10,11 +10,13 @@
 		<<
 			{
 				\repeat volta 2 { \part \line } \break
+			
 				\part \line \break
 				\line \bar "|."
 			}
 			{
 				\pipesA s8
+
 				\pipesBA
 				\pipesBB s8
 			}
