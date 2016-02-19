@@ -1,0 +1,75 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(110,120,100,80,0)
+
+TuneFormat,(1,0,F,L,500,500,500,500,L,1,0)
+
+TuneTempo,46
+
+"Miss Kirkwood",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+
+"Slow March",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+"PM FrankJan de Boone-The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"M 1",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"9 June 2010",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+
+
+& sharpf sharpc 6_8 I!''	gg E_8
+!	dbc C_4 'c		dbb B_4 strlg LA_8
+!	dbe E_4 'e		dbc C_4 'c	space  
+!	dbe E_4 C_8		dbha HA_4 HG_8
+!	hdbf F_4 'f		dbe E_4 'e    space  	!t
+
+& sharpf sharpc	dbf Fr_8 HAr_8 'ha Fl_16		dbe E_4 C_8
+!	dbf Fr_8  Er_8 'e Fl_16	gg LA_4 grp C_8
+!	dbe E_4 C_8		dbf Fr_8  Br_8 'b dg Cl_16
+!	eg LA_4 'la		brl LA_4    space  	''!I
+
+& sharpf sharpc I!''	E_8
+!	dbha HA_4 HG_8		hdbf F_4 HA_8
+!	hdbe E_4 'e		dbc C_4 E_8
+!	abr  LA_4 F_8		dbe E_4 B_8
+!	gg C_4 grp C_8		dbc Cr_8 Br_8 strlg LAl_8	!t
+
+& sharpf sharpc	dbha HA_4 HG_8		hdbf F_4 HA_8
+!	hdbe E_4 'e		dbc C_4 E_8
+!	abr LA_4 F_8		dbe Er_8 Br_8 'b dg Cl_16
+!	eg LA_4 'la		'1 brl LA_4 _'	'2	brl LA_4 'la    space   _'	''!I
+
+"Seconds",(I,L,0,0,Times New Roman,11,400,0,0,0,0,0,0) 
+
+& sharpf sharpc 6_8 I!''	gg E_8
+!	dbe E_4 'e		dbd D_4 eg C_8
+!	dbc C_4 'c		brl LA_4 'la    space  
+!	dbc C_4 LA_8		hdbf F_4 E_8
+!	dbd D_4 'd		hdbc C_4 'c    space  	!t
+
+& sharpf sharpc	dbd Dr_8 Fr_8 'f Dl_16		dbc C_4 LA_8
+!	dbd Dr_8  Cr_8 'c Dl_16		gg C_4 brl LA_8
+!	dbc C_4 LA_8		dbd Dr_8  LGr_8 'lg  LAl_16
+!	gg C_4 'c		grp C_4	    space  ''!I
+
+& sharpf sharpc I!''	E_8
+!	hdbf F_4 E_8		hdbd D_4 F_8
+!	hdbc C_4 'c		brl LA_4 C_8
+!	grp  C_4 D_8		dbc C_4 D_8
+!	dbe E_4 'e		gg Er_8 Dr_8 Cl_8	!t
+
+& sharpf sharpc	
+	hdbf F_4 E_8		hdbd D_4 F_8
+!	dbc C_4 'c		strla LA_4 C_8
+!	dbc C_4 D_8		dbc Cr_8 Dr_8 'd El_16
+!	gg C_4 'c			'1 grp C_4 _'	'2	grp C_4 'c    space   _'	''!I
