@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MKDRUMCOMMAND="./lily_files/makedrum"
-MKDRUMOPTIONS="--no-log -i ./lily_files/defs.ly -i ./lily_files/header_default.ily --drumfile ./lily_files/lilydrum/lilydrum.ly --pipefile ./lily_files/bagpipe_new.ly -s 18"
+MKDRUMCOMMAND="./lilydrum/makedrum"
+MKDRUMOPTIONS="--no-log -i ./defs/defs.ly -i ./defs/header_default.ily --drumfile ./lilydrum/lilydrum.ly --pipefile ./bagpipemusic/bagpipe_new.ly -s 18"
 MUSIC_DIR="./music/"
 OUT_DIR="./pdf/"
 MKDRUMOPTIONS="$MKDRUMOPTIONS -d $OUT_DIR"
@@ -43,6 +43,7 @@ elif [ -d "$1" ]; then
 	another_dir "$1"
 fi
 
+# Fix naming
 for f in $OUT_DIR/music-*
 do
 	mv $f ${f/music-/}
