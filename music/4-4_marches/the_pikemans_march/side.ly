@@ -1,11 +1,12 @@
 \version "2.18.2"
 
 \include "config.ily"
-\include "notes.side.v1.6.ily"
+\include "notes.side.v1.8.ily"
 
 \score {
     \new PipeBandDrumStaff {
         \global
+	\sideglobal
         <<
 			{\repeat volta 2 { \part \line \break \line} \break
 				\part \line \break

@@ -39,7 +39,7 @@
 
 				\pipesDA
 				\pipesDBA s8
-				\pipesDBB s8
+				\pipesDBB 
 				}%Pipes
 			>>
 		}
@@ -54,18 +54,29 @@
 			\snareBA 
 			\snareBBA s8
 			\snareAB s8
+
+			s8 s2*4
+			s2*4
+			s2*4
+
+			s8 s2*4
+			s2*4
+			s2*4
 		}
-	%	\new PipeBandDrumStaff = "bass" {
-	%		\bassglobal
-	%		\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-	%		\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-    %
-	%	}
+		\new PipeBandDrumStaff = "bass" {
+			\bassglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+   			s8 | s2*8
+			s8 | s2*4 | s2*4 | s2*4
+			s8 | s2*4 | s2*4 | s2*4
+			s8 | s2*4 | s2*4 
+
+		}
 	%	\new PipeBandDrumStaff = "tenor" {
 	%		\tenorglobal
 	%		\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 	%		\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-    %
 	%	}
 	>>
 	\header {
@@ -73,16 +84,16 @@
 		meter = \meter
 		composer = \markup \large {
 			\column \right-align {
-				$(if (not (string=? "" composerPipes))  %{ \markup {\line { \composerPipes  ":" }} %} )
-				$(if (not (string=? "" composerSide))  %{ \markup {\line { \composerSide  ":" }} %} )
-				$(if (not (string=? "" composerTenor)) %{ \markup {\line { \composerTenor  ":" }} %} )
-				$(if (not (string=? "" composerBass))  %{ \markup {\line { \composerBass  ":" }} %} )
+				$(if (not (string=? "" composerPipes)) { \markup {\line { \composerPipes  ":" }}} )
+				$(if (not (string=? "" composerSide))  { \markup {\line { \composerSide  ":" }}} )
+				$(if (not (string=? "" composerTenor)) { \markup {\line { \composerTenor  ":" }}} )
+				$(if (not (string=? "" composerBass))  { \markup {\line { \composerBass  ":" }}} )
 			}
 			\column \right-align {
-				$(if (not (string=? "" composerPipes))  %{ \markup {\line { \instrumentPipes }}%} )
-				$(if (not (string=? "" composerSide))  %{ \markup {\line { \instrumentSide }}%} )
-				$(if (not (string=? "" composerTenor)) %{ \markup {\line { \instrumentTenor }}%} )
-				$(if (not (string=? "" composerBass))  %{ \markup {\line { \instrumentBass }}%} )
+				$(if (not (string=? "" composerPipes)) { \markup {\line { \instrumentPipes }}} )
+				$(if (not (string=? "" composerSide))  { \markup {\line { \instrumentSide }}} )
+				$(if (not (string=? "" composerTenor)) { \markup {\line { \instrumentTenor }}} )
+				$(if (not (string=? "" composerBass))  { \markup {\line { \instrumentBass }}} )
 			}
 		}
 	}

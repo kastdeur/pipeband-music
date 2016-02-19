@@ -9,7 +9,7 @@ today = #(strftime "%B %e, %Y" (localtime (current-time)))
 \paper {
     tagline = \markup {
         \line {
-			"Cpl ET de Boone, Seaforths of Holland,"
+	"ET de Boone, Seaforths of Holland,"
             \concat { "(rev. " \today ")" }
         }
     }

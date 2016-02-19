@@ -16,7 +16,6 @@
 			 \tenorAA
 			 \tenorAB
 
-			 s8
 			 \tenorBA
 			 \tenorBB
 			 \tenorBC
