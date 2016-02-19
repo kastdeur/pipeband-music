@@ -2,20 +2,13 @@
 %% Globals
 global = {
 	\time 2/4
-	\eighthBeaming
 	}
 
 %% Format
 part = { \partial 8 s8 }
-halfline = { \repeat unfold 2 { s1 | } }
+halfline = { \repeat unfold 4 { s2 | } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "MacKenzie Highlanders"
-meter = "Trooping of the Colours"
-
-
-composerSide  = ""
-composerTenor = ""
-composerBass  = ""
-composerPipes = ""
+title = "Mackenzie Highlanders"
+meter = "March on the Colours / Fall In"

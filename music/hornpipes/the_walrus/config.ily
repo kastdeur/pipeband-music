@@ -3,10 +3,9 @@
 global = {
 	\time 2/4
 	}
-
 %% Format
 part = { \partial 8 s8 }
-halfline = { \repeat unfold 4 { s1 | } }
+halfline = { \repeat unfold 4 { s2 | } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers

@@ -6,9 +6,28 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
-			{ }
-			{ }
+	\sideglobal
+		<<
+			{
+					\repeat volta 2 { \part \line }
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+			}
+			{
+				\snareAA 
+				\snareAB s8
+				
+				\snareBA 
+				\snareBBA s8
+				\snareAB s8
+			}
 		>>
 	}
 	\header {
