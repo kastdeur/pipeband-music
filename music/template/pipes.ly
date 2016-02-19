@@ -6,9 +6,9 @@
 \score {
     \new Staff {
 		\global
-		\bagpipeKey
+		\pipeglobal
 		<<
-            { }
+			{ }
 			{ }
 		>>
 	}

@@ -1,19 +1,20 @@
 \version "2.19.0"
 
 \include "config.ily"
-%\include "notes.bass.ily"
+\include "notes.bass.ily"
 \include "notes.tenor.ily"
-\include "notes.side.v1.6.ily"
+\include "notes.side.v1.8.ily"
 
 \score {
 	\new StaffGroup <<
 		\new PipeBandDrumStaff = "side" {
 			\global
+			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			<<
-				{ \repeat volta 2 { \part \line \break \line} \break
+				{ \repeat volta 2 { \part \line \break \line} \pageBreak
 					\part \line \break
 					\line \break
 					\line \bar "|."
@@ -28,13 +29,17 @@
 				}
 			>>
 		}
-		%\new PipeBandDrumStaff = "bass" {
-		%	\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-		%	\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-        %
-		%	\bassA
-		%	s16 \bassBA \bassBB
-		%}
+		\new PipeBandDrumStaff = "bass" {
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+        
+			s8 \bassAA
+			\bassAB
+			
+			s8 \bassBA 
+			\bassBB
+			\bassBB
+		}
 		\new PipeBandDrumStaff = "tenor" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
@@ -43,7 +48,6 @@
 			\tenorAB
 			s8
 
-			s8
 			\tenorBA
 			\tenorBB
 			\tenorBC

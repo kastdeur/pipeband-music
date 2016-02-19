@@ -8,8 +8,19 @@
 		\global
 		\bagpipeKey
 		<<
-            { }
-			{ }
+			{
+				\repeat volta 2 {
+					\part \line
+				}\break
+				\part \line \bar "||" \break
+				\line \bar "|."
+
+			}
+			{
+				\pipesA s8
+				\pipesB
+				\pipesCA
+			}
 		>>
 	}
 	\header {

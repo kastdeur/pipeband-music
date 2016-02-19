@@ -3,7 +3,6 @@
 global = {
 	\time 4/4
 	}
-
 %% Format
 part = { \partial 8 s8 }
 halfline = { \repeat unfold 4 { s1 | } }

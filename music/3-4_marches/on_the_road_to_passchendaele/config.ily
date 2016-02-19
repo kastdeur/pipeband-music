@@ -2,7 +2,6 @@
 %% Globals
 global = {
 	\time 3/4
-	\eighthBeaming
 	}
 
 %% Format

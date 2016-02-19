@@ -6,11 +6,19 @@
 \score {
     \new PipeBandDrumStaff {
         \global
+	\sideglobal
         <<
 			{
-				\repeat volta 2 { \line } \break
-				\line \bar "||" \break
-				\line \bar "|."
+				\repeat volta 2 { \line }
+				\break
+				\repeat volta 2 { \halfline }
+				\alternative {
+					{\halfline}
+					{\halfline}
+				}
+				\bar "|."
+				%\line \bar "||" \break
+				%\line \bar "|."
 			}
 			{
 			 \snareAA
@@ -18,8 +26,6 @@
 
 			 \snareBA
 			 \snareBB
-
-			 \snareBA
 			 \snareAB
 			}
 		>>

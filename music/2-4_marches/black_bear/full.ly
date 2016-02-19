@@ -14,25 +14,38 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
-				{}%Format
-				{}%Pipes
+				{
+					\repeat volta 2 {
+						\part \line
+					}\break
+					\part \line \bar "||" \break
+					\line \bar "|."
+				}%Format
+				{
+					\pipesA s8
+					\pipesB
+					\pipesCA s8
+				}%Pipes
 			>>
 		}
 		\new PipeBandDrumStaff = "side" {
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
+				\snareA s8
+				\snareBA
+				\snareA s8
 		}
-		\new PipeBandDrumStaff = "bass" {
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-		}
-		\new PipeBandDrumStaff = "tenor" {
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-
-		}
+%		\new PipeBandDrumStaff = "bass" {
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+%
+%		}
+%		\new PipeBandDrumStaff = "tenor" {
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+%
+%		}
 	>>
 	\header {
 		title = \title

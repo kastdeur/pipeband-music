@@ -1,8 +1,10 @@
 #!/bin/bash
 
 MKDRUMCOMMAND="./lily_files/makedrum"
-MKDRUMOPTIONS="-i ./lily_files/defs.ly -x ./lily_files/lilydrum.ly -c ./lily_files/bagpipe_new.ly"
-MUSIC_DIR="./music"
+MKDRUMOPTIONS="--no-log -i ./lily_files/defs.ly -i ./lily_files/header_default.ily --drumfile ./lily_files/lilydrum/lilydrum.ly --pipefile ./lily_files/bagpipe_new.ly -s 18"
+MUSIC_DIR="./music/"
+OUT_DIR="./pdf/"
+MKDRUMOPTIONS="$MKDRUMOPTIONS -d $OUT_DIR"
 
 trap "echo Aborted!; exit;" SIGINT SIGTERM
 
@@ -30,7 +32,7 @@ another_dir() {
 	done;
 }
 
-if [ "$1" == "-a" ]; then
+if [ "$1" == "--all" ]; then
 	echo "Build all"
 	another_dir $MUSIC_DIR
 elif [ -f "$1" ]; then
@@ -40,3 +42,8 @@ elif [ -d "$1" ]; then
 	echo "Build files in directory"
 	another_dir "$1"
 fi
+
+for f in $OUT_DIR/music-*
+do
+	mv $f ${f/music-/}
+done;
