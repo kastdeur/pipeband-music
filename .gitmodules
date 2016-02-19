@@ -1,0 +1,6 @@
+[submodule "lilydrum"]
+	path = lilydrum
+	url = ../../git/lilydrumi.git
+[submodule "bagpipemusic"]
+	path = bagpipemusic
+	url = https://github.com/svenax/bagpipemusic.git

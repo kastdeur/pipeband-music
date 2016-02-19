@@ -1,1 +1,0 @@
-../../svenax-bagpipemusic-master/bagpipe_new.ly
