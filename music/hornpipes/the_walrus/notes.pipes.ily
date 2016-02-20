@@ -4,6 +4,7 @@
 composerPipes = "R. Mathieson"
 pipeglobal = {
 	\bagpipeKey
+	\set Staff.midiInstrument = #"bagpipe"
 	}
 pipesA = {
 	\grg b16 [ d16 ] |

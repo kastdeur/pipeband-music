@@ -1,7 +1,7 @@
 % 2/4 The Walrus
 % Side
 \version "2.18.2"
-composerSide = "E.T. de Boone, v0.3, 2016"
+composerSide = "E.T. de Boone, v0.2, 2016"
 sideglobal = {
 	\eighthBeaming
 }
