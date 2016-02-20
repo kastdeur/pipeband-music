@@ -3,7 +3,7 @@
 MKDRUMCOMMAND="./lilydrum/makedrum"
 MKDRUMOPTIONS="--no-log -i ./defs/defs.ly -i ./defs/header_default.ily --drumfile ./lilydrum/lilydrum.ly --pipefile ./bagpipemusic/bagpipe_new.ly -s 18"
 MUSIC_DIR="./music/"
-OUT_DIR="./pdf/"
+OUT_DIR="./pdf"
 MKDRUMOPTIONS="$MKDRUMOPTIONS -d $OUT_DIR"
 
 trap "echo Aborted!; exit;" SIGINT SIGTERM
@@ -44,7 +44,10 @@ elif [ -d "$1" ]; then
 fi
 
 # Fix naming
-for f in $OUT_DIR/music-*
+for f in $OUT_DIR/music-* ;
 do
-	mv $f ${f/music-/}
+#if [[ ! "$f" == *music-* ]]; then
+#	continue;
+#fi
+mv "$f" "${f/"music-"}";
 done;
