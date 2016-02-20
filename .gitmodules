@@ -1,6 +1,0 @@
-[submodule "lilydrum"]
-	path = lilydrum
-	url = /home/ericteunis/public/git/lilydrum.git/
-[submodule "bagpipemusic"]
-	path = bagpipemusic
-	url = https://github.com/svenax/bagpipemusic.git
