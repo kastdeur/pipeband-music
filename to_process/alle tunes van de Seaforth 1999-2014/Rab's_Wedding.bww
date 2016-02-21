@@ -1,0 +1,81 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,88,80,230)
+
+TuneFormat,(1,0,F,C,500,500,500,500,L,0,0)
+
+TuneTempo,90
+
+"Rab's Wedding",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+"March",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+"J. Kerr",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"PM FrankJan de Boone-The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"R 6",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"2002",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+& sharpf sharpc 6_8   I!''  Er_32 Dl_16 'd
+!	dbc C_4 eg LA_8		gg LAr_8 'la dg Cl_16 El_8
+!	dbha HA_4 E_8		gg Fr_8 'f El_16 strla El_8
+!	thrd D_4 eg B_8		gg Br_8 'b Cl_16 Dl_8
+!	dbf F_4 E_8		gg Er_8 'e Fl_16 El_8	!t
+
+& sharpf sharpc   '22	dbc C_4 eg LA_8		gg LAr_8 'la dg Cl_16 El_8
+!	dbha HA_4 E_8		gg Fr_8 'f El_16 strla El_8
+!	thrd D_4 eg B_8		gg Fr_8 'f El_16 strla El_8
+!	gg LA_4 'la		brl LA_4 _'		''!I
+
+
+& sharpf sharpc	I!'' Er_32 Dl_16 'd
+!	dbc C_4 E_8		dbha HA_4 E_8
+!	gg Fr_8 'f HAl_16 gg HAl_8	hdbf Fr_8 'f El_16 strla El_8
+!	thrd D_4 eg B_8		gg Br_8 'b Cl_16 Dl_8
+!	dbf F_4 E_8		gg Er_8 'e Fl_16 El_8	!t
+
+& sharpf sharpc    '1 dbc C_4 E_8		dbha HA_4 E_8
+!	gg Fr_8 'f HAl_16 gg HAl_8	hdbf Fr_8 'f El_16 strla El_8
+!	thrd D_4 eg B_8		gg Fr_8 'f El_16 strla El_8
+!	gg LA_4 'la		brl LA_4 _'		''!I
+
+
+& sharpf sharpc	I!'' E_8
+!	gg LA_4 tar LA_8	dbc C_4 D_8
+!	gg Er_8 'e Fl_16 Dl_8	dbc C_4 E_8
+!	thrd Dr_8 'd Fl_16 Dl_8		gg Br_8 'b Cl_16 Dl_8
+!	dbf F_4 E_8		gg Er_8 'e Fl_16 El_8	!t
+
+& sharpf sharpc	gg LA_4 tar LA_8	dbc C_4 D_8
+!	gg Er_8 'e Fl_16 Dl_8	dbc C_4 E_8
+!	thrd D_4 eg B_8		gg Fr_8 'f El_16 strla El_8
+!	gg LA_4 'la		brl LA_4		''!I
+
+
+& sharpf sharpc	I!'' dbhg HG_8
+!	HA_4 grp HA_8		Fr_8 'f HGl_16 HAl_8
+!	Er_8 'e Fl_16 Dl_8		dbc C_4 E_8
+!	thrd Dr_8 'd gg Fl_16 HAl_8	Br_8 'b Cl_16 Dl_8
+    	!t
+
+& sharpf sharpc  
+'1 dbf F_4 E_8		gg Er_8 'e Fl_16 HGl_8 
+!   HA_4 grp HA_8		Fr_8 'f HGl_16 HAl_8
+!	Er_8 'e Fl_16 Dl_8		dbc C_4 E_8
+!	thrd D_4 eg B_8		gg Fr_8 'f El_16 strla El_8
+!	gg LA_4 'la		brl LA_4 _'		''!I
+
+& sharpf sharpc   '2 dbf F_4 HA_8	hdbf Fr_8 'f El_16 strla El_8
+!	gg LAr_8 'la Bl_16 Cl_8	gg Br_8 'b Cl_16 Dl_8
+!	gg Er_8 'e Fl_16 Dl_8	dbc C_4 E_8
+!	thrd D_4 eg B_8		gg Fr_8 'f El_16 strla El_8
+!	gg LA_4 'la		brl LA_4 _'		!I
+
+ 

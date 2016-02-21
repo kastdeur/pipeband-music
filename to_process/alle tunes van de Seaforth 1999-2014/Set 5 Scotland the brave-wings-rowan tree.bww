@@ -1,0 +1,136 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,60,80,175)
+
+TuneFormat,(1,0,F,L,300,530,500,300,P,1,0)
+
+TuneTempo,90
+
+"  set 5",(T,L,0,0,Times New Roman,19,700,0,0,18,0,0,0)
+
+"March",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,12,400,0,0,18,0,0,0)
+"  ",(F,C,0,0,Times New Roman,12,400,0,0,18,0,0,0)
+"September 8th 2007",(F,L,0,0,Times New Roman,12,400,0,0,18,0,0,0)
+
+"Scotland the Brave",(I,L,0,0,Times New Roman,11,700,0,0,18,0,0,0)
+
+& sharpf sharpc 4_4  E_8
+! gg LA_4		tar LAr_8 'la Bl_16	dbc Cr_8 eg LAl_8	dbc Cr_8 El_8
+! dbha HA_4	strhg HA_4		grp HAr_8 El_8	dbc Cr_8 eg LAl_8
+! thrd D_4		gg Fr_8 'f Dl_16	dbc Cr_8 El_8		dbc Cr_8 eg LAl_8
+! dbb B_4		gg E_4			strla Er_8 'e Fl_16	gg Er_16 'e Dl_32 Cr_16 'c Bl_32 	!t
+
+& sharpf sharpc
+ gg LA_4		tar LAr_8 'la Bl_16	dbc Cr_8 eg LAl_8	dbc Cr_8 El_8
+! dbha HA_4	strhg HA_4		grp HAr_8 El_8	dbc Cr_8 eg LAl_8
+! thrd D_4		gg Fr_8 'f Dl_16	dbc Cr_8 El_8		dbc Cr_8 eg LAl_8
+! dbb B_4		eg LA_4 			tar LA_4			dbc Cr_8 El_8 !t
+
+& sharpf sharpc
+ dbha HA_4		strhg HA_4			grp HAr_8 El_8	dbc Cr_8 eg LAl_8
+! dbha HA_4		strhg HA_4			grp HAr_8 El_8	dbc Cr_8 El_8
+! thrd D_4			gg Fr_8 'f Dl_16		dbc C_4			gg Er_8 'e Cl_16
+! dbb B_4			gg E_4				strla Er_8 'e Fl_16	gg Er_16 'e Dl_32 Cr_16 'c Bl_32  	!t
+
+& sharpf sharpc
+ gg LA_4			tar LAr_8 'la Bl_16		dbc Cr_8 eg LAl_8	dbc Cr_8 El_8
+! dbha HA_4		strhg HA_4			grp HAr_8 El_8	dbc Cr_8 eg LAl_8
+! thrd D_4			gg Fr_8 'f Dl_16		dbc Cr_8 El_8		dbc Cr_8 eg LAl_8
+! dbb B_4			gg LA_4 				tar ^ts LA_4		LA_8 ^te E_8 !I
+
+
+
+"Wings",(I,L,0,0,Times New Roman,11,700,0,0,18,0,0,0)
+
+
+& sharpf sharpc  
+ gg LA_4			tar LAr_8 Bl_8		grp ^ts C_4		Cr_8 ^te El_8
+! gg Fr_8 'f El_16	gg Fr_8 HAl_8		E_4				dbc Cr_8 El_8
+! gg Fr_8 'f HGl_16	HAr_8 Fl_8		dbe Er_16 Cl_8 'c	gg Br_8 LAl_8
+! gg Br_8 'b Cl_16	thrd Dr_8 Cl_8		gg Br_8 El_8		gg Dr_8 Bl_8  	!t
+
+& sharpf sharpc
+ gg LA_4			tar LAr_8 Bl_8		grp ^ts C_4		Cr_8 ^te El_8
+! gg Fr_8 'f El_16	gg Fr_8 HAl_8		E_4				dbc Cr_8 El_8
+! gg Fr_8 'f HGl_16	HAr_8 Fl_8		dbe Er_16 Cl_8 'c	gg Br_8 'b Cl_16
+! gg LA_2			brl ^ts LA_4		LAr_8 ^te El_8 !t
+
+& sharpf sharpc
+ HA_4			strhg HA_4		grp HAr_8 HGl_8	hdbf Fr_8 El_8
+! gg Fr_8 'f El_16	gg Fr_8 HAl_8		hdbf Fr_8 El_8		dbc Cr_8 El_8
+! gg Fr_8 'f HGl_16	HAr_8 Fl_8		dbe Er_16 Cl_8 'c	gg Br_8 LAl_8
+! gg Br_8 'b Cl_16	thrd Dr_8 'd Cl_16	gg Br_8 El_8		gg Dr_8 Bl_8  	!t
+
+& sharpf sharpc
+ gg LA_4			tar LAr_8 Bl_8		grp ^ts C_4		Cr_8 ^te El_8
+! gg Fr_8 'f El_16	gg Fr_8 HAl_8		E_4				dbc Cr_8 El_8
+! gg Fr_8 'f HGl_16	HAr_8 Fl_8		dbe Er_16 Cl_8 'c	gg Br_8 'b Cl_16
+! gg LA_2			brl ^ts LA_4		space   	space		
+ !I
+
+
+
+"The Rowan Tree",(I,L,0,0,Times New Roman,11,700,0,0,18,0,0,0)
+
+
+& sharpf sharpc 4_4 gg LAr_8  'la Bl_16  
+! grp ^ts C_4 		Cr_8 ^te strlg Cl_8		gg C_4		B_4
+! gg Cr_8 ^ts El_8	E_4 ^te				strla E_4		HA_4
+! hdbf ^ts F_4		Fr_8 ^te El_8			gg F_4		HA_4
+! hdbf ^ts F_4		Fr_8 ^te El_8			strla E_4		gg LAr_8 'la Bl_16  	!t
+
+& sharpf sharpc  
+ grp ^ts C_4 		Cr_8 ^te strlg Cl_8		gg C_4		B_4
+! gg Cr_8 ^ts El_8	E_4 ^te				dbf ^ts F_4	Fr_8 ^te El_8
+! dbe Er_8 ^ts Cl_8	C_4 ^te				dbb ^ts B_4	Br_8 ^te strlg LAl_8
+! gg LA_2								brl LA_4 		E_4 !I
+
+& sharpf sharpc  
+ strla E_4		HA_4				strhg ^ts HA_4	HAr_8 ^te HGl_8
+! strf HG_4		F_4					dbf F_4		HA_4
+! hdbe ^ts E_4 		Er_8 ^te Fl_8			gg Fr_8 El_8	gg Dr_8 Cl_8
+! dbc C_2			eg B_4				gg LAr_8 'la Bl_16  	!t
+
+& sharpf sharpc  
+ grp ^ts C_4 		Cr_8 ^te strlg Cl_8		gg C_4		B_4
+! gg Cr_8 ^ts El_8	E_4 ^te				dbf ^ts F_4	Fr_8 ^te El_8
+! dbe Er_8 ^ts Cl_8	C_4 ^te				dbb ^ts B_4	Br_8 ^te strlg LAl_8
+! gg LA_2			brl LA_4 'la ^ts 			space	space		 !I
+
+"Scotland the Brave (high)",(I,L,0,0,Times New Roman,11,700,0,0,18,0,0,0)
+
+& sharpf sharpc   E_8
+! gg LA_4		tar LAr_8 'la Bl_16	dbc Cr_8 eg LAl_8	dbc Cr_8 El_8
+! dbha HA_4	strhg HA_4		grp HAr_8 El_8	dbc Cr_8 eg LAl_8
+! thrd D_4		gg Fr_8 'f Dl_16	dbc Cr_8 El_8		dbc Cr_8 eg LAl_8
+! dbb B_4		gg E_4			strla Er_8 'e Fl_16	gg Er_16 'e Dl_32 Cr_16 'c Bl_32  	!t
+
+& sharpf sharpc  
+	 gg LA_4		tar LAr_8 'la Bl_16	dbc Cr_8 eg LAl_8	dbc Cr_8 El_8
+! dbha HA_4	strhg HA_4		grp HAr_8 El_8	dbc Cr_8 eg LAl_8
+! thrd D_4		gg Fr_8 'f Dl_16	dbc Cr_8 El_8		dbc Cr_8 eg LAl_8
+! dbb B_4		eg LA_4 			tar LA_4			dbc Cr_8 El_8 !t
+
+ 
+& sharpf sharpc
+	 dbha HA_4		strhg HA_4			grp HAr_8 El_8		dbc Cr_8 eg LAl_8
+! dbha HA_4		strhg HA_4			grp HAr_8 El_8		dbc Cr_8 El_8
+! dbha HA_4		strhg HAr_8 'ha HGl_16	tg F_4			dbha HAr_8 'ha HGl_16
+! hdbf Fr_8 HAl_8	HGr_8 Fl_8			dbe Er_8 Dl_8		dbc Cr_8 Bl_8  	!t
+
+& sharpf sharpc  
+	 gg LA_4		tar LAr_8 'la Bl_16	dbc Cr_8 eg LAl_8	dbc Cr_8 El_8
+! dbha HA_4	strhg HA_4		grp HAr_8 El_8	dbc Cr_8 eg LAl_8
+! thrd D_4		gg Fr_8 'f Dl_16	dbc Cr_8 El_8		dbc Cr_8 eg LAl_8
+! dbb B_4		eg LA_4			tar  LA_2		space	space	space			 !I
+

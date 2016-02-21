@@ -1,0 +1,106 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,80,200)
+
+TuneFormat,(1,0,F,L,500,500,500,500,L,1,0)
+
+TuneTempo,92
+
+"The Steam Boat ",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+
+"March",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+"Traditional, 1936, 3 &4 by Ruaraith Petre",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+"The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"Duty tunes  37",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"1995",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"The Hills of Caithness, 1st trainings periode",(I,L,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+& sharpf sharpc 6_8 I!'' 	E_8
+! 	dbha HA_4 	E_8 	dbc C_4 	eg LA_8 	
+! 	gg LAr_8 'la dg Cl_16 El_8 		dbha HA_4 'ha 	
+! 	gg HAr_8 'ha HGl_16 Fl_8 		dbe Er_8 'e Dl_16 Cl_8 	
+! 	gg Br_8 'b Cl_16 Dl_8 			dbc Cr_8 'c Bl_16 dg LAl_8 	
+	!t
+
+& sharpf sharpc 	
+	dbha HA_4 	E_8 	dbc C_4 	eg LA_8 	
+! 	gg LAr_8 'la dg Cl_16 El_8 		dbha HA_4 'ha 	
+! 	gg HAr_8 'ha HGl_16 Fl_8 		dbe Er_8 'e Dl_16 Cl_8 	
+! 	dbe Er_8 'e Cl_16 dg LAl_8 		brl LA_4 
+	''!I
+
+"part 2"
+
+& sharpf sharpc I!'' B_8 	
+!	dbc C_4 	E_8 					gg Er_8 'e Fl_16 El_8 	
+! 	gg Er_8 'e Fl_16 El_8 			dbc C_4 	eg LA_8 	
+! 	thrd D_4 	F_8 					gg Fr_16 HAr_8 'ha Fl_8 	
+! 	gg Fr_8 'f HGl_16 HAl_8 			hdbf F_4 	E_8 	
+	!t	
+
+& sharpf sharpc	
+	dbc C_4 	E_8 					gg Er_8 'e Fl_16 El_8 	
+! 	gg Er_8 'e Fl_16 El_8 			dbc C_4 	eg LA_8 	
+! 	HAr_8 'ha HGl_16 Fl_8 			dbe Er_8 'e Dl_16 Cl_8 	
+! 	dbe Er_8 'e Cl_16 dg LAl_8 		brl LA_4 
+	''!I
+
+
+
+"part 3" 
+
+& sharpf sharpc	I!'' E_8
+!	HAr_8 'ha HGl_16 HAl_8			Er_8 'e Cl_16 El_8
+!	gg LAr_8 'la Cl_16 El_8			dbha HA_4 'ha
+! 	gg HAr_8 'ha HGl_16 Fl_8 		dbe Er_8 'e Dl_16 Cl_8 	
+! 	gg Br_8 'b Cl_16 Dl_8 			dbc Cr_8 'c Bl_16 dg LAl_8 	
+	!t	
+
+
+& sharpf sharpc	
+	HAr_8 'ha HGl_16 HAl_8			Er_8 'e Cl_16 El_8
+!	gg LAr_8 'la Cl_16 El_8			dbha HA_4 'ha
+! 	gg HAr_8 'ha HGl_16 Fl_8 		dbe Er_8 'e Dl_16 Cl_8 	
+! 	dbe Er_8 'e Cl_16 dg LAl_8 		brl LA_4 
+	''!I
+
+"part 4"
+
+& sharpf sharpc	I!'' E_8
+!	gg LAr_8 'la Bl_16 Cl_8			gg Br_8 'b Cl_16 Dl_8
+!	dbc C_4 E_8					dbha HA_4 'ha
+! 	gg HAr_8 'ha HGl_16 Fl_8 		dbe Er_8 'e Dl_16 Cl_8 	
+! 	gg Br_8 'b Cl_16 Dl_8 			dbc Cr_8 'c Bl_16 dg LAl_8 	
+	!t
+
+& sharpf sharpc	
+'1	gg LAr_8 'la Bl_16 Cl_8			gg Br_8 'b Cl_16 Dl_8
+!	dbc C_4 E_8					dbha HA_4 'ha
+! 	gg HAr_8 'ha HGl_16 Fl_8 		dbe Er_8 'e Dl_16 Cl_8 	
+! 	dbe Er_8 'e Cl_16 dg LAl_8 		brl LA_4 
+	_'	''!I
+
+& sharpf sharpc	
+'2	HAr_8 'ha HGl_16 HAl_8			Er_8 'e Cl_16 El_8
+!	gg LAr_8 'la Cl_16 El_8			dbha HA_4 'ha
+! 	gg HAr_8 'ha HGl_16 Fl_8 		dbe Er_8 'e Dl_16 Cl_8 	
+! 	dbe Er_8 'e Cl_16 dg LAl_8 		brl LA_4 'la
+	_'	!I
+
+	
+
+

@@ -1,0 +1,48 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,80,250)
+
+TuneFormat,(1,0,M,L,500,500,500,500,L,1,0)
+
+"Brose and Butter",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+"March 9/8",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"Traditional",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+TuneTempo,90
+
+"The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"Duty tunes  4",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"2012",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"Dinner call, Officer'mess pipes and Coffee time",(I,L,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+
+
+& sharpf sharpc 9_8 I!''	thrd Dr_8 'd El_16 Fl_8		gg B_4 tar B_8		gg B_4 tar B_8
+!	thrd Dr_8 'd El_16 Fl_8		gg B_4 tar B_8		dbe Er_8 'e gg Cl_16 dg LAl_8	!t
+
+& sharpf sharpc	thrd Dr_8 'd El_16 Fl_8		gg B_4 tar B_8		gg Br_8 'b Cl_16 Dl_8
+!	dbc Cr_8 'c gg Bl_16 dg LAl_8		brl LAr_8 HAl_8 Fl_8		dbe Er_8 'e gg Cl_16 dg LAl_8	''!I
+
+& sharpf sharpc	thrd Dr_8 'd El_16 Fl_8		gg Fr_16 HAl_8 'ha Fl_8		gg Fr_16 HAl_8 'ha Fl_8
+!	thrd Dr_8 'd El_16 Fl_8		gg Fr_16 HAl_8 'ha Fl_8		dbe Er_8 'e gg Cl_16 dg LAl_8	!t
+
+& sharpf sharpc	thrd Dr_8 'd El_16 Fl_8		gg Fr_16 HAl_8 'ha Fl_8		gg Fr_16 HAl_8 'ha Fl_8
+!	dbhg HGr_8 'hg Fl_16 El_8	gg Fr_16 HAl_8 'ha Fl_8		dbe Er_8 'e gg Cl_16 dg LAl_8	!I
+
+& sharpf sharpc	thrd Dr_8 'd El_16 Fl_8		gg Fr_16 HAl_8 'ha Fl_8		gg Fr_16 HAl_8 'ha Fl_8
+!	thrd Dr_8 'd El_16 Fl_8		gg Fr_16 HAl_8 'ha Fl_8		dbe Er_8 'e gg Cl_16 dg LAl_8	!t
+
+& sharpf sharpc	thrd D_4 E_8	gg F_4 grp F_8		dbhg HG_4 F_8
+!	dbe Er_8 'e gg Cl_16 dg LAl_8		brl LAr_8 HAl_8 Fl_8	dbe Er_8 'e gg Cl_16 dg LAl_8	!I

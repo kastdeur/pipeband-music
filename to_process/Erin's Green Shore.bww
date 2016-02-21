@@ -1,0 +1,68 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,80,250)
+
+TuneFormat,(1,0,M,L,500,500,500,500,L,1,0)
+
+"Erin's Green Shore",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+"Slow Air",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"Traditional / arr.:  PM E. de Jong",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"oktober 2013",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"versie van Wijk bij Duurstede"
+
+TuneTempo,50
+
+
+
+
+
+
+
+"Slow air (1st time solo)",(I,L,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+&  6_8 
+I!'' 	gg Er_8 'e  Fl_16 HGl_8		 	hdbe E_4					LA_8 
+!  	gg E_4 						C_8						gg Dr_8 Cl_8 LAl_8 
+!  	gg LG_4 'lg					space gg LA_4 			dg B_8 space
+!  	space strlg ^ts LA_4 'la 			LA_4 ^te space space		HA_8 space 				!t
+
+& 
+	hdbf  Fr_8 'f  El_16 Dl_8			gg Er_8 'e  Fl_16 HGl_8
+! 	dbha  HAr_8 'ha  HGl_16 tg Fl_8	dbe E_4  					HA_8 space
+! 	strf  HGr_8 'hg  Fl_16 gg El_8		gg Dr_8 LAl_8 dg Bl_8		space
+! 	space dg ^ts LG_4 'lg 			LG_4 ^te  space space		HA_8 space				  !t
+
+& 
+	hdbf  Fr_8 'f  El_16 Dl_8			gg Er_8 'e  Fl_16 HGl_8
+! 	dbha  HAr_8 'ha  HGl_16 tg Fl_8	dbe E_4 					HA_8 space
+! 	strf  HGr_8 'hg  Fl_16 gg El_8		gg Dr_8 LAl_8 dg Bl_8		space
+! 	space dg ^ts LG_4 'lg 			LG_4 ^te  space space		LA_8 space				  !t
+
+& 
+	gg Er_8 'e  Fl_16 HGl_8	 		hdbe E_4					LA_8
+! 	gg E_4 						C_8						gg Dr_8 Cl_8 LAl_8 
+! 	gg LG_4 'lg					space gg LA_4 			dg B_8 space
+! 	space strlg ^ts LA_4 'la 			LA_4 ^te 'la space									 ''!I
+
+"Solo",(I,L,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+&
+	gg Er_8 'e  Fl_16 HGl_8	 		hdbe E_4					LA_8
+! 	gg E_4 						C_8						gg Dr_8 Cl_8 LAl_8 
+! 	gg LG_4 'lg					space gg LA_4 			dg B_8 space
+! 	space strlg ^ts LA_4 'la 			LA_4 ^te 'la space									 !t
+ 
+

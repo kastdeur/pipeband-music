@@ -1,0 +1,92 @@
+Bagpipe Music Writer Gold:1.0
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,75,80,250)
+
+TuneFormat,(1,0,F,L,500,500,500,500,L,1,0)
+
+TuneTempo,84
+
+"March",(T,C,0,0,Times New Romanl,14,700,0,0,18,0,0,0)
+
+"Lord Lovat's Lament",(Y,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+"Robert Meldrum, arr. Mac Kay",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"Duty tunes  27",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"2000",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"Funeral march",(I,L,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+
+
+
+
+
+& sharpf sharpc  4_4 	gg LAr_8 'la Bl_16
+!	grp C_4			dbc    Cr_8 El_8		thrd Dr_8 Cl_8		dbb Br_8  LAl_8
+!	gg Cr_16 El_8 'e	strla Er_8 'e Fl_16	dbe E_4		gg Fr_8 'f HGl_16
+!	dbha HA_4		hdbe Er_8 HAl_8	hdbf Fr_8 El_8		dbc Cr_8 eg LAl_8
+!	dbc Cr_16  Bl_8 'b	grp Br_8 'b Cl_16	dbb B_4	gg LAr_8 'la Bl_16		!t
+
+& sharpf sharpc 
+	grp C_4			dbc Cr_8 El_8		thrd Dr_8 Cl_8			dbb Br_8  LAl_8
+!	gg Cr_16 El_8 'e	strla Er_8 'e Fl_16	dbe E_4				dbc Cr_8 eg LAl_8
+!	thrd Dr_8 'd El_16	gg Fr_8  Er_32 Dl_16 'd 	gg Cr_16 El_8 'e	thrd Dr_8 'd Bl_16 
+!	gg LA_4 			tar LAr_8 'la Bl_16	strlg LA_4						!I
+
+"part 2"
+
+& sharpf sharpc 		gg Fr_8 'f HGl_16
+!	dbha HA_4		hdbe Er_8 HAl_8	hdbf Fr_8 El_8		dbc Cr_8 eg LAl_8
+!	gg Cr_16 El_8 'e	strla Er_8 'e Fl_16	dbe E_4		gg Fr_8 'f HGl_16
+!	dbha HA_4		hdbe Er_8 HAl_8	hdbf Fr_8 El_8		dbc Cr_8 eg LAl_8
+!	dbc Cr_16  Bl_8 'b	grp Br_8 'b Cl_16	dbb B_4	gg LAr_8 'la Bl_16		!t
+
+
+& sharpf sharpc 
+	grp C_4			dbc  Cr_8 El_8		thrd Dr_8 Cl_8		dbb Br_8 strlg LAl_8
+!	gg Cr_16 El_8 'e	strla Er_8 'e Fl_16	dbe E_4		dbc Cr_8 eg LAl_8
+!	thrd Dr_8 'd El_16	gg Fr_8  Er_32 Dl_16 'd 	gg Cr_16 El_8 'e	thrd Dr_8 'd Bl_16 
+!	gg LA_4 			tar LAr_8 'la Bl_16	strlg LA_4							!I
+
+" Seconds                                                                                                                                                                                                                                         Arr. PM J.G.Slattery Scots Guards",(I,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+& sharpf sharpc  4_4 	gg Er_8 'e Fl_16
+!	gg LA_4			brl LAr_8 Cl_8		dbf Fr_8 El_8		dbd Dr_8  El_8
+!	gg Er_16 Cl_8 'c	strlg Cr_8 'c Dl_16	dbc E_4			dbe  Fr_8 'f HGl_16
+!	dbha HA_4		hdbe Er_8 HAl_8	dbe E_4		gg Fr_8 'f HGl_16
+!	dbha HA_4		hdbe Er_8 HAl_8	hdbf Fr_8 El_8		dbc Cr_8 eg LAl_8
+!	dbc Cr_16  Bl_8 'b	grp Br_8 'b Cl_16	dbb B_4	gg LAr_8 'la Bl_16		!t
+
+& sharpf sharpc 
+	gg LA_4			brl LAr_8 Cl_8		dbf Fr_8 El_8			dbc Dr_8  El_8
+!	gg Er_16 Cl_8 'c	strla Cr_8 'c Dl_16	dbc C_4				dbe Er_8 eg Cl_8
+!	gg Br_8 'b Cl_16	thrd Dr_8  Cr_32 Fl_16 'f 	gg Er_16 Cl_8 'e	gg Fr_8 'f eg  Fl_16 
+!	gg C_4 			dbe Er_8 'e Dl_16	dbc C_4						!I
+
+"part 2"
+
+& sharpf sharpc 		gg Dr_8 'd El_16
+!	dbf F_4			gg Cr_8 Fl_8		hdbd Dr_8 Cl_8		dbe Er_8 eg Cl_8
+!	gg Er_16 Cl_8 'c	strlg Cr_8 'c Dl_16	dbc E_4			dbe  Fr_8 'f HGl_16
+!	dbha HA_4		hdbe Er_8 HAl_8	dbe E_4		gg Fr_8 'f HGl_16
+!	dbha HA_4		hdbe Er_8 HAl_8	hdbf Fr_8 El_8		dbc Cr_8 eg LAl_8
+!	dbc Cr_16  Bl_8 'b	grp Br_8 'b Cl_16	dbb B_4	gg LAr_8 'la Bl_16			!t
+
+
+& sharpf sharpc 
+	gg LA_4			brl LAr_8 Cl_8		dbf Fr_8 El_8			dbc Dr_8  El_8
+!	gg Er_16 Cl_8 'c	strla Cr_8 'c Dl_16	dbc C_4				dbe Er_8 eg Cl_8
+!	gg Br_8 'b Cl_16	thrd Dr_8  Cr_32 Fl_16 'f 	gg Er_16 Cl_8 'e	gg Fr_8 'f eg  Fl_16 
+!	gg C_4 			dbe Er_8 'e Dl_16	dbc C_4						!I

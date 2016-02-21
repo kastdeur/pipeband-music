@@ -1,0 +1,58 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(30,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,88,80,250)
+
+TuneFormat,(1,0,F,L,500,500,500,500,L,1,0)
+
+TuneTempo,90
+
+"The Battle of Waterloo",(Y,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+"March",(T,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"Duty tunes  42",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"2010",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+& sharpf sharpc C  	gg Er_8 Dr_16 Bl_16
+!	gg LA_4					tar LAr_8 dg Bl_8		dbla LAr_8 eg LGl_8	dg LGr_8 LAl_8
+!	grp Cr_8 'c Dl_16			dbe Er_8 Cl_8			thrd D_4				gg Er_8 Fr_16 HGl_16
+!	dbha HAr_8 'ha HGl_16		hdbe Er_8 Dl_8		dbe Er_8 'e Dl_16		dbb Br_8 eg LAl_8
+!	gg LGr_8 'lg dg LGl_16		eg LGr_8 dg LAl_8		dblg LG_4			dbe Er_8 Dr_16 Bl_16
+!t
+
+
+& sharpf sharpc	
+	gg LA_4					tar LAr_8 dg Bl_8		dbla LAr_8 eg LGl_8	dg LGr_8 LAl_8
+!	grp Cr_8 'c Dl_16			dbe Er_8 Cl_8			thrd D_4				gg Er_8 Fr_16 HGl_16
+!	dbha HAr_8 'ha HGl_16		hdbe Er_8 Dl_8		dbe Er_8 'e Dl_16		dbb Br_8 eg LGl_8
+!	gg LA_2			space		space		space				brl 		LA_4 'la	space	space	
+!I
+
+
+
+
+& sharpf sharpc		dbhg HG_8	space
+!	dbha HAr_8 'ha HGl_16		tg Er_8 Dl_8 			gg C_4				grp Er_8 'e Fl_16
+!	dbhg HGr_8 'hg HAl_16		strf HGr_8 tg El_8		dbhg HG_4			tg Er_8 Fr_16 HGl_16
+!	dbha HAr_8 'ha HGl_16		hdbe Er_8 Dl_8		dbe Er_8 'e Dl_16		dbb Br_8 eg LAl_8
+!	gg LGr_8 'lg dg LGl_16		eg LGr_8  dg LAl_8		dblg LG_4			dbe Er_8 Dr_16 Bl_16
+!t
+
+& sharpf sharpc
+	gg LA_4					tar LAr_8 dg Bl_8		dbla LAr_8 eg LGl_8	dg LGr_8 LAl_8
+!	grp Cr_8 'c Dl_16			dbe Er_8 Cl_8			thrd D_4				gg Er_8 Fr_16 HGl_16
+!	dbha HAr_8 'ha HGl_16		hdbe Er_8 Dl_8		dbe Er_8 'e Dl_16		dbb Br_8 eg LGl_8
+!	gg LA_2			space		space		space				brl 	LA_4 'la	space	space	
+!I

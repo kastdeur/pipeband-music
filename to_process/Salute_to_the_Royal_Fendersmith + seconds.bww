@@ -1,0 +1,87 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,82,80,250)
+
+TuneFormat,(1,0,F,L,500,500,500,500,L,1,0)
+
+TuneTempo,50
+
+"Salute to the Royal Fendersmith",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+
+"Slow Air",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+"PM J.M. Banks",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+"PM FrankJan de Boone-The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"S 10",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"2002",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+
+
+& sharpf sharpc 12_8 gg LA_4	B_8
+!	dbc C_4		E_8		dbc C_4 'c		eg LA_4 'la		^tla LA_4	dg C_8
+!	gg E_4		F_8		dbe E_2 'e		^te E_4 'e
+!	dbha HA_4	F_8		dbe E_4 'e		gg LA_4 'la		^tla LA_4	F_8
+!	dbe E_4		C_8		gstb B_4 'b		^tb B_4			LA_8		brl LA_4	B_8		!t
+
+& sharpf sharpc
+	dbc C_4		E_8		dbc C_4 'c		eg LA_4 'la		^tla LA_4	dg C_8
+!	gg E_4		F_8		dbe E_2 'e		^te E_4 'e
+!	dbha HA_4	F_8		dbe E_4 'e		gg LA_4 'la		^tla LA_4	B_8
+!	dbc C_4		eg B_8		strlg LA_2 'la		^tla LA_4		E_8						!I
+
+
+& sharpf sharpc
+	strla E_4	F_8		dbe E_4 'e		dbc C_2 'c
+!	dbha HA_4	F_8		dbe E_2 'e		^te E_4			LA_8
+!	brl LA_4	B_8		dbc C_4 'c		E_4 'e			^te E_4		F_8
+!	dbe E_4		C_8		gstb B_2 'b		^tb B_4			E_8						!t
+
+& sharpf sharpc
+	strla E_4	F_8		dbe E_4 'e		dbc C_2 'c
+!	dbha HA_4	F_8		dbe E_2 'e		^te E_4 'e	
+!	dbha HA_4	F_8		dbe E_4 'e		gg LA_4 'la		^tla LA_4	B_8
+!	dbc C_4		eg B_8		strlg LA_2 'la		^tla LA_4 'la								!I
+
+
+"Seconds",(I,L,0,0,Times New Roman,11,700,0,0,18,0,0,0)
+
+
+
+& sharpf sharpc 12_8 gg LA_4	B_8
+!	dbc C_4		E_8		dbc C_4 'c		eg LA_4 'la		^tla LA_4	dg C_8
+!	gg E_4		F_8		dbe E_2 'e		^te E_4 'e
+!	dbha HA_4	F_8		dbe E_4 'e		gg LA_4 'la		^tla LA_4	F_8
+!	dbe E_4		C_8		gstb B_4 'b		^tb B_4			C_8		gg C_4		D_8				!t
+
+& sharpf sharpc
+	dbc E_4		C_8		dbe E_4 'e		dg C_4 'c		^tc C_4		eg LA_8
+!	gg C_4		D_8		dbc C_2 'c		^tc C_4 'c
+!	dbf F_4		D_8		dbc C_4 'c		gg E_4 'e		^te E_4		D_8
+!	dbe E_4		D_8		dbc C_4			D_8			dbe E_4		D_8		dbc C_4		LA_8		!I
+
+
+& sharpf sharpc
+	gg C_4		D_8		dbc C_4 'c		dbe E_2 'e
+!	dbf F_4		D_8		dbc C_2 'c		^tc C_4			E_8
+!	dbc C_4		D_8		dbe E_4 'e		gg C_4 'c		^tc C_4		D_8
+!	dbc C_4		E_8		thrd D_2 'd		^td D_4			C_8								!t
+
+& sharpf sharpc
+	gg C_4		D_8		dbc C_4 'c		dbe E_2 'e
+!	dbf F_4		D_8		dbc C_2 'c		^tc C_4 'c
+!	dbf F_4		D_8		dbc C_4 'c		gg E_4 'e		^te E_4		D_8
+!	dbe E_4		D_8		dbc C_4			D_8			dbe E_4		D_8		dbc C_4 'c			!I
+

@@ -1,0 +1,79 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,20,220)
+
+TuneFormat,(1,0,F,L,500,500,570,500,L,1,0)
+
+TuneTempo,84
+
+"The Steam Boat",(T,L,0,0,Celtic,16,700,0,0,18,0,0,0)
+
+"Traditional / arr.: PM G.J. van Achterbergh (part 1 and 2) / R. Petre (part 3 and 4)",(T,R,0,0,Century Gothic,11,400,0,0,18,0,0,0)
+
+"Saint Anthony Pipe Band - 01112006",(F,R,0,0,Century Gothic,11,400,0,0,18,0,0,0)
+
+"March",(I,L,0,0,Century Gothic,11,400,0,0,18,0,0,0)
+
+& 6_8 I!'' 	E_8
+! 	dbha HA_4 				E_8 				dbc C_4 			eg LA_8 	
+! 	gg LAr_8 'la dg Cl_16 El_8	dbha HA_4 'ha 	
+! 	gg HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	
+! 	gg Br_8 'b Cl_16 Dl_8 		dbc C_4 			eg LA_8 					!t
+
+& 
+	dbha HA_4 				E_8 				dbc C_4 			eg LA_8 	
+! 	gg LAr_8 'la dg Cl_16 El_8 	dbha HA_4 'ha 	
+! 	gg HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	
+! 	gg Er_8 'e Cl_16 dg LAl_8 	brl LA_4 									''!I
+
+& I!'' 
+	B_8 	
+!	dbc C_4 	E_8				gg Er_8 'e Fl_16 gg El_8 	
+! 	gg Er_8 'e Fl_16 gg El_8 	dbc C_4 	eg LA_8 	
+! 	thrd D_4 	F_8 				gg Fr_16 HAr_8 'ha Fl_8 	
+! 	gg Fr_8 'f HGl_16 HAl_8 		hdbf F_4 	E_8 								!t	
+
+& 
+	dbc C_4 	E_8 				gg Er_8 'e Fl_16 gg El_8 	
+! 	gg Er_8 'e Fl_16 gg El_8 	dbc C_4 	eg LA_8 	
+! 	HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	
+! 	gg Er_8 'e Cl_16 dg LAl_8 	brl LA_4 									''!I
+
+&
+	E_8
+!	HAr_8 'ha HGl_16 HAl_8 	Er_8 'e Dl_16 El_8
+! 	gg LAr_8 'la dg Cl_16 El_8 	dbha HA_4 'ha 	
+! 	gg HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	
+! 	gg Br_8 'b Cl_16 Dl_8 		dbc C_4 				eg LA_8 				!t
+
+&
+!	HAr_8 'ha HGl_16 HAl_8 	Er_8 'e Dl_16 El_8
+! 	gg LAr_8 'la dg Cl_16 El_8 	dbha HA_4 'ha 	
+! 	gg HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	
+! 	gg Er_8 'e Cl_16 dg LAl_8 	brl LA_4 									''!I
+
+&	E_8
+!	gg LAr_8 'la Bl_16 Cl_8 		gg Br_8 'b Cl_16 Dl_8
+!	dbc C_4					E_8					dbha HA_4 'ha		
+! 	gg HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	  	
+! 	gg Br_8 'b Cl_16 Dl_8 		dbc C_4 				eg LA_8 				!t
+
+&	'1
+	gg LAr_8 'la Bl_16 Cl_8 		gg Br_8 'b Cl_16 Dl_8
+!	dbc C_4					E_8					dbha HA_4 'ha		
+! 	gg HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	  	
+! 	gg Er_8 'e Cl_16 dg LAl_8 	brl LA_4 				_' ''!I 
+
+&	'2
+	HAr_8 'ha HGl_16 HAl_8 	Er_8 'e Dl_16 El_8
+! 	gg LAr_8 'la dg Cl_16 El_8 	dbha HA_4 'ha 	
+! 	gg HAr_8 'ha HGl_16 tg Fl_8 	gg Er_8 'e Dl_16 Cl_8 	
+! 	gg Er_8 'e Cl_16 dg LAl_8 	brl LA_4 									_' !t

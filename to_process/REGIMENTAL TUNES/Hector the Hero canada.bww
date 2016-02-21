@@ -1,0 +1,74 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,88,80,250)
+
+TuneFormat,(1,0,F,L,500,500,500,500,L,1,0)
+
+TuneTempo 30
+
+"Slow Air",(T,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"Hector the Hero",(Y,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+"J. Scott Skinner, arr. F.Morrison",(M,R,0,0,Times New Romanl,10,400,0,0,18,0,0,0)
+
+
+
+"PM FrankJan de Boone-The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"H 3",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"2008 23th november",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+
+
+& sharpf sharpc 6_8 I!''   gg LAr_16 'la dg Bl_32
+! grp ^ts C_4  space space  ^3s Cr_16  ^te  ^3s Bl_16 strlg LAl_16 ^3e		gg ^ts F_4 space space  Fr_16 ^te ^3s El_16 Cl_16 ^3e
+! gg E_4 'e 													strlg E_4	gg LAr_32 dg  Bl_16 'b
+! grp ^ts C_4  space space  ^3s Cr_16  ^te  ^3s Bl_16 strlg LAl_16 ^3e		gg ^ts F_4 space space  Fr_16 ^te ^3s El_16 Cl_16 ^3e
+! gg B_4 'b 													gstb B_4  	 gg LAr_16 'la Bl_32 
+!t
+
+&  sharpf sharpc
+	 grp ^ts C_4  space space  ^3s Cr_16  ^te  ^3s Bl_16 strlg LAl_16 ^3e		gg ^ts F_4 space space  Fr_16 ^te ^3s El_16 Cl_16 ^3e
+!	 Er_16 gg LAl_8 'la grp Bl_8									dg Cr_16 HAl_8 'ha Fl_8
+!	 Er_16 gg ^ts LAl_8 'la  LAr_16 ^te ^3s  Bl_16 Cl_16 ^3e				gg  B_4   strlg LA_8
+!	 gg LA_4 'la												'1 brl LA_4 _'	'2  gg Cr_32 El_16 'e _'	space
+''!I
+
+"part2 "
+
+& sharpf sharpc    
+	dbf F_4 dbf F_8							dbha HAr_8 'ha HGl_16 tg Fl_8
+!	gg Fr_16 ^ts  El_16 E_4 'e ^te 			strla Er_8 'e gg Cl_16 El_8
+! 	hdbf F_4 dbha  ^3s  HAr_16  Fl_16 gg El_16 ^3e space		Cr_16 El_16 gg ^ts  LAl_8	 space  LAr_16 ^te ^3s  Bl_16 Cl_16 ^3e
+! gg B_4 'b 									gstb  B_4 'b gg ^3s LAr_16 dg Cl_16 El_16 ^3e 
+!t
+"4e regel"
+
+&  sharpf sharpc
+	dbf F_4 dbf F_8							dbha HAr_8 'ha HGl_16 tg Fl_8
+!	 Er_16 gg LAl_8 'la grp Bl_8 space				dg Cr_16 HAl_8 'ha Fl_8
+! 	Er_16 gg LAl_8 'la 	gg Br_32 dg Cl_16 'c			gg B_4 strlg LA_8
+!	 gg LA_4 'la	brl LA_4 space 				gg ^3s LAr_16 dg Cl_16 El_16 ^3e 
+!t
+
+&  sharpf sharpc
+
+	dbf F_4 dbf F_8							dbha HAr_8 'ha HGl_16 tg ^ts Fl_8
+!	Fr_16 ^te  ^ts  El_16 E_4 'e ^te 			strla Er_8 'e gg Cl_16 El_8
+! 	hdbf F_4 dbha  ^3s  HAr_16  Fl_16 gg El_16 ^3e space		Cr_16 El_16 gg LAl_8	gg ^3s LAr_16 Bl_16 Cl_16 ^3e
+!	 gg B_4 'b 									gstb  B_4 'b gg ^3s LAr_16 dg Cl_16 El_16 ^3e 		!t
+
+&  sharpf sharpc
+
+	dbf F_4 dbf F_8							dbha HAr_8 'ha HGl_16 tg Fl_8
+!	 Er_16 gg LAl_8 'la grp Bl_8 space				dg Cr_16 HAl_8 'ha Fl_8
+! 	Er_16 gg LAl_8 'la 	gg Br_32 dg Cl_16 'c			gg B_4 strlg LA_8
+!	 gg LA_4 'la								brl LA_4 'la !I

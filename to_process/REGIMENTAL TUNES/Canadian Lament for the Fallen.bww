@@ -1,0 +1,54 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,80,250)
+
+TuneFormat,(1,0,M,L,500,500,500,500,L,0,0)
+ 
+TuneTempo,90
+
+TuneTempo,52
+
+"Canadian Lament for the Fallen",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+"Lament",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"Major John Cairns, CD",(M,R,0,0,Times New Roman,10  ,400,0,0,18,0,0,0)
+
+"Canadian Forces Music Centre, Ottawa, Canada",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"Duty tunes 45",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"2005",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+& sharpf sharpc 3_4 I!'' gg LAr_8 'la dg Bl_16
+!	dbe E_4 ^te Er_8 Dl_8 	gg Br_8 'b Dl_16
+!	dbb 	Br_16 strlg LAl_8 'la	^tla	LA_4 gg LAr_16 dg Bl_8 'b	space		
+!	dbe E_4 ^te 	Er_8 Dl_8 	^td 	Dr_8 gg Br_16 Dl_16
+!	dbe E_4 ^te E_4	gg Er_8 'e HGl_16	!t
+
+
+& sharpf sharpc
+	dbha HA_4 ^tha HAr_8 HGl_8 		tg Er_8 'e Dl_16
+!	dbb Br_16 strlg LAl_8 'la ^tla LA_4	gg LGr_8 'lg dg LAl_16
+!	grp B_4 ^tb Br_8 Dl_8 	^td	 Dr_8 dbb Br_16 LGl_16
+!	gg LA_4 ^tla LA_4	space	space 	''!I
+
+
+& sharpf sharpc
+I!'' gg Er_8 'e HGl_16
+!	dbha HA_4 ^tha HAr_8 HGl_8	tg Er_8 'e Dl_16
+!	tdbb Br_16 strlg LAl_8 'la	^tla	LA_4 gg Er_16 HGl_8 'hg		space	
+!	dbha HA_4 ^tha HAr_8 fg HGl_8 	^thg	HGr_8 hdbe Er_16 Dl_16
+!	gg E_4 ^te E_4 dbha HAr_8 'ha HGl_16	!t
+
+& sharpf sharpc
+	tdbe E_4 ^te Er_8 Dl_8	gg Er_8 'e HGl_16
+!	tdbb Br_16 strlg LAl_8 'la	^tla	LA_4	gg LGr_8 'lg dg LAl_16
+!	grp B_4 ^tb	Br_8 Dl_8 ^td	Dr_8 dbb Br_16 LGl_16
+!	'1 gg LA_4 ^tla LA_4 _'  '2  LA_2 'la      _'		''!I
