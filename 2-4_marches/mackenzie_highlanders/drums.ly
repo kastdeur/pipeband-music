@@ -4,70 +4,56 @@
 \include "notes.bass.ily"
 %\include "notes.tenor.ily"
 \include "notes.side.ily"
-\include "notes.pipes.ily"
 
 \score {
 	\new StaffGroup <<
-		\new Staff {
-			\global
-			\bagpipeKey
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
-			<<
-				{
-				\repeat volta 2 {
-					\part \line
-				}\break
-
-				\part \line \bar "||" \break
-				\line \bar "|."
-				}%Format
-				{
-				\pipesA s8
-
-				\pipesB
-				\pipesBA
-				\pipesB
-				\pipesBB
-				}%Pipes
-			>>
-		}
 		\new PipeBandDrumStaff = "side" {
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
+			\global
+			\sideglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
-			\snareA s8
-			\snareB
-			\snareB
-
+			<<
+				{
+					\repeat volta 2 { \part \line } \break
+					
+					\part \line \bar "||" \break
+					\line \bar "|."
+				}%Format
+				{
+				 \snareA s8
+				 \snareB 
+				 \snareB
+				}%Music
+			>>
 		}
 		\new PipeBandDrumStaff = "bass" {
+			\bassglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 			s8 \bassA
-			
-			s8 \bassBA 
+
+			s8 \bassBA
 			\bassBB
 		}
-%		\new PipeBandDrumStaff = "tenor" {
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-%
-%		}
+		%	\new PipeBandDrumStaff = "tenor" {
+		%		\tenorglobal
+		%		\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+		%		\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+
+		%	}
 	>>
 	\header {
 		title = \title
 		meter = \meter
-		composer = \markup \large {
+		composer = \markup {
 			\column \right-align {
-				$(if (not (string=? "" composerPipes))  #{ \markup {\line { \composerPipes  ":" }} #} )
 				$(if (not (string=? "" composerSide))  #{ \markup {\line { \composerSide  ":" }} #} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \composerTenor  ":" }} #} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \composerBass  ":" }} #} )
 			}
 			\column \right-align {
-				$(if (not (string=? "" composerPipes))  #{ \markup {\line { \instrumentPipes }}#} )
 				$(if (not (string=? "" composerSide))  #{ \markup {\line { \instrumentSide }}#} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \instrumentTenor }}#} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \instrumentBass }}#} )

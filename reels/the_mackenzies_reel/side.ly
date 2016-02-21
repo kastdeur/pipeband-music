@@ -6,18 +6,14 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
-			{
-				\repeat volta 2 { \part \halfline \break \halfline } \break
-				\part \line \bar "||" \break
-				\line
+	\sideglobal
+		<<
+			{ \repeat volta 2 { \part \line } \break
+			  \repeat volta 2 { \line }
 			}
-			{
-			 \snareA s8
-
-			 \snareBA
-			 \snareBB
-			}
+			{ 
+			  s16. \snareA 
+			  \snareB}
 		>>
 	}
 	\header {
