@@ -10,38 +10,42 @@
 	\new StaffGroup <<
 		\new Staff {
 			\global
-			\bagpipeKey
+			\pipeglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
-					\repeat volta 2 {
-						\part \line
-					}\break
+					\repeat volta 2 { \part \line } \break
+			
 					\part \line \bar "||" \break
 					\line \bar "|."
 				}%Format
 				{
 					\pipesA s8
-					\pipesB
-					\pipesCA s8
+
+					\pipesBA
+					\pipesBB s8
 				}%Pipes
 			>>
 		}
 		\new PipeBandDrumStaff = "side" {
+			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
-				\snareA s8
-				\snareBA
-				\snareBB
+			r16. \snareA s16
+			
+			r16. \snareBA 
+			\snareBB
 		}
 %		\new PipeBandDrumStaff = "bass" {
+%			\bassglobal
 %			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 %			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 %
 %		}
 %		\new PipeBandDrumStaff = "tenor" {
+%			\tenorglobal
 %			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 %			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 %

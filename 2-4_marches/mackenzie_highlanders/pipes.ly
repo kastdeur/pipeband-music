@@ -7,6 +7,7 @@
     \new Staff {
 		\global
 		\bagpipeKey
+		\set Staff.midiInstrument = #"bird tweet"
 		<<
 			{
 				\repeat volta 2 {
@@ -36,5 +37,8 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+	}
+	\midi {
+		\tempo 4 = 90
 	}
 }

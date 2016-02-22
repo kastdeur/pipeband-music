@@ -28,4 +28,7 @@
 		instrument = \instrumentPipes
 		composer = \composerPipes
 	}
+	\midi {
+		\tempo 2 = 70
+	}
 }
