@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \include "config.ily"
-\include "notes.pipes.ily"
+\include "notes.pipes.seconds.ily"
 
 \score {
     \new Staff {
@@ -24,13 +24,13 @@
 				}
 			}
 			{
-			\pipesA s8
+			\pipesSecA s8
 
-			\pipesB
+			\pipesSecB
 
-			\pipesC
-			\pipesCA
-			\pipesCB
+			\pipesSecC
+			\pipesSecCA
+			\pipesSecCB
 			}
 		>>
 	}
@@ -38,6 +38,6 @@
 		title = \title
 		meter = \meter
 		instrument = \instrumentPipes
-		composer = \composerPipes
+		composer = \composerPipesSec
 	}
 }

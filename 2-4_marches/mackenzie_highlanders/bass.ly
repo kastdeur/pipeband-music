@@ -1,20 +1,20 @@
 \version "2.18.2"
 
 \include "config.ily"
-\include "notes.tenor.ily"
+\include "notes.bass.ily"
 
 \score {
     \new PipeBandDrumStaff {
 		\global
 
-		\repeat volta 2 { \tenorA } \break
-		\tenorBA \break
-		\tenorBB
+		\repeat volta 2 { \bassA } \break
+		\bassBA \break
+		\bassBB
 	}
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentTenor
-		composer = \composerTenor
+		instrument = \instrumentBass
+		composer = \composerBass
 	}
 }

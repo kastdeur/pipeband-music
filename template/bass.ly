@@ -6,7 +6,7 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-	\tenorglobal
+	\bassglobal
 		<<
 			{ }
 			{ }

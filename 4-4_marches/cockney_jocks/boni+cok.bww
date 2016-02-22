@@ -1,0 +1,92 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,75,80,250)
+
+TuneFormat,(1,0,F,L,500,400,500,500,L,1,0)
+
+TuneTempo,90
+
+
+
+
+
+
+"  set 6 ",(Y,L,0,0,Times New Roman,17,700,0,0,18,0,0,0)
+
+"March",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"Traditional - arr.  J. Haynes",(M,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"The Seaforth Highlanders of Holland",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"8",(F,C,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+"September 8th 2007",(F,L,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+"Bonnie Lass 'O Fyvie ",(I,L,0,0,Times New Roman,11,700,0,0,18,0,0,0)
+
+
+
+
+
+
+
+
+
+
+& sharpf sharpc 4_4 I!'' LA_8
+! thrd D_4			lgstd Dr_8 'd El_16	thrd ^ts D_4	Dr_8 ^te LAl_8
+! thrd D_4			lgstd Dr_8 'd El_16	thrd D_2
+! dbe E_4			gg Fr_8 HGl_8		dbha HA_4	HGr_8 Fl_8
+! dbe E_4			LA_4			brl LA_4		HAr_8 'ha HGl_16 !t
+
+& sharpf sharpc
+	 tg Fr_8 'f El_16	gg Fr_8 HGl_8		dbha ^ts HA_4	HAr_8 ^te LAl_8
+! thrd Dr_8 'd El_16	dbd Dr_8 Bl_8		gg ^ts LG_4	LGr_8 ^te dg Bl_8
+! gg LA_4			thrd D_4			dbe Er_8 Dl_8	dbc Cr_8 Bl_8
+! gg LA_4			thrd D_4			lgstd ^ts D_4	D_8 ^te ''!I
+
+"Cockney Jocks",(I,L,0,0,Times New Roman,11,700,0,0,18,0,0,0)
+
+& sharpf sharpc   LA_8
+! thrd D_2			gstd D_4		gg Fr_8 HAl_8
+! LG_2			tg HGr_8 Fl_8	gg Er_8 Dl_8
+! gg Cr_8 'c Dl_16	dbe Er_8 Cl_8	gg LA_4		dg B_4
+! strlg LA_2		HAr_8 HGl_8	tg Fr_8 El_8 !t
+
+& sharpf sharpc
+	 thrd D_2			gstd D_4		gg Fr_8 HAl_8
+! LG_2			tg HGr_8 Fl_8	gg Er_8 Dl_8
+! gg Cr_8 'c Dl_16	dbe Er_8 Cl_8	gg LA_4		dg Br_8 'b Cl_16
+! thrd D_2			gstd ^ts D_4	Dr_8 ^te LAl_8 !t
+
+& sharpf sharpc
+	 thrd D_4			gg Fr_8 HAl_8		thrd D_4		gg Fr_8 HAl_8
+! LG_2			tg HGr_8 Fl_8	gg Er_8 Dl_8
+! gg Cr_8 'c Dl_16	dbe Er_8 Cl_8	gg LA_4		dg B_4
+! strlg LA_2		HAr_8 HGl_8	tg Fr_8 El_8 !t
+
+& sharpf sharpc
+	 thrd D_4			gg Fr_8 HAl_8		thrd D_4		gg Fr_8 HAl_8
+! LG_2			tg HGr_8 Fl_8		gg Er_8 Dl_8
+! gg Cr_8 'c Dl_16	dbe Er_8 Cl_8		gg LA_4		dg Br_8 'b Cl_16
+! thrd D_2			gstd ^ts D_4		Dr_8 ^te LAl_8	!t
+
+& sharpf sharpc
+	 thrd Dr_8 eg LAl_8	gg Fr_8 Dl_8	gg LAr_8 Dl_8	gg Fr_8 HAl_8
+! LG_2			tg HGr_8 Fl_8	gg Er_8 Dl_8
+! gg Cr_8 'c Dl_16	dbe Er_8 Cl_8	gg LA_4		dg B_4
+! strlg LA_2		HAr_8 HGl_8	tg Fr_8 El_8 !t
+
+& sharpf sharpc
+	 thrd Dr_8 eg LAl_8	gg Fr_8 Dl_8	gg LAr_8 Dl_8	gg Fr_8 HAl_8
+! LG_2			tg HGr_8 Fl_8	gg Er_8 Dl_8
+! gg Cr_8 'c Dl_16	dbe Er_8 Cl_8	gg LA_4		dg Br_8 'b Cl_16
+! thrd D_2			gstd ^ts D_4	D_8 ^te	!I
+

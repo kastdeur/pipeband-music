@@ -5,11 +5,12 @@
 
 \score {
     \new PipeBandDrumStaff {
-		\global
+	\global
+	\tenorglobal
         <<
 			{}
 			{}
-		>>
+	>>
 	}
 	\header {
 		title = \title
