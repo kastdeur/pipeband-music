@@ -1,0 +1,49 @@
+#!/bin/bash
+COM='./make-set -c'
+D='./sets'
+
+trap "echo Aborted!; exit;" SIGINT SIGTERM
+
+for f in full drums side pipes tenor bass; do
+
+$COM $D/mackenzie_set.$f.ly \
+2-4_marches/mackenzie_highlanders/$f.ly \
+strathspeys/lady_mackenzie_of_fairburn/$f.ly \
+reels/the_mackenzies_reel/$f.ly \
+;
+
+$COM $D/set_1.$f.ly \
+4-4_marches/bonnie_galloway.$f.ly \
+4-4_marches/were_no_awa_tae_bide_awa/$f.ly \
+;
+
+$COM $D/set_2.$f.ly \
+2-4_marches/high_road_to_gairloch/$f.ly \
+2-4_marches/brown_haired_maiden/$f.ly \
+2-4_marches/mairis_wedding/$f.ly \
+;
+
+$COM $D/set_5.$f.ly \
+4-4_marches/scotland_the_brave/$f.ly \
+4-4_marches/wings/$f.ly \
+4-4_marches/rowan_tree/$f.ly \
+4-4_marches/scotland_the_brave/$f.ly \
+;
+
+$COM $D/set_11.$f.ly \
+4-4_marches/flett_from_flotta/$f.ly \
+4-4_marches/crusaders_march/$f.ly \
+4-4_marches/the_pikemans_march/$f.ly \
+;
+
+$COM $D/set_10.$f.ly \
+airs/morag_of_dunvegan/$f.ly \
+4-4_marches/bonnie_galloway.$f.ly \
+4-4_marches/were_no_awa_tae_bide_awa/$f.ly \
+;
+
+$COM $D/alexander_mackenzie_cullen_bay.$f.ly \
+airs/alexander_mackenzie/$f.ly \
+5-4_marches/cullen_bay/$f.ly \
+;
+done;

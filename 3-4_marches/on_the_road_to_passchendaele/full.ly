@@ -15,8 +15,7 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
-					\repeat volta 2 { \line }
-					\break
+					\repeat volta 2 { \line }		\break
 					\repeat volta 2 { \halfline }
 					\alternative {
 						{\halfline}

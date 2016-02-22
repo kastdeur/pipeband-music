@@ -1,7 +1,7 @@
 % 4/4 The Pikeman's March
 % Tenor
 \version "2.18.2"
-composerTenor = "E.T. de Boone, v0.8, 2016"
+composerTenor = "E.T. de Boone, v1.0, 2016"
 tenorglobal = {
 	}
 %%music
@@ -41,7 +41,7 @@ tenorBA = \drummode {
 	d4
 	r8 d16 g
 	d8[ g]
-	d4
+	r4
 	|
 	d4
 	d8^\markup{scoop} g

@@ -7,6 +7,7 @@
     \new Staff {
 		\global
 		\pipeglobal
+		\pipeKey
 		<<
 			{ }
 			{ }
@@ -18,4 +19,11 @@
 		instrument = \instrumentPipes
 		composer = \composerPipes
 	}
+}
+\score {
+	\new Staff { \global \pipeglobal \pipeKey
+		\set Staff.midiInstrument = #"bagpipe"
+		%%Tune
+	}
+	\midi { \confTempo }
 }
