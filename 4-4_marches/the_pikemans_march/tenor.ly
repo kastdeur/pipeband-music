@@ -7,14 +7,20 @@
     \new PipeBandDrumStaff {
         \global
         <<
-			{\repeat volta 2 { \part \line \break \line} \break
+			{	
+				\repeat volta 2 { 
+					\part \line 
+					\break 
+					\line
+				}
+				\break
 				\part \line \break
 				\line \break
 				\line \bar "|."
 			}
 			{
 			 \tenorAA
-			 \tenorAB
+			 \tenorAB s8
 
 			 \tenorBA
 			 \tenorBB
