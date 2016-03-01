@@ -1,7 +1,7 @@
 % 2/2 The MacKenzie's Reel
 % Side
 \version "2.18.2"
-composerSide = "C. Ooms, 2015"
+composerSide = "C. Ooms, 2016"
 sideglobal = { \eighthBeaming}
 
 snareA = \drummode {

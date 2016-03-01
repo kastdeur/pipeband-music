@@ -24,7 +24,7 @@
 	\new Staff {
 		\global
 		\bagpipeKey
-			\partial 8 
+			\partial 16 
 			\pipesA
 			\pipesA
 

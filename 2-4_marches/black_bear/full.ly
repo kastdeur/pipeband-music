@@ -31,7 +31,7 @@
 		\new PipeBandDrumStaff = "side" {
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-
+			\sideglobal
 				\snareA s8
 				\snareBA
 				\snareBB

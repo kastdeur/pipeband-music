@@ -1,7 +1,7 @@
 % 2/4 MacKenzie Highlanders
 % Bass
 \version "2.18.2"
-composerBass = "C. Ooms, 2015"
+composerBass = "C. Ooms, 2016"
 bassglobal = {}
 
 bassA = \drummode {
