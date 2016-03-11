@@ -5,5 +5,6 @@ composerPipes = ""
 pipeglobal = {
 	\bagpipeKey
 	}
+% Music
 pipesA = {
 }
