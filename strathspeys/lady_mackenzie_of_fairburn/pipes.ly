@@ -19,3 +19,22 @@
 		composer = \composerPipes
 	}
 }
+\score {
+	\midi { \confTempo }
+	\new Staff {
+		\global
+		\bagpipeKey
+			\partial 16 
+			\pipesA
+			\pipesA
+
+			\pipesBA
+			\pipesBB
+	}
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
+	}
+}

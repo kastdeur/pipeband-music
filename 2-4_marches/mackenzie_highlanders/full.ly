@@ -3,7 +3,7 @@
 \include "config.ily"
 \include "notes.bass.ily"
 %\include "notes.tenor.ily"
-\include "notes.side.ily"
+\include "notes.side.alt.ily"
 \include "notes.pipes.ily"
 
 \score {
@@ -37,8 +37,8 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			\snareA s8
-			\snareB
-			\snareB
+			\snareBA
+			\snareBB
 
 		}
 		\new PipeBandDrumStaff = "bass" {

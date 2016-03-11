@@ -7,9 +7,8 @@
     \new Staff {
 		\global
 		\pipeglobal
-		\pipeKey
 		<<
-			{ }
+			{ }%Format
 			{ }
 		>>
 	}

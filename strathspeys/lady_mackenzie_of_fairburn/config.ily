@@ -3,7 +3,7 @@
 global = {
 	\time 4/4
 	}
-
+confTempo = { \tempo 4 = 108 }
 %% Format
 part = { \partial 16 s16 }
 line = { \repeat unfold 4 { s1 | } }

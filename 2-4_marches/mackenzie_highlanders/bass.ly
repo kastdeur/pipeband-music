@@ -9,7 +9,7 @@
 
 		\repeat volta 2 { \bassA } \break
 		\bassBA \break
-		\bassBB
+		\bassBB \bar "|."
 	}
 	\header {
 		title = \title

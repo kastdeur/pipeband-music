@@ -7,8 +7,8 @@
     \new PipeBandDrumStaff {
 	\global
 	\tenorglobal
-        <<
-			{}
+	<<
+			{}%Format
 			{}
 	>>
 	}
