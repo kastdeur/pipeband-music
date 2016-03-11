@@ -12,5 +12,5 @@ halfline = { \repeat unfold 4 { s1 | } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "Title"
-meter = "Meter"
+title = "Auld Lang Syne"
+meter = "March"

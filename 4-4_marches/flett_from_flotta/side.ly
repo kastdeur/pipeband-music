@@ -13,7 +13,7 @@
 
 			}
 			{
-			 \snareA s8
+			 s8 \snareA s8
 
 			 \snareB s8
 			}
