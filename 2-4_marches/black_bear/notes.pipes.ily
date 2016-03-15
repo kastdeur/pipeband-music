@@ -7,7 +7,7 @@ pipesA = {
 	\thrwd d8 [ \dbld d8 ] \grg f16.[  d32  A16.  f32  ]|
 	\thrwd d8 [ \dbld d8 ] \grg f16.[  d32  A16.  f32  ]|
 	\dble e8 [ \grg b8 ] \grip b8 [ \grg e16 d16 ] |
-	\grg c32 [ d16. ] \grg b32 [ \grd c16. ] \grg a16. [ b32 \grg c32 \grd a16. ]
+	\grg c32 [ d16. \grg b32 \grd c16. ] \grg a16. [ b32 \grg c32 \grd a16. ]
 
 	\thrwd d8 [ \dbld d8 ] \grg f16. [ d32 A16.  f32 ] |
 	\thrwd d8 [ \dbld d8 ] \grg f16. [ d32 A16.  f32 ] |
@@ -16,7 +16,7 @@ pipesA = {
 }
 pipesB = {
 	e8 |
-	\grg a16. [ \grd a32 a16 ] \grd b16 ] \thrwd d8 [ \grg d16 e16 ] |
+	\grg a16. [ \grd a32 a16  \grd b16 ] \thrwd d8 [ \grg d16 e16 ] |
 	\dblg g8 [ \grA f16 e16 ] \grg f32 [ A16. f16. d32 ] |
 	\grg a16. [ \grd a32 a16 ] \grd b16 ] \thrwd d8 [ \grg d16 e16 ] |
 	\dblg g8 [ \grA f16 e16 ] \grg f32 [ A16. f16. d32 ] | 
@@ -30,7 +30,7 @@ pipesCA = {
 	\thrwd d8 [ \dbld d8 ] \grg f16. [ d32  A16.  f32 ] |
 	\thrwd d8 [ \dbld d8 ] \grg f16. [ d32  A16.  f32 ] |
 	\dble e8 [ \grg b8 ] \grip b8 [ \grg e16 d16 ] |
-	\grg c32 [ d16. ] \grg b32 [ \grd c16. ] \grg a16. [ b32 \grg c32 \grd a16. ]
+	\grg c32 [ d16.  \grg b32  \grd c16. ] \grg a16. [ b32 \grg c32 \grd a16. ]
 
 	\thrwd d8 [ \dbld d8 ] \grg f16. [ d32 A16.  f32 ] |
 	\thrwd d8 [ \dbld d8 ] \grg f16. [ d32 A16.  f32 ] |

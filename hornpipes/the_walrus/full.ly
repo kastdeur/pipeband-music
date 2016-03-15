@@ -54,6 +54,10 @@
 			\snareBA 
 			\snareBBA s8
 			\snareAB s8
+
+			\snareCA
+			\snareCBA s8
+			\snareBBA s8
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
@@ -74,9 +78,6 @@
 	%		\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 	%	}
 	>>
-	\midi {
-		\tempo 4 = 90
-	}
 	\header {
 		title = \title
 		meter = \meter
