@@ -1,8 +1,7 @@
 #!/bin/python3
-
 ## Script to easily generate a set (concatenated scores)
 
-import codecs, os
+import codecs, os, sys
 from argparse import ArgumentParser
 
 parser = ArgumentParser(__file__)
@@ -11,6 +10,10 @@ parser.add_argument('-c',dest='copy',action='store_true',default=False)
 parser.add_argument('scores',nargs='+')
 
 args = parser.parse_args()
+
+if os.path.isdir(args.setfile):
+	print("First argument cannot be a directory ")
+	sys.exit()
 
 os.makedirs(os.path.dirname(args.setfile), exist_ok=True)
 fpoint = codecs.open(args.setfile, 'w+', 'utf8')
@@ -40,6 +43,3 @@ for f in args.scores:
 		fpoint.write('\\include \"' + os.path.join( os.path.abspath( os.curdir ) ,f) + '\"\n')
 
 fpoint.close()
-
-
-

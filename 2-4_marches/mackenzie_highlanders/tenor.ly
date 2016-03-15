@@ -10,20 +10,18 @@
 	<<
 			{
 				\repeat volta 2 {
-					\line
+					\part \line
 				}
-
-				\part \line 
-				\bar "||"
 				\break
 
-				\part \line \bar "|."
+				\part \line \bar "||" \break
+				\line \bar "|."
 			}%Format
 			{
-				\tenorA
+				r8 \tenorA s8
 
 				\tenorBA
-				\tenorBB
+				\tenorBB s8
 			}
 	>>
 	}
