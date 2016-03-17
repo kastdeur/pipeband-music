@@ -6,7 +6,12 @@ trap "echo Aborted!; exit;" SIGINT SIGTERM
 
 for f in full drums side pipes tenor bass; do
 
-$COM $D/mackenzie_set.$f.ly \
+$COM $D/mackenzie_bear.$f.ly \
+2-4_marches/mackenzie_highlanders/$f.ly \
+2-4_marches/black_bear/$f.ly \
+;
+
+$COM $D/mackenzie_msr.$f.ly \
 2-4_marches/mackenzie_highlanders/$f.ly \
 strathspeys/lady_mackenzie_of_fairburn/$f.ly \
 reels/the_mackenzies_reel/$f.ly \
@@ -23,11 +28,44 @@ $COM $D/set_2.$f.ly \
 2-4_marches/mairis_wedding/$f.ly \
 ;
 
+$COM $D/set_4.$f.ly \
+3-4_marches/collins_cattle/$f.ly \
+3-4_marches/my_land/$f.ly \
+3-4_marches/shoals_of_herring/$f.ly \
+;
+
 $COM $D/set_5.$f.ly \
 4-4_marches/scotland_the_brave/$f.ly \
 4-4_marches/wings/$f.ly \
 4-4_marches/rowan_tree/$f.ly \
 4-4_marches/scotland_the_brave/$f.ly \
+;
+
+$COM $D/set_6.$f.ly \
+4-4_marches/bonnie_lass_o_fyvie/$f.ly \
+4-4_marches/cockney_jocks/$f.ly \
+;
+
+$COM $D/set_7.$f.ly \
+4-4_marches/51st_highlanders/$f.ly \
+4-4_marches/scotland_the_brave/$f.ly \
+;
+
+$COM $D/set_8.$f.ly \
+6-8_marches/10th_hli_crossing_the_rhine/$f.ly \
+6-8_marches/farewell_to_the_creeks/$f.ly \
+6-8_marches/cock_o_the_north/$f.ly \
+;
+
+$COM $D/set_9.$f.ly \
+airs/the_mist_covered_mountains/$f.ly \
+airs/my_home/$f.ly \
+;
+
+$COM $D/set_10.$f.ly \
+airs/morag_of_dunvegan/$f.ly \
+4-4_marches/bonnie_galloway.$f.ly \
+4-4_marches/were_no_awa_tae_bide_awa/$f.ly \
 ;
 
 $COM $D/set_11.$f.ly \
@@ -36,10 +74,19 @@ $COM $D/set_11.$f.ly \
 4-4_marches/the_pikemans_march/$f.ly \
 ;
 
-$COM $D/set_10.$f.ly \
-airs/morag_of_dunvegan/$f.ly \
-4-4_marches/bonnie_galloway.$f.ly \
-4-4_marches/were_no_awa_tae_bide_awa/$f.ly \
+$COM $D/set_12.$f.ly \
+4-4_marches/the_leaving_of_liverpool/$f.ly \
+4-4_marches/the_old_rustic_bridge/$f.ly \
+;
+
+$COM $D/set_14.$f.ly \
+4-4_marches/minstrel_boy/$f.ly \
+2-4_marches/pipers_cave/$f.ly \
+;
+
+$COM $D/set_15.$f.ly \
+3-4_marches/on_the_road_to_passchendaele/$f.ly \
+4-4_marches/hills_of_argyll/$f.ly \
 ;
 
 $COM $D/alexander_mackenzie_cullen_bay.$f.ly \

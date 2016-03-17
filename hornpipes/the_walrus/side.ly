@@ -27,6 +27,10 @@
 				\snareBA 
 				\snareBBA s8
 				\snareAB s8
+
+				\snareCA
+				\snareCBA s8
+				\snareBBA s8
 			}
 		>>
 	}

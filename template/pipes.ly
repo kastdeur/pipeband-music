@@ -20,7 +20,7 @@
 	}
 }
 \score {
-	\new Staff { \global \pipeglobal \pipeKey
+	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 	}
