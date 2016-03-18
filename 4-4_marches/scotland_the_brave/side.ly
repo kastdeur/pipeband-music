@@ -6,6 +6,7 @@
 \score {
     \new PipeBandDrumStaff {
         \global
+	\sideglobal
         <<
 			{
 				\repeat volta 2 {\part \line \break }
