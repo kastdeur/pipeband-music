@@ -53,10 +53,12 @@
 		%%Tune
 
 		\repeat unfold 2 {
+			\partial 4
 			\pipesAA
 			\pipesAB
 		}
 
+		\partial 4
 			\pipesBA
 			\pipesBBA
 
