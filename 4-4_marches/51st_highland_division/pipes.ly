@@ -9,8 +9,14 @@
 		\pipeglobal
 		<<
 			{
-				\repeat volta 2 { \part \line} \break
-				\repeat volta 2 { \part \line }
+				\repeat volta 2 { 
+					\part \line \break
+					\line \break
+					}
+				\repeat volta 2 { 
+					\part \line \break
+					\line \break
+					}
 			}
 			{
 				\pipesA s4
@@ -29,6 +35,7 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+		\partial 4 
 		\repeat volta 2 { \pipesA }
 		\repeat volta 2 { \pipesB }
 	}
