@@ -5,6 +5,9 @@ global = {
 	\eighthBeaming
 	}
 
+confTempo = {
+	\tempo 4 = 90
+}
 %% Format
 part = { \partial 8 s8 }
 halfline = { \repeat unfold 2 { s1 | } }
