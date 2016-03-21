@@ -6,7 +6,8 @@
 \score {
     \new PipeBandDrumStaff {
 		\global
-        <<
+       		\tenorglobal
+		<<
 			{ \repeat unfold 1 { \line \line \bar "|."} }
 			{ \tenorAA \tenorAB }
 		>>

@@ -11,16 +11,19 @@
 			{
 				\repeat volta 2 { 
 					\part \line \break
-					\line \break
+					\line \bar "|." \break
 					}
 				\repeat volta 2 { 
 					\part \line \break
-					\line \break
+					\line \bar "|." \break
 					}
 			}
 			{
-				\pipesA s4
-				\pipesB s4
+				\pipesAA
+				\pipesAB s4
+
+				\pipesBA
+				\pipesBB s4
 			}
 		>>
 	}
@@ -36,8 +39,8 @@
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 		\partial 4 
-		\repeat volta 2 { \pipesA }
-		\repeat volta 2 { \pipesB }
+		\repeat volta 2 { \pipesAA \pipesAB }
+		\repeat volta 2 { \pipesBA \pipesBB }
 	}
 	\midi { \confTempo }
 }

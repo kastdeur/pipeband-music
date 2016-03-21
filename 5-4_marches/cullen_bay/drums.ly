@@ -15,10 +15,8 @@
 			<<
 				{
 					\repeat unfold 4 {
-						\line
-						\break
-						\line
-						\bar "|."
+						\line \bar "||"	\break
+						\line \bar "|."
 					}
 				}%End of Format
 				{
@@ -34,7 +32,9 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 			\repeat unfold 4 {
-				\bassA
+				\repeat unfold 2 {
+					\bassA
+				}
 			}
 		}
 		\new PipeBandDrumStaff = "tenor" {

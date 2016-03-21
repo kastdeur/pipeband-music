@@ -1,12 +1,12 @@
 \version "2.18.2"
 
 \include "config.ily"
-\include "notes.pipes.ily"
+\include "notes.pipes.thirds.ily"
 
 \score {
     \new Staff {
 		\global
-		\pipeglobal
+		\pipesthrdglobal
 		<<
 			{ }%Format
 			{ }
@@ -15,12 +15,12 @@
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
+		instrument = \instrumentPipesthrd
+		composer = \composerPipesthrd
 	}
 }
 \score {
-	\new Staff { \global \pipeglobal
+	\new Staff { \global \pipethrdglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 	}
@@ -28,7 +28,8 @@
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
+		instrument = \instrumentPipesthrd
+		composer = \composerPipesthrd
 	}
+
 }

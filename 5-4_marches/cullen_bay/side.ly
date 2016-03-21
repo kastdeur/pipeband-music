@@ -6,12 +6,12 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
+        \sideglobal
+		<<
 			{
-				\repeat volta 1 { \line } \break
-				\repeat volta 1 { \line } \break
-				\repeat volta 1 { \line } \break
-				\repeat volta 1 { \line } \break
+				\repeat unfold 4 {
+					\repeat volta 1 { \line } \break
+				}
 			}
 			{
 				\snareA

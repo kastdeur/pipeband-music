@@ -8,8 +8,22 @@
 		\global
 		\pipeglobal
 		<<
-			{ }%Format
-			{ }
+			{ 
+				\part
+				\line \break
+				\line \bar "|." \break
+
+				\part
+				\line \break
+				\line \bar "|."
+			}%Format
+			{ 
+				\pipesAA
+				\pipesAB s4
+
+				\pipesBA
+				\pipesAB s4
+			}
 		>>
 	}
 	\header {
@@ -23,12 +37,13 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+
+		\partial 4
+		\pipesAA
+		\pipesAB
+
+		\pipesBA
+		\pipesAB
 	}
 	\midi { \confTempo }
-	\header {
-		title = \title
-		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
-	}
 }

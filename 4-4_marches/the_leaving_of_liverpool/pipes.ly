@@ -9,10 +9,11 @@
 		<<
 			{
 				\repeat unfold 2 {
-					\part
+					\partial 4 s4
 					\line
 					\break
 					\line
+					\bar "|."
 					\break
 				}
 			

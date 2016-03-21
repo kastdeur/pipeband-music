@@ -8,7 +8,7 @@
         \global
         <<
 			{
-				\repeat volta 2 {
+				\repeat unfold 2 {
 					\repeat volta 2 { \part \halfline \break}
 						\alternative { {\halfline} {\halfline } }
 						\bar "|." \break
@@ -17,11 +17,11 @@
 				}
 			}
 			{
-			 \snareA
+			 s8 \snareA
 				\snareAA s8
 				\snareAB s8
 
-			 \snareB
+			 s8 \snareB
 			 \snareA \snareAB
 			}
 		>>

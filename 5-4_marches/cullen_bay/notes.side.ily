@@ -2,6 +2,11 @@
 % Side
 \version "2.18.2"
 composerSide  = ""
+sideglobal = {
+	\eighthBeaming
+}
+
+% Music
 snareEnd = \drummode {
 	d8[:32)(-> g16.) g32]->
 	d8[:32(->\<  g8]:32)(->
@@ -11,9 +16,9 @@ snareEnd = \drummode {
 	|
 	d8) \!        d8:32(
 	\triplet { g16)[ d g } \flam d8]
-	g16. d32-> g16. g32
-	\flam d8 d16. g32 ->
-	d16. d32 \flam g8
+	g16.[ d32-> g16. g32]
+	\flam d8 [ d16. g32->]
+	d16.[ d32 \flam g8 ]
 	|
 	\flam d8. d16:64(
 	d8) d8:32(
@@ -44,9 +49,9 @@ snareB = \drummode{
 snareC = \drummode{
 	\flam d8-> \flam d16-> g->
 	d16 d \flam g8
-	g8 d8:32(
-	\triplet { g16) d g } \flam d16. g32
-	\triplet { g16 d g } \flam g8
+	g8 [ d8:32(]
+	\triplet { g16[) d g } \flam d16. g32]
+	\triplet { g16[ d g } \flam g8]
 	|
 	\snareEnd
 }

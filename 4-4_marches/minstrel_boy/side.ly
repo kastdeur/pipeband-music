@@ -8,7 +8,8 @@
         \global
         <<
 			{
-				\part \line \break
+				\partial 4 s4 |
+				\line \break
 				\line \break \bar "|."
 
 				\partial 4 s4 |
@@ -16,11 +17,11 @@
 				\line \break \bar "|."
 			}
 			{
-			 \snareAA
+			 r8 \snareAA
 			 \snareAB s4
 
 			 \snareBA
-			 \snareAB r8
+			 \snareAB 
 			}
 		>>
 	}

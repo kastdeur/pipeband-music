@@ -2,8 +2,8 @@
 
 \include "config.ily"
 %\include "notes.bass.ily"
-%\include "notes.tenor.ily"
-\include "notes.side.ily"
+\include "notes.tenor.ily"
+%\include "notes.side.ily"
 \include "notes.pipes.ily"
 
 \score {
@@ -15,11 +15,12 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
+					\part
+					\line \break
+					\line \bar "|." \break
 
-					\repeat volta 2 { \part \halfline \break}
-						\alternative { {\halfline} {\halfline } }
-						\bar "|." \break
-					\part \line \bar "||" \break
+					\part
+					\line \break
 					\line \bar "|."
 				}%Format
 				{
@@ -27,35 +28,30 @@
 					\pipesAB s4
 
 					\pipesBA
-					\pipesBB s4
-				
+					\pipesAB s4
 				}%Pipes
 			>>
 		}
-		\new PipeBandDrumStaff = "side" {
-			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-			s8 \snareA
-				\snareAA s8
-				\snareAB s8
+%		\new PipeBandDrumStaff = "side" {
+%			\sideglobal
+%			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
+%
+%		}
+		\new PipeBandDrumStaff = "tenor" {
+			\tenorglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			 s8 \snareB
-			 \snareA \snareAB
-
-
-
+			\repeat unfold 2 {
+				r8. \tenorA
+				r8. \tenorA s4
+			}
 		}
 %		\new PipeBandDrumStaff = "bass" {
 %			\bassglobal
 %			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 %			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-%
-%		}
-%		\new PipeBandDrumStaff = "tenor" {
-%			\tenorglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 %
 %		}
 	>>

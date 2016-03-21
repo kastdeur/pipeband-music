@@ -1,7 +1,7 @@
 \version "2.19.0"
 
 \include "config.ily"
-\include "notes.bass.ily"
+%\include "notes.bass.ily"
 \include "notes.tenor.ily"
 \include "notes.side.ily"
 \include "notes.pipes.ily"
@@ -14,28 +14,54 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
-				{}%Format
-				{}%Pipes
+				{
+					\repeat unfold 2 {
+						\partial 4 s4
+						\line 
+						\break
+						\line \bar "|."
+						\break
+					}
+				}%Format
+				{
+					\pipesAA
+					\pipesAB s4
+
+					\pipesBA
+					\pipesBB
+				}%Pipes
 			>>
 		}
 		\new PipeBandDrumStaff = "side" {
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
+			\snareA
+			\snareA s4
 
-		}
-		\new PipeBandDrumStaff = "bass" {
-			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+			\snareBA
+			\snareBB s4
 
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+			
+			\repeat unfold 2 {
+				\repeat unfold 2 {
+					r8. \tenorA
+				}
+				s4
+			}
 
 		}
+%	\new PipeBandDrumStaff = "bass" {
+%			\bassglobal
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+%
+%		}
 	>>
 	\header {
 		title = \title

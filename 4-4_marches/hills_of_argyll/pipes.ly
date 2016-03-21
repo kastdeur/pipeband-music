@@ -52,8 +52,8 @@
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 
+		\partial 4
 		\repeat unfold 2 {
-			\partial 4
 			\pipesAA
 			\pipesAB
 		}

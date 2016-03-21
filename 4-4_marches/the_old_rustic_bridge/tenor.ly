@@ -7,8 +7,18 @@
     \new PipeBandDrumStaff {
 		\global
         <<
-			{\repeat unfold 2 {\repeat volta 2 { \part \line } \break }}
-			{\repeat unfold 2 {s16\tenorA}}
+			{
+				\repeat unfold 2 {
+					\repeat volta 2 { 
+						\part \line 
+					} \break 
+				}
+			}
+			{
+				\repeat unfold 2 {
+					r8. \tenorA s4
+				}
+			}
 		>>
 	}
 	\header {

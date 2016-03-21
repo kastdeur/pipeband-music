@@ -2,7 +2,9 @@
 % Snare
 \version "2.18.2"
 composerSnare = "E.T. de Boone, 2015"
-
+sideglobal = {
+	\eighthBeaming
+}
 %%music
 snareA = \drummode {
 	r8 d16. g32 |

@@ -15,20 +15,20 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
-
-					\repeat volta 2 { \part \halfline \break}
-						\alternative { {\halfline} {\halfline } }
-						\bar "|." \break
-					\part \line \bar "||" \break
+					\partial 4 s4 |
+					\line \break
+					\line \bar "|." \break
+					
+					\partial 4 s4 |
+					\line \break
 					\line \bar "|."
 				}%Format
 				{
-					\pipesAA
-					\pipesAB s4
+					r8 \pipesA
+					\pipesA s4
 
 					\pipesBA
-					\pipesBB s4
-				
+					\pipesBB s8
 				}%Pipes
 			>>
 		}
@@ -36,26 +36,25 @@
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-			s8 \snareA
-				\snareAA s8
-				\snareAB s8
+			
+			r8 \snareAA
+			\snareAB s4
 
-			 s8 \snareB
-			 \snareA \snareAB
-
+			\snareBA
+			\snareAB s4
 
 
 		}
-%		\new PipeBandDrumStaff = "bass" {
-%			\bassglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-%
-%		}
 %		\new PipeBandDrumStaff = "tenor" {
 %			\tenorglobal
 %			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 %			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+%
+%		}
+%		\new PipeBandDrumStaff = "bass" {
+%			\bassglobal
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 %
 %		}
 	>>

@@ -1,8 +1,8 @@
 \version "2.19.0"
 
 \include "config.ily"
-%\include "notes.bass.ily"
-%\include "notes.tenor.ily"
+\include "notes.bass.ily"
+\include "notes.tenor.ily"
 \include "notes.side.ily"
 \include "notes.pipes.ily"
 
@@ -15,20 +15,16 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
-
-					\repeat volta 2 { \part \halfline \break}
-						\alternative { {\halfline} {\halfline } }
-						\bar "|." \break
-					\part \line \bar "||" \break
-					\line \bar "|."
+					\repeat unfold 4 {
+						\line \bar "||"	\break
+						\line \bar "|."
+					}		
 				}%Format
 				{
-					\pipesAA
-					\pipesAB s4
-
-					\pipesBA
-					\pipesBB s4
-				
+					\repeat unfold 2 { \pipesA }
+					\repeat unfold 2 { \pipesB }
+					\repeat unfold 2 { \pipesC }
+					\repeat unfold 2 { \pipesD }
 				}%Pipes
 			>>
 		}
@@ -36,28 +32,33 @@
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-			s8 \snareA
-				\snareAA s8
-				\snareAB s8
-
-			 s8 \snareB
-			 \snareA \snareAB
-
-
+			\repeat unfold 2 { \snareA }
+			\repeat unfold 2 { \snareB }
+			\repeat unfold 2 { \snareC }
+			\repeat unfold 2 { \snareD }
 
 		}
-%		\new PipeBandDrumStaff = "bass" {
-%			\bassglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-%
-%		}
-%		\new PipeBandDrumStaff = "tenor" {
-%			\tenorglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-%
-%		}
+		\new PipeBandDrumStaff = "tenor" {
+			\tenorglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+
+			\repeat unfold 4 {
+				\tenorAA
+				\tenorAB
+			}
+		}
+		\new PipeBandDrumStaff = "bass" {
+			\bassglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+			\repeat unfold 4 {
+				\repeat unfold 2 {
+					\bassA
+				}
+			}
+
+		}
 	>>
 	\header {
 		title = \title

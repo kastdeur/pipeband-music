@@ -8,8 +8,19 @@
 		\global
 		\pipeglobal
 		<<
-			{ }%Format
-			{ }
+			{
+				\repeat unfold 4 {
+				\repeat volta 2 {
+					\line
+				}\break
+				}
+			}%Format
+			{
+				\pipesA
+				\pipesB
+				\pipesC
+				\pipesD
+			}
 		>>
 	}
 	\header {
@@ -20,15 +31,16 @@
 	}
 }
 \score {
-	\new Staff { \global \pipeglobal
+	\new Staff {
+		\global
+		\pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
-		%%Tune
+		%% Tune
+
+		\pipesA
+		\pipesB
+		\pipesC
+		\pipesD
 	}
 	\midi { \confTempo }
-	\header {
-		title = \title
-		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
-	}
 }
