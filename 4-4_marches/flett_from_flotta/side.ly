@@ -8,12 +8,12 @@
         \global
         <<
 			{
-				\repeat volta 2 { \part \line \break \line }
+				\repeat volta 2 { \partial 8 s8 \line \break \line }
 				\repeat volta 2 { \line \break \line }
 
 			}
 			{
-			 s8 \snareA s8
+			 \snareA s8
 
 			 \snareB s8
 			}

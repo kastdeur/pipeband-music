@@ -4,16 +4,18 @@
 \include "notes.side.ily"
 
 \score {
-    \new PipeBandDrumStaff {
-        \global
-        <<
+    	\new PipeBandDrumStaff {
+        	\global
+        	<<
 			{
 				\repeat volta 2 { \part \line } \break
-				\repeat volta 2 { \part \line }
+				\part \line \bar "||" \break
+				\line \bar "|."
 			}
 			{
 			 \snareA s8
-			 \snareB
+			 \snareBA
+			 \snareBB
 			}
 		>>
 	}
@@ -22,5 +24,32 @@
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
+	}
+	\layout {}
+}
+\score {
+    	\new PipeBandDrumStaff {
+        	\global
+		
+
+		\unfoldRepeats {
+			\repeat volta 2 {
+				\partial 8 \snareA
+			}
+			\bar "|."
+			\snareBA \bar "||"
+			\snareBB
+
+		}
+
+	}
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentSide
+		composer = \composerSide
+	}
+	\midi {
+		\tempo 4 = 80
 	}
 }

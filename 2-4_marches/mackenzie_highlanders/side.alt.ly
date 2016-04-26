@@ -4,19 +4,16 @@
 \include "notes.side.alt.ily"
 
 \score {
-    	\new PipeBandDrumStaff {
-        	\global
-		\set Staff.midiInstrument = #"synth drum"
-        	<<
+    \new PipeBandDrumStaff {
+        \global
+        <<
 			{
 				\repeat volta 2 { \part \line } \break
-				\part \line \bar "||" \break
-				\line \bar "|."
+				\repeat volta 2 { \part \line }
 			}
 			{
 			 \snareA s8
-			 \snareBA
-			 \snareBB
+			 \snareB
 			}
 		>>
 	}
@@ -26,8 +23,4 @@
 		instrument = \instrumentSide
 		composer = \composerSide
 	}
-	\midi {
-		\tempo 4 = 90
-	}
-	\layout {}
 }
