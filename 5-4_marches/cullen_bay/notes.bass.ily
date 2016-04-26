@@ -3,6 +3,15 @@
 \version "2.18.2"
 composerBass  = ""
 bassglobal = {}
-bassA = \drummode {
-	\repeat unfold 4 {	d4-^ g d-> g d | }
+bassAA = \drummode {
+	d4 g4 d4 g4 r4 |
+	d4 g4 r8 g8 d4 r4 |
+	d4 g4 d4 g4 r4 |
+	d4 g4 d4 r8 g8 d4 |
+}
+bassAB = \drummode {
+	d8 g8 d8 g8 d8 g8 d8 g8 d4 |
+	d4 g4 r8 g8 d4 r4 |
+	d8 g8  d8 g8  d8 g8 d4 r4 |
+	d4 g4 d4 r8 g8 d4 |
 }

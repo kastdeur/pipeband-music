@@ -8,7 +8,7 @@
 		\global
        		\tenorglobal
 		<<
-			{ \repeat unfold 1 { \line \line \bar "|."} }
+			{ \repeat volta 4 { \line \break \line } }
 			{ \tenorAA \tenorAB }
 		>>
 	}

@@ -7,8 +7,8 @@
     \new PipeBandDrumStaff {
 		\global
 		<<
-			{ \repeat volta 2 { \line } }
-			{ \bassA }
+			{ \repeat volta 2 { \line \break \line } }
+			{ \bassAA \bassAB }
 		>>
 	}
 	\header {

@@ -8,16 +8,17 @@
 
 \score {
 	\new StaffGroup <<
+		\global
 		\new Staff {
-			\global
 			\pipeglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
+				\global
 				{
 					\repeat unfold 4 {
 						\line \bar "||"	\break
-						\line \bar "|."
+						\line \bar "|." \break
 					}		
 				}%Format
 				{
@@ -29,7 +30,6 @@
 			>>
 		}
 		\new PipeBandDrumStaff = "side" {
-			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 			\repeat unfold 2 { \snareA }
@@ -53,9 +53,8 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 			\repeat unfold 4 {
-				\repeat unfold 2 {
-					\bassA
-				}
+				\bassAA
+				\bassAB
 			}
 
 		}

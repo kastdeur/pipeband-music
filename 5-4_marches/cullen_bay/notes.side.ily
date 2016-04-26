@@ -31,7 +31,7 @@ snareA = \drummode {
 	d8[:32( g8])
 	\flam d8[ d8]:32(
 	\triplet { g16[) d g } \flam d16. g32]
-	\triplet { g16[ d g } \flam g8]
+	\triplet { d16[ g d } \flam g8]
 	|
 	\snareEnd
 }
