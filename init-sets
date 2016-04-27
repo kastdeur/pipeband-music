@@ -6,11 +6,6 @@ trap "echo Aborted!; exit;" SIGINT SIGTERM
 
 for f in full drums side pipes tenor bass; do
 
-$COM $D/mackenzie_bear.$f.ly \
-2-4_marches/mackenzie_highlanders/$f.ly \
-2-4_marches/black_bear/$f.ly \
-;
-
 $COM $D/mackenzie_msr.$f.ly \
 2-4_marches/mackenzie_highlanders/$f.ly \
 strathspeys/lady_mackenzie_of_fairburn/$f.ly \
@@ -47,14 +42,12 @@ $COM $D/set_6.$f.ly \
 ;
 
 $COM $D/set_7.$f.ly \
-4-4_marches/51st_highlanders/$f.ly \
+4-4_marches/51st_highland_division/$f.ly \
 4-4_marches/scotland_the_brave/$f.ly \
 ;
 
 $COM $D/set_8.$f.ly \
 6-8_marches/10th_hli_crossing_the_rhine/$f.ly \
-6-8_marches/farewell_to_the_creeks/$f.ly \
-6-8_marches/cock_o_the_north/$f.ly \
 ;
 
 $COM $D/set_9.$f.ly \
@@ -79,6 +72,12 @@ $COM $D/set_12.$f.ly \
 4-4_marches/the_old_rustic_bridge/$f.ly \
 ;
 
+$COM $D/set_13.$f.ly \
+3-4_marches/castle_dangerous/$f.ly \
+3-4_marches/pm_jk_cairns/$f.ly \
+3-4_marches/lochanside/$f.ly \
+;
+
 $COM $D/set_14.$f.ly \
 4-4_marches/minstrel_boy/$f.ly \
 2-4_marches/pipers_cave/$f.ly \
@@ -87,6 +86,21 @@ $COM $D/set_14.$f.ly \
 $COM $D/set_15.$f.ly \
 3-4_marches/on_the_road_to_passchendaele/$f.ly \
 4-4_marches/hills_of_argyll/$f.ly \
+;
+
+$COM $D/set_16.$f.ly \
+6-8_marches/farewell_to_the_creeks/$f.ly \
+6-8_marches/cock_o_the_north/$f.ly \
+;
+
+$COM $D/set_17.$f.ly \
+2-4_marches/teribus/$f.ly \
+2-4_marches/corriechoillie_welcome_to_the_43rd_northern_meeting/$f.ly \
+;
+
+$COM $D/set_18.$f.ly \
+2-4_marches/mackenzie_highlanders/$f.ly \
+2-4_marches/black_bear/$f.ly \
 ;
 
 $COM $D/alexander_mackenzie_cullen_bay.$f.ly \
