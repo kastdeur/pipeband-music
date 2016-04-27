@@ -6,8 +6,12 @@ bassglobal = {}
 % Music
 bassA = \drummode {
 	s1*4
+	|
+	s1*4
 }
 
 bassB = \drummode {
+	s1*4
+	|
 	s1*4
 }
