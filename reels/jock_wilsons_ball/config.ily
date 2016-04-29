@@ -4,7 +4,7 @@ global = {
 	\time 2/2
 	}
 confTempo = { 
-	\tempo 2 = 40 
+	\tempo 2 = 60 
 	}
 %% Format
 part = { \partial 8 s8 }

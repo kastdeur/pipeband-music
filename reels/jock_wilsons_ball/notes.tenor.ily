@@ -12,14 +12,14 @@ tenorA = \drummode {
 	r8. d16 g4
 	|
 	d4 g8. g16
-	d4 r4
+	d2
 	|
-	d4 r4
+	d2
 	d8. g16 d4
 
 	|
 	d4 g8. g16
-	d4 g4
+	d2
 	|
 	d4 g16 g8 d16
 	r8. d16 g4
@@ -28,28 +28,34 @@ tenorA = \drummode {
 	d8. g16 d4
 	|
 	d8. g16 d4
-	g4 r4
+	g2 
 	|
 }
 tenorB = \drummode {
 	\flourish g4 \flourish g4
 	\flourish d4 \flourish d4
 	|
-	s1
+	d4 d8. g16
+	d8. g16 d4
 	|
 	\flourish g4 \flourish g4
 	\flourish d4 \flourish d4
 	|
-	s1
+	d4 g4
+	d8. g16 d4
 
 	|
 	\flourish g4 \flourish g4
 	\flourish d4 \flourish d4
 	|
-	s1
+	d4 d8. g16
+	d8. g16 d4
 	|
-	\flourish g4 \flourish g4
-	\flourish d4 \flourish d4
+	d8. g16 d8. g16
+	
+	d4^\up g4^\up
 	|
-	s1
+	
+	d4 \triplet {g8 d g}
+	d2^\splitTheFeather
 }

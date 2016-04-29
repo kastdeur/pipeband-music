@@ -1,35 +1,37 @@
 % 2/4 Black Bear
 % Tenor
 \version "2.18.2"
-composerTenor = "F.J. de Boone, v0.5, 2016"
+composerTenor = "E.T. de Boone, v0.6, 2016"
 tenorglobal = {}
 % Music
 tenorApiece = \drummode {
-	r4
-	d16. g32 d16. g32
+	d8 g8
+	\triplet { d16 g d } g8
 	|
-	r4
-	d16. g32 d16. g32
+	d8 g8
+	\triplet { d16 g d } g8
 	|
-	r2
+	d8 d8
+	g4
 	|
-	d32 g16. d32 g16. 
-	r4
+	d4^\splitTheFeather
+	r8 \triplet { g16 d g }
 	|
 	
-	r4 
-	d16. g32 d16. g32
+	d8 g8
+	\triplet { d16 g d } g8
 	|
-	r4 
-	d16. g32 d16. g32
+	d8 g8
+	\triplet { d16 g d } g8
 	|
-	r4 
-	d16. g32 d16. g32
+	d8 g16. g32
+	d8 g16. g32
 	|
-	r4 r8
+	d8 d8
+	g41
 }
 tenorA = \drummode {
-	r8 |
+	g8 |
 	\tenorApiece
 }
 

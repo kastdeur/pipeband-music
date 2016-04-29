@@ -28,4 +28,6 @@
 		instrument = \instrumentTenor
 		composer = \composerTenor
 	}
+	\midi { \confTempo }
+	\layout {}
 }
