@@ -8,9 +8,9 @@ confTempo = {
 	}
 %% Format
 part = { \partial 8 s8 }
-halfline = { \repeat unfold 4 { s1 | } }
+halfline = { \repeat unfold 2 { s1 | } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "Title"
-meter = "Meter"
+title = "The Pikeman's March"
+meter = "March"

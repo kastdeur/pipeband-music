@@ -34,7 +34,29 @@ bassA = \drummode {
 }
 
 bassB = \drummode {
-	s1*4
+	d4 g4->
+	d4 g8. g16
 	|
-	s1*4
+	d4 g4
+	d2
+	|
+	d4 g4->
+	d4 g8. g16
+	|
+	g4.. g16
+	d2
+	|
+
+	d4 g4->
+	d4 g8. g16
+	|
+	d4 g4
+	d2
+	|
+	d8. g16 d4
+	g4 g4
+	|
+	d8. g16 d4
+	g4 d4
+
 }

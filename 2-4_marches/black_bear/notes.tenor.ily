@@ -25,10 +25,10 @@ tenorApiece = \drummode {
 	\triplet { d16 g d } g8
 	|
 	d8 g16. g32
-	d8 g16. g32
+	d16. g8 d32
 	|
 	d8 d8
-	g41
+	g8
 }
 tenorA = \drummode {
 	g8 |
@@ -36,30 +36,30 @@ tenorA = \drummode {
 }
 
 tenorBA = \drummode {
-	d8 |
-	g16. g32 d16. d32
-	r4
+	g8 |
+	d16. g32 d16. d32
+	g4
 	|
 	r4
 	d32 g16. g32 d16.
 	|
 	d16. g32 d16. d32
-	r4
+	g4
 	|
 	r4
 	d32 g16. g32 d16.
 	|
 
-	d32 g16. d32 g16.
-	g32 d16. g32 d16.
+	d32 g16. g32 d16.
+	d32 g16. g32 d16.
 	|
-	d32 g16. d32 g16.
+	g32 d16. g32 d16.
 	g32 d16. g32 d16.
 	|
 	d16. g32 d16. d32
 	g16. d32 g16. g32
 	|
-	r4
+	d4
 	d16. g32 g16. d32
 }
 tenorBB = \drummode {

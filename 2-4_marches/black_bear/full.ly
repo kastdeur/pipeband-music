@@ -1,7 +1,7 @@
 \version "2.19.0"
 
 \include "config.ily"
-%\include "notes.bass.ily"
+\include "notes.bass.ily"
 \include "notes.tenor.ily"
 \include "notes.side.ily"
 \include "notes.pipes.ily"
@@ -50,14 +50,10 @@
 		\new PipeBandDrumStaff = "bass" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-			s8
-			s2*7
-			s4 s4
+			r8 \bassA s8
 
-			s8
-			s2*8
-			s2*7
-			s4 s4
+			\bassB
+			\bassA s8
 		}
 	>>
 	\header {

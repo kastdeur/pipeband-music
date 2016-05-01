@@ -3,7 +3,7 @@
 \include "config.ily"
 \include "notes.bass.ily"
 \include "notes.tenor.ily"
-\include "notes.side.v1.8.ily"
+\include "notes.side.ily"
 
 \score {
 	\new StaffGroup <<
