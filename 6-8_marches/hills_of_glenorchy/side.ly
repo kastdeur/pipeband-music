@@ -9,6 +9,7 @@
         <<
 			{
 				\repeat volta 2 { \part \halfline \break \halfline }
+				\break
 				\repeat volta 2 { \part \halfline \break \halfline }
 			}
 			{
