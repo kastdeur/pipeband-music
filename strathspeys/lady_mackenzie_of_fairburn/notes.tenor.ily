@@ -45,9 +45,9 @@ tenorBB = \drummode {
 	r4
 	|
 	d16 g8.
-	\flourish d4
-	g8. d16
 	\flourish g4
+	g8. d16
+	\flourish d4
 	|
 	\triplet { d8 g d }
 	g4
