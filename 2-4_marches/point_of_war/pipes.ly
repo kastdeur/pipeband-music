@@ -8,14 +8,14 @@
 		\global
 		\pipeglobal
 		<<
-			{
-			\repeat volta 2 { \part \line }
-			\repeat volta 2 { \line }
-			}
-			{
-			\pipesA s4
-
-			\pipesB s4
+			{ 
+			\repeat volta 2 {
+				\part
+				\halfline
+				}
+			}%Format
+			{ 
+			 \pipesA
 			}
 		>>
 	}
@@ -30,13 +30,15 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
-
 		\partial 8
 		\pipesA
 		\pipesA
-		
-		\pipesB
-		\pipesB
 	}
 	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
+	}
 }

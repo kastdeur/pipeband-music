@@ -22,8 +22,8 @@
 				}%Format
 				{
 				 \snareA s8
-				 \snareB 
-				 \snareB
+				 \snareBA 
+				 \snareBB
 				}%Music
 			>>
 		}

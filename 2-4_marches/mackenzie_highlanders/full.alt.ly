@@ -40,9 +40,9 @@
 
 			\snareA s8
 		
-			\snareBA
+			\snareB
 		
-			\snareBB
+			\snareB
 
 		}
 		\new PipeBandDrumStaff = "tenor" {

@@ -3,7 +3,7 @@
 \include "config.ily"
 \include "notes.bass.ily"
 \include "notes.tenor.ily"
-\include "notes.side.alt.ily"
+\include "notes.side.ily"
 \include "notes.pipes.ily"
 
 \score {

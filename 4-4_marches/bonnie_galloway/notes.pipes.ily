@@ -1,6 +1,8 @@
 % 4/4 Bonnie Galloway>
 % Pipes
 \version "2.18.2"
+
+hvthrwd = { \gripthrwd }
 composerPipes = ""
 pipeglobal = {
 	\bagpipeKey

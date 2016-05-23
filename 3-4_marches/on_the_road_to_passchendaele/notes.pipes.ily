@@ -1,6 +1,9 @@
 % 3/4 On the Road to Passchendaele
 % Pipes
 \version "2.18.2"
+%If not defined, define rodin here
+rodin = { \bgrip }
+
 composerPipes = "PM Gavin Stoddart MBE BEM / Alan Brydon"
 pipeglobal = {
 	\bagpipeKey
