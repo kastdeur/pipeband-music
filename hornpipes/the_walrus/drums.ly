@@ -14,8 +14,31 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			<<
-				{ }%Format
-				{ }%Music
+				{ 
+					\repeat volta 2 { \part \line }
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+}%Format
+				{
+					\snareAA
+					\snareAB s8
+
+					\snareBA
+					\snareBBA s8
+					\snareAB s8
+
+					\snareCA
+					\snareCBA s8
+					\snareBBA
+				
+				}%Music
 			>>
 		}
 		\new PipeBandDrumStaff = "bass" {

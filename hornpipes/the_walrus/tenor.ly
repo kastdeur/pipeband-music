@@ -6,8 +6,20 @@
 \score {
     \new PipeBandDrumStaff {
 		\global
+		\tenorglobal
         <<
-			{}
+			{
+					\repeat volta 2 { \part \line }
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+				\break
+					\repeat volta 2 { \part \halfline}
+					\alternative{ {\halfline} {\halfline}}
+			}
 			{}
 		>>
 	}

@@ -1,7 +1,5 @@
 \version "2.18.2"
 
-\include "lilydrum.ly"
-
 \header {
 		title = "Standards"
 		instrument = "Bass"
@@ -20,6 +18,7 @@
 		title = "2/4 Standard"
 	}
 }
+\break
 \score {
 	\new PipeBandDrumStaff {
 		\time 3/4
@@ -34,6 +33,7 @@
 		title = "3/4 Standard"
 	}
 }
+\break
 \score {
 	\new PipeBandDrumStaff {
 		\time 4/4
@@ -48,6 +48,7 @@
 		title = "4/4 Standard"
 	}
 }
+\break
 \score {
 	\new PipeBandDrumStaff {
 		\time 6/8
