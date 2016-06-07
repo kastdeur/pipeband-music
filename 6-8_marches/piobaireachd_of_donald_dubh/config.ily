@@ -1,17 +1,16 @@
 \version "2.19.0"
 %% Globals
 global = {
-	\time 4/4
+	\time 6/8
 	}
 confTempo = { 
 	\tempo 4 = 80 
 	}
 %% Format
 part = { \partial 8 s8 }
-measure = { \grace {s1} s1 | }
-halfline = { \repeat unfold 4 \measure }
+halfline = { \repeat unfold 2 { s1. | } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "Title"
-meter = "Meter"
+title = "Piobaireachd o' Donuil Dubh"
+meter = "Regimental March Past of The Seaforth Highlanders"
