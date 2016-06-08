@@ -8,14 +8,10 @@ confTempo = {
 	}
 %% Format
 part = { \partial 4 s4 }
-halfline = { \repeat unfold 2 { s1 | } }
+measure = { \grace { s4 } s1 | }
+halfline = { \repeat unfold 4 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "51st Highland Division"
 meter = "March"
-
-composerSide  = ""
-composerTenor = ""
-composerBass  = ""
-composerPipes = ""

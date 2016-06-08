@@ -4,10 +4,13 @@ global = {
 	\time 2/4
 	\eighthBeaming
 	}
-
+confTempo = {
+	\tempo 4 = 80
+	}
 %% Format
 part = { \partial 8 s8 }
-halfline = { \repeat unfold 2 { s1 | } }
+measure = { \grace { s4 } s2 | }
+halfline = { \repeat unfold 4 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
