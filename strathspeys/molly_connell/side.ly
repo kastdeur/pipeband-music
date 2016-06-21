@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \include "config.ily"
-\include "notes.side.v1.1.ily"
+\include "notes.side.ily"
 
 \score {
     \new PipeBandDrumStaff {
