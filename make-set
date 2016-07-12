@@ -6,7 +6,8 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser(__file__)
 parser.add_argument('setfile')
-parser.add_argument('-c',dest='copy',action='store_true',default=False)
+parser.add_argument('-c',dest='copy',action='store_true',default=False,help="Copy files instead of just linkingi")
+parser.add_argument('-t',dest='title',help="Title for the set")
 parser.add_argument('scores',nargs='+')
 
 args = parser.parse_args()
@@ -15,10 +16,30 @@ if os.path.isdir(args.setfile):
 	print("First argument cannot be a directory ")
 	sys.exit()
 
-os.makedirs(os.path.dirname(args.setfile), exist_ok=True)
-fpoint = codecs.open(args.setfile, 'w+', 'utf8')
-fpoint.write(u'\ufeff')
-fpoint.write('\\version \"2.18.2\"\n\n')
+if os.path.dirname(args.setfile):
+    os.makedirs(os.path.dirname(args.setfile), exist_ok=True)
+
+if args.setfile == '--':
+    fprint = print  
+else:
+    fpoint = codecs.open(args.setfile, 'w+', 'utf8')
+    fprint = fpoint.write
+
+fprint(u'\ufeff')
+fprint('\\version \"2.18.2\"\n\n')
+
+if args.title:
+    fprint(
+"\header {"+
+    "title = \"" + args.title + "\""+
+"}\n")
+
+fprint(
+"\paper {"+
+    "#(define page-breaking ly:minimal-breaking)" +
+"}\n")
+
+fprint("\n\n%Scores\n")
 
 for f in args.scores:
 
@@ -38,8 +59,8 @@ for f in args.scores:
 					incline = os.path.join(os.path.abspath(os.path.dirname(f)), incline)
 			
 				line = "\\include \""+incline+"\""
-			fpoint.write(line.replace('\r', '')+'\n')
+			fprint(line.replace('\r', '')+'\n')
 	else:
-		fpoint.write('\\include \"' + os.path.join( os.path.abspath( os.curdir ) ,f) + '\"\n')
+		fprint('\\include \"' + os.path.join( os.path.abspath( os.curdir ) ,f) + '\"\n')
 
 fpoint.close()
