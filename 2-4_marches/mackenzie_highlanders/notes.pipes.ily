@@ -2,6 +2,7 @@
 % Pipes
 \version "2.18.2"
 composerPipes = ""
+pipeglobal = { }
 pipesA = {
 	\dblA A8 |
 	\dblc c8 [ \gre b16. \grd c32 ] \grg a16. [ b32  \grg c16.  d32 ] |

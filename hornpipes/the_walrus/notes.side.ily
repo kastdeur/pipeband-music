@@ -16,7 +16,7 @@ snareAA = \drummode {
 	\flam d16 g32 g d16 \flam g16
 	d32 g d g	d16 g->
 	|
-	d16:64( g8:32)(-> d16:64)(->
+	d16 g8:32(-> d16:64)(->
 	g16:64 g16:64)(-> d)-> g16 |
 }
 snareAB = \drummode {
@@ -43,7 +43,7 @@ snareBA = \drummode {
 	\flam d16 g32 g d16 \flam g16
 	d32 g d g	d16 g->
 	|
-	d16:64( g8:32)(-> d16:64)(->
+	d16 g8:32(-> d16:64)(->
 	g16:64 g16:64)(-> d)-> g16 |
 }	
 snareBBA = \drummode {	
@@ -70,7 +70,7 @@ snareCA = \drummode {
 	\flam d16 g32 g d16 \flam g16
 	d32 g d g       d16 g->
 	|
-	d16:64( g8:32)(-> d16:64)(->
+	d16 g8:32(-> d16:64)(->
 	g16:64 g16:64)(-> d)-> g16 |
 }
 snareCBA = \drummode {

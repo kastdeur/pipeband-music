@@ -6,6 +6,7 @@
 \score {
     \new PipeBandDrumStaff {
         \global
+	\sideglobal
         <<
 			{
 				\repeat volta 2 { \part \halfline \break \halfline }
@@ -14,7 +15,7 @@
 			}
 			{
 			\snareA s8
-			\snareBA s8
+			\snareB s8
 			}
 		>>
 	}
@@ -25,3 +26,24 @@
 		composer = \composerSide
 	}
 }
+\score {
+	\new PipeBandDrumStaff {
+		\global
+		\sideglobal
+			\partial 8
+			\snareA
+			\snareA
+
+			\snareB
+			\snareB
+	}
+	\midi{
+		\confTempo
+	}
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentSide
+		composer = \composerSide
+	}
+}	

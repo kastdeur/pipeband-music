@@ -25,9 +25,9 @@
 				\break
 				\line
 				\break
-				\repeat unfold 3 { s1. | }
+				\repeat unfold 3 { \measure }
 			}
-			\alternative{ { \grace{ s8 } s1.} {s1.} }
+			\alternative{ { \measure} {\measure} }
 			\bar "|."
 			}%Format
 			{ 

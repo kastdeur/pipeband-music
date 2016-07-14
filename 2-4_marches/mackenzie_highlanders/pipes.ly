@@ -6,8 +6,7 @@
 \score {
     \new Staff {
 		\global
-		\bagpipeKey
-		\set Staff.midiInstrument = #"bird tweet"
+		\pipeglobal
 		<<
 			{
 				\repeat volta 2 {
@@ -16,21 +15,21 @@
 				\break
 				\repeat volta 2 {
 					\part \halfline
-				}	
+				}
 				\alternative {
 					{\halfline}
 					{\halfline}
 				}
-	
 				\bar "|."
-			}
+			}%Format
 			{
 				\pipesA s8
-				
+
 				\pipesB
 				\pipesBA s8
 				\pipesBB
-			}		>>
+			}
+		>>
 	}
 	\header {
 		title = \title
@@ -38,7 +37,25 @@
 		instrument = \instrumentPipes
 		composer = \composerPipes
 	}
-	\midi {
-		\tempo 4 = 90
+}
+\score {
+	\new Staff { \global \pipeglobal
+		\set Staff.midiInstrument = #"bagpipe"
+		%%Tune
+		\partial 8
+		\pipesA
+		\pipesA
+
+		\pipesB
+		\pipesBA
+		\pipesBB
+
+	}
+	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
 	}
 }
