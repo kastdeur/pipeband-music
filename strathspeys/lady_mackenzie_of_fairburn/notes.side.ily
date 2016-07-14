@@ -13,15 +13,15 @@ snareA = \drummode {
 	d8.:32(-> \dr g16:64)(->
 	d4)
 	|
-	\triplet { \drag d8 d g }
+	\dragd \triplet { d8 d g }
 	\flam d8. \fr g16 ->
 	\triplet { d16\< g d g d8 }
 	g16\! d8.
 	|
 	d8.[:32(\< \dr  g16]:32)(-> \>
 	d8.[:32)( g16]:32)(-> \<
-	d8.[:32)( g16]:32)(->
-	d8.) \! \fr
+	d8.[:32)( g16]:32)->
+	d8. \! \fr
 }
 snareBA = \drummode{
 	g16 |

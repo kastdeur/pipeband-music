@@ -9,13 +9,16 @@
 	\sideglobal
 		<<
 			{ 
-			  \repeat volta 2 {\line } \break
-			  \repeat volta 2 { \line }
+			  \line
+			  \bar "|."
+			  \break
+			  \line
+			  \bar "|."
 			}
 			{ 
 			  \snareA
 
-			  \snareBB
+			  \snareB
 			 }
 		>>
 	}

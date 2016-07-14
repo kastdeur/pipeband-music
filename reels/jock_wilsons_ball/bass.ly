@@ -8,8 +8,18 @@
         \global
 	\bassglobal
 		<<
-			{ }%Format
-			{ }
+			{
+				\line 
+				\bar "|."
+				\break
+				\line
+				\bar "|."
+			}%Format
+			{
+			\bassA
+
+			\bassB
+			}
 		>>
 	}
 	\header {

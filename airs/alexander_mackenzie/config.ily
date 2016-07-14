@@ -3,6 +3,9 @@
 global = {
 	\time 6/8
 	}
+confTempo = {
+	\tempo 2. = 90
+}
 
 %% Format
 part = { \partial 8 s8 }

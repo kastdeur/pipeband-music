@@ -39,8 +39,8 @@
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 		\partial 4 
-		\repeat volta 2 { \pipesAA \pipesAB }
-		\repeat volta 2 { \pipesBA \pipesBB }
+		\repeat unfold 2 { \pipesAA \pipesAB }
+		\repeat unfold 2 { \pipesBA \pipesBB }
 	}
 	\midi { \confTempo }
 }

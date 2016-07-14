@@ -11,8 +11,6 @@
 			{ 
 			\line \break
 			\line \break
-			\line \break
-			\line \break
 			}
 			{
 				\pipesA

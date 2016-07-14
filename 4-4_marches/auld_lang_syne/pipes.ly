@@ -10,7 +10,8 @@
 		<<
 			{
 			\repeat volta 2 { \part \line }
-			\repeat volta 2 { \line }
+			\break
+			\repeat volta 2 { \part \line }
 			}
 			{
 			\pipesA s4

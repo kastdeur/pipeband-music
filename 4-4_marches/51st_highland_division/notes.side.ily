@@ -8,7 +8,7 @@ sideglobal = {
 %%music
 snareA = \drummode {
 	d16. g32 |
-	d4:32(		d8.) g16		\flamd d8 d8:32(		g8) d8:32( |
+	d4:32(		d8.) g16		\flamd d8[ d8:32(]		g8[) d8:32(] |
 	g8.) g16		\flamd d8 \flamg g8		d4:32(->		d8.)-> g16 |
 }
 snareAA = \drummode {
@@ -16,7 +16,7 @@ snareAA = \drummode {
 	\flamg g4		d4:32(		d4) r8
 }
 snareAB = \drummode {
-	d8:32(-> g8)		\flamd d8 d8:32(		\tuplet 3/2 { g16) d g } \flamd d16. g32->		d16. d32 \flamg g8 |
+	d8:32(->[ g8)]		\flamd d8[ d8:32(]		\tuplet 3/2 { g16) d g } \flamd d16. g32->		d16. d32 \flamg g8 |
 	\flamg g4		d4:32(		d4) r8
 }
 % Part 2

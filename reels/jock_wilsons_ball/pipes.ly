@@ -9,11 +9,16 @@
 		\pipeglobal
 		<<
 			{ 
-				\bar ".|"
-				\line 
-				\bar "|.|" 
+				\halfline
 				\break
-				\line \bar "|."
+				\halfline
+				\bar "|."
+				\break
+
+				\halfline 
+				\break
+				\halfline
+				\bar "|."
 			}%Format
 			{ 
 				\pipesAA

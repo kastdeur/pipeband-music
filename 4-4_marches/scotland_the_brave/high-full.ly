@@ -55,7 +55,7 @@
 %		}
 	>>
 	\header {
-		title = \title
+		title = {\title " (high)"}
 		meter = \meter
 		composer = \markup \large {
 			\column \right-align {

@@ -15,11 +15,12 @@ pipesA = {
  \dble e4~ e8 [ c8 ] \gra c4 \gre a4 |
  \dblb b4~ b8 [ a8 ] \grg b4 \grg c8. [ b16 ] |
  \grg a4~ a8 [ f8 ] \grg f4 \grg e4 |
- \grg a2 \wbirl a4 f4
+ \grg a2 \wbirl a4
 }
 
 pipesB = 
 {
+ f4 |
  \dble e4~ e8 [ c8 ] \gra c4 \gre a4 |
  \dblb b4~ b8 [ a8 ] \grg b4 f4 |
  \dble e4~ e8 [ c8 ] \grg c4 e4 |

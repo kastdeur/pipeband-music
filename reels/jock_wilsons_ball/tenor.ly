@@ -10,7 +10,7 @@
 	<<
 			{
 				\line 
-				\bar "||"
+				\bar "|."
 				\break
 				\line
 				\bar "|."

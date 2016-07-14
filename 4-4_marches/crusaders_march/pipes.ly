@@ -9,15 +9,12 @@
 		\pipeglobal
 		<<
 			{
-				\part
-				\line \break
-				\line \break 
-		
-				\line 
-				\line \break
+				\part 	\line \bar "|."
+				\break
+				\line \bar "|."
 			}
 			{
-				\pipesA
+				\pipesA 
 
 				\pipesB
 			}

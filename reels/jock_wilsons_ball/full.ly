@@ -19,7 +19,7 @@
 				{
 				\partial 16 s16
 				\line
-				\bar "||"
+				\bar "|,"
 
 				\break
 				\line

@@ -10,12 +10,16 @@
 		<<
 			{ 
 				\partial 16 s16
-				\line
-				\bar "||"
+				\halfline
+				\break
+				\halfline
+				\bar "|."
 
 				\break
 				\partial 16 s16
-				\line
+				\halfline
+				\break
+				\halfline
 				\bar "|."
 			}%Format
 			{

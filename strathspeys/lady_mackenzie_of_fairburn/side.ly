@@ -7,8 +7,18 @@
     \new PipeBandDrumStaff {
         \global
         <<
-			{\repeat volta 2 { \line } \break \part \line \bar "||" \break \line \bar "|."}
-			{\snareA s16 \snareBA \snareBB}
+			{
+			 \repeat volta 2 { \line } 
+			 \break 
+			 \part \line \bar "||" 
+			 \break
+			 \part \line \bar "|."
+			}
+			{
+			 \snareA s16 
+			 \snareBA s16 
+			 \snareBB
+			}
 		>>
 	}
 	\header {

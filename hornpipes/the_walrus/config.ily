@@ -4,8 +4,9 @@ global = {
 	\time 2/4
 	}
 %% Format
-part = { \partial 8 s8 }
-halfline = { \repeat unfold 4 { s2 | } }
+part = { \partial 8 \grace { s4 } s8 }
+measure = { \grace { s4 } s2 | }
+halfline = { \repeat unfold 4 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers

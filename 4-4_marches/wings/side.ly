@@ -10,16 +10,15 @@
 			{
 				\partial 8 s8
 				\repeat volta 2 {
-					s1 | s1
+					\halfline
 				}
 				\alternative {
-					{ s1 | s1 }
-					{ s1 | s2^"Fine" s4 s8 \bar "|."}
+					{ \halfline }
+					{ \measure | s2^"Fine" s4 s8 \bar "|."}
 				}
 				\partial 8 s8
-				s1
-				s1
-				s1
+				\halfline
+				\measure
 				s1^"D.C. al Fine" \bar "||"
 			}
 			{

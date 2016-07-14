@@ -14,21 +14,35 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			<<
-				{ }%Format
-				{ }%Music
+				{
+					\partial 16 s16
+					\line
+					\bar "|."
+					\break
+					\partial 16 s16
+					\line
+					\bar "|."
+				}%Format
+				{ 
+					\sideA s16
+					\sideB
+				}%Music
 			>>
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-
+			s16 \tenorA
+			s16 \tenorB
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
+			s16 \bassA
+			s16 \bassB
 		}
 	>>
 	\header {

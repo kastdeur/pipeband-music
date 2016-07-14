@@ -15,12 +15,12 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
-					\repeat volta 2 { \part \line } \break
-			
-					\part \line \bar "||" \break
-					\line \bar "|."
+					\part \halfline \bar "||" \halfline \bar "|."
+					\break
+					\part \halfline \bar "||" \halfline \bar "|."
 				}%Format
 				{
+					\pipesA
 					\pipesA s8
 
 					\pipesBA
@@ -33,10 +33,9 @@
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
-			r16. \snareA s16
+			r8 \snareA 
 			
-			r16. \snareBA 
-			\snareBB
+			r8 \snareB s8
 		}
 %		\new PipeBandDrumStaff = "bass" {
 %			\bassglobal

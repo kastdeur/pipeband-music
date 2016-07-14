@@ -9,11 +9,11 @@
         <<
 			{
 			\repeat unfold 2 {
-				\repeat volta 2 { \halfline	}
-					\alternative {
-						{\halfline}
-						{\halfline }
-					}
+				\line
+				\bar "||"
+				\break
+				\line
+				\bar "|."
 				\break
 				}
 			\bar "|."
@@ -21,11 +21,13 @@
 			{
 			\snareAA
 			\snareABA
+			\snareAA
 			\snareABB
 
 
 			\snareBA
 			\snareBBA
+			\snareBA
 			\snareBBB
 			}
 		>>

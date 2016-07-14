@@ -15,7 +15,7 @@ pipesA = {
 	\grg c4 \grip c4 \dblc c4 \gre a8. [ \grd c16 ]  |
 	\dble e4 \grip e8. [ f16 ] \dble e4 \thrwd d8 [ f8 ]  |
 	\dble e8 [ c8 ] \dbld d8 [ b8 ] \dblc c8 [ e8 ] \thrwd d8 [ b8 ]  |
-	\dblb b8 [ \gre a8 ] \wbirl a8. [ b16 ] \grG a4 \grg a16 [ b16 \grip c16 d16 ] 
+	\dblb b8 [ \gre a8 ] \wbirl a8. [ b16 ] \grG a4 \grg a16 [ b16 \grip c16 d16 ]  |
 }
 pipesB = {
 	\dble e4 \gra e8. [ f16 ] \dble e8 [ d8 ] \dblc c8 [ \gre b8 ]  |
