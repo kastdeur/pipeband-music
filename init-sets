@@ -1,5 +1,5 @@
 #!/bin/bash
-COM='./make-set -c'
+COM='./make-set '
 D='./sets'
 
 trap "echo Aborted!; exit;" SIGINT SIGTERM
@@ -63,7 +63,7 @@ airs/morag_of_dunvegan/$f.ly \
 
 $COM $D/set_11.$f.ly \
 4-4_marches/flett_from_flotta/$f.ly \
-4-4_marches/crusaders_march/$f.ly \
+4-4_marches/the_crusaders_march/$f.ly \
 4-4_marches/the_pikemans_march/$f.ly \
 ;
 
