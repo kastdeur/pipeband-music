@@ -1,7 +1,7 @@
 % 2/4 MacKenzie Highlanders
 % Snare
 \version "2.18.2"
-composerSide = "v1.1"
+composerSide = "v1.1, 2016"
 sideglobal = { \eighthBeaming }
 %%music
 snareA = \drummode {

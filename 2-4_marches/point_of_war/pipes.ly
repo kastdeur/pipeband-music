@@ -12,6 +12,8 @@
 			\repeat volta 2 {
 				\part
 				\halfline
+				\break
+				\halfline
 				}
 			}%Format
 			{ 

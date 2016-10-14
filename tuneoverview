@@ -1,0 +1,41 @@
+#!/bin/bash
+LEAVEOUT=" sets/ template/ standards/ "
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ECHO_COUNT=":"
+INDENT="$(echo -e '\t')"
+
+i=0
+j=0
+k=0
+tot=0
+for d in $DIR/*/
+do
+	if [[ "$LEAVOUT" =~ "${d//$DIR\/}" ]]; then
+		echo "Leaving out"
+		break
+	fi
+	i=$(($i+1))
+	echo "${d//$DIR\/}"
+	for t in $d/*/
+	do
+		if [ "$t" = "$d/*/" ]; then
+			break
+		fi
+		j=$(($j+1))
+		echo "$INDENT${t//$d\/}"
+		for inst in $t/*.ly
+		do
+			if [ "$inst" = "$t/*.ly" ]; then
+				break
+			fi
+			k=$(($k+1))
+			tot=$(($tot+1))
+			echo "$INDENT$INDENT${inst//$t\/}"
+		done
+		$ECHO_COUNT "$INDENT$k files"
+		k=0
+	done
+	$ECHO_COUNT "$j tunes"
+	echo ""
+done
+$ECHO_COUNT "${tot} Files"

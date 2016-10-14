@@ -10,7 +10,7 @@
         <<
 			{
 				\repeat volta 2 { \part \halfline \break \halfline } \break
-				\part \line \bar "||" \break
+				\part \halfline \break \halfline \bar "||" \break
 				\line
 			}
 			{
