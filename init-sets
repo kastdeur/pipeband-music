@@ -23,9 +23,15 @@ $COM $D/set_2.$f.ly \
 2-4_marches/mairis_wedding/$f.ly \
 ;
 
+$COM $D/set_3.$f.ly \
+3-4_marches/green_hill_of_tyrol/$f.ly \
+3-4_marches/when_the_battle_is_over/$f.ly \
+3-4_marches/my_land/$f.ly \
+;
+
 $COM $D/set_4.$f.ly \
 3-4_marches/collins_cattle/$f.ly \
-3-4_marches/my_land/$f.ly \
+3-4_marches/red_hackle/$f.ly \
 3-4_marches/shoals_of_herring/$f.ly \
 ;
 
@@ -48,6 +54,9 @@ $COM $D/set_7.$f.ly \
 
 $COM $D/set_8.$f.ly \
 6-8_marches/10th_hli_crossing_the_rhine/$f.ly \
+6-8_marches/farewell_to_the_creeks/$f.ly \
+6-8_marches/cock_o_the_north/$f.ly \
+6-*_marches/glendaruel_highlanders/$f.ly \
 ;
 
 $COM $D/set_9.$f.ly \
@@ -57,8 +66,7 @@ airs/my_home/$f.ly \
 
 $COM $D/set_10.$f.ly \
 airs/morag_of_dunvegan/$f.ly \
-4-4_marches/bonnie_galloway.$f.ly \
-4-4_marches/were_no_awa_tae_bide_awa/$f.ly \
+$D/set_1.$f.ly \
 ;
 
 $COM $D/set_11.$f.ly \
@@ -72,10 +80,12 @@ $COM $D/set_12.$f.ly \
 4-4_marches/the_old_rustic_bridge/$f.ly \
 ;
 
+#3-4_marches/castle_dangerous/$f.ly \
 $COM $D/set_13.$f.ly \
-3-4_marches/castle_dangerous/$f.ly \
-3-4_marches/pm_jk_cairns/$f.ly \
+3-4_marches/torosay_catle/$f.ly \
 3-4_marches/lochanside/$f.ly \
+3-4_marches/pm_jk_cairns/$f.ly \
+3-4_marches/jim_thomson_of_flagstaff/$f.ly \
 ;
 
 $COM $D/set_14.$f.ly \
@@ -88,14 +98,10 @@ $COM $D/set_15.$f.ly \
 4-4_marches/hills_of_argyll/$f.ly \
 ;
 
-$COM $D/set_16.$f.ly \
-6-8_marches/farewell_to_the_creeks/$f.ly \
-6-8_marches/cock_o_the_north/$f.ly \
-;
-
 $COM $D/set_17.$f.ly \
 2-4_marches/teribus/$f.ly \
 2-4_marches/corriechoillie_welcome_to_the_43rd_northern_meeting/$f.ly \
+2-4_marches/barren_rocks_of_aden/$f.ly \
 ;
 
 $COM $D/set_18.$f.ly \
@@ -103,8 +109,37 @@ $COM $D/set_18.$f.ly \
 2-4_marches/black_bear/$f.ly \
 ;
 
-$COM $D/alexander_mackenzie_cullen_bay.$f.ly \
+$COM $D/set_19.$f.ly \
+strathspeys/molly_connell/$f.ly \
+strathspeys/keel_row/$f.ly \
+;
+
+$COM $D/set_20.$f.ly \
+9-8_marches/heights_of_dargai/$f.ly
+9-8_marches/battle_of_the_somme/$f.ly
+
+$COM $D/set_21.$f.ly \
 airs/alexander_mackenzie/$f.ly \
+;
+
+$COM $D/set_22.$f.ly \
 5-4_marches/cullen_bay/$f.ly \
 ;
+
+$COM $D/set_23.$f.ly \
+4-4_marches/cabar_feidh/$f.ly \
+;
+
+$COM $D/set_24.$f.ly \
+2-4_marches/mackenzie_highlanders/$f.ly \
+strathspeys/lady_mackenzie_of_fairburn/$f.ly \
+reels/jock_wilsons_ball/$f.ly \
+;
+
+$COM $D/set_25.$f.ly \
+6-8_marches/72nd_highlanders/$f.ly \
+6-8_marches/piobaireachd_of_donald_dubh/$f.ly \
+;
+
 done;
+echo "Have a nice day!"
