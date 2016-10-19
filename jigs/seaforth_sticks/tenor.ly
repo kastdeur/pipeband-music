@@ -8,16 +8,35 @@
 		\global
         <<
 			{
+				\mark "Intro"
+				\repeat unfold 2 {
+					\repeat volta 2 {
+						\halfline
+					}
+				}
+				\break
 				\repeat unfold 8 {
 					\mark \default
 					\repeat volta 2 {
-						\part
 						\line
 					}
 					\break
 				}
 			}
-			{}
+			{
+				r2.*4
+				\tenorIntro
+
+				\tenorA s8
+				\tenorB s8
+				\tenorC s8
+				\tenorD s8
+				\tenorE s8
+				\tenorF s8
+				\tenorG s8
+				\tenorH s8
+				
+			}
 		>>
 	}
 	\header {

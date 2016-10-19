@@ -87,6 +87,11 @@ pseven = \drummode {
 	\flam d16. g32 d16. \flam g32		\parenthesize \flam d16. g32 d16.  \flam g32
 	d16. \flam g32 d16. \parenthesize \flam g32		\flam d8
 }
+peight = \drummode {
+	d16. g32 |
+	\flam d8 d16. g32 	\flam d8 d16 g16
+	r16 d16 g16. g32 	\flam d8
+}
 
 % Scores
 \score {

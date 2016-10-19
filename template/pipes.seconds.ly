@@ -15,8 +15,8 @@
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentpipessecnd
-		composer = \composerpipessecnd
+		instrument = \instrumentPipes \instrumentSecnd
+		composer = \composerPipesSecnd
 	}
 }
 \score {
@@ -28,8 +28,8 @@
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentpipessecnd
-		composer = \composerpipessecnd
+		instrument = \instrumentPipes \instrumentSecnd
+		composer = \composerPipesSecnd
 	}
 
 }

@@ -3,7 +3,6 @@
 \version "2.18.2"
 composerSide = ""
 snareA = \drummode {
-	r8 |
 	\flamd d8 g8 d8		\flamg g4 g8 |
 	d16 g d g d8->		g8 d8 g8 |
 
