@@ -18,14 +18,14 @@
 				}
 			}
 			{
-				\snareA
-				\snareB
-				\snareC
-				\snareD
-				\snareE
-				\snareF
-				\snareG
-				\snareH
+				r8 \snareA
+				\snareB 
+				\snareC 
+				\snareD 
+				\snareE 
+				\snareF 
+				\snareG 
+				\snareH 
 			}
 		>>
 	}
