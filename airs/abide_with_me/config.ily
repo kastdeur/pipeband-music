@@ -2,8 +2,10 @@
 %% Globals
 global = {
 	\time 4/4
-	}
-
+}
+confTempo = {
+  	\tempo 4 = 60
+}
 %% Format
 part = { \partial 8 s8 }
 measure = { \grace { s4 } s1 | }

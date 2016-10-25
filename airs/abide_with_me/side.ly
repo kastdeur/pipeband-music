@@ -8,10 +8,10 @@
         \global
         <<
 			{
-				\repeat volta 2 {\halfline \break}
+				\repeat volta 2 {\line \break}
 					\alternative {
-						{ \halfline \break }
-						{ \halfline \bar "|."}
+						{ \line \break }
+						{ \line \bar "|."}
 					}
 
 			}
