@@ -2,10 +2,10 @@
 % Side
 \version "2.18.2"
 composerSide = "E.T. de Boone, 2016"
-sideglobal = {}
-% Music
-ending = \drummode {
+sideglobal = {
+	\eighthBeaming
 }
+% Music
 
 snareAA = \drummode {
 	d16. g32 |

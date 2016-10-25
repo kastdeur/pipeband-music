@@ -8,35 +8,19 @@
 		\global
 		\pipessecndglobal
 		<<
-			{ 
-				\repeat volta 2 {
-					\part \line
-				}
-
-				\break
-				%\repeat volta 2 {
-				%	\part \halfline
-				%}
-				%\alternative { 
-				%	{\halfline}
-				%	{\halfline}
-				%}
-				\part \line
-				\bar "||"
-				\break
-				\part \line
-				\bar "|."
-				
+			{
+			  \repeat volta 2 {
+				\part \line 
+			  }
+			  \break
+			  \repeat volta 2 {
+				\part \line 
+			  }
 			}%Format
 			{ 
 				\pipessecndA s8
 
-				\pipessecndBA 
-				\pipessecndBBA s8
-
-				\pipessecndBA 
-				\pipessecndBBB s8
-				
+				\pipessecndB s8
 			}
 		>>
 	}
@@ -44,30 +28,26 @@
 		title = \title
 		meter = \meter
 		instrument = \instrumentPipessecnd
-		composer = \composerPipessecnd
+		composer = \composerPipesSecnd
 	}
 }
 \score {
 	\new Staff { \global \pipessecndglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
-
 		\partial 8
 		\pipessecndA
 		\pipessecndA
 
-		\pipessecndBA
-		\pipessecndBBA
-
-		\pipessecndBA
-		\pipessecndBBB
+		\pipessecndB
+		\pipessecndB
 	}
 	\midi { \confTempo }
 	\header {
 		title = \title
 		meter = \meter
 		instrument = \instrumentPipessecnd
-		composer = \composerPipessecnd
+		composer = \composerPipesSecnd
 	}
 
 }

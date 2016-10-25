@@ -1,11 +1,11 @@
 \version "2.19.0"
 
 \include "config.ily"
-\include "notes.bass.ily"
-\include "notes.tenor.ily"
+%\include "notes.bass.ily"
+%\include "notes.tenor.ily"
 \include "notes.side.ily"
 \include "notes.pipes.ily"
-%\include "notes.pipes.seconds.ily"
+\include "notes.pipes.seconds.ily"
 %\include "notes.lyrics.ily"
 
 \score {
@@ -17,11 +17,33 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				\new Voice = "format"
-			  	{}%Format
+			  	{
+					\repeat volta 2 {
+						\part \line 
+					}
+					\break
+					\repeat volta 2 {
+						\part \line 
+			  		}
+				}%Format
 
 				\new Voice = "pipes"
-				{}%Pipes
+				{
+					\pipesA s8
+
+					\pipesB s8
+				}%Pipes
 			>>
+		}
+		\new Staff = "seconds" {
+			\pipessecndglobal
+			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
+			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
+
+			\pipessecndA s8
+
+			\pipessecndB s8
+
 		}
 %		\new Lyrics = "verse1" {
 %		  \lyricsglobal
@@ -29,31 +51,27 @@
 %			\verseA
 %		  }
 %		}
-%		\new Staff = "seconds" {
-%			\pipessecndglobal
-%			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
-%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
-%
-%
-%		}
 		\new PipeBandDrumStaff = "side" {
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
-		}
-		\new PipeBandDrumStaff = "tenor" {
-			\tenorglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+			s8 \snareA
 
+			s8 \snareB
 		}
-		\new PipeBandDrumStaff = "bass" {
-			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-		}
+%		\new PipeBandDrumStaff = "tenor" {
+%			\tenorglobal
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+%
+%		}
+%		\new PipeBandDrumStaff = "bass" {
+%			\bassglobal
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+%
+%		}
 	>>
 	\header {
 		title = \title
