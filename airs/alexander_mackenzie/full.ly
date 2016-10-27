@@ -1,7 +1,7 @@
 \version "2.19.0"
 
 \include "config.ily"
-%\include "notes.bass.ily"
+\include "notes.bass.ily"
 \include "notes.tenor.ily"
 \include "notes.side.ily"
 \include "notes.pipes.ily"
@@ -73,19 +73,22 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			\tenorAA \tenorAB s8
+			s8 \tenorAA r8 \tenorAB s8
 
 			\tenorBA 
 			\tenorBB s8
 			
-			\tenorBA \tenorAB s8
+			\tenorBA r8 \tenorAB s8
 		}
-%		\new PipeBandDrumStaff = "bass" {
-%			\bassglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-%
-%		}
+		\new PipeBandDrumStaff = "bass" {
+			\bassglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+			
+			s8 \bassAA \bassAB
+			s8 \bassBA \bassBB
+			s8 \bassBA \bassAB
+		}
 	>>
 	\header {
 		title = \title
