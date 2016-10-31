@@ -17,27 +17,28 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				\new Voice = "format"
-			  	{}%Format
+			  	{
+					\repeat volta 2 { \part \line \break}
+					\repeat volta 2 { \part \line \break}
+				}%Format
 
 				\new Voice = "pipes"
-				{}%Pipes
+				{
+					\pipesA s8
+					\pipesB s8
+				}%Pipes
 			>>
 		}
-%		\new Staff = "song" {
-%  			\lyricsglobal
-%			\new Voice = "lyrics"
-%			{}
-%		}
 %		\new Lyrics = "verse1" {
 %		  \lyricsglobal
-%		  \lyricsto "lyrics" {
+%		  \lyricsto "pipes" {
 %			\verseA
 %		  }
 %		}
 %		\new Staff = "seconds" {
 %			\pipessecndglobal
-%			\set Staff.instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
-%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentTrd}
+%			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
+%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
 %
 %
 %		}
@@ -45,19 +46,24 @@
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-
+			\snareA s8
+			\snareB s8
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-
+			
+			s8 \tenorA s8
+			\tenorB s8
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
+			\bassA s8
+			\bassB s8
 		}
 	>>
 	\header {

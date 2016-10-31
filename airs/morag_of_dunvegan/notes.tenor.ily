@@ -1,6 +1,7 @@
 % 6/8 Morag of Dunvegan
 % Tenor
 \version "2.18.2"
+tenorglobal = {}
 tenorA = \drummode {
 	d8 g8 d8	g8 d8 g8 |
 	d8 g8 d8	g4.	|

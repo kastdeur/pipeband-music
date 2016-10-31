@@ -13,24 +13,36 @@
 
 			\global
 			<<
-				{\formatA	\formatB }
-				{\snareA	\snareB }
+				{
+					\repeat volta 2 { 
+						\part \line 
+			  		} 
+			  		\break
+					\repeat volta 2 {
+						\part \line
+					}
+				}
+				{
+				  \snareA s8
+				  \snareB s8
+				}
 			>>
-		}
-		\new PipeBandDrumStaff = "bass" {
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-			%\bassA
-			%\bassB
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			\tenorA
-			\tenorB
+			s8 \tenorA
+			s8 \tenorB
 		}
+%		\new PipeBandDrumStaff = "bass" {
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+%
+%			\bassA
+%			\bassB
+%		}
+
 	>>
 	\header {
 		title = \title

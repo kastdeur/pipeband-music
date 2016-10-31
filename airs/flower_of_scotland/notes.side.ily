@@ -2,6 +2,7 @@
 % Side
 \version "2.18.2"
 composerSide = ""
+sideglobal = {} 
 snareA = \drummode {
 	g8 |
 	\flam d8 d:32( g)	\flam d8 g16. d32 g16. g32 |

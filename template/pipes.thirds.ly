@@ -15,7 +15,7 @@
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentPipesthrd
+		instrument = \instrumentThrd
 		composer = \composerPipesthrd
 	}
 }
@@ -28,7 +28,7 @@
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentPipesthrd
+		instrument = \instrumentThrd
 		composer = \composerPipesthrd
 	}
 

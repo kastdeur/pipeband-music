@@ -8,9 +8,22 @@
 		\global
 		\pipessecndglobal
 		<<
-			{ }%Format
-			{ }
-		>>
+			{ 
+				\repeat unfold 3 {
+				  \repeat volta 2 {
+					\part \line
+					\break
+				  }
+				}
+			}%Format
+			{ 
+				\pipessecndA s8
+
+				\pipessecndB s8
+
+				\pipessecndC s8
+			}
+		  >>
 	}
 	\header {
 		title = \title
@@ -23,6 +36,16 @@
 	\new Staff { \global \pipessecndglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+			\partial 8
+				\pipessecndA
+				\pipessecndA
+
+				\pipessecndB
+				\pipessecndB
+
+				\pipessecndC
+				\pipessecndC
+
 	}
 	\midi { \confTempo }
 	\header {

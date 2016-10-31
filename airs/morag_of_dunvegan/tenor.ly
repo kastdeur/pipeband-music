@@ -7,7 +7,7 @@
     \new PipeBandDrumStaff {
 		\global
         <<
-			{\formatA \formatB}
+			{\repeat volta 2 {\line}\break\repeat volta 2 {\line}\break}
 			{\tenorA \tenorB}
 		>>
 	}

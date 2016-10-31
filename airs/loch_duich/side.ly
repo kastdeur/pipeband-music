@@ -10,10 +10,11 @@
 			{
 				\repeat volta 2 { \line \break}
 				\repeat volta 2 { \line \break}
-				\repeat volta 2 { \halfline s2. s2.}
+				\repeat volta 2 { \halfline s2. s2. s2. }
 					\alternative {
-						{ s2.} {s2.}
+					  { \grace {s1} s2.} {\grace{s1}s2.}
 				}
+				\bar "|."
 			}
 			{
 				\snareA

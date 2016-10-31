@@ -1,17 +1,17 @@
 \version "2.19.0"
 %% Globals
 global = {
-	\time 6/8
+	\time 4/4
 	}
 confTempo = { 
-	\tempo 2. = 45 
+	\tempo 4 = 40 
 	}
 %% Format
 part = { \partial 8 s8 }
-measure = { \grace {s1} s2. | }
+measure = { \grace {s1} s1 | }
 halfline = { \repeat unfold 4 \measure }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "Morag of Dunvegan"
-meter = "Slow Air"
+title = "Highland Cathedral"
+meter = "Air"

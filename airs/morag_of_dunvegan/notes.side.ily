@@ -1,6 +1,7 @@
 % 6/8 Morag of Dunvegan
 % Tenor
 \version "2.18.2"
+sideglobal={}
 snareA = \drummode {
 	\flamd d8 d8:32( g8)		\flamd d8 r8 \flamd d8 |
 	g8 d8:32( g8)		g8 \tuplet 3/2 { d16 g d } g8 |

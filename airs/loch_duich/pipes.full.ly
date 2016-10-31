@@ -14,21 +14,36 @@
 			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 			  	\new Voice = "format"
-				{ }%Format
+				{ 
+				  \repeat unfold 3 {
+					  \repeat volta 2 {
+						\part \line
+						\break
+					  }
+					}
+				  }%Format
 				\new Voice = "pipes"
-				{ }%Pipes
+				{
+					\pipesA s8
+					\pipesB s8
+					\pipesC s8
+				}%Pipes
 			>>
 		}
 		\new Staff = "seconds" {
 			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentSecnd }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd}
+			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
+			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
 			
+				\pipessecndA s8
+				\pipessecndB s8
+				\pipessecndC s8
+				
 		}
 %		\new Staff = "thirds" {
 %			\pipesthrdglobal
-%			\set Staff.instrumentName = \markup{ \instrumentPipes \instrumentThrd }
-%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentThrd }
+%			\set Staff.instrumentName = \markup{ \instrumentPipes Thirds }
+%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 3rd }
 %
 %		}
 	>>
@@ -56,12 +71,18 @@
 			\pipeglobal
 			\set Staff.midiInstrument = #"bagpipe"
 			%%Tune
-		
+			\pipesA
+        	\pipesB
+        	\pipesC
+
 		}
 		\new Staff = "seconds" {
 			\pipessecndglobal
 			\set Staff.midiInstrument = #"bagpipe"
 			%% Seconds
+			\pipessecndA
+			\pipessecndB
+			\pipessecndC
 
 		}
 %		\new Staff = "thirds" {

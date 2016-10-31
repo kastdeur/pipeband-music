@@ -2,11 +2,14 @@
 %% Globals
 global = {
 	\time 6/8
-	}
-
+}
+confTempo = {
+	\tempo 2. = 60
+}
 %% Format
 part = { \partial 8 s8 }
-halfline = { \repeat unfold 2 { s2. | } }
+measure = {\grace{s1} s2. |}
+halfline = { \repeat unfold 2 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers

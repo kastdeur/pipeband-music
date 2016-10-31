@@ -13,7 +13,7 @@
 
 			\global
 			<<
-				{ \formatA	\formatB }
+				{\repeat volta 2 {\line}\break\repeat volta 2 {\line}\break}
 				{ \snareA	\snareB }
 			>>
 		}
