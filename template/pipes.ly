@@ -8,8 +8,13 @@
 		\global
 		\pipeglobal
 		<<
-			{ }%Format
-			{ }
+			\new NullVoice = "format" {
+			
+			}%Format
+			
+			\new Voice = "pipes" {
+			
+			}
 		>>
 	}
 	\header {

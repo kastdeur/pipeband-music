@@ -6,7 +6,7 @@ pipeglobal = {
 	\bagpipeKey
 	}
 pipesA = {
-	\grg c8 [ \grG c8 ] \grg c4 c8 a8 |
+	\grg c8 [ \grG c8 ] \grg c4. a8 |
 	\grg b8 [ \grG b8 ] a2 |
 	e8 [ \gra e8 ] \grg e4. \grg e8 |
 	\grg f8 e8 \grg e2 | 
@@ -31,7 +31,7 @@ pipesB = {
 }
 
 pipesC = {
-	\grg c8 [ \grG c8 ] \grg c4 c8 a8 |
+	\grg c8 [ \grG c8 ] \grg c4. a8 |
 	\grg b8 [ \grG b8 ] a2 |
 	e8 [ \gra e8 ] \grg e4 \grg e4 |
 	\grg f8 e8 \gra e2 | 

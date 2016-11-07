@@ -8,8 +8,13 @@
 		\global
 		\pipessecndglobal
 		<<
-			{ }%Format
-			{ }
+			\new NullVoice = "format" {
+			
+			}%Format
+			
+			\new Voice = "seconds" {
+			
+			}
 		>>
 	}
 	\header {

@@ -8,8 +8,13 @@
 		\global
 		\pipesthrdglobal
 		<<
-			{ }%Format
-			{ }
+			\new NullVoice = "format" {
+			
+			}%Format
+			
+			\new Voice = "thirds" {
+			
+			}
 		>>
 	}
 	\header {

@@ -9,13 +9,17 @@
 		\global
 		\lyricsglobal
 		<<
-%		  	\new Voice = "format"
-%			{ }%Format
-			\new Voice = "tune"
-			{ }
+%		  	\new NullVoice = "format"{
+%				
+%			}%Format
+
+			\new Voice = "tune" {
+				
+			}
+
 			\new Lyrics = "lyrics" {
 				\lyricsto "tune" { 
-			
+					
 				}
 			}
 		>>
@@ -26,12 +30,11 @@
 		instrument = \instrumentLyrics
 		composer = \markup \large {
 		  	\column \right-align {
-			  $(if (not (string=? "" composerLyrics)) #{ \markup { \line { \composerLyrics } } #} )
-			  $(if (not (string=? "" composerPipes)) #{ \markup { \line { \composerPipes  ":" } } #} )
+				$(if (not (string=? "" composerLyrics)) #{ \markup { \line { \composerLyrics } } #} )
+				$(if (not (string=? "" composerPipes)) #{ \markup { \line { \composerPipes  ":" } } #} )
 		  	}
 			\column \right-align {
-			  $(if (not (string=? "" composerLyrics)) #{ \markup { \line { } } #} )
-
+				$(if (not (string=? "" composerLyrics)) #{ \markup { \line { } } #} )
 			    $(if (not (string=? "" composerPipes)) #{ \markup { \line { \instrumentPipes  } } #} )
 			}
 		}

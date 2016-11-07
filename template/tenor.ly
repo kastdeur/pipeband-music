@@ -8,8 +8,13 @@
 	\global
 	\tenorglobal
 	<<
-			{}%Format
-			{}
+			\new NullVoice = "format" {
+			
+			}%Format
+			
+			\new DrumVoice = "tenor" {
+			
+			}
 	>>
 	}
 	\header {

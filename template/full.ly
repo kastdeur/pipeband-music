@@ -16,17 +16,20 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
-				\new Voice = "format"
-			  	{}%Format
+				\new NullVoice = "format" {
+					
+				}%Format
 
-				\new Voice = "pipes"
-				{}%Pipes
+				\new Voice = "pipes" {
+					
+				}%Pipes
 			>>
 		}
 %		\new Staff = "song" {
 %  			\lyricsglobal
-%			\new Voice = "lyrics"
-%			{}
+%			\new Voice = "lyrics" {
+%				
+%			}
 %		}
 %		\new Lyrics = "verse1" {
 %		  \lyricsglobal

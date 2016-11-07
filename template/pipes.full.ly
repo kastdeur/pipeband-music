@@ -13,10 +13,12 @@
 			\set Staff.instrumentName = \markup{ \instrumentPipes }
 			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
-			  	\new Voice = "format"
-				{ }%Format
-				\new Voice = "pipes"
-				{ }%Pipes
+			  	\new NullVoice = "format" {
+					
+				}%Format
+				\new Voice = "pipes" {
+					
+				}%Pipes
 			>>
 		}
 		\new Staff = "seconds" {

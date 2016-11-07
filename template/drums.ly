@@ -14,8 +14,12 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			<<
-				{ }%Format
-				{ }%Music
+				\new NullVoice = "format" {
+					
+				}%End of Format
+				\new DrumVoice = "side" {
+					
+				}%End of side
 			>>
 		}
 		\new PipeBandDrumStaff = "tenor" {
