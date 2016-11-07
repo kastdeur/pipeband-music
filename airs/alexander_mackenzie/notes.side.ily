@@ -1,8 +1,10 @@
 % 6/8 Alexander MacKenzie
 % Side
 \version "2.18.2"
-composerSide = "version 1.1, E.T. de Boone, 2016"
-sideglobal = {}
+composerSide = "v1.2, E.T. de Boone, 2016"
+sideglobal = {
+	\sixteenthCompoundBeaming
+}
 snareAA = \drummode {
 	d16. g32 |
 	d8:32( d8.)-> g16 d4:32( d8) |
@@ -21,17 +23,17 @@ snareAB = \drummode {
 }
 snareBA = \drummode {
 	d8:32( |
-	g4) \flamddr d16. g32 d8:32( d8) \flamd d8 \fr |
-	d32-> g32 d32 g32 d32 g32 d32 g32-> d32 g32 d32 g32		d4-> d8:32(
+	g4) \flamddr d16. g32 d8:32(\< d8) \flamd d8 \fr \! |
+	d32-> g d g d g d g-> d g d g		d4-> d8:32(
 
-	g4) \flamddr d16. g32 d8:32( d8.) g16 |
+	g4) \flamddr d16. g32 d8:32( d8) g |
 	d8:32(\< d4:32 \> d4)\! \fr
 }
 snareBB = \drummode {
 	d8:32( |
 	g4) \flamddr d16. g32 d8:32( d8) \flamd d8 |
-	d32-> g32 d32 g32 d32 g32 d32 g32-> d32 g32 d32 g32 d4-> \flamd d16. g32 |
+	d32-> g d g d g d g-> d g d  g d4.-> |
 
-	d8:32( g16.) \fr d32-> g16. g32 d8:32( \dr g16.) \fr d32-> g16. g32 |
+	d8:32(\< g16.)\! \fr d32-> g16. g32 d8:32(\< \dr g16.)\! \fr d32-> g16. g32 |
 	d4.:32( \dr d4) \fr
 }

@@ -1,0 +1,59 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,88,80,250)
+
+TuneFormat,(1,0,M,L,500,500,500,500,P,0,0)
+
+TuneTempo,110
+
+"La Marseillaise (for Massed Pipe Bands)",(T,C,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+"4/4 March",(Y,L,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"Claude Joseph Rouget de L'Isle",(M,R,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+"www.pipefest.com",(F,R,0,0,Times New Roman,10,400,0,0,18,0,0,0)
+
+& sharpf sharpc 4_4 I! LA_16 ! 
+gg LAr_8 'la grp LAl_16   D_4 gg D_4 E_4 !
+gg E_4  HA_4 'ha F_8 Dr_8 'd gg Dl_16 !
+Fr_8 'f Dl_16 B_4 HG_2 !
+Er_8 'e Cl_16 D_2 'd !
+thrd Dr_8 'e El_16 F_4 gg F_4 gg F_4 !
+HGr_8 'hg Fl_16  gg F_4 E_2 !
+gg Er_8 'e Fl_16 HG_4 grp HG_4  grp HG_4 !t
+
+& sharpf sharpc ! 
+HAr_8 'ha HGl_16 F_2 HAr_8 'ha grp HAl_16 !
+grp HA_4 Fr_8 'f Dl_16 HA_4 Fr_8 'f Dl_16 !
+LA_2 gg LAr_8 'la dg LAl_16	eg LAr_8 'la Cl_16 !
+E_2 HG_4 Er_8 'e Cl_16 !
+E_4 D_4 gg D_2 !
+C_2 Dr_8 'd Cl_16 D_4 !
+Cr_8 'c Dl_16 E_2 'e !t
+
+& sharpf sharpc !
+gg Er_8 'e gg El_8 F_4  'f grp F_8 'f !
+gg Fr_8  HGl_8 	HAr_8 'ha ^ts El_16 E_2 !
+Er_8 ^te Fr_8 'f El_16  D_2  F_8 !
+Er_8 'e Dl_16 gg D_4 C_2 !
+Cr_8 HAl_8 grp HA_2 grp HAr_8 'ha strhg HAl_16 !
+Fr_8 'f Dl_16 E_2 'e !
+gg Er_8 HAl_8 grp HA_2 grp HAr_8 'ha strhg HAl_16 !t
+
+& sharpf sharpc
+Fr_8 'f Dl_16 E_2 'e !
+LA_4 D_2 'd !
+E_4 F_2 'f !
+HG_2 HA_4 grp HA_4 !
+E_2 'f HA_4 !
+HG_2 strla HGr_8 'hg El_16 	Fr_8 'f El_16 !
+D_2 'd thrd D_8 'd !I!t
