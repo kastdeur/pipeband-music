@@ -2,14 +2,14 @@
 %% Globals
 global = {
 	\time 4/4
-	\eighthBeaming
 	}
 confTempo = {
 	\tempo 4 = 90
 	}
 %% Format
-part = { \partial 8 s8 }
+part = { \partial 4 s4 }
 measure = { \grace { s4 } s1 | }
+quartline = { \repeat unfold 2 { \measure } }
 halfline = { \repeat unfold 2 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 

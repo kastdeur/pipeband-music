@@ -6,26 +6,27 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
-			{
+		\sideglobal
+		<<
+			\new NullVoice = "format" {
 				\partial 8 s8
 				\repeat volta 2 {
-					\halfline
-				}
-				\alternative {
-					{ \halfline }
-					{ \measure | s2^"Fine" s4 s8 \bar "|."}
-				}
+					\quartline
+				} \alternative {
+				  	\quartline
+					\quartline
+				}\bar "|."
+				\break
+
 				\partial 8 s8
-				\halfline
-				\measure
-				s1^"D.C. al Fine" \bar "||"
-			}
-			{
+				\line \bar "||"
+			}%Format
+			
+			\new DrumVoice = "side" {
 				\snareAA
-					\snareABA
+					\snareABA s4
 					\snareABB
-				\snareBA
+				\snareBA 
 			}
 		>>
 	}

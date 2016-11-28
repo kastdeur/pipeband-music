@@ -3,7 +3,7 @@
 \include "config.ily"
 \include "notes.bass.ily"
 \include "notes.tenor.ily"
-\include "notes.side.v1.1.ily"
+\include "notes.side.ily"
 
 \score {
 	\new StaffGroup <<
@@ -21,9 +21,8 @@
 					\part \line \break
 					\part \line \break
 					\bar "|."
-				}%End of Format
+			}%End of Format
 				{
-  \set Score.proportionalNotationDuration = #(ly:make-moment 1/8)
 					\snareA
 					s8
 					\snareA

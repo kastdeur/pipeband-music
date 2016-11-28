@@ -1,16 +1,13 @@
-% 4/4 Cabar Feidh (Strathspey)
+% 4/4 Cabar Feidh ()
 % Pipes
 \version "2.18.2"
-arrangerPipesStrathspey = "PM William Ross"
-composerPipesStrathspey = ""
-instrumentPipesStrathspey = "Pipes"
-meterStrathspey = "Strathspey"
-titleStrathspey = "Cabar Feidh"
+arrangerPipes = "PM William Ross"
+composerPipes = ""
 pipeglobal = {
 	\bagpipeKey
-	}
+}
 % Music
-pipesStrathspeyA = {
+pipesA = {
 	e16 |
 	\dblg g8. [ A16 ] g16 [ f16 e8 ] \dblg g4 \thrwd d8. [ e16 ] |
 	\dblg g4 \thrwd d16 [ g8. ] \hdblb b8. [ \grg a16 ] \grd G8. [ \grd b16 ] |
@@ -23,7 +20,7 @@ pipesStrathspeyA = {
 	\dblA A4 \hdble e8. [ A16 ] \hdblc c16 [ \gre a8. ] \wbirl a8.   
 }
 
-pipesStrathspeyB = {
+pipesB = {
 	g16 |
 	\grA G16 [ \grd G16 \gre G8 ] \whslurd d16 [ \gre G8. ] \dblb b16 [ \gre G8. ] \whslurd d8. [ b16 ] |
 	\grA G16 [ \grd G16 \gre G8 ] \whslurd d16 [ \gre G8. ] \hdblb b8. [ \grg a16 ] \grd G8. [ \grd b16 ] |
@@ -36,7 +33,7 @@ pipesStrathspeyB = {
 	\dblA A4 \hdble e8. [ A16 ] \hdblc c16 [ \gre a8. ] \wbirl a8.   
 }
 
-pipesStrathspeyC = {
+pipesC = {
 	g16 |
 	\hcatchc c4 \dblg g8. [ c16 ] \dble e8. [ c16 ] \dblg g8. [ e16 ] |
 	\grg c4 \grip e8. [ f16 ] \dblg g8. [ e16 ] \dblc c16 [ e8. ] |
@@ -49,7 +46,7 @@ pipesStrathspeyC = {
 	\dblc c16 [ A8. ] \hdble e8. [ A16 ] \hdblc c16 [ \gre a8. ] \wbirl a8.   
 }
 
-pipesStrathspeyD = {
+pipesD = {
 	g16 |
 	\grg G8. [ \grd G16 ] \gre G8. [ \grd b16 ] \grg G8. [ \grd G16 ] \gre G8. [ \grd b16 ] |
 	\grg G16 [ \grd G16 \gre G8 ] \whslurd d16 [ \gre G8. ] \dblb b8. [ \grg a16 ] \grd G8. [ \grd b16 ] |

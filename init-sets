@@ -115,8 +115,9 @@ strathspeys/keel_row/$f.ly \
 ;
 
 $COM $D/set_20.$f.ly \
-9-8_marches/heights_of_dargai/$f.ly
-9-8_marches/battle_of_the_somme/$f.ly
+9-8_marches/heights_of_dargai/$f.ly \
+9-8_marches/battle_of_the_somme/$f.ly \
+;
 
 $COM $D/set_21.$f.ly \
 airs/alexander_mackenzie/$f.ly \

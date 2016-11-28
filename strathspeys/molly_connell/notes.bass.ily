@@ -2,6 +2,7 @@
 % Bass
 \version "2.18.2"
 composerBass  = "W.H. de Boone / E.T. de Boone, 2014"
+bassglobal = {}
 bassAA = \drummode {
 	d4-> g4-> d4 g4 |
 	d4 g4 d4 g4 |

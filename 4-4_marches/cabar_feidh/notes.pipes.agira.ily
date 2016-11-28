@@ -1,13 +1,13 @@
 % 4/4 Cabar Feidh (Agira Version)
 % Pipes
 \version "2.18.2"
-composerPipesAgira = ""
+composerPipesAgira = "Cpl 'Dewey' Uren"
 titleAgira = "Cabar Feidh (Agira Version)"
 meterAgira = "March"
 instrumentPipesAgira = "Pipes"
 pipeglobal = {
 	\bagpipeKey
-	}
+}
 % Music
 pipesAgiraA = {
 	e8 |

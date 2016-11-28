@@ -6,15 +6,20 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
-			{
-				\repeat volta 2 { \part \line \break }
-				\part \line \bar "||"
-			}
-			{
-			 \snareA s4
+		\sideglobal
+		<<
+			\new NullVoice = "format" {
+				\repeat volta 2 {
+					\part \halfline
+				}
+				\break
+				\part \halfline \bar "||"
+			}%Format
+			
+			\new DrumVoice = "side" {
+				\snareA s4
 
-			 \snareBA
+				\snareBA
 			}
 		>>
 	}

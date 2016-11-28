@@ -8,11 +8,17 @@
         \global
         <<
 			{
-			\mark "Intro"
-			\line
-			\mark "Tune"
-			\repeat volta 2 { \line } \break \part \line \break \bar "||" \part \line \bar "|." }
-			{\intro \snareA s8 \snareBA \snareBB }
+		  		\mark \markup { \normalsize {Intro } }
+				\line
+				\break
+				\mark \markup { \normalsize {Tune } }
+				\repeat volta 2 { \line } \break \part \line \break \bar "||" \part \line \bar "|." 
+			}
+			{
+			  \intro 
+			  \snareA s8 
+			  \snareBA \snareBB 
+			}
 		>>
 	}
 	\header {
