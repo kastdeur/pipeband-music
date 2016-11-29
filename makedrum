@@ -10,7 +10,7 @@ from argparse import ArgumentParser
 
 class MakeDrum:
 	LILYPOND = 'lilypond'
-	VERSION  = '0.9.5'
+	VERSION  = '0.9.7'
 	MASTER_DIR = os.path.dirname(os.path.abspath(__file__))
 	RUN_DIR = os.path.abspath(os.curdir)
 	TMP_DIR  = './tmp'
@@ -28,15 +28,12 @@ class MakeDrum:
 			action='store_true', dest='show_lilyversion', default=False,
 			help='show Lilypond version and exit')
 
-		parser.add_argument('-x', '--drumfile',
-			dest='lilydrum', default=os.path.join(self.MASTER_DIR,'lilydrum.ly'),
-			help='Use the specified file for drums')
-		parser.add_argument('-c', '--pipefile',
-			dest='lilypipe', default=os.path.join(self.MASTER_DIR,'bagpipe.ly'),
-			help='Use the specified file for pipes')
 		parser.add_argument('-i', '--include',
 			dest='includes', nargs='*', default=[],action='append',
 			help='Include the specified file for compiling')
+		parser.add_argument('-I', '--path-include',
+			dest='search_paths', nargs='*', default=[], action='append',
+			help='Paths for lilypond to search through while compiling')
 
 		parser.add_argument('-p', '--paper-size',
 			dest='papersize', default='a4',
@@ -161,8 +158,15 @@ class MakeDrum:
 			print ('Compiling ', file, end=' ', flush=True)
 			if not self.args.log:
 				print()
+
+			# stringify search paths
+			#TODO: this is ugly code
+			paths = ' -I '.join(str(x)[1:-1] for x in self.args.search_paths)
+			if paths:
+			    paths = ' -I ' + paths
+
 			lilyout = os.path.join(self.RUN_DIR, self.args.out_dir, os.path.basename(tmp_file).replace(self.TMP_PREFIX, '').replace(".ly", ''))
-			lilycmd = self.LILYPOND+' --pdf --output='+lilyout+' '+tmp_file+log
+			lilycmd = self.LILYPOND + paths + ' --pdf --output='+lilyout+' '+tmp_file+log
 
 			if os.system(lilycmd) != 0:
 				self.remove_tmp_dir = False
@@ -183,32 +187,6 @@ class MakeDrum:
 	def maketemplate(self, tmp_dir, file, compilable):
 
 		lily_includes = ''
-		include_drum_file = False
-		include_pipe_file = False
-		
-		if not self.args.lilydrum or self.args.lilydrum == "''":
-			self.args.lilydrum = False
-
-		if not self.args.lilypipe or self.args.lilypipe == "''":
-			self.args.lilypipe = False
-		# find out whether drum, pipes, or full score
-		if self.args.lilydrum:
-			for ext in ['full', 'side', 'tenor', 'bass', 'drum', 'snare']:
-				if ext in file:
-					include_drum_file = True
-					break
-
-		if self.args.lilypipe:
-			for ext in ['full', 'pipes']:
-				if ext in file:
-					include_pipe_file = True
-					break
-
-		if include_drum_file:
-			self.args.includes.insert(0, self.args.lilydrum)
-
-		if include_pipe_file:
-			self.args.includes.insert(0, self.args.lilypipe)
 
 		# set up a tmp file with template and file combined
 		tmp_file = os.path.join(tmp_dir, self.TMP_PREFIX + os.path.relpath(file).replace('../','').replace('music/','',1).replace('/', '-')[:-3] + self.args.suffix + '.ly')
@@ -224,9 +202,10 @@ class MakeDrum:
 					incline = line.replace('\\include', '').strip('"\'\n ')
 					printline(u"\n %%%% \"{}\"\n".format(incline))
 
-					if not incline.startswith('\\'): #already absolute
+					# Only rewrite if it begins with a dot
+					# if / it's absolute, and something else means search_path
+					if incline.startswith('.'): #
 						incline = os.path.join(os.path.abspath(os.path.dirname(relpath)), incline)
-
 
 					if compilable:
 						try:

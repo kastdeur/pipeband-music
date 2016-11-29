@@ -1,10 +1,10 @@
 \version "2.19.0"
 
-\include "config.ily"
-%\include "notes.bass.ily"
-%\include "notes.tenor.ily"
-\include "notes.side.ily"
-\include "notes.pipes.ily"
+\include "./config.ily"
+%\include "./notes.bass.ily"
+%\include "./notes.tenor.ily"
+\include "./notes.side.ily"
+\include "./notes.pipes.ily"
 
 \score {
 	\new StaffGroup <<

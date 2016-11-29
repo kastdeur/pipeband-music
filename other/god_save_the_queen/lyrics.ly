@@ -1,8 +1,8 @@
 \version "2.18.2"
 
-\include "config.ily"
-%\include "notes.pipes.ily"
-\include "notes.lyrics.ily"
+\include "./config.ily"
+%\include "./notes.pipes.ily"
+\include "./notes.lyrics.ily"
 
 \score {
     \new Staff {

@@ -4,8 +4,8 @@
 
 \include "bagpipe.ly"
 
-\include "config.ily"
-\include "notes.pipes.charge.ily"
+\include "./config.ily"
+\include "./notes.pipes.charge.ily"
 
 \score {
     \new Staff {

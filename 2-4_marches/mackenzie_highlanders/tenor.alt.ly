@@ -2,8 +2,8 @@
 
 \include "lilydrum.ly"
 
-\include "config.ily"
-\include "notes.tenor.alt.ily"
+\include "./config.ily"
+\include "./notes.tenor.alt.ily"
 
 \score {
     \new PipeBandDrumStaff {

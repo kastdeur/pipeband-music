@@ -2,27 +2,28 @@
 
 \include "lilydrum.ly"
 
-\include "lilydrum.ly"
-
 \include "./config.ily"
 \include "./notes.bass.ily"
 
 \score {
     \new PipeBandDrumStaff {
         \global
-	\bassglobal
+		\bassglobal
 		<<
+			\new NullVoice = "format"
 			{
-				\line 
-				\bar "|."
+				\repeat volta 2 {
+					\part \line
+				}
 				\break
-				\line
-				\bar "|."
+				\part \line \bar "||"
+				\break
+				\line \bar "|."
 			}%Format
-			{
-			\bassA
-
-			\bassB
+			\new DrumVoice { 
+				r8 \bassA s8
+				\bassB
+				\bassA s8
 			}
 		>>
 	}

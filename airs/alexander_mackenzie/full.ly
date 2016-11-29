@@ -6,12 +6,12 @@
 \include "bagpipe.ly"
 \include "lilydrum.ly"
 
-\include "config.ily"
-\include "notes.bass.ily"
-\include "notes.tenor.ily"
-\include "notes.side.ily"
-\include "notes.pipes.ily"
-\include "notes.pipes.seconds.ily"
+\include "./config.ily"
+\include "./notes.bass.ily"
+\include "./notes.tenor.ily"
+\include "./notes.side.ily"
+\include "./notes.pipes.ily"
+\include "./notes.pipes.seconds.ily"
 
 \score {
 	\new StaffGroup <<

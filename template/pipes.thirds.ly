@@ -2,10 +2,8 @@
 
 \include "bagpipe.ly"
 
-\include "bagpipe.ly"
-
-\include "config.ily"
-\include "notes.pipes.thirds.ily"
+\include "./config.ily"
+\include "./notes.pipes.thirds.ily"
 
 \score {
     \new Staff {

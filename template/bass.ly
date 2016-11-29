@@ -2,10 +2,8 @@
 
 \include "lilydrum.ly"
 
-\include "lilydrum.ly"
-
-\include "config.ily"
-\include "notes.bass.ily"
+\include "./config.ily"
+\include "./notes.bass.ily"
 
 \score {
     \new PipeBandDrumStaff {

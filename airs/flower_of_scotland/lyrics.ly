@@ -2,9 +2,9 @@
 
 \include "bagpipe.ly"
 
-\include "config.ily"
-\include "notes.pipes.ily"
-\include "notes.lyrics.ily"
+\include "./config.ily"
+\include "./notes.pipes.ily"
+\include "./notes.lyrics.ily"
 
 \score {
 %  \new StaffGroup <<
