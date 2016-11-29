@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+\include "bagpipe.ly"
+
 \include "config.ily"
 \include "notes.pipes.ily"
 \include "notes.pipes.seconds.ily"

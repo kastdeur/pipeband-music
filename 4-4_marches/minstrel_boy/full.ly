@@ -1,5 +1,11 @@
 \version "2.19.0"
 
+\include "bagpipe.ly"
+\include "lilydrum.ly"
+
+\include "bagpipe.ly"
+\include "lilydrum.ly"
+
 \include "config.ily"
 %\include "notes.bass.ily"
 %\include "notes.tenor.ily"

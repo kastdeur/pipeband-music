@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+\include "lilydrum.ly"
+
 \include "config.ily"
 \include "notes.tenor.alt.ily"
 
