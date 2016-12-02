@@ -24,6 +24,7 @@
 		meter = \meter
 		instrument = \instrumentSecnd
 		composer = \composerPipesSecnd
+		arranger = \arrangerPipesSecnd
 	}
 }
 \score {
@@ -37,6 +38,7 @@
 		meter = \meter
 		instrument = \instrumentSecnd
 		composer = \composerPipesSecnd
+		arranger = \arrangerPipesSecnd
 	}
 
 }

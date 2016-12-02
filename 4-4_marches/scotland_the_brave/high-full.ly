@@ -1,5 +1,8 @@
 \version "2.19.0"
 
+\include "bagpipe.ly" 
+\include "lilydrum.ly"
+
 \include "./config.ily"
 %\include "./notes.bass.ily"
 %\include "./notes.tenor.ily"
@@ -55,7 +58,7 @@
 %		}
 	>>
 	\header {
-		title = {\title " (high)"}
+		title = #(string-append title " (high)" )
 		meter = \meter
 		composer = \markup \large {
 			\column \right-align {

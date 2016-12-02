@@ -33,7 +33,7 @@ pipesBA = {
 	\dblA A4 \grg A4 \grip A8 [ e8 ] \dblc c8 [ \gre a8 ] |
 	\dblA A4 \grg A4 \grip A8 [ e8 ] \dblc c8 [ e8 ] |
 	\thrwd d4 \grg f8. [ d16 ] \dblc c4 \grg e8. [ c16 ] |
-	\dblb b4 \grg e4 \gra e8. [ f16 ] \grg e16. [ d32 ] c16. [ b32 ] | 
+	\dblb b4 \grg e4 \gra e8. [ f16 ] \grg e16. [ d32 c16. b32 ] | 
 }
 
 pipesBB = {

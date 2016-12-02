@@ -2,13 +2,12 @@
 %% Globals
 global = {
 	\time 4/4
-	\eighthBeaming
-	}
+}
 confTempo = {
 	\tempo 4 = 90
-	}
+}
 %% Format
-part = { \partial 4 s4 }
+part = { \partial 4 \grace {s4} s4 }
 measure = { \grace { s4 } s1 | }
 halfline = { \repeat unfold 2 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
@@ -16,9 +15,3 @@ line = { \repeat unfold 2 { \halfline } }
 %% Headers
 title = "Flett from Flotta"
 meter = "March"
-
-
-composerSide  = ""
-composerTenor = ""
-composerBass  = ""
-composerPipes = ""

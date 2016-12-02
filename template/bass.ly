@@ -24,5 +24,6 @@
 		meter = \meter
 		instrument = \instrumentBass
 		composer = \composerBass
+		arranger = \arrangerBass
 	}
 }

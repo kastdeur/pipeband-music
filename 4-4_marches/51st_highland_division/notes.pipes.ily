@@ -26,6 +26,10 @@ pipesAA = {
 	\pipesAAA
 	\pipesAAB
 }
+pipesAB = {
+	\pipesABA
+	\pipesABB
+}
 
 pipesBA = {
 	\dblc c8 [ e8 ] |

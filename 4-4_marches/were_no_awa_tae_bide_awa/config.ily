@@ -2,8 +2,7 @@
 %% Globals
 global = {
 	\time 4/4
-	\eighthBeaming
-	}
+}
 
 confTempo = {
 	\tempo 4 = 90

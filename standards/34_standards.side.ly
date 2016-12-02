@@ -1,5 +1,6 @@
 \version "2.18.2"
 
+\include "lilydrum.ly"
 % Midparts
 midone = \drummode {
 	\flamd d8 \dr d8:32(	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8 \fr |

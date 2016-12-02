@@ -2,11 +2,10 @@
 %% Globals
 global = {
 	\time 4/4
-	\eighthBeaming
-	}
+}
 confTempo = {
 	\tempo 4 = 90
-	}
+}
 %% Format
 part = { \partial 4 s4 }
 measure = { \grace { s4 } s1 | }

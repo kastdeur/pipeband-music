@@ -1,5 +1,6 @@
 \version "2.18.2"
 
+\include "lilydrum.ly"
 \header {
 	instrument = "Tenor"
 	title = "Standards"

@@ -2,8 +2,6 @@
 
 \include "bagpipe.ly"
 
-\include "bagpipe.ly"
-
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
@@ -15,12 +13,13 @@
 			{
 				\repeat volta 2 { 
 					\part \line \break
-					\line \bar "|." \break
-					}
+					\line 
+				}
+				\break
 				\repeat volta 2 { 
 					\part \line \break
-					\line \bar "|." \break
-					}
+					\line 
+				}
 			}
 			{
 				\pipesAA

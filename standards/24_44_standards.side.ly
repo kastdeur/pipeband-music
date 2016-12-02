@@ -1,4 +1,6 @@
 \version "2.18.2"
+
+\include "lilydrum.ly"
 % Midparts
 midone = \drummode {
 	d8:32( \dr |

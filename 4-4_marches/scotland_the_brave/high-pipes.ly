@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+\include "bagpipe.ly" 
+
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
@@ -24,7 +26,7 @@
 		>>
 	}
 	\header {
-		title = \title
+		title = #(string-append title " (high)" )
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
