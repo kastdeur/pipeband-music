@@ -3,9 +3,6 @@
 \include "bagpipe.ly"
 \include "lilydrum.ly"
 
-\include "bagpipe.ly"
-\include "lilydrum.ly"
-
 \include "./config.ily"
 \include "./notes.bass.ily"
 \include "./notes.tenor.ily"
@@ -16,7 +13,7 @@
 	\new StaffGroup <<
 		\new Staff {
 			\global
-			\bagpipeKey
+			\pipeglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<

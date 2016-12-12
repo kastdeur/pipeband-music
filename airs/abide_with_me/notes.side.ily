@@ -2,7 +2,7 @@
 % Side
 \version "2.18.2"
 composerSide = "W.H. de Boone, 2014"
-sideglobal = {}
+sideglobal = { \eighthBeaming }
 snareAA = \drummode {
 	\flam  d8->) \! \triplet { d16 g d }	g8 \flam d->	r8 \flam d	r8 g |
 	\flam  d8-> \triplet { d16 g d }	g8 \flam d->	r8 \flam d	r8 g |

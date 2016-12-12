@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-#(set-default-paper-size "a4" 'landscape)
+%#(set-default-paper-size "a4" 'landscape)
 #(set-global-staff-size 19)
 \layout {
 	indent = 0

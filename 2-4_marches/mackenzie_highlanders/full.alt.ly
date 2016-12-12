@@ -1,5 +1,8 @@
 \version "2.19.0"
 
+\include "bagpipe.ly"
+\include "lilydrum.ly"
+
 \include "./config.ily"
 \include "./notes.bass.ily"
 \include "./notes.tenor.alt.ily"
@@ -10,7 +13,7 @@
 	\new StaffGroup <<
 		\new Staff {
 			\global
-			\bagpipeKey
+			\pipeglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<

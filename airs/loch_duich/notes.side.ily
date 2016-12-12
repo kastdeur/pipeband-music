@@ -2,7 +2,7 @@
 % Side
 \version "2.18.2"
 composerSide = ""
-sideglobal = {} 
+sideglobal = { \sixteenthCompoundBeaming } 
 snareA = \drummode {
 	\flam d4 \flam d8		d16:64( d8) d16:64( d8) |
 	d4:32( d8)		\drag d16 d-> g g \flam d8 |

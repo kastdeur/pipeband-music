@@ -12,12 +12,10 @@
 		<<
 			\new NullVoice = "format"
 			{
-					\part
-					\line
-					\bar "|."
+				
 			}%Format
 			\new DrumVoice { 
-				\bassA s4
+				
 			}
 		>>
 	}

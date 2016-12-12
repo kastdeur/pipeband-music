@@ -2,8 +2,6 @@
 
 \include "bagpipe.ly"
 
-\include "bagpipe.ly"
-
 \include "./config.ily"
 \include "./notes.pipes.seconds.ily"
 
@@ -41,13 +39,14 @@
 		title = \title
 		meter = \meter
 		instrument = \instrumentSecnd
-		composer = \composerPipesSecnd
+		composer = \composerPipessecnd
 	}
 }
 \score {
 	\new Staff { \global \pipessecndglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+		\partial 4 
 		\pipessecndAA
 		\pipessecndAB
 
@@ -58,7 +57,7 @@
 		title = \title
 		meter = \meter
 		instrument = \instrumentSecnd
-		composer = \composerPipesSecnd
+		composer = \composerPipessecnd
 	}
 
 }

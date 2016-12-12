@@ -9,77 +9,35 @@ tenorglobal = {
 
 tenorA = \drummode {
 	g8 |
-	d16.\< g32 d16. g32\!
-	r16. g32\< \triplet { d16 g d }
-	|
-	g16.->\< d32 g16. g32 \!
-	r16. d32\< \triplet { g16 d g }
-	|
-	d16. \< g32 d16. d32 \!
-	r16 g16\< r16 d16
-	|
-	r16 g16 r16 d16
-	g8\! g8
-	|
+	d4 d8 g |
+	d8 \< g8 d4 \! |
+	d8-> g d g |
+	d4 g4 |
 
-	d16.\< g32 d16. g32 \!
-	r16. g32\< \triplet { d16 g d }
-	|
-	g16.->\< d32 g16. g32 \!
-	r16. g32\< d16. g32
-	|
-	d32 g16.\! d16. g32
-	r16. g32 d16. g32
-	|
-	d8.. g32
-	r8
+	d4 d8 g |
+	d8 \< g d4 \! |
+	d16-> g16 r8	g16-> g8 g16 |
+	d4 g4 |
+}
+tenorA = \drummode {
+	s8 |
+	d4 g4 |
+	d4 d8 g |
+	d8. g16 d8. g16-> |
+	r8. g16 d4 |
 
+	d4 g4 |
+	d8 g d4 |
+	d16-> g16 r8	g16-> d8 g16 |
+	d4 g4 |
 }
 tenorBA = \drummode {
-	g8 |
-	r8 d32 g16.
-	r8 d32 g16.
-	|
-	d4
-	r8 g8
-	|
-	r8 d32 g16.
-	r8 d32 g16.
-	|
-	r4
-	d8 g8
-	|
-	
-	r8 d32 g16.
-	r8 d32 g16.
-	|
-	d4 r8 g8
-	|
-	r8 d32 g16.
-	r8 d32 g16.
-	|
-	r4 r8
+s2*4 |
+
+s2*4 |
 }
 tenorBB = \drummode {
-	g8 |
-	r8 d32 g16.
-	r8 d32 g16.
-	|
-	d4
-	r8 g8
-	|
-	r8 d32 g16.
-	r8 d32 g16.
-	|
-	r4
-	d8 g8
-	|
-	
-	\repeat unfold 3
-	{
-		r8 d32 g16.
-		r8 d32 g16.
-		|
-	}
-	d4 r8
+s2*4 |
+s2*4 |
 }
+

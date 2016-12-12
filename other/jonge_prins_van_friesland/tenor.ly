@@ -1,28 +1,9 @@
 \version "2.18.2"
 
-\include "bagpipe.ly"
 \include "lilydrum.ly"
 
-\include "bagpipe.ly"
-\include "lilydrum.ly"
-
-\include "bagpipe.ly"
-\include "lilydrum.ly"
-
-\include "lilydrum.ly"
-
-\include "lilydrum.ly"
-
-\include "lilydrum.ly"
-
-\include "lilydrum.ly"
-
-\include "lilydrum.ly"
-
-\include "lilydrum.ly"
-
-\include "config.ily"
-\include "notes.tenor.ily"
+\include "./config.ily"
+\include "./notes.tenor.ily"
 
 \score {
     \new PipeBandDrumStaff {
@@ -30,11 +11,14 @@
 	\tenorglobal
 	<<
 			\new NullVoice = "format" {
-			
+					\part
+					\line
+					\bar "|."
+
 			}%Format
 			
 			\new DrumVoice = "tenor" {
-			
+				\tenorA s4
 			}
 	>>
 	}

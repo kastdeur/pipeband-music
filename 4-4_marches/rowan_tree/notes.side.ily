@@ -2,7 +2,7 @@
 % Snare
 \version "2.18.2"
 composerSide = ""
-sideglobal = {}
+sideglobal = { \eighthBeaming }
 
 %%music
 snareEnding = \drummode {

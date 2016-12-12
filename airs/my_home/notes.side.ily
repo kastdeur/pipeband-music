@@ -2,7 +2,7 @@
 % Side
 \version "2.18.2"
 composerSide = ""
-sideglobal = {}
+sideglobal = { \eighthCompoundBeaming }
 snareA = \drummode {
 	d8:32( |
 	g8.) d16 g8		\flamd d8. g16 d8 |

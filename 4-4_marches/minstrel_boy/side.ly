@@ -10,6 +10,7 @@
 \score {
     \new PipeBandDrumStaff {
         \global
+		\sideglobal
         <<
 			{
 				\partial 4 s4 |
