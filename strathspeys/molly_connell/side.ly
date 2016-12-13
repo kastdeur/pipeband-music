@@ -13,15 +13,20 @@
         <<
 			{
 		  		\mark \markup { \normalsize {Intro } }
-				\line
+				\line \bar ".|:-|."
 				\break
 				\mark \markup { \normalsize {Tune } }
-				\repeat volta 2 { \line } \break \part \line \break \bar "||" \part \line \bar "|." 
+				\repeat volta 2 { \line } 
+				\break 
+				\part \line  \bar "||" 
+				\break
+				\part \line \bar "|." 
 			}
 			{
 			  \intro 
 			  \snareA s8 
-			  \snareBA \snareBB 
+			  \snareBA s8 
+			  \snareBB 
 			}
 		>>
 	}

@@ -3,9 +3,6 @@
 \include "bagpipe.ly"
 \include "lilydrum.ly"
 
-\include "bagpipe.ly"
-\include "lilydrum.ly"
-
 \include "./config.ily"
 \include "./notes.bass.ily"
 \include "./notes.tenor.ily"
@@ -15,102 +12,106 @@
 %\include "./notes.lyrics.ily"
 \score {
 	<<
-	  \new PipeBandDrumStaff = "intro" {
+		\new PipeBandDrumStaff = "intro" {
+			\global
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			\intro
 		}
-	\new StaffGroup <<
-		\new Staff {
-			\global
-			\pipeglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
-			<<
-				\new NullVoice = "format" {
-					\emptyline
-				  	\line \break
-					\line \break
-					\bar "|."
-
-					\part \line \break
-					\line \break
-					\bar "|."
-				}%Format
-
-				\new Voice = "pipes" {
-				  	\emptyline
-
-				  	\pipesA \pipesA
-
-					s8 \pipesBA 
-					\pipesBB
-					
-				}%Pipes
-			>>
-		}
-%		\new Staff = "song" {
-%  			\lyricsglobal
-%			\new Voice = "lyrics" {
-%				
+		\new StaffGroup <<
+			\new Staff {
+				\global
+				\pipeglobal
+				\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
+				\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
+				<<
+					\new NullVoice = "format" {
+						\mark \markup { \normalsize {Intro } }
+						\emptyline
+						\bar "|."
+						
+						\mark \markup { \normalsize {Tune } }
+					  	\line \break
+						\line \break
+						\bar "|."
+	
+						\part \line \break
+						\line \break
+						\bar "|."
+					}%Format
+	
+					\new Voice = "pipes" {
+					  	\emptyline
+	
+					  	\pipesA \pipesA
+	
+						s8 \pipesBA 
+						\pipesBB
+						
+					}%Pipes
+				>>
+			}
+%			\new Staff = "song" {
+%	  			\lyricsglobal
+%				\new Voice = "lyrics" {
+%					
+%				}
 %			}
-%		}
-%		\new Lyrics = "verse1" {
-%		  \lyricsglobal
-%		  \lyricsto "lyrics" {
-%			\verseA
-%		  }
-%		}
-%		\new Staff = "seconds" {
-%			\pipessecndglobal
-%			\set Staff.instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
-%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentTrd}
-%
-%
-%		}
-		\new PipeBandDrumStaff = "side" {
-			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-
-			\emptyline 
-			\snareA s8
-			\snareA s8
-			
-			\snareBA
-			\snareBB
-		}
-		\new PipeBandDrumStaff = "tenor" {
-			\tenorglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-
-			\emptyline
-
-			\tenorA
-			\tenorA
-
-			s8 \tenorBA
-			\tenorBB
-		}
-		\new PipeBandDrumStaff = "bass" {
-			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-			\emptyline
-
-			\bassAA
-			\bassAB
-
-			s8 \bassAA
-			\bassAB
-		}
-	>>
-	>>
-	\layout {
+%			\new Lyrics = "verse1" {
+%			  \lyricsglobal
+%			  \lyricsto "lyrics" {
+%				\verseA
+%			  }
+%			}
+%			\new Staff = "seconds" {
+%				\pipessecndglobal
+%				\set Staff.instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
+%				\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentTrd}
+%	
+%	
+%			}
+			\new PipeBandDrumStaff = "side" {
+				\sideglobal
+				\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
+				\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
+	
+				\emptyline 
+				\snareA s8
+				\snareA s8
+				
+				\snareBA
+				\snareBB
+			}
+			\new PipeBandDrumStaff = "tenor" {
+				\tenorglobal
+				\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+				\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+	
+				\emptyline
+	
+				\tenorA
+				\tenorA
+	
+				s8 \tenorBA
+				\tenorBB
+			}
+			\new PipeBandDrumStaff = "bass" {
+				\bassglobal
+				\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+				\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+	
+				\emptyline
+	
+				\bassAA
+				\bassAB
+	
+				s8 \bassAA
+				\bassAB
+			}
+		>>
+	>>	\layout {
 		\context {
 		  	\PipeBandDrumStaff
 			\RemoveEmptyStaves
