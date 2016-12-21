@@ -39,6 +39,8 @@ fprint(
     "#(define page-breaking ly:minimal-breaking)" +
 "}\n")
 
+fprint("#(ly:set-option 'relative-includes #t)\n")
+
 fprint("\n\n%Scores\n")
 
 for f in args.scores:

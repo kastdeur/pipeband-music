@@ -6,115 +6,115 @@ trap "echo Aborted!; exit;" SIGINT SIGTERM
 
 for f in full drums side pipes tenor bass; do
 
-$COM $D/mackenzie_msr.$f.ly \
+$COM $D/mackenzie_msr.$f.ly -t "MacKenzie MSR" \
 2-4_marches/mackenzie_highlanders/$f.ly \
 strathspeys/lady_mackenzie_of_fairburn/$f.ly \
 reels/the_mackenzies_reel/$f.ly \
 ;
 
-$COM $D/set_1.$f.ly \
+$COM $D/set_1.$f.ly -t "Set 1: Bonnie Galloway / We're no awa' tae bide awa'" \
 4-4_marches/bonnie_galloway.$f.ly \
 4-4_marches/were_no_awa_tae_bide_awa/$f.ly \
 ;
 
-$COM $D/set_2.$f.ly \
+$COM $D/set_2.$f.ly -t "Set 2: High Road to Gairloch / Brown Haired Maiden / Mairi's Wedding" \
 2-4_marches/high_road_to_gairloch/$f.ly \
 2-4_marches/brown_haired_maiden/$f.ly \
 2-4_marches/mairis_wedding/$f.ly \
 ;
 
-$COM $D/set_3.$f.ly \
+$COM $D/set_3.$f.ly -t "Set 3: Green Hills of Tyrol / When the Battle is Over / My Land" \
 3-4_marches/green_hill_of_tyrol/$f.ly \
 3-4_marches/when_the_battle_is_over/$f.ly \
 3-4_marches/my_land/$f.ly \
 ;
 
-$COM $D/set_4.$f.ly \
+$COM $D/set_4.$f.ly -t "Set 4: Collin's Cattle / Red Hackle / Shoals of Herring" \
 3-4_marches/collins_cattle/$f.ly \
 3-4_marches/red_hackle/$f.ly \
 3-4_marches/shoals_of_herring/$f.ly \
 ;
 
-$COM $D/set_5.$f.ly \
+$COM $D/set_5.$f.ly -t "Set 5: Scotland the Brave / Wings / Rowan Tree / Scotland the brave (high)" \
 4-4_marches/scotland_the_brave/$f.ly \
 4-4_marches/wings/$f.ly \
 4-4_marches/rowan_tree/$f.ly \
 4-4_marches/scotland_the_brave/$f.ly \
 ;
 
-$COM $D/set_6.$f.ly \
+$COM $D/set_6.$f.ly -t "Set 6: Bonnie Lass o'Fyvie, Cockney Jocks" \
 4-4_marches/bonnie_lass_o_fyvie/$f.ly \
 4-4_marches/cockney_jocks/$f.ly \
 ;
 
-$COM $D/set_7.$f.ly \
+$COM $D/set_7.$f.ly -t "Set 7: 51st Highland Division / Scotland the Brave" \
 4-4_marches/51st_highland_division/$f.ly \
 4-4_marches/scotland_the_brave/$f.ly \
 ;
 
-$COM $D/set_8.$f.ly \
+$COM $D/set_8.$f.ly -t "Set 8: 10th HLI Crossing the Rhine / Farewell to the Creeks / Cock o'the North / Glendaruel Highlanders" \
 6-8_marches/10th_hli_crossing_the_rhine/$f.ly \
 6-8_marches/farewell_to_the_creeks/$f.ly \
 6-8_marches/cock_o_the_north/$f.ly \
 6-*_marches/glendaruel_highlanders/$f.ly \
 ;
 
-$COM $D/set_9.$f.ly \
+$COM $D/set_9.$f.ly -t "Set 9: Mist Covered Mountains / My Home" \
 airs/the_mist_covered_mountains/$f.ly \
 airs/my_home/$f.ly \
 ;
 
-$COM $D/set_10.$f.ly \
+$COM $D/set_10.$f.ly -t "Set 10: Morag of Dunvegan / Set 1" \
 airs/morag_of_dunvegan/$f.ly \
 $D/set_1.$f.ly \
 ;
 
-$COM $D/set_11.$f.ly \
+$COM $D/set_11.$f.ly -t "Set 11: Flett from Flotta / the Crusader's March / the Pikeman's March" \
 4-4_marches/flett_from_flotta/$f.ly \
 4-4_marches/the_crusaders_march/$f.ly \
 4-4_marches/the_pikemans_march/$f.ly \
 ;
 
-$COM $D/set_12.$f.ly \
+$COM $D/set_12.$f.ly -t "Set 12: the Leaving of Liverpool / the Old Rustic Bridge" \
 4-4_marches/the_leaving_of_liverpool/$f.ly \
 4-4_marches/the_old_rustic_bridge/$f.ly \
 ;
 
 #3-4_marches/castle_dangerous/$f.ly \
-$COM $D/set_13.$f.ly \
+$COM $D/set_13.$f.ly -t "Set 13: Torosay Castle / Lochanside / PM JK Cairns / Jim Thomson of Flagstaff" \
 3-4_marches/torosay_catle/$f.ly \
 3-4_marches/lochanside/$f.ly \
 3-4_marches/pm_jk_cairns/$f.ly \
 3-4_marches/jim_thomson_of_flagstaff/$f.ly \
 ;
 
-$COM $D/set_14.$f.ly \
+$COM $D/set_14.$f.ly -t "Set 14: Minstrel Boy / the Piper's Cave" \
 4-4_marches/minstrel_boy/$f.ly \
 2-4_marches/pipers_cave/$f.ly \
 ;
 
-$COM $D/set_15.$f.ly \
+$COM $D/set_15.$f.ly -t "Set 15: On the Road to Passchendaele / the Hills of Argyll" \
 3-4_marches/on_the_road_to_passchendaele/$f.ly \
 4-4_marches/hills_of_argyll/$f.ly \
 ;
 
-$COM $D/set_17.$f.ly \
+$COM $D/set_17.$f.ly -t "Set 17: Teribus/ Corriechoillie's 43rd Welcome to the Northern Meeting / the Barren Rocks of Aden" \
 2-4_marches/teribus/$f.ly \
 2-4_marches/corriechoillie_welcome_to_the_43rd_northern_meeting/$f.ly \
 2-4_marches/barren_rocks_of_aden/$f.ly \
 ;
 
-$COM $D/set_18.$f.ly \
+$COM $D/set_18.$f.ly -t "Set 18: MacKenzie Highlanders / Black Bear" \
 2-4_marches/mackenzie_highlanders/$f.ly \
 2-4_marches/black_bear/$f.ly \
 ;
 
-$COM $D/set_19.$f.ly \
+$COM $D/set_19.$f.ly -t "Set 19: Molly Connell / Keel Row" \
 strathspeys/molly_connell/$f.ly \
 strathspeys/keel_row/$f.ly \
 ;
 
-$COM $D/set_20.$f.ly \
+$COM $D/set_20.$f.ly -t "Set 20: Heights of Dargai / Battle of the Somme" \
 9-8_marches/heights_of_dargai/$f.ly \
 9-8_marches/battle_of_the_somme/$f.ly \
 ;
@@ -131,13 +131,13 @@ $COM $D/set_23.$f.ly \
 4-4_marches/cabar_feidh/$f.ly \
 ;
 
-$COM $D/set_24.$f.ly \
+$COM $D/set_24.$f.ly -t "Set 24:MSR: MacKenzie Highlanders / Lady MacKenzie of Fairburn / Jock Wilson's Ball" \
 2-4_marches/mackenzie_highlanders/$f.ly \
 strathspeys/lady_mackenzie_of_fairburn/$f.ly \
 reels/jock_wilsons_ball/$f.ly \
 ;
 
-$COM $D/set_25.$f.ly \
+$COM $D/set_25.$f.ly -t "Set 25: 72nd Highlanders / Piobaireachd of Donald Dubh" \
 6-8_marches/72nd_highlanders/$f.ly \
 6-8_marches/piobaireachd_of_donald_dubh/$f.ly \
 ;
