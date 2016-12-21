@@ -26,6 +26,7 @@ pipesBA = {
  A8 [ \grg A8 ] A8 [ g8 ] \hdble e8 [ d8 ] d8 [ e8 ] |
  \dblg g8. [ A16 ] g8 [ e8 ] \dblg g4 A16 [ g16 e16 ] g16 ] | 
 }
+
 pipesBB = {
  A8 [ \grg A8 ] A8 [ g8 ] \hdble e8 [ d8 ] d8 [ e8 ] |
  \dblg g8. [ A16 ] g8 [ e8 ] \dbld d8 [ b8 ] \grg G4 |

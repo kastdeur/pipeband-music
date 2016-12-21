@@ -24,7 +24,7 @@ pipesABA = {
 pipesABB = {
 	\grg a8 \grd a |
 	b4 c4 d8 e |
-	\dblf f2 d8 e |
+	\dblf f2 d8 f |
 	\dble e4 b4 \grc c8 e8 |
 	\thrwd d2
 }

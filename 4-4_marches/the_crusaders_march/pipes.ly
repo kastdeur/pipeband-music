@@ -13,8 +13,10 @@
 		\pipeglobal
 		<<
 			{
-				\part 	\line \bar "|."
+				\part \line
+				\line \bar "|."
 				\break
+				\line
 				\line \bar "|."
 			}
 			{

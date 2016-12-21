@@ -7,23 +7,30 @@
 
 \score {
     \new PipeBandDrumStaff {
-		\global
-        <<
-			{
-			  \repeat volta 2 { \partial 16 s16 \line }
-			  \break
-			  \repeat volta 2 { \partial 16 s16 \line }
+	\global
+	\tenorglobal
+	<<
+			\new NullVoice = "format" {
+				\part \line
+				\line
+				\bar "|."
+				\break
+				\line
+				\line
+				\bar "|."
+			}%Format
+			
+			\new DrumVoice = "tenor" {
+				\tenorA
+				\tenorB s4
 			}
-			{
-			  \tenorA r8. s16
-			  \tenorA r8. s16
-			}
-		>>
+	>>
 	}
 	\header {
 		title = \title
 		meter = \meter
 		instrument = \instrumentTenor
 		composer = \composerTenor
+		arranger = \arrangerTenor
 	}
 }

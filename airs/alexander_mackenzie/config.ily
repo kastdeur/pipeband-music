@@ -4,7 +4,7 @@ global = {
 	\time 6/8
 	}
 confTempo = {
-	\tempo 2. = 90
+	\tempo 4. = 60
 }
 
 %% Format

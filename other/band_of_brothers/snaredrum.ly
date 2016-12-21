@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+\include "./config.ily"
+
 %#(set-default-paper-size "a4" 'landscape)
 #(set-global-staff-size 19)
 \layout {
@@ -116,11 +118,11 @@
 		}
 	}
 	\header {
-		title = "Band of Brothers"
-		subtitle = "for the Edinburgh Military Tattoo 2005"
-		arranger = "Michael Kamen, arr. Richard Barriball"
+		title = \title
+		subtitle = \subtitle
+		arranger = \arranger
+		meter = \meter
 		instrument = "Snare Drum"
-		meter = ""
 	}
 
 }

@@ -4,7 +4,7 @@ global = {
 	\time 4/4
 	}
 confTempo = { 
-	\tempo 4 = 80 
+	\tempo 4 = 60 
 	}
 %% Format
 part = { \partial 4 \grace{s1} s4 }

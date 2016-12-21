@@ -14,16 +14,20 @@
 		<<
 			{
 				\repeat volta 2 {
-					\part \line
-				}\break
-				\part \line \bar "||" \break
-				\line \bar "|."
-
+					\part
+					\line \break
+					\line \break
+				}
+				\part \line \break
+				\line \break
+				\line \break
 			}
-			{
-				\pipesA s8
-				\pipesB
-				\pipesCA
+			{ 
+				\pipesA
+
+				\pipesBA
+				\pipesBB
+				\pipesBC
 			}
 		>>
 	}
@@ -41,14 +45,9 @@
 		\partial 8
 		\pipesA
 		\pipesA
-		\pipesB
-		\pipesCA
+		\pipesBA
+		\pipesBB
+		\pipesBC
 	}
 	\midi { \confTempo }
-	\header {
-		title = \title
-		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
-	}
 }

@@ -1,7 +1,7 @@
 % 4/4 The Leaving of Liverpool
 % Tenor
 \version "2.18.2"
-composerTenor = "F.J. de Boone,2011"
+composerTenor = "F.J. de Boone, v1.0, 2011"
 tenorglobal = {}
 %%music
 tenorA = \drummode {

@@ -2,6 +2,8 @@
 
 \include "bagpipe.ly"
 
+\include "./config.ily"
+
 #(set-default-paper-size "a4" 'landscape)
 #(set-global-staff-size 19)
 \layout {
@@ -104,10 +106,10 @@
 			\grG a1 |
 	}
 	\header {
-		title = "Band of Brothers"
-		subtitle = "for the Edinburgh Military Tattoo 2005"
-		arranger = "Michael Kamen, arr. Richard Barriball"
+		title = \title
+		subtitle = \subtitle
+		arranger = \arranger
+		meter = \meter
 		instrument = "Bagpipe"
-		meter = ""
 	}
 }

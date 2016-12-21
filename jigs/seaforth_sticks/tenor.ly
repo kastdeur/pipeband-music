@@ -2,13 +2,16 @@
 
 \include "lilydrum.ly"
 
-\include "lilydrum.ly"
-
 \include "./config.ily"
 \include "./notes.tenor.ily"
 
 \score {
-    \new PipeBandDrumStaff {
+    \new PipeBandDrumStaff\with {
+	    fontSize = #-0.5
+		\override StaffSymbol.staff-space = #(magstep -0.5)
+		\override StaffSymbol.thickness = #(magstep -0.5)
+	} 
+	{
 		\global
         <<
 			{
@@ -28,17 +31,17 @@
 				}
 			}
 			{
-				r2.*4
+				R2.*4
 				\tenorIntro
 
-				\tenorA s8
-				\tenorB s8
-				\tenorC s8
-				\tenorD s8
-				\tenorE s8
-				\tenorF s8
-				\tenorG s8
-				\tenorH s8
+				\tenorA r8
+				\tenorB r8
+				\tenorC r8
+				\tenorD r8
+				\tenorE r8
+				\tenorF r8
+				\tenorG r8
+				\tenorH r8
 				
 			}
 		>>

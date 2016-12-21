@@ -5,47 +5,27 @@
 \include "./config.ily"
 \include "./notes.bass.ily"
 \include "./notes.tenor.ily"
-\include "./notes.side.ily"
 
 \score {
 	\new StaffGroup <<
-		\new PipeBandDrumStaff = "side" {
-			\global
-			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-
-			<<
-				\new NullVoice = "format" {
-					\repeat volta 2 { \part \halfline \break \halfline } \break
-					\part \halfline \break \halfline \bar "||" \break
-					\line \bar "|."
-				}%End of Format
-				\new DrumVoice = "side" {
-					\snareA s8
-					\snareBA
-					\snareBB
-				}%End of side
-			>>
-		}
 		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+			\global
+			<<
+				{
 
-			r8 \tenorA s8
+				}%Format
+				{
 
-			\tenorB
-			\tenorA s8
+				}%Music
+			>>
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-			r8 \bassA s8
-			\bassB
-			\bassA s8
 
 		}
 	>>
@@ -54,12 +34,10 @@
 		meter = \meter
 		composer = \markup {
 			\column \right-align {
-				$(if (not (string=? "" composerSide))  #{ \markup {\line { \composerSide  ":" }} #} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \composerTenor  ":" }} #} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \composerBass  ":" }} #} )
 			}
 			\column \right-align {
-				$(if (not (string=? "" composerSide))  #{ \markup {\line { \instrumentSide }}#} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \instrumentTenor }}#} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \instrumentBass }}#} )
 			}

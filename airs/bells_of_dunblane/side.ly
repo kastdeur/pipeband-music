@@ -8,22 +8,20 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-	\sideglobal
+		\sideglobal
 		<<
-			{
-				\part \line  
-				\line \bar "|."
-				\break
-				\bar ".|"
+			\new NullVoice = "format" {
+				\part
 				\line
-				\line \bar "|."
+				\line
+				\line
+				\line
+				\line
+				\bar "|."
 			}%Format
-			{ 
-				s8 \snareAA r8
-				\snareAB
-
-				\snareBA r8
-				\snareBB r8 s8
+			
+			\new DrumVoice = "side" {
+				\snareA
 			}
 		>>
 	}
@@ -32,5 +30,6 @@
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
+		arranger = \arrangerSide
 	}
 }

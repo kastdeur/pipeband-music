@@ -1,67 +1,39 @@
 % 2/4 Black Bear
 % Tenor
 \version "2.18.2"
-composerTenor = "E.T. de Boone, v0.6, 2016"
+composerTenor = "E.T. de Boone, v0.9, 2016"
 tenorglobal = {}
 % Music
-tenorApiece = \drummode {
-	d8 g8
-	\triplet { d16 g d } g8
+tenorA = \drummode {
+	d8 g8 	d4
 	|
-	d8 g8
-	\triplet { d16 g d } g8
+	d8 g8 	d4
 	|
-	d8 d8
-	g4
+	d8 \triplet { d16 g d} 	g4
 	|
-	d4^\splitTheFeather
-	r8 \triplet { g16 d g }
+	d4^\parenthesize \splitTheFeather		r4
 	|
 	
-	d8 g8
-	\triplet { d16 g d } g8
+	d8 g8	d4
+	|
+	d8 g8	d4
+	|
+	d8 d16. g32	d16 g8-> g16
 	|
 	d8 g8
-	\triplet { d16 g d } g8
-	|
-	d8 g16. g32
-	d16. g8 d32
-	|
-	d8 d8
-	g8
-}
-tenorA = \drummode {
-	g8 |
-	\tenorApiece
+	d8
 }
 
-tenorBA = \drummode {
+tenorB = \drummode {
 	g8 |
-	d16. g32 d16. d32
-	g4
-	|
-	r4
-	d32 g16. g32 d16.
-	|
-	d16. g32 d16. d32
-	g4
-	|
-	r4
-	d32 g16. g32 d16.
-	|
+	\repeat unfold 2 {
+		d8 g8 d8 g8|
+		r16 g8 g16 \triplet { d16 g d } g8 |
+	}
 
-	d32 g16. g32 d16.
-	d32 g16. g32 d16.
-	|
-	g32 d16. g32 d16.
-	g32 d16. g32 d16.
-	|
-	d16. g32 d16. d32
-	g16. d32 g16. g32
-	|
-	d4
-	d16. g32 g16. d32
-}
-tenorBB = \drummode {
-	\tenorApiece
+
+	d4 g8. g16 |
+	d8 g d4 |
+	d8 d g g |
+	d4^\parenthesize \splitTheFeather	r4
 }

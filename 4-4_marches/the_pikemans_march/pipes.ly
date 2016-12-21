@@ -23,7 +23,7 @@
 				\line \break
 			}
 			{ 
-				\pipesA
+				\pipesA s8
 
 				\pipesBA
 				\pipesBB

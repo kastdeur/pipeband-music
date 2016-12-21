@@ -3,7 +3,7 @@
 \include "lilydrum.ly"
 
 \include "./config.ily"
-\include "./notes.bass.ily"
+%\include "./notes.bass.ily"
 \include "./notes.tenor.ily"
 \include "./notes.side.ily"
 
@@ -17,14 +17,20 @@
 
 			<<
 				\new NullVoice = "format" {
-					\repeat volta 2 { \part \halfline \break \halfline } \break
-					\part \halfline \break \halfline \bar "||" \break
-					\line \bar "|."
+					\part \line
+					\line
+					\bar "|."
+					\break
+					\line
+					\line
+					\bar "|."
 				}%End of Format
-				\new DrumVoice = "side" {
-					\snareA s8
-					\snareBA
-					\snareBB
+				\new DrumVoice = "side" {	
+					s8 \snareAA r8
+					\snareAB
+
+					\snareBA r8
+					\snareBB r8 s8
 				}%End of side
 			>>
 		}
@@ -33,21 +39,16 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			r8 \tenorA s8
+			\tenorA
 
-			\tenorB
-			\tenorA s8
+			\tenorB s4
 		}
-		\new PipeBandDrumStaff = "bass" {
-			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-			r8 \bassA s8
-			\bassB
-			\bassA s8
-
-		}
+%		\new PipeBandDrumStaff = "bass" {
+%			\bassglobal
+%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+%
+%		}
 	>>
 	\header {
 		title = \title

@@ -14,7 +14,7 @@
 		<<
 			{
 				\repeat volta 2 {
-					\part \line
+					\part \halfline
 				}\break
 
 				\part \halfline \line

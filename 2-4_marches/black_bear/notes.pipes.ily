@@ -2,6 +2,9 @@
 % Pipes
 \version "2.18.2"
 composerPipes = "1936"
+pipeglobal = {
+  \bagpipeKey
+}
 pipesA = {
 	\grg a16. [ b32 ] |
 	\thrwd d8 [ \dbld d8 ] \grg f16.[  d32  A16.  f32  ]|

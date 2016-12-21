@@ -12,12 +12,12 @@
 		<<
 			{
 				\repeat volta 2 {
-					\partial 4 s4
+					\part
 					\line \break
 					\line \break 
 				}
 				\repeat volta 2 {
-					\partial 4 s4
+					\part
 					\line \break
 					\line \break
 				}
