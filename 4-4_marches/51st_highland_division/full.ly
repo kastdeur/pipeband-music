@@ -3,12 +3,9 @@
 \include "bagpipe.ly"
 \include "lilydrum.ly"
 
-\include "bagpipe.ly"
-\include "lilydrum.ly"
-
 \include "./config.ily"
 %\include "./notes.bass.ily"
-%\include "./notes.tenor.ily"
+\include "./notes.tenor.ily"
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
 
@@ -21,20 +18,24 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
-
-					\repeat volta 2 { \part \halfline \break}
-						\alternative { {\halfline} {\halfline } }
-						\bar "|." \break
-					\part \line \bar "||" \break
-					\line \bar "|."
+					\repeat unfold 2 {
+						\repeat unfold 2 {
+							\part \line \break
+							\line \bar "||"
+							\break
+						}
+						\bar "|."
+					}
 				}%Format
 				{
-					\pipesAA
-					\pipesAB s4
-
-					\pipesBA
-					\pipesBB s4
-				
+					\repeat unfold 2 {
+						\pipesAA
+						\pipesAB s4
+					}
+					\repeat unfold 2 {
+						\pipesBA
+						\pipesBB s4
+					}
 				}%Pipes
 			>>
 		}
@@ -42,26 +43,39 @@
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-			s8 \snareA
-				\snareAA s8
-				\snareAB s8
 
-			 s8 \snareB
-			 \snareA \snareAB
+			\repeat unfold 2 {
+				s8 \snareA 
+				\snareAA  r8
+
+				\snareA 
+				\snareAB r8 s8
+
+				s8 \snareB
+
+				r8 \snareA \snareAB r8 s8
+			}
 
 
+
+		}
+		\new PipeBandDrumStaff = "tenor" {
+			\tenorglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+			
+			\repeat unfold 2 {
+				\repeat unfold 2 {
+					s8 \tenorAA r8 
+					\tenorAB r8 s8
+				}
+			}
 
 		}
 %		\new PipeBandDrumStaff = "bass" {
 %			\bassglobal
 %			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 %			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-%
-%		}
-%		\new PipeBandDrumStaff = "tenor" {
-%			\tenorglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 %
 %		}
 	>>

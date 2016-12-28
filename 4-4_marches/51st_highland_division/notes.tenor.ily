@@ -10,12 +10,12 @@ tenorAA = \drummode {
 	d4 g d8[ g] d[ g] |
 	d4 g d8[ g] d[ g] |
 	d4 d8[ g] d4 d8[ g] |
-	d4 g d r8 
+	d4 g d 
 }
 tenorAB = \drummode {
 	g8 |
 	d4 g d r8 g8 |
 	d4 g d8[ g] d[ g] |
 	d4 g d8[ g] d[ g] |
-	d4 g d r8
+	d4 g d
 }

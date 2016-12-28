@@ -13,11 +13,11 @@ snareA = \drummode {
 }
 snareAA = \drummode {
 	d8:32(-> g8)		r8 d8:32(		g8) g16. d32->		g16. g32 \flamd d8 |
-	\flamg g4		d4:32(		d4) r8
+	\flamg g4		d4:32(		d4)
 }
 snareAB = \drummode {
 	d8:32(->[ g8)]		\flamd d8[ d8:32(]		\tuplet 3/2 { g16) d g } \flamd d16. g32->		d16. d32 \flamg g8 |
-	\flamg g4		d4:32(		d4) r8
+	\flamg g4		d4:32(		d4)
 }
 % Part 2
 snareB = \drummode {
@@ -27,5 +27,5 @@ snareB = \drummode {
 
 	d8:32(-> g8)		r8 d8:32(		g8) g16. d32->		g16. g32 \flamd d8 |
 
-	\flamg g4		d4:32(		d4) r8
+	\flamg g4		d4:32(		d4)
 }

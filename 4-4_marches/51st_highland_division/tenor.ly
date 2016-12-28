@@ -15,6 +15,7 @@
 					\repeat repeat 2 {
 						\partial 8 s8 \line
 						\break
+						\partial 8 s8
 						\line
 					}
 					\break
@@ -22,8 +23,8 @@
 			}%Format
 			
 			\new DrumVoice = "tenor" {
-				\tenorAA \tenorAB s8
-				\tenorAA \tenorAB s8
+				\tenorAA r8 s8 \tenorAB r8 s8
+				\tenorAA r8 s8 \tenorAB r8 s8
 			}
 	>>
 	}

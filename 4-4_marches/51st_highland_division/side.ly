@@ -18,11 +18,11 @@
 			}
 			{
 					s8 \snareA
-						\snareAA s8
-						\snareAB s8
+						\snareAA r8 s8
+						\snareAB r8 s8
 
-					 s8 \snareB s8
-					 s8 \snareA \snareAB
+					 s8 \snareB r8 s8
+					 s8 \snareA \snareAB r8
 			}
 		>>
 	}
