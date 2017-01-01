@@ -2,8 +2,6 @@
 
 \include "lilydrum.ly"
 
-\include "lilydrum.ly"
-
 \include "./config.ily"
 \include "./notes.bass.ily"
 %\include "./notes.tenor.ily"

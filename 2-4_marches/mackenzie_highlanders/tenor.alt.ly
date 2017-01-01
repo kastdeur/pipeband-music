@@ -3,11 +3,11 @@
 \include "lilydrum.ly"
 \include "bagpipe.ly"
 
+\include "./config.ily"
 \include "./notes.pipes.ily"
 \include "./notes.bass.ily"
 \include "./notes.side.ily"
 
-\include "./config.ily"
 \include "./notes.tenor.alt.ily"
 
 \score {

@@ -1,6 +1,5 @@
 \version "2.18.2"
 
-\include "lilydrum.ly"
 \include "./24_44_standards.side.ily"
 
 % Scores
