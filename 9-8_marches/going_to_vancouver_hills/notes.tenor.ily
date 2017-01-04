@@ -28,3 +28,6 @@ tenorB = \drummode {
 	r4.	r4.	d4 g8 |
 	d4 g8	d8 g d	g8 d g |
 }
+
+tenorC = \drummode { \tenorA }
+tenorD = \drummode { \tenorB }

@@ -3,13 +3,13 @@
 \include "lilydrum.ly"
 
 \include "./config.ily"
-\include "./notes.tenor.ily"
+\include "./notes.bass.ily"
 
 \score {
     \new PipeBandDrumStaff {
-	\global
-	\tenorglobal
-	<<
+        \global
+		\bassglobal
+		<<
 			\new NullVoice = "format" {
 				\repeat unfold 4 {
 					\repeat volta 2 {
@@ -19,22 +19,22 @@
 				}
 			}%Format
 			
-			\new DrumVoice = "tenor" {
-				\tenorA
+			\new DrumVoice = "bass" {
+				\bassA
 
-				\tenorB
+				\bassB
 
-				\tenorC
+				\bassC
 
-				\tenorD
+				\bassD
 			}
-	>>
+		>>
 	}
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentTenor
-		composer = \composerTenor
-		arranger = \arrangerTenor
+		instrument = \instrumentBass
+		composer = \composerBass
+		arranger = \arrangerBass
 	}
 }

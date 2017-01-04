@@ -10,7 +10,7 @@ tenorA = \drummode {
 	d8. g16 d8 g8 r8 g8 |
 	d4. g |
 	d4. g8 r8 g8 |
-	d4. g8. d16 g8 |
+	d4. g8 d8 g8 |
 	d8 g8 d8 g8 r4
 }
 tenorB = \drummode {
