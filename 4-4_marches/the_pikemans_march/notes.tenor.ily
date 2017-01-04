@@ -89,5 +89,4 @@ tenorBC = \drummode {
 	d4
 	d8^\markup{scoop} g
 	d4^\markup{end}
-	r4
 }

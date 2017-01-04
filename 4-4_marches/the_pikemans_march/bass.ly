@@ -22,7 +22,7 @@
 			
 				\bassBA 
 				\bassBB
-				\bassBB
+				\bassBC r4
 			}
 		>>
 	}

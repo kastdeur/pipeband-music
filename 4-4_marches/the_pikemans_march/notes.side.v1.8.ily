@@ -1,7 +1,7 @@
 % 4/4 The Pikeman's March
 % Side
 \version "2.18.2"
-composerSide = "E.T. de Boone, v1.9, 2016"
+composerSide = "E.T. de Boone, v1.8, 2016"
 sideglobal = {
 	\eighthBeaming
 	}
@@ -76,9 +76,9 @@ snareBB = \drummode {
 	\flamd d8\f \flamg g8
 	r8 d8:32(
 	g16.) d32-> g16. g32
-	d4:32( \dr \<
+	\flamd d8 d8:32(\dr
 	|
-	d16.)\! g32 \flam d16. g32	d16. g32-> d32 g d g
+	g16.)\! g32 \flam d16. g32	d16. g32-> d32 g d g
 	\flam g8 \fr d8:32(
 	g16:64 g16) d16. g32
 	|
@@ -97,9 +97,9 @@ snareBC = \drummode {
 	\flamd d8\f \flamg g8
 	r8 d8:32(
 	g16.) d32-> g16. g32
-	d4:32( \<
+	\flamd d8 d8:32(
 	|
-	d16.)\! g32 \flam d16. g32	d16. g32-> d32 g d g
+	g16.)\! g32 \flam d16. g32	d16. g32-> d32 g d g
 	\flam g8 d8:32(
 	g16:64 g16) d16. g32
 	|

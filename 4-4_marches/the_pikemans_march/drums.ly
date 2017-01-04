@@ -16,12 +16,21 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			<<
-				{ \repeat volta 2 { \part \line \break \line} \pageBreak
+				{
+					\repeat volta 2 { 
+						\part 
+						\line 
+						\break 
+						\line
+					} 
+					\pageBreak
+
 					\part \line \break
 					\line \break
 					\line \bar "|."
 				}
-				{	\snareAA
+				{	
+					\snareAA
 					\snareAB
 					s8
 
@@ -30,17 +39,6 @@
 					\snareBC
 				}
 			>>
-		}
-		\new PipeBandDrumStaff = "bass" {
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-        
-			s8 \bassAA
-			\bassAB
-			
-			s8 \bassBA 
-			\bassBB
-			\bassBB
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
@@ -52,8 +50,20 @@
 
 			\tenorBA
 			\tenorBB
-			\tenorBC
+			\tenorBC r8 s
 		}
+		\new PipeBandDrumStaff = "bass" {
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+        
+			s8 \bassAA
+			\bassAB
+			
+			s8 \bassBA 
+			\bassBB
+			\bassBC r4
+		}
+
 	>>
 	\header {
 		title = \title
