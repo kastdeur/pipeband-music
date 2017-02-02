@@ -5,8 +5,8 @@ global = {
 	}
 
 %% Format
-part = { \partial 8 s8 }
-halfline = { \repeat unfold 4 { s2. | } }
+part = { \partial 8 \grace{s4} s8 }
+halfline = { \repeat unfold 4 { \grace{s4} s2. | } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers

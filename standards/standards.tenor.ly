@@ -82,3 +82,22 @@
 		title = "6/8 Standards"
 	}
 }
+
+\score {
+	\new PipeBandDrumStaff {
+		\time 9/8
+
+		\drummode {
+			\repeat volta 2 {
+				\tenorNineeightsOneA
+				\bar "||"
+				\break
+				\tenorNineeightsOneB
+			}
+		}
+	}
+
+	\header {
+		title = "9/8 Standards"
+	}
+}

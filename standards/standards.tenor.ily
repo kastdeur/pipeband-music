@@ -95,3 +95,29 @@ tenorSixeightsOneB = \drummode {
 				}
 				d^\splitTheFeather r |
 }
+
+% -------------------------
+% 9/8s
+% -------------------------
+tenorNineeightsOneA = \drummode {
+	d4 g8	d4 d8	g4.
+	|
+	\flourish d4.	\flourish g4.	<d g>4.
+	|
+	d4 g8	d4 d8	g4.
+	|
+	d4.	<d g>2.^\bfly
+	|
+
+	d4 g8	d4 d8	g4.
+	|
+	\flourish d4.	\flourish g4.	 <d g>4.
+	|
+	d4 g8	d4.	\flourish g4.
+	|
+	\flourish d4.	<d g>2.^\splitTheFeather
+}
+
+tenorNineeightsOneB = \drummode {
+  \tenorNineeightsOneA
+}

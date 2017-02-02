@@ -95,6 +95,12 @@ peight = \drummode {
 	\flam d8 d16. g32 	\flam d8 d16 g16
 	r16 d16 g16. g32 	\flam d8
 }
-
+pnine = \drummode {
+	d16. g32 |
+	d16.:64~ d32 g16. d32:128~
+	d16. g32 d16.:64~ d32
+	g16. d32:128~ d16. g32
+	\flam d8
+}
 %% Standard thingies
 midstd = \drummode { \midone }

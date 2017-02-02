@@ -43,14 +43,14 @@
 					R2.*4 | 
 					R2.*4 |
 
-					\snareA
-					\snareB
-					\snareC
-					\snareD
-					\snareE
-					\snareF
-					\snareG
-					\snareH
+					\snareA s8
+					\snareB s8
+					\snareC s8
+					\snareD s8
+					\snareE s8
+					\snareF s8
+					\snareG s8
+					\snareH s8
 				}
 			>>
 		}

@@ -8,26 +8,17 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
-			{
-				\repeat unfold 8 {
-					\mark \default
-					\repeat volta 2 {
-						\part
-						\line
-					}
-					\break
+		\sideglobal
+		<<
+			\new NullVoice = "format" {
+				\partial 8 s8
+				\repeat volta 2 {
+					\line
 				}
-			}
-			{
-				r8 \snareA s8
-				\snareB s8
-				\snareC s8
-				\snareD s8
-				\snareE s8
-				\snareF s8
-				\snareG s8
-				\snareH s8
+			}%Format
+			
+			\new DrumVoice = "side" {
+				\snareA
 			}
 		>>
 	}
@@ -36,5 +27,6 @@
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
+		arranger = \arrangerSide
 	}
 }

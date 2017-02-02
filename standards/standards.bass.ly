@@ -65,3 +65,18 @@
 		title = "6/8 Standard"
 	}
 }
+
+\score {
+	\new PipeBandDrumStaff {
+		\time 9/8
+
+		\drummode {
+			\repeat volta 2 {
+				\bassNineeightsOne 
+			}
+		}
+	}
+	\header {
+		title = "9/8 Standard"
+	}
+}
