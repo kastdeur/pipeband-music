@@ -14,7 +14,7 @@ snareA = \drummode {
 	d16 g d g d8->		g8 d g |
 
 	\flamd d8 g d		\flamg g4 g8 |
-	d4.:32->~		d8 g g |
+	d4:32->~ g8:32->(		g8:32 d)-> g |
 
 	\flamd d8 g d		\flamg g4 g8 |
 	d16 g d g d8->		g8 d g |
@@ -40,13 +40,13 @@ snareB = \drummode {
 %C
 snareC = \drummode {
 	d8:32~\< |
-	d4\! \flamd d8		g8 d g-^|
+	d4\! \flamd d8		r4 g8-^|
 	d16 g d g d8		g8 d g |
 
 	\flamd d8-^ g \flamd d-^		g8 d \flamg g-^ |
 	d8 g \flamg d		\flamg g4-^ d8:32~\< |
 
-	d4\! \flamd d8		g8 d g-^|
+	d4\! \flamd d8		r4 g8-^|
 	d16 g d g d8->		g8 d g |
 
 	d16 g d g d8->		g8 d g |
@@ -55,13 +55,13 @@ snareC = \drummode {
 %D
 snareD = \drummode {
 	g8 |
-	d4.:32~->		d8 g g |
-	d4.:32~->		d8 g g |
+	d4:32~-> g8:32(->		g8:32 d) g |
+	d4:32~-> g8:32(->		g8:32 d) g |
 
 	\flamd d8\> g d		\flamg g4\! g8-\v |
 	d8\< g \flamg d		\flamg g4\! g8 |
 
-	d4.:32~->		d8 g g|
+	d4:32~->	g8:32(->	g8:32 d) g|
 	d16 g d g d8->		g8 d g |
 
 	d16 g d g d8->		g8 d g |
@@ -74,7 +74,7 @@ snareE = \drummode {
 	d16 g d g d8->		g8 d g |
 
 	\flamd d8 g d		\backstick d4 g8 |
-	d4.:32~->		d8 g g |
+	d4:32~-> g8:32(->		g8:32 d) g |
 
 	\flamd d8 g d		\backstick d4 g8 |
 	d16 g d g d8->		g8 d g |
@@ -99,30 +99,30 @@ snareF = \drummode {
 }
 %G
 snareG = \drummode {
-	d8:32~ |
-	d4->  \backstick d8		g8 d g|
+	d8:32~\< |
+	d4\!  \backstick d8		r4 g8|
 	d16 g d g d8->		g8 d g |
 
-	\flamd d8 g d		\Y d8 g d  |
-	\flamd d8 g d		\backstick d4 d8:32~ |
+	\flamd d8 g d		\Y d8 d g  |
+	\flamd d8 g d		\backstick d4 d8:32~\< |
 
-	d4-> \backstick d8		g8 d g|
+	d4-> \backstick d8		r4 g8|
 	d16 g d g d8->		g8 d g |
 
-	\flamd d8 g d		\Y d8 g d |
+	\flamd d8 g d		\Y d8 d g |
 	d4.:32~		d4
 }
 %H
 snareH = \drummode {
 	g8 |
 	\flamd d8 d16 g d8		\crossstick { d8 d d }|
-	\flamd d8 g d		\Y d8 g d|
+	\flamd d8 g d		\Y d8 d g|
 
 	\flamd d8 g d		\backstick d4 g8 |
 	\flamd d8 g d		\backstick d4 g8 |
 
 	\flamd d8 d16 g d8		\crossstick { d8 d d }|
-	\flamd d8 g d		\Y d8 g d |
+	\flamd d8 g d		\Y d8 d g |
 
 	\flam d8 g d		\backstick d4 g8 |
 	d4.:32~		d4

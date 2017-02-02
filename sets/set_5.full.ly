@@ -1,6 +1,8 @@
 ﻿\version "2.18.2"
 
+\header {title = "Set 5: Scotland the Brave / Wings / Rowan Tree / Scotland the brave (high)"}
 \paper {#(define page-breaking ly:minimal-breaking)}
+#(ly:set-option 'relative-includes #t)
 
 
 %Scores
