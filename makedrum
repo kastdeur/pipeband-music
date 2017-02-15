@@ -13,8 +13,9 @@ class MakeDrum:
 	VERSION  = '0.9.7'
 	MASTER_DIR = os.path.dirname(os.path.abspath(__file__))
 	RUN_DIR = os.path.abspath(os.curdir)
-	TMP_DIR  = './tmp'
+	TMP_DIR  = '.'
 	TMP_PREFIX = 'tmp_'
+	OUT_DIR = '.'
 
 	def __init__(self):
 		# Gather options and create the template file
@@ -27,6 +28,10 @@ class MakeDrum:
 		parser.add_argument('--lilyversion',
 			action='store_true', dest='show_lilyversion', default=False,
 			help='show Lilypond version and exit')
+		parser.add_argument('-l', '--lilycommand',
+			default=self.LILYPOND, dest='lilypond',
+			help='Command used to compile')
+			
 
 		parser.add_argument('-i', '--include',
 			dest='includes', nargs='*', default=[],action='append',
@@ -48,6 +53,9 @@ class MakeDrum:
 			action='store_true', dest='view_spacing', default=False,
 			help='Turn on "Paper.annotatespacing".')
 
+		parser.add_argument('--rename',
+			action='store_true', dest='rename', default=False,
+			help='Rename the final output to it\'s relative location, replacing /\'s with -\'s')
 		parser.add_argument('-r', '--suffix',
 			dest='suffix', default='',
 			help='String added at end of pdf\'s filename')
@@ -67,7 +75,7 @@ class MakeDrum:
 			action='store_false', dest='clean', default=True,
 			help='Leave all temporary files in place')
 		parser.add_argument('-d', '--out-dir',
-			dest='out_dir', default='pdf',
+			dest='out_dir', default=self.OUT_DIR,
 			help='Output dir, for lilypond. If it doesn\'t exist, try to create it')
 		parser.add_argument('music_file',
 			default='', nargs='*',
@@ -76,7 +84,8 @@ class MakeDrum:
 			dest='list_file', default='',
 			help='list of files to process')
 
-		self.args = parser.parse_args()
+		# All unknown args are passed on to the lilypond command
+		self.args, self.unknownargs = parser.parse_known_args()
 
 		if self.args.show_version:
 			print(__name__, ' ', self.VERSION)
@@ -165,8 +174,15 @@ class MakeDrum:
 			if paths:
 			    paths = ' -I ' + paths
 
-			lilyout = os.path.join(self.RUN_DIR, self.args.out_dir, os.path.basename(tmp_file).replace(self.TMP_PREFIX, '').replace(".ly", ''))
-			lilycmd = self.LILYPOND + paths + ' --pdf --output='+lilyout+' '+tmp_file+log
+			if self.args.rename:
+			    lilyout = os.path.join(self.RUN_DIR, self.args.out_dir, os.path.basename(tmp_file).replace(self.TMP_PREFIX, '').rsplit( ".", 1 )[ 0 ])
+			else:
+			    lilyout = os.path.basename(file).rsplit( ".", 1 )[ 0 ]
+
+
+			unknownargs = " " + " ".join(self.unknownargs)
+
+			lilycmd = self.LILYPOND + unknownargs + paths + ' --output='+lilyout+' '+tmp_file+log
 
 			if os.system(lilycmd) != 0:
 				self.remove_tmp_dir = False
