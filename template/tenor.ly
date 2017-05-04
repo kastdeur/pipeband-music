@@ -7,9 +7,9 @@
 
 \score {
     \new PipeBandDrumStaff {
-	\global
-	\tenorglobal
-	<<
+		\global
+		\tenorglobal
+		<<
 			\new NullVoice = "format" {
 			
 			}%Format
@@ -17,7 +17,7 @@
 			\new DrumVoice = "tenor" {
 			
 			}
-	>>
+		>>
 	}
 	\header {
 		title = \title

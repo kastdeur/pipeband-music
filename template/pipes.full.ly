@@ -9,11 +9,12 @@
 
 \score {
 	\new StaffGroup <<
-		\new Staff = "pipes"  {
+		\new Staff = "pipes" \with{
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 			  	\new NullVoice = "format" {
 					
@@ -23,16 +24,18 @@
 				}%Pipes
 			>>
 		}
-		\new Staff = "seconds" {
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd}
+		} {
 			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentSecnd }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd}
 			
 		}
-%		\new Staff = "thirds" {
+%		\new Staff = "thirds" \with {
+%			instrumentName = \markup{ \instrumentPipes \instrumentThrd }
+%			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentThrd}
+%		} {
 %			\pipesthrdglobal
-%			\set Staff.instrumentName = \markup{ \instrumentPipes \instrumentThrd }
-%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentThrd }
 %
 %		}
 	>>

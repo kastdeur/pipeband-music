@@ -9,12 +9,12 @@
 
 \score {
 	\new StaffGroup <<
-		\new PipeBandDrumStaff = "side" {
+		\new PipeBandDrumStaff = "side" \with {
+			instrumentName = \markup{ \instrumentSide }
+			shortInstrumentName = \markup{ \shortInstrumentSide }
+		} {
 			\global
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-
 			<<
 				\new NullVoice = "format" {
 					
@@ -24,16 +24,18 @@
 				}%End of side
 			>>
 		}
-		\new PipeBandDrumStaff = "tenor" {
+		\new PipeBandDrumStaff = "tenor" \with {
+			instrumentName = \markup{ \instrumentTenor }
+			shortInstrumentName = \markup{ \shortInstrumentTenor }
+		} {
 			\tenorglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
 		}
-		\new PipeBandDrumStaff = "bass" {
+		\new PipeBandDrumStaff = "bass" \with {
+			instrumentName = \markup{ \instrumentBass }
+			shortInstrumentName = \markup{ \shortInstrumentBass}
+		} {
 			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 		}
 	>>

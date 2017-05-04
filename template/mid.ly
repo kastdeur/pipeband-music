@@ -8,10 +8,11 @@
 
 \score {
 	\new StaffGroup <<
-		\new PipeBandDrumStaff = "tenor" {
+		\new PipeBandDrumStaff = "tenor" \with {
+			instrumentName = \markup{ \instrumentTenor }
+			shortInstrumentName = \markup{ \shortInstrumentTenor }
+		} {
 			\tenorglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 			\global
 			<<
 				{
@@ -22,10 +23,11 @@
 				}%Music
 			>>
 		}
-		\new PipeBandDrumStaff = "bass" {
+		\new PipeBandDrumStaff = "bass" \with {
+			instrumentName = \markup{ \instrumentBass }
+			shortInstrumentName = \markup{ \shortInstrumentBass }
+		} {
 			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 		}
 	>>
