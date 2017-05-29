@@ -12,8 +12,8 @@
 		\new PipeBandDrumStaff = "side" {
 			\global
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
+			\set Staff.instrumentName = \markup{\instrumentSide}
+			\set Staff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 			<<
 				{
@@ -31,8 +31,8 @@
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+			\set Staff.instrumentName = \markup{ \instrumentBass }
+			\set Staff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 			s8 \bassA
 
@@ -41,8 +41,8 @@
 		}
 		%	\new PipeBandDrumStaff = "tenor" {
 		%		\tenorglobal
-		%		\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-		%		\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+		%		\set Staff.instrumentName = \markup{ \instrumentTenor }
+		%		\set Staff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
 		%	}
 	>>

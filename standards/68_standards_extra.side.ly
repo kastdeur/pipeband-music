@@ -7,8 +7,11 @@
 	\new PipeBandDrumStaff {
 		\time 6/8
 
-		\drummode {
-		}
+        \drummode {
+	       	\repeat volta 2 { \partial 8 \pseven \midone \peight \endone}	\break
+	       	\repeat volta 2 { \partial 8 \pnine \midtwo \pten \endtwo}	\break
+	    	\repeat volta 2 { \partial 8 \pten \midone \pempty \endthree}	\break
+		}% End of drums %	
 	}
 	\header{
 		title = "6/8 Marches (Extra)"

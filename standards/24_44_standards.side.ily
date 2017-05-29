@@ -4,47 +4,63 @@
 
 % Midparts
 midone = \drummode {
-	d8:32( \dr |
-	\tuplet 3/2 { g16) d g } \flamd d16. g32		\tuplet 3/2 { d16 g d } \flamg g16. g32
-	d16. g32 \tuplet 3/2 { d16 g d }			\flamg g8 \fr
+	\tutti {
+		d8:32( |
+		\tuplet 3/2 { g16) d g } \flamd d16. g32		\tuplet 3/2 { d16 g d } \flamg g16. g32
+		d16. g32 \tuplet 3/2 { d16 g d }			\flamg g8
+	}
 }
 
 midtwo = \drummode {
-	d8:32( \dr |
-	g16.) d32-> g16. g32		d16. g32-> d16. d32
-	\flamg g8 [ d8:32( ]		g8) \fr
+	\tutti {
+		d8:32( |
+		g16.) d32-> g16. g32		d16. g32-> d16. d32
+		\flamg g8 [ d8:32( ]		g8)
+	}
 }
 midthree = \drummode {
-	d8:32( \dr |			
-	g16.)\! g32 \flam d16. g32	d16. g32-> d32 g d g %|
-	\flam g8 [  d8:32( ]		g8) \fr
+	\tutti {
+		d8:32( |			
+		g16.)\! g32 \flam d16. g32	d16. g32-> d32 g d g %|
+		\flam g8 [  d8:32( ]		g8)
+	}
 }
 midfour = \drummode {
-	d8:32( \dr |
-	\tuplet 3/2 { g16) d g } \flamd d16. g32		\tuplet 3/2 { d16 g d } \flamg g16. g32
-	\drag d16. [  \drag g32  d32 g d g ]	d8 \fr
+	\tutti {
+		d8:32( |
+		\tuplet 3/2 { g16) d g } \flamd d16. g32		\tuplet 3/2 { d16 g d } \flamg g16. g32
+		\drag d16. [  \drag g32  d32 g d g ]	d8
+	}
 }
 % Endings
 endone = \drummode {
-	g8 \dr |
-	\flamd d4 	d4:32(	
-	d4) \fr		r8
+	\tutti {
+		g8 |
+		\flamd d4 	d4:32(	
+		d4)
+	}	r8
 }
 
 endtwo = \drummode {
-	d8:32( \dr |
-	g8) \flamd d16. g32		d16. \flamg g32 d16. g32
-	\flamd d8[ d8:32( ]		g8) \fr
+	\tutti {
+		d8:32( |
+		g8) \flamd d16. g32		d16. \flamg g32 d16. g32
+		\flamd d8[ d8:32( ]		g8)
+	}
 }
 endthree = \drummode {
-	d8:32( \dr |
-	d4)		d4:32(
-	d4) \fr 	r8
+	\tutti {
+		d8:32( |
+		d4)		d4:32(
+		d4) 
+	} 	r8
 }
 endfour = \drummode {
-	d8:32( \dr |
-	\triplet { g16) d g } \flam d16. g32	d32 g d g d16. g32
-	\flam d8[ d8:32( ]		g8) \fr
+	\tutti {
+		d8:32( |
+		\triplet { g16) d g } \flam d16. g32	d32 g d g d16. g32
+		\flam d8[ d8:32( ]		g8)
+	}
 }
 
 % Several Parts
@@ -72,7 +88,7 @@ pthree = \drummode {
 pfour = \drummode {
 	d16. g32 |
 	\flamd d8. g16		\flamd d8 d8:32(
-	d16.) g32-> d16. d32		\flamd d8
+	g16.) d32-> g16. g32		\flamd d8
 }
 pfive = \drummode {
 	d16. g32 |

@@ -39,9 +39,9 @@ tenorBB = \drummode {
 	\triplet { d8 g d }
 	g8. \! \mf g16
 	|
-	d8.^"begin scoop" \dr g16->
-	r8.  g16
-	d8.^"end scoop" \fr g16->
+	\scoop { d8. g16->
+		r8.  g16
+		d8. } g16->
 	r4
 	|
 	d16 g8.

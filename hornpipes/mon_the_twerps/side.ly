@@ -5,29 +5,40 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
-markTextEol = #(define-music-function (parser location text) (string?) #{
-	\once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
-	\mark \markup $text
-#})
-
 \score {
     \new PipeBandDrumStaff {
         \global
-		\sideglobal
 		<<
 			\new NullVoice = "format" {
 				\repeat volta 2 {
-					\part \halfline \markTextEol "Fine"
+					\partial 16*3 s16*3 |
+					\line
 				}
 				\break
-				\part \halfline \markTextEol "D.C. al Fine"\bar "||"
+				\repeat volta 2 {
+					\partial 16 s16 |
+					\halfline
+				} \alternative {
+					\halfline
+					\halfline
+				}
+				\bar "||"
+				\break
+				\line
+				\bar "||"
+				\halfline
+				\bar "|."	  
 			}%Format
 			
 			\new DrumVoice = "side" {
-				\snareA s4
+		\sideglobal
+				\snareA
 
 				\snareBA
+				\snareBBA
+				\snareBBB
+
+				\snareC
 			}
 		>>
 	}
@@ -36,5 +47,6 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
+		arranger = \arrangerSide
 	}
 }

@@ -5,6 +5,12 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+markTextEol = #(define-music-function (parser location text) (string?) #{
+	\once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
+	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+	\mark \markup $text
+#})
+
 \score {
     \new PipeBandDrumStaff {
         \global
@@ -16,12 +22,16 @@
 					\quartline
 				} \alternative {
 				  	\quartline
-					\quartline
+					{	\quartline 
+						\markTextEol "Fine"
+					}
 				}\bar "|."
 				\break
 
 				\partial 8 s8
-				\line \bar "||"
+				\line 
+				\markTextEol "D.C. al Fine"
+				\bar "||"
 			}%Format
 			
 			\new DrumVoice = "side" {

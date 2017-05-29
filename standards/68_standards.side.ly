@@ -14,7 +14,7 @@
 	    	\repeat volta 2 { \partial 8 \pfour \midone \pfour \endone}	\break
 	    	\repeat volta 2 { \partial 8 \pfive \midone \pfive \endone}	\break
 	    	\repeat volta 2 { \partial 8 \psix \midone \psix \endone}	\break
-	}% End of drums %
+		}% End of drums %
 	}
 
 	\header {

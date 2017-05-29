@@ -9,25 +9,20 @@
     \new PipeBandDrumStaff {
         \global
 	\sideglobal
-		<<
+        <<
 			{
-				\part \line  
-				\line \bar "|."
-				\break
-				\line
-				\line \bar "|."
-			}%Format
-			{ 
-				s8 \snareAA r8
-				\snareAB
+				\repeat volta 2 {\part \line \break }
+				\part \line \bar "||"
+			}
+			{
+			 \snareA s8
 
-				\snareBA r8
-				\snareBB r8 s8
+			 \snareBAhigh
 			}
 		>>
 	}
 	\header {
-		title = \title
+		title = #(string-append title " (high)" )
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide

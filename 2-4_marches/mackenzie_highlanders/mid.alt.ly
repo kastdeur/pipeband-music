@@ -11,8 +11,8 @@
 		\new PipeBandDrumStaff = "bass" {
 			\global
 			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+			\set Staff.instrumentName = \markup{ \instrumentBass }
+			\set Staff.shortInstrumentName = \markup{ \shortInstrumentBass}
 			<<
 				{
 					\repeat volta 2 { \line } \break
@@ -30,8 +30,8 @@
 		}
 			\new PipeBandDrumStaff = "tenor" {
 				\tenorglobal
-				\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-				\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+				\set Staff.instrumentName = \markup{ \instrumentTenor }
+				\set Staff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
 				\tenorA
 

@@ -5,7 +5,7 @@ composerSnare = ""
 sideglobal = { \eighthBeaming }
 %%music
 snareA = \drummode {
-	 d8:32( |
+	d8:32( |
 	g8) \tuplet 3/2 { d16 g d } 	\flam g16. d32-> g16. g32 |
 	\flam d8 d8:32(	g8:32)(-> \tuplet 3/2 { d16) g d } |
 

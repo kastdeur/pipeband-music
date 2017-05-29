@@ -36,7 +36,7 @@ tenorTwofoursOneB = \drummode {
 tenorThreefoursOneA = \drummode {
 	\repeat unfold 2 {
 		d8.-> g16 d8 g r g |
-		d4-> d8^"scoop"\dr g d4^"end" \fr |
+		d4-> \scoop { d8 g d4 } |
 	}
 }
 
@@ -57,7 +57,7 @@ tenorFourfoursOneA = \drummode {
 				d8-> g	d g	 d-- g	d g |
 				d8-> g	d g	 d-- g	d g |
 				d8-> g	d g	 d-- g	d g |
-				d4-> d8^"scoop"\dr g d4^"end"\fr r |
+				d4-> \scoop { d8 g d4 } r |
 }
 
 tenorFourfoursOneB = \drummode {
@@ -76,11 +76,11 @@ tenorSixeightsOneA = \drummode {
 				d4.\up g\up |
 				d^\splitTheFeather r |
 				d g |
-				d8^"scoop"\dr r8 g8 d4.^"end"\fr |
+				\scoop { d8 r8 g8 d4. } |
 				\flourish d4. \flourish g |
 				d^\splitTheFeather r |
 				d g |
-				d8^"scoop"\dr r8 g8 d4.^"end"\fr |
+				\scoop { d8r8 g8 d4. } |
 }
 
 tenorSixeightsOneB = \drummode {

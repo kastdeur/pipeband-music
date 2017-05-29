@@ -11,7 +11,7 @@
 		\sideglobal
 	<<
 		{
-			\repeat volta 2 { \part \line \break } \break
+			\repeat volta 2 { \part \halfline \break \halfline } \break
 			\repeat volta 2 { \part \halfline \break }
 				\alternative{ {\part \halfline \break}{\part \halfline \break} }
 			\bar "|."
