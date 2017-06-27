@@ -1,7 +1,7 @@
 % 6/8 Seaforth Sticks
 % Bass
 \version "2.18.2"
-composerBass  = ""
+composerBass  = "L. Visser, 2006"
 bassglobal = {}
 bassIntro = \drummode {
 	bd4\p bd8 bd4.

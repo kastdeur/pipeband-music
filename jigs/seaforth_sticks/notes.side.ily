@@ -1,8 +1,8 @@
 % 6/8 Seaforth Sticks
 % Side
 \version "2.18.2"
-composerSide = ""
-arrangerSide = ""
+composerSide = "L. Visser, 2006"
+arrangerSide = "W.H. de Boone"
 
 Y = #(define-music-function (parser location note) (ly:music?)
 	#{

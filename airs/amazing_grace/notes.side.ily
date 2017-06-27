@@ -27,14 +27,6 @@ snareAC = \drummode {
 snareAD = \drummode {
 	\flamd d2 d8 g32 d16. |
 	\flamd d2 \dragd d4 |
-}
-
-snareADendA = \drummode {
 	d4:32(\> d4:32)( d4:32)(\! |
-	d4:32)( d4:32)(\< d4:32)\laissezVibrer \! |
-}
-
-snareADendB = \drummode {
-	d4:32(\> d4:32)( d4:32)(\! |
-	d4:32)( d4:32)(\< d4)
+	d4:32)( d4:32)(\< d4:32( <>)\!)
 }

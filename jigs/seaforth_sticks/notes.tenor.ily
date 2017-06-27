@@ -1,7 +1,7 @@
 % 6/8 Seaforth Sticks
 % Tenor
 \version "2.18.2"
-composerTenor = ""
+composerTenor = "L. Visser, 2006"
 tenorIntro = \drummode {
 	d8\p g d	g4.
 	|d8 g d 	g4.
