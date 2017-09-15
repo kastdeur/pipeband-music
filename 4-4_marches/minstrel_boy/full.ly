@@ -18,11 +18,11 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
-					\partial 4 s4 |
+					\part |
 					\line \break
 					\line \bar "|." \break
 					
-					\partial 4 s4 |
+					\part |
 					\line \break
 					\line \bar "|."
 				}%Format

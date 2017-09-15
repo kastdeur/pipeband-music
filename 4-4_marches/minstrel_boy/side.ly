@@ -11,11 +11,11 @@
 		\sideglobal
         <<
 			{
-				\partial 4 s4 |
+				\part |
 				\line \break
 				\line \break \bar "|."
 
-				\partial 4 s4 |
+				\part |
 				\line \break
 				\line \break \bar "|."
 			}
