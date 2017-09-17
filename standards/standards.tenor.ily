@@ -73,14 +73,14 @@ tenorFourfoursOneB = \drummode {
 % 6/8s
 % --------------------------
 tenorSixeightsOneA = \drummode {
-				d4.\up g\up |
+				\flourish d4. \flourish g  |
 				d^\splitTheFeather r |
 				d g |
 				\scoop { d8 r8 g8 d4. } |
 				\flourish d4. \flourish g |
 				d^\splitTheFeather r |
 				d g |
-				\scoop { d8r8 g8 d4. } |
+				\scoop { d8 r8 g8 d4. } |
 }
 
 tenorSixeightsOneB = \drummode {

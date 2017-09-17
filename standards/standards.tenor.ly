@@ -89,10 +89,9 @@
 
 		\drummode {
 			\repeat volta 2 {
+			  \repeat volta 2 {
 				\tenorNineeightsOneA
-				\bar "||"
-				\break
-				\tenorNineeightsOneB
+			  }
 			}
 		}
 	}
