@@ -26,9 +26,11 @@ pipesA = {
 	\dblA A4 f8 \dblA A4 f8 |
 	\dble e4 g8 \grA f4 e8 |
 	\thrwd d2. |
-	\dbld d4. \grg a4. | 
-
-	\hslura g4 f8 \hslura g4 e8 |
+	\dbld d4. | 
+}
+pipesB = {
+	\grg a4. |
+	\dblg g4 f8 \dblg g4 e8 |
 	\thrwd d4. \gre a4. |
 	\dblA A4 f8 \dblA A4 f8 |
 	\dbld d4. \dbld d4 c8 | 
@@ -46,9 +48,17 @@ pipesA = {
 	\dblA A4 f8 \dblA A4 f8 |
 	\dble e4 g8 \grA f4 e8 |
 	\thrwd d2.~ |
-	d4. \grg a8 [ b8 c8 ] |
+	d4.
 }
-pipesB = {
+pipesCBA = {
+	\grg a8 [ b8 c8 ]
+}
+pipesCBB = {
+	\grg d4.
+}
+pipesC = {
+	\pipesCBA
+
 	\thrwd d4 c8 \thrwd d4 e8 |
 	\thrwd d4. \grg a8 [ b8 c8 ] |
 	\thrwd d4 c8 \thrwd d4 e8 |
@@ -66,13 +76,9 @@ pipesB = {
 
 	\dblA A4 f8 \slura g4 e8 |
 	\dblf f4 d8 A4.~ |
-	A4. A4 g8 |
+	A4.~ A4 g8 |
 	\grf f4 d8 \grg e4 c8 |
+	\thrwd d4.
 
 }
-pipesBBA = {
-	\thrwd d4. \grg a8 [ b8 c8 ]
-}
-pipesBBB = {
-	\thrwd d4. \grg d4.
-}
+

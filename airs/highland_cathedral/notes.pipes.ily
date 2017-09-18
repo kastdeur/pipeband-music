@@ -1,7 +1,7 @@
 % 4/4 Highland Cathedral
 % Pipes
 \version "2.18.2"
-composerPipes = "arr. Marc Goudswaart"
+composerPipes = "arr. Marc Gouswaart"
 pipeglobal = {
 	\bagpipeKey
 	}

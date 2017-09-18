@@ -14,7 +14,7 @@
 			\part
 			\line
 			\break
-			\line
+			\line \bar "|."
 			\break
 			\line
 			\break
@@ -24,19 +24,17 @@
 				\line
 				\break
 				\line
-				\break
-				\line
-				\break
-				\repeat unfold 3 { \measure }
+				s4.
 			}
-			\alternative{ { \measure} {\measure} }
+			\alternative{ {\grace{s4} s4.} {\grace{s4} s4.} }
 			\bar "|."
 			}%Format
 			{ 
 			\pipesA
 
-			\pipesB \pipesBBA
-			\pipesB \pipesBBB
+			\pipesB
+
+			\pipesC \pipesCBA \pipesCBB
 
 			}
 		>>
@@ -56,8 +54,9 @@
 		\partial 8
 		\pipesA
 
-		\pipesB	\pipesBBA
-		\pipesB	\pipesBBB
+		\pipesB
+
+		\pipesC	\pipesC	\pipesCBB
 		
 	}
 	\midi { \confTempo }

@@ -13,19 +13,39 @@
 
 \score {
 	\new StaffGroup <<
-		\new Staff \with {
-			instrumentName = \markup{ \instrumentPipes }
-			shortInstrumentName = \markup{ \shortInstrumentPipes }
-		} {
+		\new Staff {
 			\global
 			\pipeglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				\new NullVoice = "format" {
-					
+						\repeat unfold 2 {
+							\line
+							\bar "||"
+							\break
+							\line
+							\measure
+							\bar "|."
+						}
+
+						\break
+						\mark \markup "HaFaBra"
+						\measure
+						\measure
+						\bar "|."
+
 				}%Format
 
 				\new Voice = "pipes" {
-					
+					\repeat unfold 2 {
+						{}\mark \markup \small "A"
+						\pipesA
+						{}\mark \markup \small "B"
+						\pipesB
+					}
+
+					\pipesHafabraEnd
 				}%Pipes
 			>>
 		}
@@ -41,33 +61,55 @@
 %			\verseA
 %		  }
 %		}
-%		\new Staff = "seconds" \with {
-%			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
-%			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd }
-%		} {
+%		\new Staff = "seconds" {
 %			\pipessecndglobal
+%			\set Staff.instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
+%			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentTrd}
 %
 %
 %		}
-		\new PipeBandDrumStaff = "side" \with {
-			instrumentName = \markup { \instrumentSide }
-			shortInstrumentName = \markup{ \shortInstrumentSide }
-		} {
+		\new PipeBandDrumStaff = "side" {
 			\sideglobal
+			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
+					\repeat percent 15 {
+						\snareAA
+					}
+					\snareRolls
+
+					\snareB
+					\snareRolls
+
+					\snareHafabraEnd
 
 		}
-		\new PipeBandDrumStaff = "tenor" \with {
-			instrumentName = \markup{ \instrumentTenor }
-			shortInstrumentName = \markup{ \shortInstrumentTenor }
-		} {
+		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
+				\repeat percent 15 {
+					\tenorAA
+				}
+				\tenorRolls
+				\repeat percent 7 \tenorBA
+				\tenorAA
+				\tenorRolls
+
+				\tenorHafabraEnd
 
 		}
-		\new PipeBandDrumStaff = "bass" \with {
-			instrumentName = \markup{ \instrumentBass }
-			shortInstrumentName = \markup{ \shortInstrumentBass }
-		} {
+		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+				\repeat percent 15 \bassAA
+				\bassRolls
+
+				\repeat percent 7 \bassBA
+				\bassAA
+				\bassRolls
+
+				\bassHafabraEnd
 
 		}
 	>>
