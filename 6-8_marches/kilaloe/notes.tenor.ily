@@ -1,29 +1,34 @@
 % 6/8 Kilaloe
 % Tenor
 \version "2.18.2"
-composerTenor = ""
+composerTenor = "N. Kuijkhoven, 2017"
 arrangerTenor = ""
 tenorglobal = {}
+
 % Music
-tenorA = \drummode {
-	d4. g4. | d4. r4. | 
-	d4. g4. | d4. r4. |
-	d4. g4. | d8. g16 d8 g8. d16 g8 |
-	d4. g4. | d4. r4. |
+tenorAA = \drummode {
+	d4. g4. | d4. r4.\rswipe | 
+	d4. g4. | d4. r4.\rswipe |
+	d4. g4. | d4. g4. |
+	d4.\up g4.\up | d4.\up r4. |
 }
-tenorB = \drummode {
-	d4. g4. d4. g4. |
-	d4. g4. d4. r4. |
-	d4. g4. d8. g16 d8 g8. d16 g8 |
-	d4. g4. d4. r4. |
+tenorAB = \drummode {
+	\flourish{
+	  d4. d4. | g4. g4. |
+	  d4. d4. | g4. g4. |
+	  d4. d4. | g4. g4. |
+	}
+	d4.\up g4.\up | d4. \up r4. |
 }
-tenorCA = \drummode {
-	\tenorB
+tenorBA = \drummode {
+	\tenorAA
 }
-tenorCB = \drummode {
-	d4. g4. d4. r4. |
-	d4. g4. d4. r4. |
-	d4. g4. d8. g16 d8 g4. |
-	r4.^"Oii" r4. d4. g4. |
-	d4. r4. |
+tenorBB = \drummode {
+  \flourish{
+	  d4. d4. | g4. g4. |
+	  d4. d4. | g4. g4. |
+	  d4. d4. | g4. g4. |
+	}
+	r4. r4. |
+	d4.\up g4.\up | d4. \up r4. |
 }

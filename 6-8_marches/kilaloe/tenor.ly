@@ -11,23 +11,17 @@
 		\tenorglobal
 		<<
 			\new NullVoice = "format" {
-				\repeat volta 2 \line
+				\repeat volta 2 { \line \line }
 				\break
-				\repeat volta 2 \line
-				\break
-				
-				\line
-				\break
-				\line \measure \bar "|."
+				\repeat volta 2 { \line \line s2. }
 			}%Format
 			
 			\new DrumVoice = "tenor" {
-				\tenorA
+				\tenorAA
+				\tenorAB
 
-				\tenorB
-
-				\tenorCA
-				\tenorCB
+				\tenorBA
+				\tenorBB
 			}
 		>>
 	}

@@ -83,14 +83,14 @@
 		} {
 			\tenorglobal
 
-			s8 \tenorA
-			\tenorA
+			s8 \tenorAA
+			\tenorAB
 
-			\tenorB
-			\tenorB
+			\tenorAA
+			\tenorAB
 
-			\tenorCA
-			\tenorCB 
+			\tenorBA
+			\tenorBB
 			r4. | % Volta bracket for pipes
 		}
 %		\new PipeBandDrumStaff = "bass" \with {
