@@ -4,21 +4,29 @@
 
 % Midparts
 midone = \drummode {
-	\tutti {
-	  \flamd d8 d8:32(	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8
-	} |
+	<<
+	  \tag #'tutti \tutti { s4 s4 s4 }
+	  { \flamd d8 d8:32(	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8 }
+	>> |
 }
 midtwo = \drummode {
-	d8) \tutti {
-	  d8:32( 	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8
-	} |
+	<<
+	  \tag #'tutti { s8 \tutti { s8 s4 s4 } }
+	  { d8) d8:32( 	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8 }
+	>> |
 }
 % Endings
 endone = \drummode {
-	\flamd \tutti { d4 	d4:32(	d4)  }
+	<<
+	  \tag #'tutti \tutti { s4 s4 s4 }
+	  { \flam d4 	d4:32(	d4)  }
+	>> |
 }
 endtwo = \drummode {
-	d4) \tutti { d4:32(  d4)  }
+	<<
+	  \tag #'tutti { s4 \tutti { s4 s4 } }
+	  { d4) d4:32( d4) }
+	>> |
 }
 
 % Several Parts

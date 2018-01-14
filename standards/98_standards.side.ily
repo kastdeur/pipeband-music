@@ -4,7 +4,9 @@
 composerSide = "E.T. de Boone, 05-01-2017"
 % Midparts
 midone = \drummode {
-	\tutti {
+	<<
+	  \tutti { s8 | s4. s4. s4. | s4. s4. s4 }
+	  {
 		d16 g |
 		\flam d8. g16:64( g8)
 		d4.:32(
@@ -13,11 +15,14 @@ midone = \drummode {
 		d8. \flam g16 d8
 		d4.:32(
 		d4)
-	}
+	 }
+   >>
 }
 % Endings
 endone = \drummode {
-	\tutti {
+	<<
+	  \tutti { s8 | s4. s4. s4. | s4. s4. s4 }
+	  {
 		g8 |
 		\flam d8. d16 g8
 		\flam d4 \drag g8
@@ -26,7 +31,8 @@ endone = \drummode {
 		d8. \flam g16 d8
 		d4.:32(
 		d4)
-	}
+	  }
+	>>
 }
 
 % Several Parts
