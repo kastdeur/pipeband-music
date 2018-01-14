@@ -16,12 +16,12 @@ part = { \partial 4. \grace {s4} s4. }
 				\part
 				\line
 				\break
-				\line \bar "|."
+				\line \bar "!"
 				\break
 				\part
 				\line
 				\break
-				\line \bar "|."
+				\line \bar ".|:-||"
 				\break
 				\repeat volta 2 {
 					\part
