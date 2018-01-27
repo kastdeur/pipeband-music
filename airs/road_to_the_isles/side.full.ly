@@ -27,36 +27,34 @@
 				
 				}%End of Format
 				\new DrumVoice = "side" {
-					\sideA s8
+					\sidePI
+					<<
+						\sideMid
+						\context PipeBandDrumStaff = "side2" {
+							\sideMidII
+						}
+					>>
+					\sidePI
+					<<
+						\sideEnd
+						\context PipeBandDrumStaff = "side2" {
+							\sideEndII
+						}
+					>> s8
 
-					\sideB s8
+					\sidePII
+					\sideMid
+					\sidePII
+					\sideEnd s8
 				}%End of side
 			>>
 		}
 		\new PipeBandDrumStaff = "side2" \with {
-			instrumentName = \markup{ \instrumentSide 2 }
-			shortInstrumentName = \markup{ \shortInstrumentSide 2}
+			instrumentName = \markup{ \instrumentSide LD }
+			shortInstrumentName = \markup{ \shortInstrumentSide LD }
+			\RemoveAllEmptyStaves
 		} {
-				s8 |
-				s2 |
-				s4 s8
-				\sideMidTwo
-				s8 |
-				s2 |
-				s4 s8
-				\sideEndTwo
-				s8
-			
-				
-				s8 |
-				s2 |
-				s4 s8
-				\sideMidTwo
-				s8 |
-				s2 |
-				s4 s8
-				\sideEndTwo
-				s8
+			s8 | s1*4
 		}
 	>>
 	\header {

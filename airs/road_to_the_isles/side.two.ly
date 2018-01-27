@@ -23,31 +23,15 @@
 			}%Format
 			
 			\new DrumVoice = "side" {
-				d16. g32 |
-				d4:32(	d16.) g32 \tuplet 3/2 { d16 g d } |
-				\flam g8 d8:32(	d8)
-
-				\sideMidTwo
-
-				d16. g32 |
-				d4:32(	d16.) g32 \tuplet 3/2 { d16 g d } |
-				\flam g16. d32-> g16. g32 	\flam d8
-
-				\sideEndTwo s8
-
-
-
-				d16. g32 |
-				d16.:64(-> d32) \tuplet 3/2 { g16 d g }	d16.:64(-> d32) \tuplet 3/2 { g16 d g } |
-				d16.:64(-> d32) g16.:64(-> g32)	d8
+				\sidePI
+				\sideMidII
+				\sidePI
+				\sideEndII s8
 				
-				\sideMidTwo
-				
-				d16. g32 |
-				d16.:64(-> d32) \tuplet 3/2 { g16 d g }	d16.:64(-> d32) \tuplet 3/2 { g16 d g } |
-				d16.:64(-> d32) g16.:64(-> g32)	d8
-				
-				\sideEndTwo s8
+				\sidePII
+				\sideMidII
+				\sidePI
+				\sideEndII s8
 			}
 		>>
 	}

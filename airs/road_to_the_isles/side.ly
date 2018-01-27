@@ -23,9 +23,15 @@
 			}%Format
 			
 			\new DrumVoice = "side" {
-				\sideA s8
+				\sidePI
+				\sideMid
+				\sidePI
+				\sideEnd s8
 
-				\sideB s8
+				\sidePII
+				\sideMid
+				\sidePII
+				\sideEnd s8
 			}
 		>>
 	}
