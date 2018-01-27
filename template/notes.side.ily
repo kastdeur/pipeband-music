@@ -3,7 +3,9 @@
 \version "2.18.2"
 composerSide = ""
 arrangerSide = ""
-sideglobal = {}
+sideglobal = {
+	\sixteenthBeaming
+}
 % Music
-\snareA = \drummode {
+snareA = \drummode {
 }
