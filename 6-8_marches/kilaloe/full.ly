@@ -11,6 +11,7 @@
 %\include "./notes.pipes.seconds.ily"
 %\include "./notes.lyrics.ily"
 
+part = { \partial 4. \grace {s4} s4. }
 \score {
 	\new StaffGroup <<
 		\new Staff \with {
@@ -24,29 +25,29 @@
 					\part
 					\line
 					\break
-					\line \bar "!"
-					\break
-					\line
-					\break
 					\line \bar "||"
 					\break
+					\part
+					\line
+					\break
+					\line \bar ".|:-||"
+					\break
 					\repeat volta 2 {
+						\part
 						\line
 						\break
 						\line
-						s4.
+						\measure
 					}
-					\alternative{ {\grace {s4} s4. } {\grace {s4} s4. } }
-					\bar "|."
 
 				}%Format
 
 				\new Voice = "pipes" {
-					\pipesA
+					r4 \pipesA s4.
 
-					\pipesB
+					\pipesB s4.
 
-					\pipesC \pipesCBA \pipesCBB
+					\pipesC s4.
 				}%Pipes
 			>>
 		}
@@ -83,15 +84,15 @@
 		} {
 			\tenorglobal
 
-			s8 \tenorAA r4.
-			\tenorAB r4.
+			r4. \tenorAA
+			\tenorAB
+			
+			r4.	\tenorAA
+			\tenorAB
 
-			\tenorAA r4.
-			\tenorAB r4.
-
-			\tenorBA r4.
-			\tenorBB r4.
-			r4. | % Volta bracket for pipes
+			r4. \tenorBA
+			\tenorBB
+			| % Volta bracket for pipes
 		}
 %		\new PipeBandDrumStaff = "bass" \with {
 %			instrumentName = \markup{ \instrumentBass }

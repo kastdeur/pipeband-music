@@ -5,61 +5,42 @@
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
+part = { \partial 4. \grace {s4} s4. }
+
 \score {
     \new Staff {
 		\global
 		\pipeglobal
 		<<
-			{
-			\part
-			\line
-			\break
-			\line \bar "|."
-			\break
-			\line
-			\break
-			\line \bar "|."
-			\break
-			\repeat volta 2 {
+			\new NullVoice = "format" {
+				\part
 				\line
 				\break
+				\line \bar "||"
+				\break
+				\part
 				\line
-				s4.
-			}
-			\alternative{ {\grace{s4} s4.} {\grace{s4} s4.} }
-			\bar "|."
+				\break
+				\line \bar ".|:-||"
+				\break
+				\repeat volta 2 {
+					\part
+					\line
+					\break
+					\line
+					\measure
+				}
 			}%Format
 			{ 
-			\pipesA
+			r4 \pipesA s4.
 
-			\pipesB
+			\pipesB s4.
 
-			\pipesC \pipesCBA \pipesCBB
+			\pipesC s4.
 
 			}
 		>>
 	}
-	\header {
-		title = \title
-		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
-	}
-}
-\score {
-	\new Staff { \global \pipeglobal
-		\set Staff.midiInstrument = #"bagpipe"
-		%%Tune
-		
-		\partial 8
-		\pipesA
-
-		\pipesB
-
-		\pipesC	\pipesC	\pipesCBB
-		
-	}
-	\midi { \confTempo }
 	\header {
 		title = \title
 		meter = \meter
