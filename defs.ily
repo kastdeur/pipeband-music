@@ -1,9 +1,8 @@
-% ===================================================	%
-% 	*Shorts* for Naming									%
-% ===================================================	%
-#(newline)
-#(display "Short naming loaded")
+%{
+  Some definitions for text, used throughout the repo.
 
+  Not critical if missing. But there is complaining..
+%}
 instrumentSide = "Side"
 instrumentTenor = "Tenor"
 instrumentBass = "Bass"
