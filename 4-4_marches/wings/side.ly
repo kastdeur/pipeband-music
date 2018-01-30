@@ -36,8 +36,8 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 			
 			\new DrumVoice = "side" {
 				\snareAA
-					\snareABA s4
-					\snareABB
+					\snareABA
+					\snareABB r8 s8
 				\snareBA 
 			}
 		>>

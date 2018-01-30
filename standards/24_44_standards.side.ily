@@ -59,7 +59,7 @@ endone = \drummode {
 
 endtwo = \drummode {
 	<<
-	  \tag #'tutti \tutti { s8 | s4 s4 s4 r8 }
+	  \tag #'tutti \tutti { s8 | s4 s4 s4 s8 }
 	  {
 		d8:32( |
 		g8) \flamd d16. g32		d16. \flamg g32 d16. g32
@@ -80,7 +80,7 @@ endthree = \drummode {
 }
 endfour = \drummode {
 	<<
-	  \tag #'tutti \tutti { r8 | s4 s4 s4 s8 }
+	  \tag #'tutti \tutti { s8 | s4 s4 s4 s8 }
 	  {
 		d8:32( |
 		\triplet { g16) d g } \flam d16. g32	d32 g d g d16. g32

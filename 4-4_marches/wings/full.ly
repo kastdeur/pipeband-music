@@ -20,9 +20,11 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				\new NullVoice = "format" {
-					\part \line \bar "|."
+					\part \line \bar "||"
+					\line \bar "|."
 					\break
-					\part \line \bar "|."
+					\part \line \bar "||"
+					\line \bar "|."
 				}%Format
 
 				\new Voice = "pipes" {

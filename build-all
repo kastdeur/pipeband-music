@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./build {*marches,airs,christmas,hornpipes,jigs,other,reels,sinterklaas,strathspeys}/**/*.ly standards/*.ly

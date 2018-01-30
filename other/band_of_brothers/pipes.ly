@@ -9,14 +9,12 @@
 \layout {
 	indent = 0
 	\set Score.markFormatter = #format-mark-box-alphabet
-	\context {
-		\Staff
-		\numericTimeSignature
-%		\hideKeySignature
-	}
 }
 \score {
 	\new Staff = "staff_pipes" {
+		\numericTimeSignature
+		\bagpipeKey
+
 		\compressMMRests {
 			\tempo 2. = 32
 			\time 3/4
@@ -29,9 +27,11 @@
 
 		\bar "||"
 		\mark \default
-			\tempo 4 = 108
 			\time 4/4
-			R1*3
+			<<
+			  { s8 \tempo 4 = 108 }
+			  {	R1*3 }
+			>>
 
 			\time 2/4
 			R2
