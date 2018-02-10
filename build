@@ -23,4 +23,4 @@ BAGPIPELY="$LIB/bagpipe.ly/"
 OPTIONS="-dno-strip-output-dir -dno-point-and-click -dpaper-size=\"a4landscape\""
 
 # Execute
-lilypond -dinclude-settings=$STYLESHEET -I $LILYDRUM -I $BAGPIPELY $OPTIONS $@
+lilypond -dinclude-settings=$STYLESHEET -I $LILYDRUM -I $BAGPIPELY $OPTIONS -dpreview $@

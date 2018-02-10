@@ -24,13 +24,15 @@
 					{\part \halfline}
 					{\part \halfline}
 				}
+				\bar "|."
 			}%Format
 			
 			\new Voice = "pipes" {
 				\pipesA s8
 
-				\pipesBA \pipesBBA s8
-				\pipesBA  \pipesBBB s8
+				\pipesBA 
+				\pipesBBA s8
+				\pipesBBB s8
 			}
 		>>
 	}
