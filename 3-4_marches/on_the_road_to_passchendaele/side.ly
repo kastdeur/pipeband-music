@@ -8,29 +8,20 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-	\sideglobal
-        <<
-			{
-				\repeat volta 2 { \line }
-				\break
-				\repeat volta 2 { \halfline }
-				\alternative {
-					{\halfline}
-					{\halfline}
-				}
-				\bar "|."
-				%\line \bar "||" \break
-				%\line \bar "|."
-			}
-			{
-			 \snareAA
-			 \snareAB
-
-			 \snareBA
-			 \snareBB
-			 \snareAB
-			}
-		>>
+		\sideglobal
+		\repeat volta 2 {
+			\snareAA
+			\snareAB
+		}
+		\break
+		\repeat volta 2 {
+			\snareBA
+		}
+		\alternative {
+			{\snareBB}
+			{\removeWithTag #'tutti { \snareAB } }
+		}
+		\bar "|."
 	}
 	\header {
 		title = \title

@@ -30,7 +30,7 @@
 				}%Format
 				{
 				\pipesA
-				
+
 				\pipesB
 				\pipesBA
 				\pipesBB
@@ -47,7 +47,7 @@
 
 			\snareBA
 			\snareBB
-			\snareAB
+			\removeWithTag #'tutti \snareAB
 		}
 %		\new PipeBandDrumStaff = "bass" {
 %			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
