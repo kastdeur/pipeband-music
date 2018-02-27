@@ -8,28 +8,28 @@ sideglobal = {
 
 % Music
 snareEnd = \drummode {
-	d8[:32)(-> g16.) g32]->
+	d8[:32)(-> g16.) \fr g32]->
 	d8[:32(->\<  g8]:32)(->
 	d8[:32)(   g8]:32)(->\>
 	d4)\!
-	d4:32( \<
+	d4:32( \< \dr
 	|
 	d8) \!        d8:32(
-	\triplet { g16)[ d g } \flam d8]
+	\triplet { g16)[ d g } \flam d8] \fr
 	g16.[ d32-> g16. g32]
 	\flam d8 [ d16. g32->]
 	d16.[ d32 \flam g8 ]
 	|
-	\flam d8. d16:64(
+	\flamdr d8. d16:64(
 	d8) d8:32(
 	\triplet { g16) d g } \flam d8
 	d4:32(
-	d4)
+	d4) \ofr
 }
 snareA = \drummode {
-	\flam d8.[ g16]
+	\flamdr d8.[\fr g16]
 	d8[:32( g8])
-	\flam d8[ d8]:32(
+	\flam d8[ d8]:32(\dr
 	\triplet { g16[) d g } \flam d16. g32]
 	\triplet { d16[ g d } \flam g8]
 	|
@@ -37,19 +37,19 @@ snareA = \drummode {
 }
 
 snareB = \drummode{
-	\flamd d8[ d16 \flam g16]
+	\flamddr d8[\fr d16 \flam g16]
 	r16 g16[ \flam d g]\v
 	r16 d16[ \flam g8]
 	\flam d4
-	d4:32(
+	d4:32(\dr
 	|
 	\snareEnd
 }
 
 snareC = \drummode{
-	\flam d8-> \flam d16-> g->
+	\flamdr d8-> \flam d16->\fr g->
 	d16 d \flam g8
-	g8 [ d8:32(]
+	g8 [ d8:32(]\dr
 	\triplet { g16[) d g } \flam d16. g32]
 	\triplet { g16[ d g } \flam g8]
 	|
@@ -57,11 +57,11 @@ snareC = \drummode{
 }
 
 snareD = \drummode{
-	\flam d16. g32 d16. g32->
+	\flamdr d16.\fr g32 d16. g32->
 	d32 g d g d16. g32
 	d16. g32-> d32 g d g
 	d4
-	d4:32(
+	d4:32(\dr
 	|
 	\snareEnd
 }
