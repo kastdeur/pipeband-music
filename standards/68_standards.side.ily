@@ -1,54 +1,38 @@
 \version "2.18.2"
 
 \include "lilydrum.ly"
-
 % Midpart
 midone = \drummode {
-	<<
-	  \tag #'tutti \tutti { s4. s4. | s4. s4 }
-	  {
+	\tutti {
 		\flam d8. g16 d8		d4.:32( |
-		d8.) g16 d8		\flam d4
-	  }
-	>>
+		d8.) g16 d8		\flamd d4
+	}
 }
 midtwo = \drummode {%Stonehaven PnD
-	<<
-	  \tag #'tutti \tutti { s4. s4. | s4. s4 }
-	  {
+	\tutti {
 		\flam d8. g16 \flam d8	d16 g d g-> d g |
 		d8. g16 d8	\flam d4
-	  }
-	>>
+	}
 }
 % Endings
 endone = \drummode {
-	<<
-	  \tag #'tutti \tutti { s4. s4. | s4. s4 }
-	  {
+	\tutti {
 		\flam d8. d16:64( d8)		d4.:32( |
 		d8.) g16 d8 		\flamd d4
-	  }
-	>>
+	}
 }
 
 endtwo = \drummode {
-	<<
-	  \tag #'tutti \tutti { s4. s4. | s4. s4 }
-	  {
+	\tutti {
 		\flam d8. g16 d8	d16 g d g d8 |
 		d4.:32(		d4)
-	  }
-	>>
+	}
 }
 endthree = \drummode {%Stonehaven PnD
-	<<
-	  \tag #'tutti \tutti { s4. s4. | s4. s4 }
-	  {
+	\tutti {
 		\flam d8. g16 d32 g d g	d8. g16 \flam d8 |
 		d4.:32(		d4)
-	  }
-	>>
+	}
 }
 % Parts
 pempty = \drummode {
