@@ -1,21 +1,21 @@
 % 4/4 Wings
 % Snare
 \version "2.18.2"
-composerSide = ""
+composerSide = "v1.1"
 sideglobal = {
 	\eighthBeaming
 }
 
 %%music
 snareAAI = \drummode {
-	g8.)\fr g16	d8:32( g8)	r8  d32->\dr \< g d g	d-> g d g d8-> \! |
+	g8.)\fr g16	d8:32( g8)	r8 d8:32(\dr \> g:32)([\< d8)] \!|
 	\flamd d16\fr \f g8 d16->	g16. g32 \flamd d8	d4:32(\dr \<	d8)\fr \! d16. g32 |
 }
 
 
 snareAA = \drummode {
 	d8:32(\dr \mf |
-  \snareAAI
+	\snareAAI
 }
 snareABA = \drummode {
 	d4:32(\dr \<	d8) \! \flamg g8	d16 \flamg g8 g16	\flamd d8\fr d8:32( |

@@ -5,32 +5,33 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+halfbreak = \break
 \score {
     \new PipeBandDrumStaff {
         \global
 		\sideglobal
 		<<
 			\new NullVoice = "format" {
-			  \part \line \bar "|."
+			  \part \halfline \halfbreak \halfline \bar "|."
 			  \break
-			  \part \line \bar "|."
+			  \part \halfline \halfbreak \halfline \bar "|."
 			  \break
-			  \part \line \bar "|."
+			  \part \halfline \halfbreak \halfline \bar "|."
 			  \break
-			  \part \line \bar "|."
+			  \part \halfline \halfbreak \halfline \bar "|."
 			  \break
-			
+
 			}%Format
-			
+
 			\new DrumVoice = "side" {
 			  \snareA s8
-			  
+
 			  \snareB s8
-			  
+
 			  \snareC s8
 
 			  \snareD s8
-			
+
 			}
 		>>
 	}
