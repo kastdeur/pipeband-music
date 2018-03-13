@@ -25,12 +25,12 @@
 					\line
 					\bar "|."
 				}%End of Format
-				\new DrumVoice = "side" {	
-					s8 \snareAA r8
+				\new DrumVoice = "side" {
+					s8 \snareAA
 					\snareAB
 
-					\snareBA r8
-					\snareBB r8 s8
+					\snareBA
+					\snareBB s8
 				}%End of side
 			>>
 		}

@@ -39,7 +39,7 @@
 %		\new Staff = "song" {
 %  			\lyricsglobal
 %			\new Voice = "lyrics" {
-%				
+%
 %			}
 %		}
 %		\new Lyrics = "verse1" {
@@ -60,11 +60,11 @@
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
-			s8 \snareAA r8
+			s8 \snareAA
 			\snareAB
 
-			\snareBA r8
-			\snareBB r8 s8
+			\snareBA
+			\removeWithTag #'endrest \snareBB s4
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal

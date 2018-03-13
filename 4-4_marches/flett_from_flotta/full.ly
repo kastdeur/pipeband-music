@@ -20,12 +20,14 @@
 				{
 					\repeat volta 2 {
 						\part \line \break
-						\line \break
+						\line
 					}
+					\break
 					\repeat volta 2 {
-						\part \line \break
-						\line \break
+						\part \line
+						\line
 					}
+					\break
 				}%Format
 				{
 					\pipesA s4
@@ -38,9 +40,9 @@
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-			s8 \snareA s8
+			r8 \snareA s4
 
-			s4 \snareB s8
+			\snareB s4
 		}
 %		\new PipeBandDrumStaff = "bass" {
 %			\bassglobal

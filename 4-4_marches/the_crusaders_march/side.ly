@@ -11,18 +11,18 @@
 	\sideglobal
 		<<
 			{
-				\part \line  
-				\line \bar "|."
+				\part \line \break
+				\line \bar "||"
 				\break
-				\line
+				\line \break
 				\line \bar "|."
 			}%Format
-			{ 
-				s8 \snareAA r8
+			{
+				s8 \snareAA
 				\snareAB
 
-				\snareBA r8
-				\snareBB r8 s8
+				\snareBA
+				\snareBB s8
 			}
 		>>
 	}

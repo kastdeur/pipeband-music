@@ -1,106 +1,56 @@
 % 4/4 The Crusaders March
 % Side
 \version "2.18.2"
+\include "../../standards/24_44_standards.side.ily"
 composerSide = "E.T. de Boone, 2016"
 sideglobal = {
 	\eighthBeaming
 }
 % Music
 
+pcrusadersI = \drummode {
+	\tag #'upbeat { d16. g32 } |
+	d8:32( \triplet { g16) d g }
+	d8:32( g8:32)(->
+	\triplet { d16) g d-> } g16. g32
+	d8:32( \triplet { g16) d g } |
+}
+
+pcrusadersII = \drummode {
+	\tag #'upbeat { d16. g32 } |
+	\flam d4
+	\flam g8. g16
+	d8:32([ g8)]
+	\flam d8
+}
+
 snareAA = \drummode {
-	d16. g32 |
-	\flam d8 d16. g32
-	\flam d8 d16 g16
-	r16. d32 g16. g32
-	\flam d8 
-	
-	\tutti {
-		d8:32( |
-		\tuplet 3/2 { g16) d g } \flamd d16. g32
-		\tuplet 3/2 { d16 g d } \flamg g16. g32
-		d16. g32 \tuplet 3/2 { d16 g d }
-		\flamg g8
-	}
-
-	d16. g32 |
-	\flam d8 d16. g32
-	\flam d8 d16 g16
-	r16. d32 g16. g32
-	\flam d8 g |
-
-	\tutti {
-		\flam d4 d4:32( d4)
-	}
+	\peight
+	\midone
+	\pthree
+	\endone
 }
 snareAB = \drummode {
 	\tutti {
-		d16. g32 |
-		\flam d8 d16. g32
-		\flam d8 d16 g16
-		r16. d32 g16. g32
-		\flam d8 
-	
-		d8:32( |
-		\tuplet 3/2 { g16) d g } \flamd d16. g32
-		\tuplet 3/2 { d16 g d } \flamg g16. g32
-		d16. g32 \tuplet 3/2 { d16 g d }
-		\flamg g8
-
-		d16. g32 |
-		d8:32( \triplet { g16) d g }
-		d8:32( g8:32)(->
-		\triplet { d16) g d-> } g16. g32
-		d8:32( \triplet { g16) d g } |
-	
-		\flam g4 d4:32( d4)
+		\peight
+		\removeWithTag #'tutti \midone
+		\pcrusadersI
+		\removeWithTag #'upbeat \removeWithTag #'endrest \endone
 	}
 	\flam d16 d \flam g g
 }
 
 snareBA = \drummode {
-	\flam d4
-	\flam g8. g16
-	d8:32( g8)
-	\flam d8
-
-	\tutti {
-		d8:32( |
-		\tuplet 3/2 { g16) d g } \flamd d16. g32
-		\tuplet 3/2 { d16 g d } \flamg g16. g32
-		d16. g32 \tuplet 3/2 { d16 g d }
-		\flamg g8
-	}
-
-	d16. g32 |
-	\flamd d16. g32 d16. d32
-	\flamg g16. d32 g16. g32
-	d16. \flamg g32 d16. d32
-	\flamg g16. d32 \flam g8 |
-
-	\tutti {
-		\flam d4 d4:32( d4)
-	}
+	\removeWithTag #'upbeat \pcrusadersII
+	\midone
+	\pthree
+	\endone
 }
 snareBB = \drummode {
 	\tutti {
-		d16. g32 |
-		\flam d4
-		\flam g8. g16
-		d8:32( g8)
-		\flam d8
-
-		d8:32( |
-		\tuplet 3/2 { g16) d g } \flamd d16. g32
-		\tuplet 3/2 { d16 g d } \flamg g16. g32
-		d16. g32 \tuplet 3/2 { d16 g d }
-		\flamg g8
-	
-		d16. g32 |
-		d8:32( \triplet { g16) d g }
-		d8:32( g8:32)(->
-		\triplet { d16) g d-> } g16. g32
-		d8:32( \triplet { g16) d g } |
-	
-		\flam g4 d4:32( d4)
+		\pcrusadersII
+		\removeWithTag #'tutti \midone
+		\pcrusadersII
+		\removeWithTag #'upbeat \endone
 	}
 }
