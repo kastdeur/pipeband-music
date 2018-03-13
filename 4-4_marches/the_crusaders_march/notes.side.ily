@@ -10,10 +10,10 @@ sideglobal = {
 
 pcrusadersI = \drummode {
 	\tag #'upbeat { d16. g32 } |
-	d8:32( \triplet { g16) d g }
-	d8:32( g8:32)(->
+	d8:32(-> \triplet { g16) d g }
+	d8:32(-> g8:32)(->
 	\triplet { d16) g d-> } g16. g32
-	d8:32( \triplet { g16) d g } |
+	d8:32(-> \triplet { g16) d g } |
 }
 
 pcrusadersII = \drummode {
@@ -50,7 +50,7 @@ snareBB = \drummode {
 	\tutti {
 		\pcrusadersII
 		\removeWithTag #'tutti \midone
-		\pcrusadersII
+		\pcrusadersI
 		\removeWithTag #'upbeat \endone
 	}
 }
