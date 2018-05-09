@@ -64,3 +64,23 @@ pthree = \drummode {
   \flam d8. d16 g8
   \flam d4
 }
+pfour = \drummode {
+  d8:32( |
+  g8.) g16 \flam d8
+  d16 g d g d8
+  \flam d8. d16 \flam g8
+  |
+  \flam d8.-> g16 \flam g8
+  d4.:32~
+  d4
+}
+pfive = \drummode {
+  g8 |
+  d4.:32(->
+  d4.:32)(->
+  d16) g d g d8
+  |
+  \flam d8.[ g16 \drag d8]
+  d16 g d g d8
+  \flam g4
+}
