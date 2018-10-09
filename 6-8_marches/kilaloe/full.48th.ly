@@ -4,13 +4,14 @@
 \include "lilydrum.ly"
 
 \include "./config.ily"
-\include "./notes.bass.ily"
+%\include "./notes.bass.ily"
 \include "./notes.tenor.ily"
-\include "./notes.side.ily"
+\include "./notes.side.48th.ily"
 \include "./notes.pipes.ily"
 %\include "./notes.pipes.seconds.ily"
 %\include "./notes.lyrics.ily"
 
+part = { \partial 4. \grace {s4} s4. }
 \score {
 	\new StaffGroup <<
 		\new Staff \with {
@@ -21,41 +22,66 @@
 			\pipeglobal
 			<<
 				\new NullVoice = "format" {
+					\part
+					\line
+					\break
+					\line \bar "||"
+					\break
+					\part
+					\line
+					\break
+					\line \bar ".|:-||"
+					\break
+					\repeat volta 2 {
+						\part
+						\line
+						\break
+						\line
+						\measure
+					}
 
 				}%Format
 
 				\new Voice = "pipes" {
+					r4 \pipesA s4.
 
+					\pipesB s4.
+
+					\pipesC s4.
 				}%Pipes
 			>>
 		}
-%{		\new Staff = "song" {
-  			\lyricsglobal
-			\new Voice = "lyrics" {
-
-			}
-		}
-}%
-%{		\new Lyrics = "verse1" {
-		  \lyricsglobal
-		  \lyricsto "lyrics" {
-			\verseA
-		  }
-		}
-%}
-%{		\new Staff = "seconds" \with {
-			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
-			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd }
-		} {
-			\pipessecndglobal
-
-		}
-%}
+%		\new Staff = "song" {
+%  			\lyricsglobal
+%			\new Voice = "lyrics" {
+%
+%			}
+%		}
+%		\new Lyrics = "verse1" {
+%		  \lyricsglobal
+%		  \lyricsto "lyrics" {
+%			\verseA
+%		  }
+%		}
+%		\new Staff = "seconds" \with {
+%			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
+%			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd }
+%		} {
+%			\pipessecndglobal
+%
+%
+%		}
 		\new PipeBandDrumStaff = "side" \with {
 			instrumentName = \markup { \instrumentSide }
 			shortInstrumentName = \markup{ \shortInstrumentSide }
 		} {
 			\sideglobal
+
+				\snareA \snareA s4.
+
+				\snareB \snareB s4.
+
+				\snareC
 
 		}
 		\new PipeBandDrumStaff = "tenor" \with {
@@ -64,14 +90,23 @@
 		} {
 			\tenorglobal
 
-		}
-		\new PipeBandDrumStaff = "bass" \with {
-			instrumentName = \markup{ \instrumentBass }
-			shortInstrumentName = \markup{ \shortInstrumentBass }
-		} {
-			\bassglobal
+			r4. \tenorAA
+			\tenorAB
 
+			r4.	\tenorAA
+			\tenorAB
+
+			r4. \tenorBA
+			\tenorBB
+			| % Volta bracket for pipes
 		}
+%		\new PipeBandDrumStaff = "bass" \with {
+%			instrumentName = \markup{ \instrumentBass }
+%			shortInstrumentName = \markup{ \shortInstrumentBass }
+%		} {
+%			\bassglobal
+%
+%		}
 	>>
 	\header {
 		title = \title

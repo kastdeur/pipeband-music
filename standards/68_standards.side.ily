@@ -69,7 +69,7 @@ pfour = \drummode {
 pfive = \drummode {
 	d8:32( |
 	\tuplet 3/2 { g8) d g } \flamd d8		\tuplet 3/2 { d8 g d } \flam g8 |
-	d16 g d-> g d g	\flam d8 g8. d16 |
+	d16 g d-> g d g	\flam d8. g16 d8 |
 
 }
 

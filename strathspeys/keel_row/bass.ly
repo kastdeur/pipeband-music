@@ -12,10 +12,18 @@
 		<<
 			\new NullVoice = "format"
 			{
-
+				\repeat volta 2 {
+				  	\halfline
+				}
+				\break
+				\repeat volta 2 {
+					\halfline
+				}
 			}%Format
 			\new DrumVoice {
+				\bassA
 
+				\bassB
 			}
 		>>
 	}

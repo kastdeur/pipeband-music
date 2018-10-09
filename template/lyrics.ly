@@ -11,17 +11,17 @@
 		\global
 		\lyricsglobal
 		<<
-%		  	\new NullVoice = "format"{
-%				
-%			}%Format
+%{		  	\new NullVoice = "format"{
 
+			}%Format
+%}
 			\new Voice = "tune" {
-				
+
 			}
 
 			\new Lyrics = "lyrics" {
-				\lyricsto "tune" { 
-					
+				\lyricsto "tune" {
+
 				}
 			}
 		>>
@@ -43,12 +43,13 @@
 
 	}
 }
-%\markup {
-%  \fill-line{
-%	\column {
-%	  \verseAblock
-%	  \combine \null \vspace #0.5
-%	  \verseBblock
-%	}
-%  }
+%{\markup {
+  \fill-line{
+	\column {
+	  \verseAblock
+	  \combine \null \vspace #0.5
+	  \verseBblock
+	}
+  }
+}
 %}

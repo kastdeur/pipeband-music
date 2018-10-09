@@ -21,42 +21,51 @@
 			\pipeglobal
 			<<
 				\new NullVoice = "format" {
-
+					\repeat volta 2 {
+				  		\halfline
+					}
+					\break
+					\repeat volta 2 {
+						\halfline
+					}
 				}%Format
 
 				\new Voice = "pipes" {
+					\pipesA
 
+					\pipesB
 				}%Pipes
 			>>
 		}
-%{		\new Staff = "song" {
-  			\lyricsglobal
-			\new Voice = "lyrics" {
-
-			}
-		}
-}%
-%{		\new Lyrics = "verse1" {
-		  \lyricsglobal
-		  \lyricsto "lyrics" {
-			\verseA
-		  }
-		}
-%}
-%{		\new Staff = "seconds" \with {
-			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
-			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd }
-		} {
-			\pipessecndglobal
-
-		}
-%}
+%		\new Staff = "song" {
+%  			\lyricsglobal
+%			\new Voice = "lyrics" {
+%
+%			}
+%		}
+%		\new Lyrics = "verse1" {
+%		  \lyricsglobal
+%		  \lyricsto "lyrics" {
+%			\verseA
+%		  }
+%		}
+%		\new Staff = "seconds" \with {
+%			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
+%			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd }
+%		} {
+%			\pipessecndglobal
+%
+%
+%		}
 		\new PipeBandDrumStaff = "side" \with {
 			instrumentName = \markup { \instrumentSide }
 			shortInstrumentName = \markup{ \shortInstrumentSide }
 		} {
 			\sideglobal
 
+			\snareA
+
+			\snareB
 		}
 		\new PipeBandDrumStaff = "tenor" \with {
 			instrumentName = \markup{ \instrumentTenor }
@@ -64,6 +73,9 @@
 		} {
 			\tenorglobal
 
+			\tenorA
+
+			\tenorB
 		}
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
@@ -71,6 +83,9 @@
 		} {
 			\bassglobal
 
+			\bassA
+
+			\bassB
 		}
 	>>
 	\header {

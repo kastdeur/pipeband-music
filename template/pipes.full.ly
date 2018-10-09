@@ -17,10 +17,10 @@
 			\pipeglobal
 			<<
 			  	\new NullVoice = "format" {
-					
+
 				}%Format
 				\new Voice = "pipes" {
-					
+
 				}%Pipes
 			>>
 		}
@@ -29,15 +29,16 @@
 			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd}
 		} {
 			\pipessecndglobal
-			
+
 		}
-%		\new Staff = "thirds" \with {
-%			instrumentName = \markup{ \instrumentPipes \instrumentThrd }
-%			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentThrd}
-%		} {
-%			\pipesthrdglobal
-%
-%		}
+%{		\new Staff = "thirds" \with {
+			instrumentName = \markup{ \instrumentPipes \instrumentThrd }
+			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentThrd}
+		} {
+			\pipesthrdglobal
+
+		}
+%}
 	>>
 	\header {
 		title = \title
@@ -63,7 +64,7 @@
 			\pipeglobal
 			\set Staff.midiInstrument = #"bagpipe"
 			%%Tune
-		
+
 		}
 		\new Staff = "seconds" {
 			\pipessecndglobal
@@ -75,7 +76,7 @@
 %			\pipesthrdglobal
 %			\set Staff.midiInstrument = #"bagpipe"
 %			%% Thirds
-%		
+%
 %		}
 	>>
 	\midi { \confTempo }
