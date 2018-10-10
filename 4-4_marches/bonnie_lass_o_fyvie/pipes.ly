@@ -31,6 +31,8 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+		\partial 8
+		\pipesA
 	}
 	\midi { \confTempo }
 }

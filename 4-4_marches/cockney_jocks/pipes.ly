@@ -11,21 +11,21 @@
 		\pipeglobal
 		<<
 			{
-				\line \break
-				\line \break
+				\part \line \break
+				\line \bar "||" \break
 				
-				\line \break
-				\line \break
+				\part \line \break
+				\line \bar "||" \break
 				
-				\line \break
+				\part \line \break
 				\line \break
 			}
 			{ 
-				\pipesA
+				\pipesA s8
 
-				\pipesB
+				\pipesB s8
 
-				\pipesC
+				\pipesC s8
 			}
 		>>
 	}
@@ -40,6 +40,7 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+		\partial 8
 		\pipesA
 		\pipesB
 		\pipesC
