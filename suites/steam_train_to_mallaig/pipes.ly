@@ -1,3 +1,4 @@
+
 \version "2.18.2"
 
 \include "bagpipe.ly"
@@ -15,7 +16,6 @@
 		\time 6/8
 		<<
 			\new NullVoice = "format" {
-				\mark \default
 				\repeat unfold 7 { \grace {s2} s2. }
 				\bar "||"
 				\break
@@ -25,30 +25,34 @@
 				\repeat volta 2 { \halfline }
 				\break
 				\mark \default
-				\repeat volta 2 { \halfline }
+				\repeat volta 2 {\halfline }
 				\break
 				\mark \default
-				\repeat volta 2 { \line }
+				\repeat unfold 1 { \line }
+				\bar "||"
 				\break
 				\mark \default
-				\repeat volta 2 { \line }
+				\repeat unfold 1 { \line }
+				\bar "||"
 				\break
 				\mark \default
-				\repeat volta 2 { \line \line}
+				\repeat unfold 1 { \line \line}
+				\bar "||"
 				\break
-				\mark \default
-				\repeat volta 2 { \line \line }
+  				\mark \default
+				\line \line
+				\bar "|."
 			}%Format
 
 			\new Voice = "pipes" {
-				\pipesA
+				\pipesIntro
 
+				\pipesA
 				\pipesB
 				\pipesC
 				\pipesD
 				\pipesE
 				\pipesF
-				\pipesG
 
 			}
 		>>
@@ -61,11 +65,23 @@
 		arranger = \arrangerPipes
 	}
 }
-%{
+
 \score {
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+		\time 6/8
+		\pipesIntro
+
+		\time 2/4
+		\repeat unfold 1 {
+			\repeat unfold 2 {\pipesA}
+			\repeat unfold 2 {\pipesB}
+			\repeat unfold 2 {\pipesC}
+			\repeat unfold 2 {\pipesD}
+			\repeat unfold 2 {\pipesE}
+		}
+		\pipesF
 	}
 	\midi { \confTempo }
 	\header {
@@ -76,4 +92,3 @@
 		arranger = \arrangerPipes
 	}
 }
-%}
