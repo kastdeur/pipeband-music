@@ -4,7 +4,7 @@
 %If not defined, define rodin here
 rodin = { \bgrip }
 
-composerPipes = "PM Gavin Stoddart MBE BEM / Alan Brydon"
+composerPipes = "Gavin Stoddart / Alan Brydon"
 pipeglobal = {
 	\bagpipeKey
 	}
