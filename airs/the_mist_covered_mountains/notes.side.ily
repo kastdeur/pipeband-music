@@ -1,15 +1,16 @@
 \version "2.18.2"
 sideglobal = {}
+composerSide = "v1.1, 2018"
 snareA = \drummode {
 	d8:32( |
 	g8.) d16 g8		d8 r8 d8:32( |
 	g8.) d16 g8		d8 r8 d8:32( |
 	g8.) d16 g8		d8. g16 d8 |
-	d4.:32(		d8) r8 d8:32( |
+	d4:32(\<	 d8:32\>	d8)\! r8 d8:32( |
 	g8.) d16 g8		d8 r8 d8:32( |
 	g8.) d16 g8		d8 r8 d8:32( |
 	g8.) d16 g8		d8. g16 d8 |
-	d4.:32(		d4) 
+	d4.:32(		d4)
 }
 snareB = \drummode {
 	d8 |

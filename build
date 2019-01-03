@@ -18,7 +18,7 @@ LILYDRUM="$LIB/lilydrum/"
 # Add custom bagpipe.ly to search path
 BAGPIPELY="$LIB/bagpipe.ly/"
 
-# Options by this script 
+# Options by this script
 # see http://lilypond.org/doc/v2.18/Documentation/usage/command_002dline-usage#advanced-command-line-options-for-lilypond
 OPTIONS="-dno-strip-output-dir -dno-point-and-click -dpaper-size=\"a4landscape\""
 

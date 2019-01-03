@@ -11,6 +11,11 @@
 %\include "./notes.pipes.seconds.ily"
 %\include "./notes.lyrics.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new Staff \with {

@@ -15,7 +15,7 @@
 
 			}
 			{
-				\repeat unfold 2 { \tenorA }
+				\repeat unfold 2 { \tenorA r8 }
 			}
 		>>
 	}

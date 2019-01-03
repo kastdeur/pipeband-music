@@ -37,8 +37,8 @@ pempty = \drummode {
 pone = \drummode {
 	g8 |
 	\flam d8. d16 g8
-	d4.:32~ 
-	d8 d16 g d g 
+	d4.:32~
+	d8 d16 g d g
 	|
 	d8. d16 \flam g8
 	d4.:32~
@@ -83,4 +83,14 @@ pfive = \drummode {
   \flam d8.[ g16 \drag d8]
   d16 g d g d8
   \flam g4
+}
+psix = \drummode {
+	g8 |
+	\flam d8. d16 \flam g8
+	d4.:32(
+	d8.) g16 d32 g d g
+	|
+	d8.-> d16 \flam g8
+	d4.:32(
+	d4)
 }

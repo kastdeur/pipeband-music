@@ -10,18 +10,18 @@
 		\global
         <<
 			{
-			  	\repeat volta 2 { 
-					\line 
-			  	} 
+			  	\repeat volta 2 {
+					\line
+			  	}
 			  	\break
 				\repeat volta 2 {
 					\line
 				}
 			}
-			
+
 			{
-			  \tenorA
-			  \tenorB
+			  \tenorA r8
+			  \tenorB r8
 		 	}
 		>>
 	}

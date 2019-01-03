@@ -6,6 +6,11 @@
 \include "./notes.bass.ily"
 \include "./notes.tenor.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new PipeBandDrumStaff = "tenor" \with {

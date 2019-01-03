@@ -56,18 +56,18 @@
 			\tenorglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-			
-			s8 \tenorA s8
-			\tenorB s8
+
+			r8 \tenorA s8
+			r8 \tenorB s8
 		}
-		\new PipeBandDrumStaff = "bass" {
+%{		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 			\bassA s8
 			\bassB s8
-		}
+		}%}
 	>>
 	\header {
 		title = \title

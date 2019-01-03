@@ -21,9 +21,9 @@
 			<<
 				\new Voice = "format"
 			  	{
-				  	\repeat volta 2 { 
-						\part \line 
-				  	} 
+				  	\repeat volta 2 {
+						\part \line
+				  	}
 				  	\break
 					\repeat volta 2 {
 						\part \line
@@ -60,19 +60,27 @@
 			\sideglobal
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-			
+
 			\snareA s8
 
-			\snareB s8
+
+			  	<<
+					{
+						\snareB s8
+					}
+					{
+						s8 | s1_\markup { \dynamic {ff} 2nd time through}
+					}
+			  	>>
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			s8 \tenorA
+			r8 \tenorA s8
 
-			s8 \tenorB
+			r8 \tenorB s8
 		}
 %		\new PipeBandDrumStaff = "bass" {
 %			\bassglobal

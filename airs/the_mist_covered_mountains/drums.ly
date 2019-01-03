@@ -16,17 +16,24 @@
 			\global
 			<<
 				{
-					\repeat volta 2 { 
-						\part \line 
-			  		} 
+					\repeat volta 2 {
+						\part \line
+			  		}
 			  		\break
 					\repeat volta 2 {
 						\part \line
 					}
 				}
 				{
-				  \snareA s8
-				  \snareB s8
+					\snareA s8
+					<<
+						{
+							\snareB s8
+						}
+						{
+							s8 | s1_\markup { \dynamic {ff} 2nd time through}
+						}
+			  		>>
 				}
 			>>
 		}
@@ -34,8 +41,8 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			s8 \tenorA
-			s8 \tenorB
+			r8 \tenorA s8
+			r8 \tenorB s8
 		}
 %		\new PipeBandDrumStaff = "bass" {
 %			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
@@ -49,7 +56,7 @@
 	\header {
 		title = \title
 		meter = \meter
-		composer = \markup \tiny {
+		composer = \markup {
 			\column \right-align {
 				$(if (not (string=? "" composerSide))  #{ \markup {\line { \composerSide  ":" }} #} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \composerTenor  ":" }} #} )

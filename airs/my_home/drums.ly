@@ -25,17 +25,17 @@
 				}
 			>>
 		}
-		\new PipeBandDrumStaff = "bass" {
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-		}
 		\new PipeBandDrumStaff = "tenor" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			\repeat unfold 2 { s8 \tenorA }
+			\repeat unfold 2 { r8 \tenorA s8 }
 		}
+%{		\new PipeBandDrumStaff = "bass" {
+			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
+			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
+
+		}%}
 	>>
 	\header {
 		title = \title

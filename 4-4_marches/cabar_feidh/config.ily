@@ -13,5 +13,6 @@ halfline = { \repeat unfold 4 \measure }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
+title = "Cabar Feidh"
 title = "Cabar Fèidh"
 meter = "Regimental March of the Seaforth Highlanders"

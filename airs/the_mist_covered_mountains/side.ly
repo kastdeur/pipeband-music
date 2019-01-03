@@ -10,17 +10,24 @@
         \global
         <<
 			{
-			  	\repeat volta 2 { 
-					\part \line 
-			  	} 
+			  	\repeat volta 2 {
+					\part \line
+			  	}
 			  	\break
 				\repeat volta 2 {
 					\part \line
 				}
 			}
 			{
-			  \snareA s8
-			  \snareB s8
+				\snareA s8
+				<<
+					{
+						\snareB s8
+					}
+					{
+						s8 | s1_\markup { \dynamic {ff} 2nd time through}
+					}
+				>>
 			}
 		>>
 	}
