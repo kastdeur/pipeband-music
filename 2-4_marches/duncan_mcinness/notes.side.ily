@@ -79,5 +79,4 @@ snareDAC = \drummode {
 		>>
 
 		\flamd d8 d8:32(	g4)
-		\bar "|."
 }

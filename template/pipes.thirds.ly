@@ -11,11 +11,11 @@
 		\pipesthrdglobal
 		<<
 			\new NullVoice = "format" {
-			
+
 			}%Format
-			
+
 			\new Voice = "thirds" {
-			
+
 			}
 		>>
 	}
@@ -28,7 +28,7 @@
 	}
 }
 \score {
-	\new Staff { \global \pipethrdglobal
+	\new Staff { \global \pipesthrdglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 	}

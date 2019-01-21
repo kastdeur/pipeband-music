@@ -5,6 +5,12 @@
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
+markTextEol = #(define-music-function (parser location text) (string?) #{
+	\once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
+	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+	\mark \markup $text
+#})
+
 \score {
     \new Staff {
 		\global
@@ -12,16 +18,13 @@
 		<<
 			{
 				\repeat volta 2 {
-					\part \line
-				}\break
-				\part \line \bar "||" \break
-				\line \bar "|."
-
+						\part \line \markTextEol "Fine"
+					}\break
+					\part \line \markTextEol "D.C. al Fine" \bar "||"
 			}
 			{
 				\pipesA s8
 				\pipesB
-				\pipesCA
 			}
 		>>
 	}
@@ -40,7 +43,7 @@
 		\pipesA
 		\pipesA
 		\pipesB
-		\pipesCA
+		\removeWithTag #'upbeat \pipesA
 	}
 	\midi { \confTempo }
 	\header {

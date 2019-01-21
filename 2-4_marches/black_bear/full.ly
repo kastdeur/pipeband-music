@@ -9,35 +9,43 @@
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
 
+markTextEol = #(define-music-function (parser location text) (string?) #{
+	\once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
+	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+	\mark \markup $text
+#})
+
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new Staff {
 			\global
 			\bagpipeKey
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
+			\set Staff.instrumentName = \markup{ \instrumentPipes }
+			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
 					\repeat volta 2 {
-						\part \line
+						\part \line \markTextEol "Fine"
 					}\break
-					\part \line \bar "||" \break
-					\line \bar "|."
+					\part \line \markTextEol "D.C. al Fine" \bar "||"
 				}%Format
 				{
 					\pipesA s8
 					\pipesB
-					\pipesCA s8
 				}%Pipes
 			>>
 		}
 		\new PipeBandDrumStaff = "side" {
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
+			\set PipeBandDrumStaff.instrumentName = \markup \column { \instrumentSide }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 			\sideglobal
 				\snareA s8
 				\snareBA
-				\snareBB
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
@@ -48,7 +56,6 @@
 			r8 \tenorA s8
 
 			\tenorB
-			\tenorA s8
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
@@ -56,7 +63,6 @@
 			r8 \bassA s8
 
 			\bassB
-			\bassA s8
 		}
 	>>
 	\header {

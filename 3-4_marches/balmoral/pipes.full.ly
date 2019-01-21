@@ -7,44 +7,54 @@
 \include "./notes.pipes.seconds.ily"
 \include "./notes.pipes.thirds.ily"
 
+\layout {
+	indent = 8.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff = "pipes"  {
+		\new Staff = "pipes" \with{
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
-				{
+			  	\new NullVoice = "format" {
 					\repeat volta 2 { \line }
 					\break
 					\repeat volta 2 { \line }
 				}%Format
-				{
+				\new Voice = "pipes" {
 					\pipesA
-					
+
 					\pipesB
 				}%Pipes
 			>>
 		}
-		\new Staff = "seconds" {
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentPipesSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd}
+		} {
 			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
-			
+
 			\pipessecndA
 
 			\pipessecndB
+
 		}
-		\new Staff = "thirds" {
+		\new Staff = "thirds" \with {
+			instrumentName = \markup{ \instrumentPipesThrd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesThrd}
+		} {
 			\pipesthrdglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes Thirds }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 3rd }
 
 			\pipesthrdA
 
 			\pipesthrdB
 		}
+
 	>>
 	\header {
 		title = \title
@@ -61,5 +71,50 @@
 				$(if (not (string=? "" composerPipesthrd))  #{ \markup {\line { \instrumentPipesthrd }}#} )
 			}
 		}
+	}
+}
+\score {
+	\new StaffGroup <<
+		\global
+		\new Staff = "pipes" \with {
+			midiInstrument = #"bagpipe"
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
+			\pipeglobal
+			%%Tune
+			\pipesA
+			\pipesB
+
+		}
+		\new Staff = "seconds" \with {
+			midiInstrument = #"bagpipe"
+			instrumentName = \markup{ \instrumentPipesSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
+		} {
+			\pipessecndglobal
+			%% Seconds
+			\pipessecndA
+			\pipessecndB
+
+		}
+		\new Staff = "thirds" \with {
+			midiInstrument = #"bagpipe"
+			instrumentName = \markup{ \instrumentPipesThrd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesThrd }
+		} {
+			\pipesthrdglobal
+			%% Thirds
+			\pipesthrdA
+			\pipesthrdB
+
+		}
+	>>
+	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
 	}
 }

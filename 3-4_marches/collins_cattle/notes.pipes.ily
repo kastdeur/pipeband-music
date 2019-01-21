@@ -2,6 +2,7 @@
 % Pipes
 \version "2.18.2"
 composerPipes = ""
+arrangerPipes = ""
 pipeglobal = {
 	\bagpipeKey
 	}
@@ -14,7 +15,7 @@ pipesA = {
 	\dble e8. [ d16 ] \grg c4 \dble e4 |
 	\dblc c8 [ \gre a8 ] \grg b4 \grip c4 |
 	\dblA A8. [ f16 ] \dble e4 \dblc c8 [ \gre a8 ] |
-	\dblb b4 \grG a2 
+	\dblb b4 \grG a2
 }
 pipesB = {
 	\grg c8. [ d16 ] \dble e4 \gra e4 |
@@ -25,6 +26,6 @@ pipesB = {
 	a8. [ b16 ] \grip c4 \dblb b4 |
 	\grG a4 \grg b4 \grip c4 |
 	\dblA A8. [ f16 ] \dble e4 \dblc c8 [ \gre a8 ] |
-	\dblb b4 \grG a2 
+	\dblb b4 \grG a2
 }
 

@@ -7,7 +7,7 @@ sideglobal = { \eighthBeaming }
 
 snareA = \drummode {
 	\tutti {
-		d16. g32 |
+	  \tag #'upbeat { d16. g32 | }
 		d8:32(-> g:32)(->	\triplet { d16) g d-> } g16. g32 |
 		d8:32(-> g:32)(->	\triplet { d16) g d-> } g16. g32 |
 		\flam d8 d8:32(		g8)
@@ -21,6 +21,9 @@ snareA = \drummode {
 		\flam d8 d8:32(		\triplet { g16) d g } \flam d16.
 	} g32 |
 	\flam d16. g32-> d32 g d g	d8
+}
+snareBB = \drummode {
+  \removeWithTag #'upbeat \snareA
 }
 
 snareBA = \drummode {

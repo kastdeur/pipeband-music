@@ -11,11 +11,11 @@
 		\pipeglobal
 		<<
 			\new NullVoice = "format" {
-			
+
 			}%Format
-			
+
 			\new Voice = "pipes" {
-			
+
 			}
 		>>
 	}
@@ -31,6 +31,7 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+
 	}
 	\midi { \confTempo }
 	\header {

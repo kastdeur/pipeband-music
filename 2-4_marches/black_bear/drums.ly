@@ -7,6 +7,18 @@
 \include "./notes.tenor.ily"
 \include "./notes.side.ily"
 
+
+markTextEol = #(define-music-function (parser location text) (string?) #{
+	\once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
+	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+	\mark \markup $text
+#})
+
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new PipeBandDrumStaff = "side" {
@@ -17,9 +29,10 @@
 
 			<<
 				\new NullVoice = "format" {
-					\repeat volta 2 { \part \halfline \break \halfline } \break
-					\part \halfline \break \halfline \bar "||" \break
-					\line \bar "|."
+					\repeat volta 2 {
+						\part \line \markTextEol "Fine"
+					}\break
+					\part \line \markTextEol "D.C. al Fine" \bar "||"
 				}%End of Format
 				\new DrumVoice = "side" {
 					\snareA s8

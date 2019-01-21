@@ -37,28 +37,3 @@
 		composer = \composerTenor
 	}
 }
-
-midiTenor = midiDrumPitches
-midiTenor.right-hand = \tenorDefault
-midiTenor.left-hand = \tenorDefault
-\score {
-	\new PipeBandDrumStaff 
-	\with {
-		drumPitchTable = #(alist->hash-table midiTenor)
-	}
-	{ \global \tenorglobal
-		%%Tune
-		\tenorA 
-		r8 \tenorA
-		
-		\tenorB
-		\tenorA r8
-	}
-	\midi { \confTempo }
-	\header {
-		title = \title
-		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
-	}
-}

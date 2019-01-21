@@ -21,7 +21,7 @@
 				\bar "|."
 			}
 			{
-				\pipesA 
+				\pipesA
 
 				\pipesB
 				\pipesBA
@@ -34,5 +34,25 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+	}
+}
+
+\score {
+	\new Staff { \global \pipeglobal
+		\set Staff.midiInstrument = #"bagpipe"
+		%%Tune
+		\pipesA \pipesA
+
+		\pipesB \pipesBA
+		\pipesB \pipesBB
+
+	}
+	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }

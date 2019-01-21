@@ -7,11 +7,12 @@ confTempo = {
 	\tempo 4 = 90
 	}
 %% Format
-part = { \partial 8 s8 }
+partspacer = { \grace {s4} s8 }
+part = { \partial 8 }
 measure = { \grace { s4 } s2 | }
 halfline = { \repeat unfold 4 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "Piper's Cave"
+title = "The Piper's Cave"
 meter = "March"

@@ -8,29 +8,29 @@
 \score {
     \new Staff {
 		\global
-		\bagpipeKey
+		\pipeglobal
 		<<
-			{ 
+			\new NullVoice = "format" {
 				\repeat volta 2 {
 					\line
 				}
 				\break
 				\repeat volta 2 {
 					\halfline
-				}	
-				\alternative {
-					{\halfline}
-					{\halfline}
 				}
-	
+				\alternative {
+					{ \halfline }
+					{ \halfline }
+				}
 				\bar "|."
-			}
-			{ 
-			\pipesA
+			}%Format
 
-			\pipesB
-			\pipesBA
-			\pipesBB
+			\new Voice = "pipes" {
+				\pipesA
+
+				\pipesB
+				\pipesBA
+				\pipesBB
 			}
 		>>
 	}
@@ -39,5 +39,26 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
+	}
+}
+\score {
+	\new Staff { \global \pipeglobal
+		\set Staff.midiInstrument = #"bagpipe"
+		%%Tune
+		\pipesA
+
+		\pipesB
+		\pipesBA
+		\pipesB
+		\pipesBB
+	}
+	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }

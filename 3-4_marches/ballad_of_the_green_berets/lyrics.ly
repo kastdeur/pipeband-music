@@ -12,7 +12,7 @@
 		\lyricsglobal
 		<<
 		  	\new NullVoice = "format"
-			{ 
+			{
 				\line
 				\bar "||"
 				\break
@@ -30,7 +30,7 @@
 			  \lyricsAB
 			}
 			\new Lyrics = "lyrics" {
-				\lyricsto "song" { 
+				\lyricsto "song" {
 					\verseA
 				}
 			}
@@ -58,10 +58,15 @@
   \fill-line{
 	\column {
 	  \verseAblock
-	  \combine \null \vspace #0.5
+	}
+	\combine \null \vspace #0.5
+	\column {
 	  \verseBblock
+	}
 	  \combine \null \vspace #0.5
-	  \verseCblock
+	\column {
+		\verseCblock
+	}
 	}
   }
 }

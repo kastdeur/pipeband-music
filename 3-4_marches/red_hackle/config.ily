@@ -13,5 +13,5 @@ halfline = { \repeat unfold 4 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "Red Hackle"
+title = "Red Hackle Pipeband"
 meter = "Retreat"

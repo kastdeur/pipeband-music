@@ -8,22 +8,21 @@
 \score {
     \new Staff {
 		\global
-		\bagpipeKey
-		<<
-            		{
-				\line 
-				\line
-			}
-			{
+		\pipeglobal
+		\set Staff.midiInstrument = #"bagpipe"
+
 				\pipesA
+				\bar "||"
 				\pipesB
-			}
-		>>
+				\bar "|."
 	}
 	\header {
 		title = \title
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
+	\layout { }
+	\midi { \confTempo }
 }

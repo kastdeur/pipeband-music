@@ -1,7 +1,7 @@
 % 3/4 Balmoral (thirds)
 % Pipes
 \version "2.18.2"
-composerPipesthrd = ""
+composerPipesThrd = ""
 pipesthrdglobal = {
 	\bagpipeKey
 	}

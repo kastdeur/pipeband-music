@@ -7,9 +7,14 @@
 \include "./notes.pipes.seconds.ily"
 %\include "./notes.pipes.thirds.ily"
 
+\layout {
+	indent = 8.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff = "pipes" \with{
+		\new Staff = "pipes" \with {
 			instrumentName = \markup{ \instrumentPipes }
 			shortInstrumentName = \markup{ \shortInstrumentPipes }
 		} {
@@ -25,15 +30,15 @@
 			>>
 		}
 		\new Staff = "seconds" \with {
-			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
-			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd}
+			instrumentName = \markup{ \instrumentPipesSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
 		} {
 			\pipessecndglobal
 
 		}
 %{		\new Staff = "thirds" \with {
-			instrumentName = \markup{ \instrumentPipes \instrumentThrd }
-			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentThrd}
+			instrumentName = \markup{ \instrumentPipesThrd }
+			shortInstrumentName = \markup{ \shortInstrumentPipeTthrd }
 		} {
 			\pipesthrdglobal
 
@@ -60,24 +65,33 @@
 \score {
 	\new StaffGroup <<
 		\global
-		\new Staff = "pipes" {
+		\new Staff = "pipes" \with {
+			midiInstrument = #"bagpipe"
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\pipeglobal
-			\set Staff.midiInstrument = #"bagpipe"
 			%%Tune
 
 		}
-		\new Staff = "seconds" {
+		\new Staff = "seconds" \with {
+			midiInstrument = #"bagpipe"
+			instrumentName = \markup{ \instrumentPipesSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
+		} {
 			\pipessecndglobal
-			\set Staff.midiInstrument = #"bagpipe"
 			%% Seconds
 
 		}
-%		\new Staff = "thirds" {
-%			\pipesthrdglobal
-%			\set Staff.midiInstrument = #"bagpipe"
-%			%% Thirds
-%
-%		}
+%{		\new Staff = "thirds" \with {
+			midiInstrument = #"bagpipe"
+			instrumentName = \markup{ \instrumentPipesThrd }
+			shortInstrumentName = \markup{ \shortInstrumentPipeThrd }
+		} {
+			\pipesthrdglobal
+			%% Thirds
+
+%}		}
 	>>
 	\midi { \confTempo }
 	\header {

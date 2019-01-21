@@ -19,7 +19,7 @@
 					\line
 				}
 			}%Format
-			
+
 			\new Voice = "pipes" {
 				\pipesA
 
@@ -32,6 +32,7 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }
 \score {
@@ -50,5 +51,6 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }

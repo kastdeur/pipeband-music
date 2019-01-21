@@ -29,3 +29,24 @@
 		composer = \composerPipes
 	}
 }
+
+\score {
+	\new Staff { \global \pipeglobal
+		\set Staff.midiInstrument = #"bagpipe"
+		%%Tune
+		\repeat unfold 2 {
+			\pipesA
+		}
+		\repeat unfold 2 {
+			\pipesB
+		}
+	}
+	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
+		arranger = \arrangerPipes
+	}
+}

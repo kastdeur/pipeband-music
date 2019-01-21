@@ -11,14 +11,21 @@
 \include "./notes.lyrics.ily"
 
 
+\layout {
+	indent = 7.0
+	short-indent = 5.0
+}
+
 #(set-default-paper-size "a4" 'portrait)
+
 \score {
 	\new StaffGroup <<
-		\new Staff {
+		\new Staff \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
 					\repeat volta 2 { \line }		\break
@@ -40,7 +47,7 @@
 				}%Pipes
 				\new NullVoice = "tune" {
 				  \lyricstuneA
-				  
+
 				  \lyricstuneBA
 					  \lyricstuneBBA
 					  \lyricstuneBBB
@@ -50,11 +57,11 @@
 		\new Lyrics = "lyrics1" {
 				\lyricsto "tune" {
 				  \verseAA
-				  
+
 				  \verseBAA
 				  \verseBAB
 				  \verseBBB
-				  
+
 				}
 			}
 			\new Lyrics = "lyrics-voltad2" {
@@ -63,11 +70,11 @@
 				  \verseBBA
 				}
 			}
-		\new PipeBandDrumStaff = "side" {
+		\new PipeBandDrumStaff = "side" \with {
+			instrumentName = \markup { \instrumentSide }
+			shortInstrumentName = \markup { \shortInstrumentSide }
+		} {
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-
 			\snareAA
 			\snareAB
 

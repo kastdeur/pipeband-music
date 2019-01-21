@@ -19,14 +19,14 @@
 					\break
 				}
 			}%Format
-			
+
 			\new Voice = "pipes" {
 				\pipesA s8
 
 				\pipesB s8
 
 				\pipesC s8
-				
+
 				\pipesD s8
 			}
 		>>
@@ -36,6 +36,7 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }
 \score {
@@ -43,6 +44,7 @@
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 
+		\partial 8
 		\pipesA
 		\pipesA
 
@@ -61,5 +63,6 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }

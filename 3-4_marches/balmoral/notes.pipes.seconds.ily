@@ -1,7 +1,7 @@
 % 3/4 Balmoral (seconds)
 % Pipes
 \version "2.18.2"
-composerPipessecnd = ""
+composerPipesSecnd = ""
 pipessecndglobal = {
 	\bagpipeKey
 	}

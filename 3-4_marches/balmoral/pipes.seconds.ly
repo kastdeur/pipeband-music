@@ -25,7 +25,28 @@
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentPipessecnd
-		composer = \composerPipessecnd
+		instrument = \instrumentPipesSecnd
+		composer = \composerPipesSecnd
 	}
+}
+\score {
+	\new Staff { \global \pipessecndglobal
+		\set Staff.midiInstrument = #"bagpipe"
+		%%Tune
+		\repeat unfold 2 {
+			\pipessecndA
+		}
+		\repeat unfold 2 {
+			\pipessecndB
+		}
+	}
+	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentSecnd
+		composer = \composerPipesSecnd
+		arranger = \arrangerPipesSecnd
+	}
+
 }
