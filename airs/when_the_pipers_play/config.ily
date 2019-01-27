@@ -4,14 +4,14 @@ global = {
 	\time 4/4
 	}
 confTempo = { 
-	\tempo 4 = 80 
+	\tempo 4 = 70 
 	}
 %% Format
-part = { \partial 4 s4 }
+part = { \partial 8*3 \grace {s4} s8*3 }
 measure = { \grace {s1} s1 | }
 halfline = { \repeat unfold 4 \measure }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "When the Pipers play"
-meter = "March"
+meter = "Slow Air"

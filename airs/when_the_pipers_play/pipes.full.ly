@@ -22,10 +22,13 @@
 			\pipeglobal
 			<<
 			  	\new NullVoice = "format" {
-
+					\repeat volta 2 {
+						\part
+						\line
+					}
 				}%Format
 				\new Voice = "pipes" {
-
+					\pipesA s8*3
 				}%Pipes
 			>>
 		}
@@ -34,6 +37,8 @@
 			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
 		} {
 			\pipessecndglobal
+
+			\pipessecndA s8*3
 
 		}
 %{		\new Staff = "thirds" \with {
@@ -72,6 +77,9 @@
 		} {
 			\pipeglobal
 			%%Tune
+			\partial 8*3
+			\pipesA
+			\pipesA
 
 		}
 		\new Staff = "seconds" \with {
@@ -81,6 +89,10 @@
 		} {
 			\pipessecndglobal
 			%% Seconds
+
+			\partial 8*3
+			\pipessecndA
+			\pipessecndA
 
 		}
 %{		\new Staff = "thirds" \with {
