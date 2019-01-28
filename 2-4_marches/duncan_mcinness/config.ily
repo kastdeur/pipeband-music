@@ -10,7 +10,8 @@ confTempo = {
 %% Format
 part = { \partial 8 s8 }
 measure = { \grace { s4 } s2 | }
-halfline = { \repeat unfold 4 { \measure } }
+quarterline = { \repeat unfold 2 { \measure } }
+halfline = { \repeat unfold 2 { \quarterline } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
