@@ -1,56 +1,53 @@
 % 4/4 Bells of Dunblane
 % Side
 \version "2.18.2"
-composerSide = "v2.0@01-04-10"
-arrangerSide = ""
+composerSide = ""
+arrangerSide = "E.T. de Boone, 2019"
 sideglobal = {}
 % Music
-snareA = \drummode {
-  \compressMMRests{
-	 \override MultiMeasureRest.expand-limit = #2
-		r4 |
-		R1*3 |
-		r4 r4 r4 d4:32(
+snarePI = \drummode {
+		\flam g8\! \triplet { d16 g d }
+		\flam g8 \triplet { d16 g d }
+		\flam g8 \triplet { d16 g d }
+		\flam g8 \backstick d
 		|
-	}
-	\repeat unfold 2 {
-		d8.) g16->
-		r16 g8-> g16
-		d8-> d32 g d g
-		d16-> g d d
+}
+snarePII = \drummode {
+		\backstick g8\! \triplet { d16 g d }
+		\flam g8 \triplet { d16 g d }
+		\flam g8 \triplet { d16 g d }
+		\flam \triplet { g16\< d g } 	\flam \triplet { d16 g d \! }
 		|
-		g8-> g16 d->
-		r16 g8-> g16
-		\flam d4
-		d4:32(
+}
+snarePIII = \drummode {
+		\flam d8\! \triplet { d16 g d }
+		\flam g8 \triplet { d16 g d }
+		\flam g8 \triplet { d16 g d }
+		\flam g8 \backstick d
 		|
-	}
-	d4) r4 r4 r4 |
-	r4 r4 r4 \flamg \triplet { g8 \flam d \flam g }
-	|
-	d1:32(->\<
-	|
-	d1:32)(\!\>
-	|
-	\repeat unfold 3 {
-		d8.)\! g16->
-		r16 g8-> g16
-		d8-> d32 g d g
-		d16-> g d d
-		|
-		g8-> g16 d->
-		r16 g8-> g16
-		\flam d4
-		d4:32(
-		|
-	}
-	d8.) g16->
-	r16 g8-> g16
-	d8-> d32 g d g
-	d16-> g d d
-	|
-	g8-> g16 d->
-	r16 g8-> g16
-	\flam d4
+}
+snarePIV = \drummode {
+				\backstick g8\! \triplet { d16 g d }
+				\flam g8 \triplet { d16 g d }
+				\flam g8 \triplet { d16 g d }
+				\flam g8 \backstick d
+				|
+}
+snarePV = \drummode {
+				\backstick g1
+}
 
+snareA = \drummode {
+	\snarePIII \snarePII
+	\snarePI \snarePII
+}
+snareB = \drummode {
+	\snarePI \snarePII
+}
+snareC = \drummode {
+	% concat with snarePV for ending
+	\snarePI 
+	\snarePII
+	\snarePI 
+	\snarePIV
 }

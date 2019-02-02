@@ -3,7 +3,7 @@
 \include "lilydrum.ly"
 
 \include "./config.ily"
-\include "./notes.side.ily"
+\include "./notes.side.cmpd.ily"
 
 \score {
     \new PipeBandDrumStaff {
@@ -11,27 +11,13 @@
 		\sideglobal
 		<<
 			\new NullVoice = "format" {
-			  \line 
-			 % \bar "||"
-			  \break
-			  \repeat volta 2 {
-				\line
-			  }
-			  %\bar "||"
-			  \break
-			  \line
-			  \bar "|."
-			  \measure
-			  \bar "|."
-			  
+				\repeat volta 2 {
+					\line
+				}
 			}%Format
 			
 			\new DrumVoice = "side" {
 				\snareA
-				\repeat percent 2 {
-					\snareB
-				}
-				\snareC \snarePV
 			}
 		>>
 	}

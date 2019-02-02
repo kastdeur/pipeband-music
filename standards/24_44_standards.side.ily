@@ -118,5 +118,11 @@ pnine = \drummode {
 	g16. d32:128~ d16. g32
 	\flam d8
 }
+pten = \drummode {
+	\tag #'upbeat { d16. g32 } |
+	d8:32(-> g8:32)(->
+	\triplet { d16) g d } \flam g16. g32 |
+	d8:32([-> g:32)(]->	d8)
+}
 %% Standard thingies
 midstd = \drummode { \midone }

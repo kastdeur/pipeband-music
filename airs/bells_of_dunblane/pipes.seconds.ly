@@ -17,16 +17,13 @@
 				}
 				\break
 
-				\part
-				\line 
-				\bar "||"
-				\line
-				\bar "|."
+				\repeat volta 2 {
+					\part
+					\line 
+				}
 				\break
 
 				\part
-				\line
-				\bar "||"
 				\line
 				\bar "|."
 			}%Format
@@ -34,9 +31,9 @@
 			\new Voice = "seconds" {
 				\pipessecndA s4
 
-				\pipessecndBA	\pipessecndBB s4
+				\pipessecndB s4
 				
-				\pipessecndCA	\pipessecndCB s4
+				\pipessecndC s4
 			
 			}
 		>>
@@ -55,9 +52,9 @@
 			\partial 4
 				\pipessecndA \pipessecndA
 
-				\pipessecndBA	\pipessecndBB
+				\pipessecndB	\pipessecndB
 				
-				\pipessecndCA	\pipessecndCB
+				\pipessecndC
 	}
 	\midi { \confTempo }
 	\header {

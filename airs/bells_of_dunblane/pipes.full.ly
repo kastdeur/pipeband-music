@@ -7,13 +7,19 @@
 \include "./notes.pipes.seconds.ily"
 %\include "./notes.pipes.thirds.ily"
 
+\layout {
+	indent = 8.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff = "pipes"  {
+		\new Staff = "pipes"  \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 			  	\new NullVoice = "format" {
 					\repeat volta 2 {
@@ -31,8 +37,6 @@
 
 					\part
 					\line
-					\bar "||"
-					\line
 					\bar "|."
 				}%Format
 				\new Voice = "pipes" {
@@ -40,19 +44,19 @@
 
 					\pipesBA \pipesBB s4
 
-					\pipesC \pipesC s4
+					\pipesC s4
 				}%Pipes
 			>>
 		}
-		\new Staff = "seconds" {
-			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentSecnd }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd}
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd}
+		} {\pipessecndglobal
 				\pipessecndA s4
 
-				\pipessecndBA	\pipessecndBB s4
+				\pipessecndB	\pipessecndB s4
 				
-				\pipessecndCA	\pipessecndCB s4
+				\pipessecndC s4
 
 		}
 %		\new Staff = "thirds" {
@@ -91,7 +95,7 @@
 
 				\pipesBA \pipesBB
 				
-				\pipesC	\pipesC
+				\pipesC
 	
 		}
 		\new Staff = "seconds" {
@@ -100,9 +104,9 @@
 			%% Seconds
 				\pipessecndA \pipessecndA
 
-				\pipessecndBA	\pipessecndBB
+				\pipessecndB	\pipessecndB
 				
-				\pipessecndCA	\pipessecndCB
+				\pipessecndC
 
 		}
 %		\new Staff = "thirds" {

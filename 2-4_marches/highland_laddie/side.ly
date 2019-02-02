@@ -11,27 +11,18 @@
 		\sideglobal
 		<<
 			\new NullVoice = "format" {
-			  \line 
-			 % \bar "||"
-			  \break
-			  \repeat volta 2 {
-				\line
-			  }
-			  %\bar "||"
-			  \break
-			  \line
-			  \bar "|."
-			  \measure
-			  \bar "|."
-			  
+				\repeat volta 2 {
+					\part \line
+				}
+				\break
+				\repeat volta 2 {
+					\part \line
+				}
 			}%Format
 			
 			\new DrumVoice = "side" {
-				\snareA
-				\repeat percent 2 {
-					\snareB
-				}
-				\snareC \snarePV
+				\snareA s8
+				\snareB s8
 			}
 		>>
 	}

@@ -84,3 +84,12 @@ pseventeen = \drummode {
 peighteen = \drummode {
 	\flam d8 d8:32(			g8[) \flam d8]		\triplet { d16-> g d } \triplet { g16-> d g } |
 }
+pnineteen = \drummode {
+	\flamd d8 d8:32(	g8[) d8:32(]	g16.) d32:64( d16.) g32 |
+}
+ptwenty = \drummode {
+	\flamd d16. g32 d16. \flam g32		d16. g32 \flam d16. g32		d16. \flam g32 d16. g32 |
+}
+ptwentyone = \drummode {
+	\flamd d8 d8:32(		g8[) \flam d8]		g16 g \crossstick d \crossstick d |
+}

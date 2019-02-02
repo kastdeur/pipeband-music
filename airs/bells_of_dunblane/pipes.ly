@@ -24,10 +24,9 @@
 				\bar "|."
 				\break
 
-				\repeat volta 2 {
-				  	\part
-					\line
-				}
+				\part
+				\line
+				\bar "|."
 			}%Format
 			
 			\new Voice = "pipes" {
@@ -50,10 +49,12 @@
 \score {
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
+
 		%%Tune
+			\partial 4 
 			\pipesA		\pipesA
 			\pipesBA	\pipesBB
-			\pipesC		\pipesC
+			\pipesC
 
 	}
 	\midi { \confTempo }
