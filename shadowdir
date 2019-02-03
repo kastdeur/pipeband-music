@@ -1,0 +1,56 @@
+#!/bin/bash
+
+FROMDIR="../$1"
+TODIR=${2:-$(pwd)}
+TODIR=${TODIR%/}
+
+OrigLDIRLINK=".dirlink"
+DIRLINK="$TODIR/$OrigLDIRLINK"
+
+if [ -z $1 ]; then
+	echo "Usage: $0 FROM TO"
+	exit 0;
+fi
+
+# Create the TODIR
+[ -d "$TODIR" ] || mkdir -p "$TODIR"
+
+# Create the dirlink
+ln -sf "$FROMDIR" "$DIRLINK"
+
+# Copy Directory Structure
+find "$DIRLINK/" -print0 |
+	while IFS= read -d "" oname; 
+	do
+		case "$oname" in
+			*.git*) continue;;
+			*.pdf )	continue;;
+			*.png ) continue;;
+		esac
+
+		name="${oname/$DIRLINK\/}"
+		lname="${oname/$TODIR\/}"
+		
+		# Create directory
+		if [ -d "$oname" ]; then
+			mkdir -p "$TODIR/$name"
+			continue;
+		fi
+
+		# Create softlink
+		if [ -f "$oname" ]; then
+			fname="${name##*/}"
+			dname="${name%/*}"
+			ndots="$(echo $name | awk -F"/" 'NF > max {max = NF} END {print max-1}')"
+			dots=$(printf '%*s' $ndots | sed 's; ;../;g')
+
+			to=$dots$OrigLDIRLINK/$name
+			from=$TODIR/$name
+			ln -s "$to" "$from" 2> /dev/null
+			continue;
+		fi
+	done
+
+echo "#!/bin/bash" > $TODIR/update_shadow_dir
+echo "./.dirlink/shadowdir ./.dirlink/ ." >> $TODIR/update_shadow_dir
+chmod +x $TODIR/update_shadow_dir
