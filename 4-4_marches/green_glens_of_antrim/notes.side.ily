@@ -21,7 +21,7 @@ snareA = \drummode {
 		d8:32( |
 		g16.) d32:64( d16.) 
 	} g32
-	\triplet { d16 g d } \flam d16. g32
+	\triplet { d16 g d } \flam g16. g32
 	\tutti {
 		\triplet { d16\< g d } \triplet { g16 d g }
 		\flam d8 \!

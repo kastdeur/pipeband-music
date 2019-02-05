@@ -98,7 +98,7 @@ $COM $D/set_15.$f.ly -t "Set 15: On the Road to Passchendaele / the Hills of Arg
 4-4_marches/hills_of_argyll/$f.ly \
 ;
 
-$COM $D/set_17.$f.ly -t "Set 17: Teribus/ Corriechoillie's 43rd Welcome to the Northern Meeting / the Barren Rocks of Aden" \
+$COM $D/set_17.$f.ly -t "Set 17: Teribus / Corriechoillie's 43rd Welcome to the Northern Meeting / the Barren Rocks of Aden" \
 2-4_marches/teribus/$f.ly \
 2-4_marches/corriechoillie_welcome_to_the_43rd_northern_meeting/$f.ly \
 2-4_marches/barren_rocks_of_aden/$f.ly \
