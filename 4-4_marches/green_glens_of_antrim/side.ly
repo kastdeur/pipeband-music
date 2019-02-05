@@ -28,9 +28,9 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 			}%Format
 			
 			\new DrumVoice = "side" {
-				\snareA r8 s8
+				s8 \snareA r8 s8
 
-				r8 \snareB r8 s8
+				s8 r8 \snareB r8 s8
 			
 			}
 		>>

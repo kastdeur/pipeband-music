@@ -8,7 +8,7 @@ confTempo = {
 	\tempo 4 = 80 
 	}
 %% Format
-part = { \partial 8 \grace{s4.} s8 }
+part = { \partial 4 \grace{s4.} s4 }
 measure = { \grace {s1} s1 | }
 halfline = { \repeat unfold 4 \measure }
 line = { \repeat unfold 2 { \halfline } }
