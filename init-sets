@@ -69,8 +69,8 @@ airs/morag_of_dunvegan/$f.ly \
 $D/set_1.$f.ly \
 ;
 
-$COM $D/set_11.$f.ly -t "Set 11: Flett from Flotta / the Crusader's March / the Pikeman's March" \
-4-4_marches/flett_from_flotta/$f.ly \
+$COM $D/set_11.$f.ly -t "Set 11: Flett of Flotta / the Crusader's March / the Pikeman's March" \
+4-4_marches/flett_of_flotta/$f.ly \
 4-4_marches/the_crusaders_march/$f.ly \
 4-4_marches/the_pikemans_march/$f.ly \
 ;
