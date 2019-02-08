@@ -2,7 +2,7 @@
 % Pipes
 \version "2.18.2"
 composerPipes = "N. MacLean"
-arrangerPipes = "Seaforth Highlanders (1936)"
+arrangerPipes = "1936"
 pipeglobal = {
 	\bagpipeKey
 }

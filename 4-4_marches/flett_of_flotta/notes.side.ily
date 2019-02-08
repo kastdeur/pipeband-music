@@ -2,6 +2,7 @@
 % Snare
 \version "2.18.2"
 composerSide = "v1.4"
+arrangerSide = "E.T. de Boone"
 sideglobal = {
 	\eighthBeaming
 	}

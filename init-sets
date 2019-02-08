@@ -24,7 +24,7 @@ $COM $D/set_2.$f.ly -t "Set 2: High Road to Gairloch / Brown Haired Maiden / Mai
 ;
 
 $COM $D/set_3.$f.ly -t "Set 3: Green Hills of Tyrol / When the Battle is Over / My Land" \
-3-4_marches/green_hill_of_tyrol/$f.ly \
+3-4_marches/green_hills_of_tyrol/$f.ly \
 3-4_marches/when_the_battle_is_over/$f.ly \
 3-4_marches/my_land/$f.ly \
 ;

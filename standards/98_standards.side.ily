@@ -6,7 +6,7 @@ composerSide = "E.T. de Boone, 05-01-2017"
 midone = \drummode {
 	\tutti {
 		g8 |
-		\flam d8. d16 g8
+		\flam d8. g16 g8
 		d4.:32(\<
 		d4)\! g8
 		|
@@ -60,34 +60,34 @@ pthree = \drummode {
 	d4
 }
 pfour = \drummode {
-  d8:32( |
-  g8.) g16 \flam d8
-  d16 g d g d8
-  \flam d8. d16 \flam g8
-  |
-  \flam d8.-> g16 \flam g8
-  d4.:32~
-  d4
+	d8:32( |
+	g8.) g16 \flam d8
+	d16 g d g d8
+	\flam d8. d16 \flam g8
+	|
+	\flam d8.-> g16 \flam g8
+	d4.:32~
+	d4
 }
 pfive = \drummode {
-  g8 |
-  \flam d8. d16 g8
-  d8.:64~ d16 g8
-  d4:32~->\> g8\!
-  |
-  d16 g d g d8
-  \flam d8. d16 g8
-  \flam d4
+	g8 |
+	\flam d8. d16 g8
+	d8.:64~ d16 g8
+	d4:32~->\> g8\!
+	|
+	d16 g d g d8
+	\flam d8. d16 g8
+	\flam d4
 }
 psix = \drummode {
-  g8 |
-  d4.:32(->
-  d4.:32)(->
-  d16) g d g d8
-  |
-  \flam d8.[ g16 \drag d8]
-  d16 g d g d8
-  \flam g4
+	g8 |
+	d4.:32(->
+	d4.:32)(->
+	d16) g d g d8
+	|
+	\flam d8.[ g16 \drag d8]
+	d16 g d g d8
+	\flam g4
 }
 pseven = \drummode {
 	g8 |
@@ -119,4 +119,3 @@ pnine = \drummode {
 	d4.:32(
 	d4)
 }
-	|
