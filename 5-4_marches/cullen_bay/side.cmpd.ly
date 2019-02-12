@@ -19,7 +19,8 @@
 		>>
 	}
 	\header {
-		title = \markup { \title "(Canadian Memorial Pipes and Drums)" }
+		title = \title
+		band = "Canadian Memorial Pipes and Drums"
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide

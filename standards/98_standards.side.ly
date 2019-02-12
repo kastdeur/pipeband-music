@@ -19,6 +19,7 @@
 	}
 	\header {
 		title = "9/8 Standards"
+		band = "Canadian Memorial Pipes and Drums"
 		meter = "Quick March"
 		composer = ""
 		instrument = "Side"

@@ -12,7 +12,7 @@
 		<<
 			\new NullVoice = "format" {
 				\repeat volta 2 {
-					\line
+					\halfline
 				}
 			}%Format
 			

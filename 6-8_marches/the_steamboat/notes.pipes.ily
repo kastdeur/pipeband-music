@@ -1,7 +1,8 @@
-% 6/8 the Steamboat / Hills of Caithness
+% 6/8 the Steamboat (Hills of Caithness)
 % Pipes
 \version "2.18.2"
-composerPipes = "Trad., 1936, pts 3 & 4 by R. Petre" %Ruaraith Petre
+composerPipes = "Trad., 1936"
+composerPipesAdd = ", pts 3 & 4 by R. Petre" %Ruaraith Petre
 pipeglobal = {
 	\bagpipeKey
 	}

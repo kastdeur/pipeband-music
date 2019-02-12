@@ -13,5 +13,5 @@ halfline = { \repeat unfold 2 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "The Steamboat / Hills of Caithness"
+title = "The Steamboat (Hills of Caithness)"
 meter = "March"

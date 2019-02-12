@@ -17,7 +17,8 @@
 	}
 
 	\header {
-		title = "6/8 Standards (Canadian Memorial Pipes & Drums)"
+		title = "6/8 Standards"
+		band = "Canadian Memorial Pipes and Drums"
 		meter = "Quick March"
 		composer = ""
 		instrument = "Side"

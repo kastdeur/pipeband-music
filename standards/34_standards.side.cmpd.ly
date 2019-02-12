@@ -18,7 +18,8 @@
 		}% End of drums %
 	}
 	\header {
-		title = "3/4 Standards (Canadian Memorial Pipes & Drums)"
+		title = "3/4 Standards"
+		band = "Canadian Memorial Pipes and Drums"
 		meter = "Quick March"
 		composer = ""
 		instrument = "Side"

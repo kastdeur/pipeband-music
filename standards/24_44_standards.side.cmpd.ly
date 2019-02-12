@@ -10,7 +10,8 @@
 		\drummode { \repeat volta 2 { \partial 8 \pempty \midstd \pempty \endtwo } }% End of drums %
 	}
 	\header {
-		title = "2/4 Standards (Canadian Memorial Pipes & Drums)"
+		title = "2/4 Standards"
+		band = "Canadian Memorial Pipes and Drums"
 		meter = "Quick March"
 		composer = ""
 		instrument = "Side"
@@ -38,7 +39,8 @@
     }
 
 	\header {
-		title = "4/4 Standards (Canadian Memorial Pipes & Drums)"
+		title = "4/4 Standards"
+		band = "Canadian Memorial Pipes and Drums"
 		meter = "Quick March"
 		composer = ""
 		instrument = "Side"

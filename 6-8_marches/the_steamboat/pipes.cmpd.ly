@@ -15,10 +15,6 @@
 			\break
 			\repeat volta 2 {\part \line}
 			\break
-			\repeat volta 2 {\part \line}
-			\break
-			\repeat volta 2 {\part \halfline}
-			\alternative{ {\halfline}{\halfline }}
 			\bar "|."
 			}%Format
 			{ 
@@ -26,11 +22,6 @@
 
 			\pipesB s8
 
-			\pipesC s8
-
-			\pipesDA
-			\pipesDBA s8
-			\pipesDBB 
 			}
 		>>
 	}
@@ -38,7 +29,7 @@
 		title = \title
 		meter = \meter
 		instrument = \instrumentPipes
-		composer = \markup { \composerPipes \composerPipesAdd }
+		composer = \composerPipes
 	}
 }
 \score {
@@ -53,13 +44,6 @@
 		\pipesB
 		\pipesB
 		
-		\pipesC
-		\pipesC
-
-		\pipesDA
-		\pipesDBA
-		\pipesDA
-		\pipesDBB
 	}
 	\midi { \confTempo }
 	\header {

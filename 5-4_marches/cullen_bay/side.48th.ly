@@ -22,7 +22,8 @@
 		>>
 	}
 	\header {
-		title = \markup \column { \title \normalsize "48th HIGHRS" }
+		title = \title
+		band = "48th HLDRS"
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
