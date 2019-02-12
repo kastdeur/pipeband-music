@@ -8,41 +8,17 @@ parser = ArgumentParser(__file__)
 parser.add_argument('setfile')
 parser.add_argument('-c',dest='copy',action='store_true',default=False,help="Copy files instead of just linkingi")
 parser.add_argument('-t',dest='title',help="Title for the set")
+parser.add_argument('-e',dest='write_empty',action='store_true',default=False,help="Write empty sets")
 parser.add_argument('scores',nargs='+')
 
 args = parser.parse_args()
 
 if os.path.isdir(args.setfile):
 	print("First argument cannot be a directory ")
-	sys.exit()
+	sys.exit(1)
 
-if os.path.dirname(args.setfile):
-    os.makedirs(os.path.dirname(args.setfile), exist_ok=True)
 
-if args.setfile == '--':
-    fprint = print  
-else:
-    fpoint = codecs.open(args.setfile, 'w+', 'utf8')
-    fprint = fpoint.write
-
-fprint(u'\ufeff')
-fprint('\\version \"2.18.2\"\n\n')
-
-if args.title:
-    fprint(
-"\header {"+
-    "title = \"" + args.title + "\""+
-"}\n")
-
-fprint(
-"\paper {"+
-    "#(define page-breaking ly:minimal-breaking)" +
-"}\n")
-
-fprint("#(ly:set-option 'relative-includes #t)\n")
-
-fprint("\n\n%Scores\n")
-
+scorestext = ""
 for f in args.scores:
 
 	if not os.path.exists(f):
@@ -51,9 +27,9 @@ for f in args.scores:
 	if args.copy is True:
 		text = codecs.open(f, 'r', 'utf8').read()
 		if text.startswith(u'\ufeff'): text = text[1:]
-		text = text.split(u'\n')	
+		text = text.split(u'\n')
 
-		for line in text:	
+		for line in text:
 			if line.startswith(u'\\include'):
 				incline = line.replace('\\include', '').strip('"\' ')
 			
@@ -61,8 +37,36 @@ for f in args.scores:
 					incline = os.path.join(os.path.abspath(os.path.dirname(f)), incline)
 			
 				line = "\\include \""+incline+"\""
-			fprint(line.replace('\r', '')+'\n')
+			scorestext += line.replace('\r', '')+'\n'
 	else:
-		fprint('\\include \"' + os.path.join( os.path.abspath( os.curdir ) ,f) + '\"\n')
+		scorestext += '\\include \"' + os.path.join( os.path.abspath( os.curdir ) ,f) + '\"\n'
+
+if scorestext == "" and not args.write_empty:
+	sys.exit()
+
+
+# Write the file
+if os.path.dirname(args.setfile):
+	os.makedirs(os.path.dirname(args.setfile), exist_ok=True)
+
+if args.setfile == '--':
+	fprint = print  
+else:
+	fpoint = codecs.open(args.setfile, 'w+', 'utf8')
+	fprint = fpoint.write
+
+fprint(u'\ufeff')
+fprint('\\version \"2.18.2\"\n\n')
+
+if args.title:
+	fprint(
+"\header {\n\ttitle = \"" + args.title + "\"\n}\n")
+
+fprint("\paper {\n\t#(define page-breaking ly:minimal-breaking)\n}\n")
+
+fprint("#(ly:set-option 'relative-includes #t)\n")
+
+fprint("\n\n%Scores\n")
+fprint(scorestext)
 
 fpoint.close()
