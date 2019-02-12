@@ -10,10 +10,9 @@ confTempo = {
 %% Format
 part = { \partial 4 \grace{s4.} s4 }
 measure = { \grace {s1} s1 | }
-quartline = { \repeat unfold 2 \measure }
-halfline = { \repeat unfold 2 \quartline }
-line = { \repeat unfold 2 \halfline }
+halfline = { \repeat unfold 4 \measure }
+line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "The Rose of Kelvingrove"
-meter = "Air"
+title = "The 48th Highlanders of Holland"
+meter = "March"
