@@ -10,19 +10,9 @@
 		\global
 		\pipeglobal
 
-		\repeat volta 2 {
-			\pipesA
-		}
-		\break
-		\repeat volta 2 {
-			\pipesBA
-			\break
-		} \alternative {
-			{\pipesBBA \break}
-			\pipesBBB
-		}
+		\partial 4
+		\pipesA
 		\bar "|."
-
 	}
 	\header {
 		title = \title
@@ -36,21 +26,8 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
-		\unfoldRepeats {
-			\repeat volta 2 {
-				\pipesA
-			}
-			\break
-			\repeat volta 2 {
-				\pipesBA
-				\break
-			} \alternative {
-				{\pipesBBA \break}
-				\pipesBBB
-			}
-			\bar "|."
-		}
-
+		\partial 4
+		%\unfoldRepeats \pipesA
 	}
 	\midi { \confTempo }
 	\header {

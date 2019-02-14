@@ -12,7 +12,7 @@
 		<<
 			\new NullVoice = "format" {
 				\partial 4 s4
-				\repeat volta 2 {
+				\repeat volta 4 {
 					\halfline
 					\measure
 					\measure
