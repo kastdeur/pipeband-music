@@ -6,7 +6,7 @@
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
-\pbreak = \break
+pbreak = \break
 \score {
     \new Staff {
 		\global
@@ -29,7 +29,7 @@
 					\quartline
 				} \alternative {
 					{\quartline \pbreak}
-					{ \halfline \quartline }
+					{ \quartline \measure }
 				}
 				\bar "|."
 			}%Format
