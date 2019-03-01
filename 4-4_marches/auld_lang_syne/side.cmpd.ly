@@ -24,6 +24,7 @@
 	\header {
 		title = \title
 		meter = \meter
+		band = "Canadian Memorial Pipes and Drums"
 		instrument = \instrumentSide
 		composer = \composerSide
 		arranger = \arrangerSide

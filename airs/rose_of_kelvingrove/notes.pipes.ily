@@ -47,8 +47,5 @@ pipesBA = {
 pipesBEnding = {
 	\grA f2~ f4 \birl a4 |
 	\grg f4 e4 \grg d4 c4 |
-	\thrwd d1~ |
-	d1~  |
-	d1~  |
-	d1~ 
+	\thrwd d1\fermata |
 }

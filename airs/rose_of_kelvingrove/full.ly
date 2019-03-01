@@ -43,7 +43,7 @@
 						\quartline
 					} \alternative {
 						\quartline
-						{ \halfline \quartline }
+						{\quartline \measure}
 					}
 					\bar "|."
 				}%Format

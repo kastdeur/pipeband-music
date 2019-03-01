@@ -30,7 +30,7 @@
 					\part \halfline \break
 					}
 				}
-			
+				\bar "|."
 			}%Format
 			{ 
 				\pipesAA
@@ -47,6 +47,7 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }
 \score {

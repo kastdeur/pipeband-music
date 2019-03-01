@@ -28,6 +28,7 @@
 	\header {
 		title = \title
 		meter = \meter
+		band = "48th HIGHRS"
 		instrument = \instrumentPipes
 		composer = \composerPipes
 	}

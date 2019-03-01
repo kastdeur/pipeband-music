@@ -11,7 +11,8 @@
 		\pipeglobal
 
 		\repeat volta 2 {
-			\pipesA
+			\pipesAA
+			\pipesAB
 		}
 		\break
 		\repeat volta 2 {
@@ -38,7 +39,8 @@
 		%%Tune
 		\unfoldRepeats {
 			\repeat volta 2 {
-				\pipesA
+				\pipesAA
+				\pipesAB
 			}
 			\break
 			\repeat volta 2 {
