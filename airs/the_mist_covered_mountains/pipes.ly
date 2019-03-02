@@ -9,21 +9,14 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			{
-			  	\repeat volta 2 { 
-					\line 
-			  	} 
-			  	\break
-				\repeat volta 2 {
-					\line
-				}
-			}%Format
-			{
-			  \pipesA
-			  \pipesB
-			}
-		>>
+	
+	   	\repeat volta 2 { 
+	 		\pipesA
+	   	} 
+	   	\break
+	 	\repeat volta 2 {
+	 		\pipesB
+	 	}
 	}
 	\header {
 		title = \title

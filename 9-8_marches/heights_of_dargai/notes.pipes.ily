@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "J. Wallace"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 % Music
 pipesA = {
 	\grg a8. [ b16 \grip c8 ] \dble e4. \dblc c4 e8 |

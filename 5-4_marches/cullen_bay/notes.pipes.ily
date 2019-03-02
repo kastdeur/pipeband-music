@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "I. Duncan"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 % Music
 pipesA = {
 	\grg c8. [ d16 ] \dble e8 [ \grg c8 ] \thrwd d8 [ \grg e16. d32 ] \grg c2 |

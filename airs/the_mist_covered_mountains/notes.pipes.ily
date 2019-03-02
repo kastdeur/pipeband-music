@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key b \minor
+}
 % Music
 pipesA = {
  \grg b4. \taor b4. |

@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "Alexander Muir"
 pipeglobal = {
-	\bagpipeKey
+	\key d \major
 }
 tb = { \pgrace { A32[ b ] } }
 % Music

@@ -4,7 +4,7 @@
 composerPipes = "PM Rev. Dr. K. B. Bice, 2015"
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
+	\key d \major
 }
 % Music
 pipesA = {

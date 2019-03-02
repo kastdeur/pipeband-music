@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipesSecnd = ""
 pipessecndglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipessecndA = {
 	e8 |
 	\dble e4. \dbld d4 c8 |

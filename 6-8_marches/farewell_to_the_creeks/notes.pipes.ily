@@ -4,8 +4,9 @@
 composerPipes = "PM J. Robertson"
 arrangerPipes = "Seaforths of Holland"
 pipeglobal = {
-	\bagpipeKey
+	\key a \major
 }
+
 % Music
 pipesA = {
 	A8 |

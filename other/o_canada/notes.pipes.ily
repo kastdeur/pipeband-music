@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "Calixa Lavallée"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 % Music
 pipesA = {
 	\grg c4 \grg e8. [ \gra e16 ] |

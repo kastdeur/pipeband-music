@@ -4,7 +4,7 @@
 arrangerPipes = "PM William Ross"
 composerPipes = ""
 pipeglobal = {
-	\bagpipeKey
+	\key a \major
 }
 % Music
 pipesA = {

@@ -6,8 +6,8 @@ rodin = { \bgrip }
 
 composerPipes = "Gavin Stoddart / Alan Brydon"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipesA = {
 	\grg a8. [ b16 ] \grip c4~ c8 [ \grG c8 ] |
 	\grg d8 [ f8 ] \dble e4 c4 |

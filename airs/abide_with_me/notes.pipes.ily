@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "J.J. van Ommen Kloeke"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 % Music
 pipes = {
 	\grg c2 \grip c4 \gre b4 

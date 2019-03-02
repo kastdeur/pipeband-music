@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "PM F.J. de Boone"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 % Music
 pipesA = {
 	\grg a4 \grd c8 \grip e4. \dble e4. |

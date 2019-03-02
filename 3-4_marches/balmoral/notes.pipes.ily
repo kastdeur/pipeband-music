@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "Arr. G. Rooney/Seaforths of Holland"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipesA = {
 	\grg a8. [ b16 ] \grip c4 \grg e4 |
 	\grg a8. [ b16 ] \grip c2 |

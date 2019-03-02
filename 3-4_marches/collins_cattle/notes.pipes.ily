@@ -4,8 +4,8 @@
 composerPipes = ""
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipesA = {
 	\grg a8. [ b16 ] \grip c4 \dblc c4 |
 	\dble e4 \dblc c8 [ b8 ] \grG a4 |

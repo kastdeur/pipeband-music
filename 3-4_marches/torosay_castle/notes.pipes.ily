@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "PM J. Laurie"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key d \major
+}
 % Music
 pipesA = {
  \thrwd d8. [ e16 ] \dblf f4 \birl a4 |

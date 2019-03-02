@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipessecnd = "Trad., arr. PM T.F.J. de Boone"
 pipessecndglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipessecndAA = {
 	\grg c8 [ d8 ] |
 	\grg e4 \grG e4 \grg e4 \grg d8 [ e8 ] |

@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipesThrd = ""
 pipesthrdglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipesthrdA = {
 	\grg c8. [ d16 ] \grg e8 [ c8 ] \grg f8 [ A8 ] |
 	\grf g8 [ f8 ] \grg f8 [ c8 ] \grg f4 |

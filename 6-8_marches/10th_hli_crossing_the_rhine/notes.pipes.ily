@@ -4,8 +4,8 @@
 composerPipes = ""
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key d \major
+}
 % Music
 pipesAA = {
 	\grg a8 |

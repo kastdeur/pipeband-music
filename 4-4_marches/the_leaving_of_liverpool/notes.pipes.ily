@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipesAA = {
 	\grg a8. [ b16 ] 
 	\grip c4 \dblc c8 [ e8 ] \thrwd d8 [ c8 ] \dblb b8 [ a8 ] |

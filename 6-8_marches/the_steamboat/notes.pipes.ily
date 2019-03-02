@@ -4,8 +4,8 @@
 composerPipes = "Trad., 1936"
 composerPipesAdd = ", pts 3 & 4 by R. Petre" %Ruaraith Petre
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 % Music
 pipesA = {
 	e8 |

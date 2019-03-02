@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "Trad."
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \major
+}
 pipesA = {
  e4 |
  \grg a4~ a8 [ \wbirl a8 ] \gre a4 \grd c4 |
