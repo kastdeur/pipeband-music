@@ -11,20 +11,26 @@
 %\include "./notes.pipes.seconds.ily"
 %\include "./notes.lyrics.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff {
+		\new Staff \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				\new NullVoice = "format" {
-					\part \line \bar "||"
-					\line \bar "|."
+					\part \halfline
+					\halfline \bar "||"
 					\break
-					\part \line \bar "||"
-					\line \bar "|."
+					\part \halfline
+					\halfline \bar "|."
 				}%Format
 
 				\new Voice = "pipes" {
@@ -53,10 +59,11 @@
 %
 %
 %		}
-		\new PipeBandDrumStaff = "side" {
+		\new PipeBandDrumStaff = "side" \with {
+			instrumentName = \markup \column {\instrumentSide}
+			shortInstrumentName = \markup{\shortInstrumentSide}
+		} {
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 				r8 \snareAA	\snareABA
 					\snareAAI \snareABB s4

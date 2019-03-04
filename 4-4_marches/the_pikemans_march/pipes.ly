@@ -18,7 +18,7 @@
 				}
 				\part \line \break
 				\line \break
-				\line \break
+				\line \bar "|."
 			}
 			{ 
 				\pipesA s8

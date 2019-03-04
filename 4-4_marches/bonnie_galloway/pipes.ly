@@ -11,8 +11,9 @@
 		\pipeglobal
 		<<
 			{ 
-			\line \break
-			\line \break
+				\line  \bar "||"
+				\break
+				\line \bar "|."
 			}
 			{
 				\pipesA
@@ -33,6 +34,7 @@
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 		\pipesA
+
 		\pipesB
 	}
 	\midi { \confTempo }

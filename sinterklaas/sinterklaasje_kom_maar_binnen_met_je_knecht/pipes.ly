@@ -12,7 +12,8 @@
 		<<
 			\new NullVoice = "format" {
 				\line \bar "|." \break
-				\halfline
+
+				\halfline \break
 				\repeat volta 2 {
 					\partial 4 \grace{s4} s4
 					\halfline

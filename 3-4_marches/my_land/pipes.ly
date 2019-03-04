@@ -9,23 +9,13 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			\new NullVoice = "format" {
-				\repeat volta 2 {
-					\line
-				}
-				\break
-				\repeat volta 2 {
-					\line
-				}
-			}%Format
-
-			\new Voice = "pipes" {
-				\pipesA
-
-				\pipesB
-			}
-		>>
+		\repeat volta 2 { 
+			\pipesA 
+		}
+		\break
+		\repeat volta 2 {
+			\pipesB
+		}
 	}
 	\header {
 		title = \title

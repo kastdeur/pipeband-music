@@ -9,54 +9,38 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			\new NullVoice = "format" {
 				\repeat volta 2 {
-					\part
-				  	\line
+					\partial 8
+					\pipesAA
+					\pipesAB s8
 				}
 				\break
+
 				\repeat volta 2 {
-				  	\part
-					\halfline
-				}\alternative{
-				  	\halfline
-					\halfline
+					\partial 8
+					\pipesBA
+				} \alternative {
+					{ \pipesBB s8 }
+					{ \pipesAB s8 }
+				}
+				\bar ".|:-||"
+				\break
+
+				\repeat volta 2 {
+					\partial 8
+					\pipesCA
+					\pipesCB s8
+				}
+				\break
+
+				\repeat volta 2 {
+					\partial 8
+					\pipesDA
+				} \alternative {
+					{ \pipesDB s8 }
+					{ \pipesCB s8 }
 				}
 				\bar "|."
-				\break
-				\repeat volta 2 {
-				  	\part
-				  	\line
-				}
-				\break
-				\repeat volta 2 {
-				  	\part
-					\halfline
-				}\alternative{
-				  	\halfline
-					\halfline
-				}
-				\bar "|."
-
-			}%Format
-			
-			\new Voice = "pipes" {
-				\pipesAA
-				\pipesAB s8
-
-				\pipesBA
-				\pipesBB s8
-				\pipesAB s8
-
-				\pipesCA
-				\pipesCB s8
-
-				\pipesDA
-				\pipesDB s8
-				\pipesCB s8
-			}
-		>>
 	}
 	\header {
 		title = \title

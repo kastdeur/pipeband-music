@@ -1,7 +1,6 @@
 \version "2.19.0"
 %% Globals
 global = {
-	\key d \major
 	\time 6/8
 	}
 confTempo = { 

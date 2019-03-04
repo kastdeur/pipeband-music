@@ -9,25 +9,10 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			\new NullVoice = "format" {
-				\part \line 
-				\bar "||" \break
-				\part \line 
-				\bar "||" \break
-				\part \line 
-				\bar "||" \break
-				\part \line 
-				\bar "|." \break
-			}%Format
-
-			\new Voice = "pipes" {
-				\pipesA s4
-				\pipesB s4
-				\pipesC s4
-				\pipesD s4
-			}
-		>>
+				\partial 4 \pipesA s4 \bar "||" \break
+				\partial 4 \pipesB s4 \bar "||" \break
+				\partial 4 \pipesC s4 \bar "||" \break
+				\partial 4 \pipesD s4 \bar "|." \break
 	}
 	\header {
 		title = \title

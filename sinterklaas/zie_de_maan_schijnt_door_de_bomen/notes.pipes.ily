@@ -10,7 +10,7 @@ pipeglobal = {
 pipesA = {
 	\grg a8 \grG a |
 	\thrwd d4 \grc d4 \grg d8[ e] |
-	\grg f4 \thrwd d4 | % Note this is 2/4
+	\grg f4 \thrwd d4 |% Note this is 2/4
 	\grg e8[ \gra e8] \grg e8[  \gra e] \grg f[ e] |
 	\thrwd d2
 }

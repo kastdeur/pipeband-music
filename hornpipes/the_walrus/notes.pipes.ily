@@ -1,4 +1,4 @@
-% <<TimeSig>> <<Title>>
+% 2/4 The Walrus
 % Pipes
 \version "2.18.2"
 composerPipes = "R. Mathieson"

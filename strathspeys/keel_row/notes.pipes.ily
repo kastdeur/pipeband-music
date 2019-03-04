@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key d \major
+}
 % Music
 pipesA = {
 	\dblf f4 \thrwd d8. [ f16 ] \dblg g4 \hdble e8. [ g16 ] |

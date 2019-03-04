@@ -9,26 +9,20 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			{
-				\repeat volta 2 {\line}
-				\break
-				\repeat volta 2 {\halfline}
-				\alternative {
-					{\halfline}
-					{\halfline}
-				}
-				\bar "|." 
-			}
-			{
+
+		\repeat volta 2 {
 			\pipesA
 			\pipesAB
-			
+		}
+		\break
+		\repeat volta 2 {
 			\pipesB
+		}
+		\alternative {
 			\pipesBA
 			\pipesAB
-			}
-		>>
+		}
+		\bar "|." 
 	}
 	\header {
 		title = \title

@@ -9,29 +9,25 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			{
-			\repeat volta 2 {\line}
-			\break
-			\repeat volta 2 {\line}
-			\break
-			\repeat volta 2 {\line}
-			\break
-			\repeat volta 2 {\halfline}
-			\alternative{ {\halfline}{\halfline}}
-			}%Format
-			{ 
-			\pipesA
-
-			\pipesB
-
-			\pipesC
-
-			\pipesDA
-			\pipesDBA
-			\pipesDBB
+			\repeat volta 2 {
+				\pipesA 
 			}
-		>>
+			\break
+			\repeat volta 2 {
+				\pipesB 
+			}
+			\break
+			\repeat volta 2 {
+				\pipesC
+			}
+			\break
+			\repeat volta 2 {
+				\pipesDA
+			} \alternative {
+				{ \pipesDBA }
+				{ \pipesDBB }
+			}
+			\bar "|."
 	}
 	\header {
 		title = \title

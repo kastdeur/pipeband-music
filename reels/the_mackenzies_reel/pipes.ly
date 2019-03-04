@@ -11,10 +11,10 @@
 		\pipeglobal
 		<<
 			{
-				\repeat volta 2 { \part \line } \break
+				\repeat volta 2 { \part \halfline } \break
 			
-				\part \line \break
-				\line \bar "|."
+				\part \halfline \break
+				\halfline \bar "|."
 			}
 			{
 				\pipesA s8
@@ -29,8 +29,5 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
-	}
-	\midi {
-		\tempo 2 = 70
 	}
 }

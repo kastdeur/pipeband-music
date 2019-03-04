@@ -1,7 +1,10 @@
 % 4/4 Lady MacKenzie of Fairburn
 % Pipes
 \version "2.18.2"
-composerPipes = "J. Wark, arr. R. Stanley"
+composerPipes = ""
+pipeglobal = {
+	\key a \major
+}
 pipesA = {
 	d16 |
 	\dblc c8. e16

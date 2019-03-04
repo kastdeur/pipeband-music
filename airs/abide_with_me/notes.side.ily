@@ -15,3 +15,17 @@ snareAB = \drummode {
 	d4:32( \>	d4:32)(	d4:32)(	d4:32)( |
 	d4:32)( \<	d4:32)(	d4:32)(	d4:32)\laissezVibrer \!
 }
+
+snareRollsAA = \drummode {
+	d1:32)( \! \p |
+	d1:32)( |
+	d1:32)( |
+	d4:32)( \<	d4:32)(	d4:32)(	d4:32)( \!\mf \> |
+}
+
+snareRollsAB = \drummode {
+	d1:32)( \!\p |
+	d1:32)( |
+	d4:32( \f \>	d4:32)(	d4:32)(	d4:32)(\p |
+	d4:32)( \<	d4:32)(	d4:32)(	d4:32)\laissezVibrer \!
+}

@@ -9,33 +9,20 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			\new NullVoice = "format" {
 				\repeat volta 2 {
-					\part
-					\line
+					\partial 8
+					\pipesA
 				}
 				\break
 				\repeat volta 2 {
-					\part
-					\repeat unfold 3 \measure
-					\grace{s1} s4 s8
+					\partial 8
+					\pipesBA
 				} \alternative {
-					{\part \halfline}
-					{\part \halfline}
+					{\partial 8 \pipesBBA }
+					{\partial 8 \pipesBBB }
 				}
 				\bar "|."
-			}%Format
-			
-			\new Voice = "pipes" {
-				\pipesA s8
-
-				\pipesBA 
-				\pipesBBA s8
-				\pipesBBB s8
-			}
-		>>
-	}
+			}%Forma	}
 	\header {
 		title = \title
 		meter = \meter

@@ -11,8 +11,8 @@
 		\pipeglobal
 		<<
 			{ 
-				\part \halfline \halfline \bar "|." \break
-
+				\part \halfline \halfline \bar "|." 
+				\break
 				\part \halfline \halfline \bar "|."
 			}%Format
 			{

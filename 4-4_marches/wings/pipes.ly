@@ -34,6 +34,7 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
+		\partial 4 
 		\pipesAA \pipesAB
 
 		\pipesBA \pipesAB

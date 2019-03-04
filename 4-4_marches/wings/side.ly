@@ -29,7 +29,7 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 				\break
 
 				\partial 8 s8
-				\line 
+				\halfline 
 				\markTextEol "D.C. al Fine"
 				\bar "||"
 			}%Format

@@ -9,38 +9,37 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			{
-			\repeat volta 2 {\part \line}
-			\break
-
-			\part \line
-			\break
-			\part \line
-			\break
-			\repeat volta 2 {\part \line}
-			\break
-			\part \line
-			\break
-			\part \line
-			\bar "|."
-			}%Format
-			{ 
-			\pipesA s8
-
-			\pipesBA
-			\pipesBBA s8
-			\pipesBA
-			\pipesBBB s8
-
-			\pipesC s8
-
-			\pipesDA
-			\pipesDBA s8
-			\pipesDA
-			\pipesBBB s8
+			\repeat volta 2 {
+				\partial 8
+				\pipesA s8
 			}
-		>>
+			\break
+			
+			\repeat volta 2 {
+				\partial 8
+				\pipesBA
+			} \alternative {
+				{ \pipesBBA s8 }
+				{ \pipesBBB s8 }
+			}
+			\bar ".|:-||"
+			\break
+			
+			\repeat volta 2 {
+				\partial 8
+				\pipesC s8
+
+			}
+			\break
+			
+			\repeat volta 2 {
+				\partial 8
+				\pipesDA
+			} \alternative {
+				{ \pipesDBA s8 }
+				{ \pipesBBB s8 }
+			}
+			\bar "|."
 	}
 	\header {
 		title = \title
