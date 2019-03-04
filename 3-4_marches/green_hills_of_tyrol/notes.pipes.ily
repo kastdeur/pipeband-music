@@ -1,7 +1,7 @@
 % 3/4 Green Hills of Tyrol
 % Pipes
 \version "2.18.2"
-composerPipes = "PM J. MacLeod"
+composerPipes = "PM J. MacLeod"% 93rd Sutherland Highlanders
 arrangerPipes = "1936"
 pipeglobal = {
 	\bagpipeKey

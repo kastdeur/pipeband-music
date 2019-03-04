@@ -1,7 +1,8 @@
 % 4/4 Abide with Me
 % Pipes
 \version "2.18.2"
-composerPipes = "J.J. van Ommen Kloeke"
+composerPipes = "W. H. Monk"
+arrangerPipes = "J.J. van Ommen Kloeke"
 pipeglobal = {
 	\bagpipeKey
 	}

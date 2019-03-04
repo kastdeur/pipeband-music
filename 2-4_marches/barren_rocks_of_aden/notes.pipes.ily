@@ -1,7 +1,7 @@
 % 2/4 The Barren Rocks of Aden
 % Pipes
 \version "2.18.2"
-composerPipes = ""
+composerPipes = "A. MacKellar, 78th Seaforth Highlanders"
 arrangerPipes = ""
 pipeglobal = {
 	\bagpipeKey

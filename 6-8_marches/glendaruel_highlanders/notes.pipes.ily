@@ -1,7 +1,9 @@
 % 6/8 Glendaruel Highlendars
 % Pipes
 \version "2.18.2"
-composerPipes = "PM A. Fettes"
+composerPipes = "PM A. Fettes"% Gordon Highlanders
+composerPipesAdd = ", pts 3 & 4 PM D. R. MacLennan" % Seaforth Highlanders
+composerPipes = \markup { \composerPipes \composerPipesAdd }
 arrangerPipes = ""
 pipeglobal = {
 	\bagpipeKey

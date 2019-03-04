@@ -1,7 +1,7 @@
 % 3/4 Torosay Castle
 % Pipes
 \version "2.18.2"
-composerPipes = "PM J. Laurie"
+composerPipes = "PM J. Laurie"% Argyll and Sutherland Highlanders
 pipeglobal = {
 	\bagpipeKey
 	}

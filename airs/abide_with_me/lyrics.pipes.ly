@@ -32,7 +32,7 @@
 		meter = \meter
 		composer = \markup \large {
 		  	\column \right-align {
-			  $(if (not (string=? "" composerPipes)) #{ \markup { \line { \composerPipes  ":" } } #} )
+			  $(if (not (string=? "" composerPipes)) #{ \markup { \line { \composerPipes \arrangerPipes ":" } } #} )
 			  $(if (not (string=? "" composerLyrics)) #{ \markup { \line { \composerLyrics ":" } } #} )
 		  	}
 			\column \right-align {

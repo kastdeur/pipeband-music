@@ -1,7 +1,7 @@
 % 2/4 Pipers Cave
 % Pipes
 \version "2.18.2"
-composerPipes = "PM J. Sutherland, 1936"
+composerPipes = "PM J. Sutherland, Seaforth Higlanders (1936)"
 arrangerPipes = ""
 pipeglobal = {
 	\bagpipeKey
