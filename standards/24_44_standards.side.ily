@@ -32,6 +32,15 @@ midfour = \drummode {
 		\drag d16. [  \drag g32  d32 g d g ]	d8
 	}
 }
+midfive = \drummode {
+	\tutti {
+		d8:32( |
+		\tuplet 3/2 { g16) d g } \flam d8
+		g16. d32-> g16. g32
+		\flam d8 d8:32(
+		g)
+	}
+}
 % Endings
 endone = \drummode {
 	\tutti {
@@ -108,7 +117,7 @@ pseven = \drummode {
 }
 peight = \drummode {
 	\tag #'upbeat { d16. g32 } |
-	\flam d8 d16. g32 	\flam d8 d16 g16
+	\flam d8 d16. g32 	\flam d8 d16. g32
 	r16. d32 g16. g32 	\flam d8
 }
 pnine = \drummode {
@@ -121,8 +130,34 @@ pnine = \drummode {
 pten = \drummode {
 	\tag #'upbeat { d16. g32 } |
 	d8:32(-> g8:32)(->
-	\triplet { d16) g d } \flam g16. g32 |
+	\triplet { d16) g d } \flam g16. g32
 	d8:32([-> g:32)(]->	d8)
 }
+peleven = \drummode {
+	\tag #'upbeat { d16. g32 } |
+	\flam d16. g32 d16. g32:64(
+	g16.:64 d32) g16.-> d32:64(
+	g16.:64 g32) d16. d32
+	\flam g8
+}
+ptwelve = \drummode {
+	\tag #'upbeat { d16. g32 } |
+	\flam d16. g32 d16. g32
+	r16. d32 g16.-> d32
+	r16. g32 d16. d32
+	\flam g8
+}
+pthirteen = \drummode {
+	\tag #'upbeat { d16. g32 } |
+	d16.:64~ d32 g16. d32:128~
+	d16. g32 d16.:64~ d32
+	g16. d32:128~ d16. g32
+	\flam d8
+}
+pfourteen = \drummode {
+	s8 |
+	s2..
+}
+
 %% Standard thingies
 midstd = \drummode { \midone }

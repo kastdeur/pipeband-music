@@ -6,6 +6,7 @@
 \include "./notes.side.ily"
 \include "../../standards/24_44_standards.side.ily"
 
+#(set-global-staff-size 18)
 \score {
     \new PipeBandDrumStaff {
         \global
@@ -19,26 +20,28 @@
 			%	  { s1*2 }
 			%	  { s1*2 }
 			%	}
-			%}
-			%
+			% }
 			%}%Format
 			
 			\new DrumVoice = "side" {
-					\partial 8 \simpleSnarepone \midone \simpleSnarepone \simpleSnareEndingI r8
-					\tutti { \simpleSnarepone \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
-				
+				\partial 8 \simpleSnarepone \midone \simpleSnarepone \simpleSnareEndingI r8
+				\tutti { \simpleSnarepone \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
 				\bar "||"
-
 				\break
-				\repeat unfold 3 {
-					\partial 8 \pempty \midone \pempty \simpleSnareEndingI r8  s8
-					\break
-					\tutti {
-					\partial 8 \cadenzaOn \pempty \cadenzaOff \removeWithTag #'tutti \midone \simpleSnareEndingII s8
-				  }
-					\bar "||"
-			  }
-			  \bar "|."
+
+				\partial 8 \simpleSnareptwo \midone \simpleSnareptwo \simpleSnareEndingI r8
+				\tutti { \simpleSnareptwo \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
+				\bar "||"
+				\break
+
+				\partial 8 \simpleSnarepthree \midone \simpleSnarepthree \simpleSnareEndingI r8
+				\tutti { \simpleSnarepthree \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
+				\bar "||"
+				\break
+
+				\partial 8 \simpleSnarepfour \midone \simpleSnarepfour \simpleSnareEndingI r8
+				\tutti { \simpleSnarepfour \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
+				\bar "|."
 			}
 		>>
 	}
@@ -47,6 +50,6 @@
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
-		arranger = \arrangerSide
+		arranger = \arrangerSideSimple
 	}
 }

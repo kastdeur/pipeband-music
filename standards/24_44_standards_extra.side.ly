@@ -7,13 +7,51 @@
 	\new PipeBandDrumStaff {
 		\eighthBeaming
 		\time 4/4
-	
+
 		\drummode{
-		\repeat volta 2 { \partial 8 \pseven \midtwo \peight \endone }
-		\break
-		\repeat volta 2 { \partial 8 \peight \midthree \pnine \endthree }
-		\break
-		\repeat volta 2 { \partial 8 \pempty \midfour \pempty \time 2/4 \endfour }
+			\partial 8
+				\pseven
+				\bar "||"
+				\midtwo
+				\bar "||"
+				\peight
+				\bar "||"
+				\endone
+				\bar "||"
+			\break
+
+			\partial 8
+				\pnine
+				\bar "||"
+				\midthree
+				\bar "||"
+				\pten
+				\bar "||"
+				\endthree
+				\bar "||"
+			\break
+
+			\partial 8
+				\peleven
+				\bar "||"
+				\midfour
+				\bar "||"
+				\ptwelve
+				\bar "||"
+				\partial 8 \time 2/4 \endfour
+				\bar "||"
+			\break
+
+			\partial 8 \time 4/4
+				\pthirteen
+				\bar "||"
+				\midfive
+				\bar "||"
+				\pfourteen
+				\bar "||"
+				\endfive
+
+
 		}% End of drums %
 	}
 	\header {

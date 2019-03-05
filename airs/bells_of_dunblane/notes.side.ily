@@ -9,11 +9,11 @@ snarePI = \drummode {
 		\flam g8\! \triplet { d16 g d }
 		\flam g8 \triplet { d16 g d }
 		\flam g8 \triplet { d16 g d }
-		\flam g8 \backstick d
+		\flam g8 \flam \backstick d
 		|
 }
 snarePII = \drummode {
-		\backstick g8\! \triplet { d16 g d }
+		\flam \backstick g8\! \triplet { d16 g d }
 		\flam g8 \triplet { d16 g d }
 		\flam g8 \triplet { d16 g d }
 		\flam \triplet { g16\< d g } 	\flam \triplet { d16 g d \! }
@@ -23,18 +23,18 @@ snarePIII = \drummode {
 		\flam d8\! \triplet { d16 g d }
 		\flam g8 \triplet { d16 g d }
 		\flam g8 \triplet { d16 g d }
-		\flam g8 \backstick d
+		\flam g8 \flam \backstick d
 		|
 }
 snarePIV = \drummode {
-				\backstick g8\! \triplet { d16 g d }
+				\flam \backstick g8\! \triplet { d16 g d }
 				\flam g8 \triplet { d16 g d }
 				\flam g8 \triplet { d16 g d }
-				\flam g8 \backstick d
+				\flam g8 \flam \backstick d
 				|
 }
 snarePV = \drummode {
-				\backstick g1
+				\flamg \backstick g1
 }
 
 snareA = \drummode {

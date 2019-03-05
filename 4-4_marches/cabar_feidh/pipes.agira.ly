@@ -12,14 +12,15 @@
 		<<
 			\new NullVoice = "format" {
 				\repeat unfold 4 {
-				  \repeat volta 2 {
 				  	\part
-					\line
-				  }
+					\halfline
+					\break
+					\halfline
+					\bar "||"
 				  \break
 				}
+				\bar "|."
 			}%Format
-			
 			\new Voice = "pipes" {
 				\pipesAgiraA s8
 

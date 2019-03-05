@@ -10,24 +10,23 @@
 		\global
 		\pipeglobal
 		<<
-			\new NullVoice = "format" {
-				\repeat unfold 4 {
-				  \repeat volta 2 {
-				  	\part
-					\line
-				  }
-				  \break
-				}
-			}%Format
+			%\new NullVoice = "format" {
+			%	\repeat unfold 4 {
+			%	  	\part
+			%		\halfline
+			%		\break
+			%		\halfline
+			%		\bar "||"
+			%	  \break
+			%	}
+			%	\bar "|."
+			%}%Format
 			
 			\new Voice = "pipes" {
-				\pipesA s8
-
-				\pipesB s8
-
-				\pipesC s8
-
-				\pipesD s8
+				\partial 8 \pipesA s8 \bar "||" \break
+				\partial 8 \pipesB s8 \bar "||" \break
+				\partial 8 \pipesC s8 \bar "||" \break
+				\partial 8 \pipesD s8 \bar "|."
 			}
 		>>
 	}

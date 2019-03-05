@@ -1,16 +1,42 @@
 % 4/4 Cabar Feidh
 % Side
 \version "2.18.2"
-composerSide = ""
+composerSide = "Seaforth Highlanders of Canada"
 arrangerSide = ""
+arrangerSideSimple = "E.T. de Boone, 2018"
 sideglobal = {
-	\sixteenthBeaming
+	\eighthBeaming
 }
 % Music
 simpleSnarepone = \drummode {
 	g8 |
-	\flam d16. g32 \triplet { d16 g d }	\flam g8 g	d4:32~ d8
+	\flam d16. g32 \triplet { d16 g d }
+	\flam g8 g
+	d4:32~
+	d8
 }
+simpleSnareptwo = \drummode {
+	g8 |
+	d8:32( \triplet { g16) d g }
+	d8-> d8:32(
+	\triplet { g16) d g } d16. d32
+	\flam g8
+}
+simpleSnarepthree = \drummode {
+	g8 |
+	\flam d8 g16. d32->
+	\triplet { g16 d g } \flam d16. g32
+	d16. d32-> \triplet { g16 d g }
+	d8->
+}
+simpleSnarepfour = \drummode {
+	d8:32( |
+	g16.) g32-> \triplet { d16 g d }
+	\flam g16. d32-> g16. g32
+	\flam d16. g32-> \triplet { d16 g d }
+	g8
+}
+
 simpleSnareEndingI = \drummode { \tutti {
 	g8 |
 	\flam d4 d4:32~ d4
@@ -20,7 +46,7 @@ simpleSnareEndingII = \drummode {
   \flam d16 g d \flam g
   d16 g \flam d g
   d16 \flam g d g
-  \flam d4:32(
+  d4:32(
   |
   d8) \flam g8
   d32 g d g d16.-> g32
