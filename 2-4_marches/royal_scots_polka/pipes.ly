@@ -15,7 +15,7 @@
 			\pipesA
 		}
 		\break
-	
+
 		\repeat volta 2 {
 			\partial 8
 			\pipesBA
@@ -23,7 +23,7 @@
 		  \pipesBB
 		  \pipesBD
 		}
-		\break
+		\bar "||"
 		\break
 
 		\repeat volta 2 {
@@ -61,7 +61,7 @@
 			\pipesA
 		}
 		\break
-	
+
 		\repeat volta 2 {
 			\partial 8
 			\pipesBA

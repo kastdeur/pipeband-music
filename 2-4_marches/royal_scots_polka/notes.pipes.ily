@@ -67,7 +67,7 @@ pipesDA = {
 }
 pipesDB = {
 	\grA f16. g32 |
-	A8 \grg A16. g32 	\hdblf f8 \thrwd d8 |
+	A8 \grg A16. g32 	\hdblf f8 [ \thrwd d8 ] |
 	\grg f16. g32 A16. g32 	\dblf f8 \grg e16. f32 |
 	\dblg g8 e16. c32 	\grg a16. \grd c32 e16. g32 |
 	\hdblf f8 d8 	\dbld d8
