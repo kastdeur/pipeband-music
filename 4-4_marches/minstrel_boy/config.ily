@@ -2,11 +2,11 @@
 %% Globals
 global = {
 	\time 4/4
-	}
-
+	\key a \mixolydian
+}
 confTempo = {
 	\tempo 4 = 90
-	}
+}
 %% Format
 part = { \grace{s1} \partial 4 s4 }
 measure = { \grace { s4 } s1 | }

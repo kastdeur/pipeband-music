@@ -1,12 +1,12 @@
 \version "2.19.0"
 %% Globals
 global = {
-	\key d \major
 	\time 6/8
-	}
+	\key a \mixolydian
+}
 confTempo = { 
 	\tempo 4. = 120 
-	}
+}
 %% Format
 part = { \partial 8 \grace{s4.} s8 }
 measure = { \grace {s1} s2. | }

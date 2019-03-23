@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "Trad."
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesA = {
  e4 |

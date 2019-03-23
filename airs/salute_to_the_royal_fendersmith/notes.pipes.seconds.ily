@@ -4,7 +4,7 @@
 composerPipesSecnd = "PM J.M. Banks"
 arrangerPipesSecnd = ""
 pipessecndglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipessecndAA = { % Same as pipesA

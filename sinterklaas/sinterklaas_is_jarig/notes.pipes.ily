@@ -4,7 +4,7 @@
 composerPipes = ""
 arrangerPipes = "Seaforth Highlanders of Holland"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesA = {

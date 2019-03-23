@@ -4,7 +4,7 @@
 composerPipes = "J. Wark (Strathclyde Police), 1978"
 arrangerPipes = ""
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesA = {

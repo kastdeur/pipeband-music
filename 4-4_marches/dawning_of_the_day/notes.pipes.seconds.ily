@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipessecnd = "Trad., arr. PM T.F.J. de Boone"
 pipessecndglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipessecndAA = {
 	\grg c8 [ d8 ] |

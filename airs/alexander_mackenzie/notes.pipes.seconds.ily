@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipessecnd = ""
 pipessecndglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipessecndA = {
 	\grg c16. [ f32 ] |

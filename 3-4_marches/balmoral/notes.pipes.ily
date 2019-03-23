@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "Arr. G. Rooney/Seaforths of Holland"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesA = {
 	\grg a8. [ b16 ] \grip c4 \grg e4 |

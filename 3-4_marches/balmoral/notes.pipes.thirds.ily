@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipesThrd = ""
 pipesthrdglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesthrdA = {
 	\grg c8. [ d16 ] \grg e8 [ c8 ] \grg f8 [ A8 ] |

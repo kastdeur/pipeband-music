@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "F.J. de Boone, 2009"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesA = {
 	\grg c8 [ \grG c8 ] \grg c4. a8 |

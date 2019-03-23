@@ -6,7 +6,7 @@ rodin = { \bgrip }
 
 composerPipes = "Gavin Stoddart / Alan Brydon"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesA = {
 	\grg a8. [ b16 ] \grip c4~ c8 [ \grG c8 ] |

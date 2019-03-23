@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "PM Donald MacLeod"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesA = {
 	\grg f8. [ e16 ]  |

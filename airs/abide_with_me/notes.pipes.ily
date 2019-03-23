@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "J.J. van Ommen Kloeke"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipes = {

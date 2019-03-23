@@ -4,7 +4,7 @@
 composerPipes = ""
 arrangerPipes = ""
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesA = {
 	\grg a8. [ b16 ] \grip c4 \dblc c4 |

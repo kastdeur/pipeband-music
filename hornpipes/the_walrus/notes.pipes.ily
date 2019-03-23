@@ -1,9 +1,9 @@
-% <<TimeSig>> <<Title>>
+% 2/4 The Walrus
 % Pipes
 \version "2.18.2"
 composerPipes = "R. Mathieson"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 	\set Staff.midiInstrument = #"bagpipe"
 	}
 pipesA = {

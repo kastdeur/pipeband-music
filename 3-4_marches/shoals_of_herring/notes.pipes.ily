@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = ""
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 pipesA = {
 	\grg a8. [ c16 ] \dble e4 \dblc c8 [ e8 ] |

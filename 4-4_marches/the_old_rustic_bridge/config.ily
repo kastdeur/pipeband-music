@@ -2,6 +2,7 @@
 %% Globals
 global = {
 	\time 4/4
+	\key d \major
 }
 confTempo = {
 	\tempo 4 = 90

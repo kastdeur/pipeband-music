@@ -4,7 +4,7 @@
 composerPipes = "Trad., 1936"
 composerPipesAdd = ", pts 3 & 4 by R. Petre" %Ruaraith Petre
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesA = {

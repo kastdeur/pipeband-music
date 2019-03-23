@@ -4,7 +4,7 @@
 arrangerPipes = "PM William Ross"
 composerPipes = ""
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesA = {

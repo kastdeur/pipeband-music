@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "I. Duncan"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesA = {

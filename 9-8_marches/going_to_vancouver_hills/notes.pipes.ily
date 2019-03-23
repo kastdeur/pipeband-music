@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "PM F.J. de Boone"
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesA = {

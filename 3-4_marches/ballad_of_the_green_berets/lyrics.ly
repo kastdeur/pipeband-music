@@ -67,6 +67,5 @@
 	\column {
 		\verseCblock
 	}
-	}
   }
 }
