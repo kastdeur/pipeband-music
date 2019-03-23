@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipessecnd = "PM Michael J. Evans"
 pipessecndglobal = {
-	\bagpipeKey
-	}
+	\key d \major
+}
 pipessecndAA = {
 	\grg a4 |
 	\thrwd d4 a4 |
@@ -13,10 +13,10 @@ pipessecndAA = {
 	b4 c4 |
 	a8 [ b8 ] \grg c4 |
 	\dblf f2 |
-	g4  
+	g4
 }
 pipessecndAB = {
-  	A4 |
+	A4 |
 	f2 |
 	\grg c8 [ d8 ] \grg e8 [ c8 ] |
 	d4 \grg c8 [ a8 ] |
@@ -34,8 +34,7 @@ pipessecndB = {
 	e4 d4 |
 	\grg c4 b4 |
 	c8 [ b8 ] a4 |
-	b4 c4 | 
-
+	b4 c4 |
 
 	\thrwd d8 [ c8 ] \grg d8 [ e8 ] |
 	\grg d4 \grg c4 |

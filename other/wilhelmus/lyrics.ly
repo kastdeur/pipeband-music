@@ -7,11 +7,20 @@
 \include "./notes.pipes.seconds.ily"
 \include "./notes.lyrics.ily"
 
+\layout {
+	indent = 8.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-	    \new Staff {
+		\new Staff = "pipes" \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\lyricsglobal
+			\pipeglobal
 			<<
 			  	\new NullVoice = "format" {
 					\part
@@ -22,7 +31,7 @@
 					\repeat unfold 7 \measure
 					\bar "|."
 					\break
-	
+
 					\part
 					\line
 					\break
@@ -30,33 +39,29 @@
 					\bar "|."
 				}%Format
 				\new Voice = "tune" {
-				  \bagpipeKey
 				  \pipesA s4
 				  \pipesA s4
-	
+
 				  \pipesB
-					
+
 				}
 			>>
 		}
-		\new Staff {
-			
-		}
 		\new Lyrics = "lyrics1" {
-			\lyricsto "tune" { 
+			\lyricsto "tune" {
 				\lyricsA
 			}
 		}
 		\new Lyrics = "lyrics2" {
-			\lyricsto "tune" { 
+			\lyricsto "tune" {
 				\lyricsF
 			}
 		}
-		\new Staff = "seconds" {
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentPipesSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
+		} {
 			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentSecnd }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd}
-			
 			\pipessecndAA s4
 			\pipessecndAB s4
 

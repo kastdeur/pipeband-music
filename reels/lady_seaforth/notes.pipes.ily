@@ -8,7 +8,7 @@ pipeglobal = {
 }
 % Music
 pipesA = {
-	A8 |
+	A16 |
 	c16 \grd a8. \grg e8 a8	\grg c16 \grd a8. \dblg g4 |
 	b16 \grd a8. \dbld d8 a8	\grg b8. \grd b16 \gre b8 A8 |
 	c16 \grd a8. \grg e8 a8	\grg c16 \grd a8. \dblg g4 |
@@ -16,7 +16,7 @@ pipesA = {
 }
 
 pipesBA = {
-	e8 |
+	e16 |
 	\dblA A4 e8. A16	g16 A8. \hdble e8. g16 |
 	\dblg g4 \grA d8. g16	\grA b16 g8. d8. e16 |
 }

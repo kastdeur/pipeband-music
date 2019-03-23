@@ -9,18 +9,15 @@
     \new Staff {
 		\global
 		\pipeglobal
-
 		\repeat volta 2 {
-			\partial 16
-			\pipesA s16
+			\partial 4 \pipesA
 		}
 		\break
 		\repeat volta 2 {
-			\partial 16
-			\pipesBA
+			\partial 4 \pipesBA
 		} \alternative {
-			{ \pipesBBA }
-			{ \pipesBBB s16 }
+			{ \partial 4 \pipesBBA }
+			{ \partial 4 \pipesBBB }
 		}
 		\bar "|."
 	}
@@ -36,12 +33,17 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
-		\partial 16
-		\pipesA
-		\pipesA
-
-		\pipesBA \pipesBBA
-		\pipesBA \pipesBBB
+		\unfoldRepeats {
+			\repeat volta 2 {
+				\pipesA
+			}
+			\repeat volta 2 {
+				\pipesBA
+			} \alternative {
+			  \pipesBBA
+			  \pipesBBB
+			}
+		}
 	}
 	\midi { \confTempo }
 	\header {

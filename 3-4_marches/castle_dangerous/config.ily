@@ -2,17 +2,17 @@
 %% Globals
 global = {
 	\time 3/4
-	\eighthBeaming
-	}
+	\key d \major
+}
 confTempo = {
 	\tempo 4 = 78
-	}
+}
 %% Format
-part = { \partial 8 s8 }
-measure = { \grace { s4 } s2 | }
-halfline = { \repeat unfold 4 { \measure } }
+part = { \partial 4 \grace{s4.} s4 }
+measure = { \grace {s1} s4 s4 s4| }
+halfline = { \repeat unfold 4 \measure }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "Castle Dangerous"
-meter = "March"
+meter = "Retreat"

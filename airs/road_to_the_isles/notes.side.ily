@@ -11,12 +11,12 @@ sideglobal = { \eighthBeaming }
 sideMid = \drummode { \tutti {
   d16. g32 |
   d16.-> g32 d16. g32->  d16. g32-> d16. g32 |
-  d8-> d8:32( d8)
+  d8-> d8:32( g8)
 } }
 sideMidII = \drummode { \tutti {
   d16. g32 |
   d16.:64([ d32) \tuplet 3/2 { g16 d g] }	\flam d16.[ \drag g32 \tuplet 5/2 { d16 g d g d] } |
-  g8 d8:32( d8)
+  g8 d8:32( g8)
 } }
 
 sideEnd = \drummode { \tutti {
@@ -27,7 +27,7 @@ sideEnd = \drummode { \tutti {
 sideEndII = \drummode { \tutti {
   d16. g32 |
   \dragd \tuplet 3/2 { d16[ d g } \drag d16. g32] 	\flam d16.[ \drag g32 \tuplet 5/2 { d16 g d g d] } |
-  g8 d8:32( d8)
+  g8 d8:32( g8)
 } }
 
 % parts

@@ -5,6 +5,11 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new PipeBandDrumStaff = "side" \with {
@@ -22,38 +27,60 @@
 				\break
 				\repeat volta 2 {
 					\part
-					\line
+					\halfline
+					\bar ""
+				} \alternative {
+					{ \part \halfline }
+					{ \part \halfline }
 				}
-				
+
 				}%End of Format
 				\new DrumVoice = "side" {
 					\sidePI
 					<<
 						\sideMid
-						\context PipeBandDrumStaff = "side2" {
+						\context PipeBandDrumStaff = "sideLD" {
 							\sideMidII
 						}
 					>>
 					\sidePI
 					<<
 						\sideEnd
-						\context PipeBandDrumStaff = "side2" {
+						\context PipeBandDrumStaff = "sideLD" {
 							\sideEndII
 						}
 					>> s8
 
 					\sidePII
-					\sideMid
+					<<
+						\sideMid
+						\context PipeBandDrumStaff = "sideLD" {
+							\sideMidII
+						}
+					>> s8
 					\sidePII
-					\sideEnd s8
+					<<
+						\sideEnd
+						\context PipeBandDrumStaff = "sideLD" {
+							\sideEndII
+						}
+					>> s8
+					\sidePI
+					<<
+						\sideEnd
+						\context PipeBandDrumStaff = "sideLD" {
+							\sideEndII
+						}
+					>> s8
 				}%End of side
 			>>
 		}
-		\new PipeBandDrumStaff = "side2" \with {
-			instrumentName = \markup{ \instrumentSide LD }
-			shortInstrumentName = \markup{ \shortInstrumentSide LD }
+		\new PipeBandDrumStaff = "sideLD" \with {
+			instrumentName = \markup \center-column { LD \instrumentSide }
+			shortInstrumentName = \markup{ L.D. }
 			\RemoveAllEmptyStaves
 		} {
+			s8 | s1*4
 			s8 | s1*4
 		}
 	>>

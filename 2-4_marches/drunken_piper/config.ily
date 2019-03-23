@@ -11,7 +11,7 @@ confTempo = {
 part = { \partial 8 \grace{s4.} s8 }
 measure = { \grace {s1} s2 | }
 halfline = { \repeat unfold 4 \measure }
-halflineMinEighth = { \repeat unfold 3 { \measure } s4 s8 }
+halflineMinusPart = { \repeat unfold 3 { \measure } s4 s8 }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers

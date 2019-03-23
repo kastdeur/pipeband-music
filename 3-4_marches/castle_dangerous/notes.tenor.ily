@@ -3,6 +3,8 @@
 \version "2.18.2"
 composerTenor = ""
 
+tenorglobal = {
+}
 %%music
 tenorA = \drummode {
 	r8. d16

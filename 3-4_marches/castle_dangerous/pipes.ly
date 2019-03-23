@@ -9,20 +9,22 @@
     \new Staff {
 		\global
 		\pipeglobal
+		<<
+			\new NullVoice = "format" {
+				\repeat volta 2 {
+					\line
+				}
+				\break
+				\repeat volta 2 {
+					\line
+				}
+			}%Format
 
-		\repeat volta 2 {
-			\partial 16
-			\pipesA s16
-		}
-		\break
-		\repeat volta 2 {
-			\partial 16
-			\pipesBA
-		} \alternative {
-			{ \pipesBBA }
-			{ \pipesBBB s16 }
-		}
-		\bar "|."
+			\new Voice = "pipes" {
+				\pipesA
+				\pipesB
+			}
+		>>
 	}
 	\header {
 		title = \title
@@ -36,12 +38,7 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
-		\partial 16
-		\pipesA
-		\pipesA
 
-		\pipesBA \pipesBBA
-		\pipesBA \pipesBBB
 	}
 	\midi { \confTempo }
 	\header {

@@ -10,9 +10,12 @@
         \global
         <<
 			{
-				\repeat volta 2 { \line }
+				\repeat volta 2 { \halfline }
+				\break
+				\repeat volta 2 { \halfline }
 			}
 			{
+			 \tenorA
 			 \tenorA
 			}
 		>>

@@ -19,7 +19,7 @@
 				\part
 				\halfline
 				\break
-				\halflineMinEighth
+				\halflineMinusPart
 			}
 		>>
 			\break
@@ -75,7 +75,7 @@
 				\part
 				\halfline
 				\break
-				\halflineMinEighth
+				\halflineMinusPart
 			}
 		>>
 			\break
