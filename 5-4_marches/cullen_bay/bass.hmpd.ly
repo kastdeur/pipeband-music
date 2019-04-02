@@ -16,7 +16,8 @@
     		}
 	}
 	\header {
-		title = \markup \column { \title \smaller "Holland Massed P&D" }
+		title = \title
+		band = "Holland Massed Pipes and Drums"
 		meter = \meter
 		instrument = \instrumentBass
 		composer = \composerBass

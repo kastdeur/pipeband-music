@@ -44,7 +44,8 @@ part = {\partial 4. \grace{ s4 } s4. }
 		>>
 	}
 	\header {
-		title = \markup \column { \title \normalsize "48th HIGHRS" }
+		title = \title
+		band = "48th HIGHRS"
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide

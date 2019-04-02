@@ -23,7 +23,7 @@
 	}
 	\header {
 		title = \title
-		band = "48th HLDRS"
+		band = "48th HIGHRS"
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide

@@ -27,10 +27,13 @@ part = { \partial 4. \grace {s4} s4. }
 					\break
 					\line \bar "||"
 					\break
+
 					\part
 					\line
 					\break
-					\line \bar ".|:-||"
+					\line
+					\bar ".|:-||"
+
 					\break
 					\repeat volta 2 {
 						\part
@@ -77,11 +80,11 @@ part = { \partial 4. \grace {s4} s4. }
 		} {
 			\sideglobal
 
+			\repeat unfold 2 {
 				\snareA \snareA s4.
+			}
 
-				\snareB \snareB s4.
-
-				\snareC
+			\snareC s4.
 
 		}
 		\new PipeBandDrumStaff = "tenor" \with {
@@ -90,14 +93,13 @@ part = { \partial 4. \grace {s4} s4. }
 		} {
 			\tenorglobal
 
-			r4. \tenorAA
-			\tenorAB
+			\repeat unfold 2 {
+				r4. \tenorAA r4. |
+				\tenorAB s4. |
+			}
 
-			r4.	\tenorAA
-			\tenorAB
-
-			r4. \tenorBA
-			\tenorBB
+			r4. \tenorBA r4. |
+			\tenorBB s4. |
 			| % Volta bracket for pipes
 		}
 %		\new PipeBandDrumStaff = "bass" \with {
@@ -110,6 +112,7 @@ part = { \partial 4. \grace {s4} s4. }
 	>>
 	\header {
 		title = \title
+		band = "48th HIGHRS"
 		meter = \meter
 		composer = \markup \large {
 			\column \right-align {

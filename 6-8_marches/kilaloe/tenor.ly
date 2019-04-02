@@ -17,11 +17,11 @@
 			}%Format
 			
 			\new DrumVoice = "tenor" {
-				\tenorAA
-				\tenorAB
+				\tenorAA r4. |
+				\tenorAB r4. |
 
-				\tenorBA
-				\tenorBB
+				\tenorBA r4. |
+				\tenorBB r4. |
 			}
 		>>
 	}

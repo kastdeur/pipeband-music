@@ -1,7 +1,8 @@
 % 4/4 Dawning of the Day
 % Pipes (Seconds)
 \version "2.18.2"
-composerPipessecnd = "Trad., arr. PM T.F.J. de Boone"
+composerPipesSecnd = "Trad."
+arrangerPipesSecnd = "PM T.F.J. de Boone"
 pipessecndglobal = {
 	\key a \mixolydian
 }

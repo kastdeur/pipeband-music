@@ -45,7 +45,8 @@ title = \markup { \title \normalsize "(HMPD)" }
 		}
 	>>
 	\header {
-		title = \markup \column { \title \smaller "Holland Massed P&D" }
+		title = \title
+		band = "Holland Massed P&D"
 		meter = \meter
 		composer = \markup {
 			\column \right-align {
