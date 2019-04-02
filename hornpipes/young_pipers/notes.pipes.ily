@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "J. Teerlinck-Wiegerinck"
 pipeglobal = {
-	\bagpipeKey
+	\key d \major
 }
 % LOL: In total 296 notes
 % Music

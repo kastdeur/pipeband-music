@@ -6,7 +6,7 @@ composerPipesAdd = ", pts 3 & 4 PM D. R. MacLennan" % Seaforth Highlanders
 composerPipes = \markup { \composerPipes \composerPipesAdd }
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
+	\key a \mixolydian
 }
 % Music
 pipesA = {

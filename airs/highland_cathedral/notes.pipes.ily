@@ -1,10 +1,11 @@
 % 4/4 Highland Cathedral
 % Pipes
 \version "2.18.2"
-composerPipes = "arr. Marc Gouswaart"
+composerPipes = "M. Korb, U. Roever, 1982"
+arrangerPipes = "Marc Gouswaart"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key d \major
+}
 % Music
 pipesA = {
 	d4. e16 [ f16 ] \dble e8 [ d8 ] \grg a8 [ d8 ] |

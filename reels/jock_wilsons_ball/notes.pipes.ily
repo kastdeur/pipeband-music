@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 % Music
 pipesAA = {
 	\thrwd d4 c4 \dblb b4 \grg f4 |

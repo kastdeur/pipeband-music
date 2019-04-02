@@ -4,7 +4,7 @@
 composerPipesthrd = ""
 arrangerPipesthrd = ""
 pipesthrdglobal = {
-	\bagpipeKey
+	\key d \major
 }
 % Music
 pipesthrdA = {

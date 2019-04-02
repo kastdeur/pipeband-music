@@ -29,6 +29,7 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }
 \score {
@@ -44,4 +45,11 @@
 		\pipesBB
 	}
 	\midi { \confTempo }
+	\header {
+		title = \title
+		meter = \meter
+		instrument = \instrumentPipes
+		composer = \composerPipes
+		arranger = \arrangerPipes
+	}
 }

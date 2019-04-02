@@ -6,7 +6,7 @@ titleAgira = "Cabar Feidh (Agira Version)"
 meterAgira = "March"
 instrumentPipesAgira = "Pipes"
 pipeglobal = {
-	\bagpipeKey
+	\key a \mixolydian
 }
 % Music
 pipesAgiraA = {

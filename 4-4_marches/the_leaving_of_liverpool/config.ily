@@ -2,8 +2,8 @@
 %% Globals
 global = {
 	\time 4/4
-	}
-
+	\key a \mixolydian
+}
 %% Format
 part = { \partial 4 s4 }
 measure = { \grace { s4 } s1 | }

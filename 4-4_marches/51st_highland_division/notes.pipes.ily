@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 pipesAAA = {
 	\dble e8. [ c16 ] |
 	a4 \taor a8. [ b16 ] \dblc c8 [ \gre b8 ] \dblc c8 [ e8 ] |

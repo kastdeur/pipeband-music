@@ -4,8 +4,8 @@
 composerPipes = "W. H. Monk"
 arrangerPipes = "J.J. van Ommen Kloeke"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 % Music
 pipes = {
 	\grg c2 \grip c4 \gre b4 

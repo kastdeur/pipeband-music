@@ -45,11 +45,11 @@
 		composer = \markup \large {
 			\column \right-align {
 				$(if (not (string=? "" composerPipes))  #{ \markup {\line { \composerPipes  ":" }} #} )
-				$(if (not (string=? "" composerPipessecnd))  #{ \markup {\line { \composerPipessecnd ":" }} #} )
+				$(if (not (string=? "" composerPipesSecnd))  #{ \markup {\line { \composerPipesSecnd ":" }} #} )
 			}
 			\column \right-align {
 				$(if (not (string=? "" composerPipes))  #{ \markup {\line { \instrumentPipes }}#} )
-				$(if (not (string=? "" composerPipessecnd))  #{ \markup {\line { \instrumentPipessecnd }}#} )
+				$(if (not (string=? "" composerPipesSecnd))  #{ \markup {\line { \instrumentPipesSecnd }}#} )
 			}
 		}
 	}

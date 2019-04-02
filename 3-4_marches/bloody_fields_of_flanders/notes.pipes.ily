@@ -4,8 +4,8 @@
 composerPipes = "John MacLellan"
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-}
+	\key a \mixolydian
+  }
 % Music
 pipesAA = {
 	\dble e8. [ c16 ] \grg a4 \taor a8. [ b16 ] |

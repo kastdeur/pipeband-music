@@ -4,7 +4,7 @@
 composerPipes = "PM J. MacLellan, DCM"
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
+	\key d \major
 }
 % Music
 pipesA = {

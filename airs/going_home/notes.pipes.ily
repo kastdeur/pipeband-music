@@ -4,7 +4,7 @@
 composerPipes = "A. Dvořák (W. A. Fisher)"
 arrangerPipes = ""
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesAA = {

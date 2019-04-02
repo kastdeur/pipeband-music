@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = "R. Mathieson"
 pipeglobal = {
-	\bagpipeKey
+	\key a \mixolydian
 	\set Staff.midiInstrument = #"bagpipe"
 	}
 pipesA = {

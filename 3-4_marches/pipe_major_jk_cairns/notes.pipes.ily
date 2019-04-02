@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerPipes = " PM A. M. Cairns, MMM, CD"
 pipeglobal = {
-	\bagpipeKey
+	\key a \mixolydian
 }
 % Music
 pipesAA = {

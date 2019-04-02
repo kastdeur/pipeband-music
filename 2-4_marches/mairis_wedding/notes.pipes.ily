@@ -4,8 +4,8 @@
 composerPipes = "Trad."
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 % Music
 pipesA = {
 	\grg G8 [ \grd a8 ] \wbirl a8. [ b16 ] |

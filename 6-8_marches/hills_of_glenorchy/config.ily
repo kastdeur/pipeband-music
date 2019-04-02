@@ -2,10 +2,11 @@
 %% Globals
 global = {
 	\time 6/8
-	}
+	\key a \mixolydian
+}
 confTempo = {
 	\tempo 4. = 90
-	}
+}
 
 %% Format
 part = { \partial 8 \grace{ s4 } s8 }

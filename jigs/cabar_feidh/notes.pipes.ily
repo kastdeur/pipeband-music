@@ -4,7 +4,7 @@
 composerPipes = ""
 arrangerPipes = "D. Johnstone"
 pipeglobal = {
-	\bagpipeKey
+	\key a \mixolydian
 }
 % Music
 pipesAA = {

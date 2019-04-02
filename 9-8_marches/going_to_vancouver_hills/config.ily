@@ -2,10 +2,11 @@
 %% Globals
 global = {
 	\time 9/8
-	}
+	\key a \mixolydian
+}
 confTempo = { 
 	\tempo 2. = 80 
-	}
+}
 %% Format
 measure = { \grace {s1} s4.*3 | }
 halfline = { \repeat unfold 4 \measure }

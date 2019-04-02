@@ -6,8 +6,8 @@ meterCharge = "The Charge"
 titleCharge = "Cabar Feidh"
 instrumentPipesCharge = "Pipes"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 % Music
 pipesChargeA = {
 	e8 |

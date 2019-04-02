@@ -4,7 +4,7 @@
 composerPipes = ""
 arrangerPipes = "Seaforth Highlanders of Holland"
 pipeglobal = {
-	\bagpipeKey
+	\key d \major
 }
 % Music
 pipesA = {

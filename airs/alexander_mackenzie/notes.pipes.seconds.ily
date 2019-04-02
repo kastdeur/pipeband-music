@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipessecnd = ""
 pipessecndglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 pipessecndA = {
 	\grg c16. [ f32 ] |
 	\dble e8 [ \grg c8. d16 ] \grg c4 \grg c8 |

@@ -9,7 +9,6 @@
 
 #(set-global-staff-size 14)
 date = \markup { 16-02-2016 }
-title = \markup { \title \normalsize "(HMPD)" }
 
 \score {
 	\new StaffGroup <<
@@ -60,7 +59,8 @@ title = \markup { \title \normalsize "(HMPD)" }
 	>>
 	\header {
 		date = \date
-		title = \markup \column { \title \smaller "Holland Massed P&D" }
+		title = \title 
+		band = "Holland Massed P&D"
 		meter = \meter
 		composer = \markup \tiny { \composerSide ":" "Drums"
 		}

@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "Trad."
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key d \major
+}
 pipesA = {
 	a8 |
 	\thrwd d4 \dbld d8. [ e16 ] \thrwd d4~ d8 [ a8 ] |

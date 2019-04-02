@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "PM Donald MacLeod"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 pipesA = {
 	\grg f8. [ e16 ]  |
 	\dblc c8. [ e16 ] \dblc c8 [ \gre b8 ] \dblc c4 \gre a8 [ \grd c8 ]  |

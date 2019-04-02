@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = ""
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 pipesA = {
 	\grg a8. [ b16 ]  |
 	\grg c4 \grip c4 \dblc c4 \gre a8. [ \grd c16 ]  |

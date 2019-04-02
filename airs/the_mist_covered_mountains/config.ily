@@ -2,8 +2,8 @@
 %% Globals
 global = {
 	\time 6/8
-	}
-
+	\key b \minor
+}
 confTempo = {
   \tempo 2. = 40
 }
