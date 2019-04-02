@@ -7,7 +7,6 @@ global = {
 confTempo = { 
 	\tempo 4 = 70
 }
->>>>>>> tunekeys
 %% Format
 part = { \partial 8 \grace {s1} s8 }
 measure = { \grace {s1} s2 | }

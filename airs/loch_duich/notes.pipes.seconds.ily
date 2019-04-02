@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipesSecnd = "Ensign Christopher MacRae, arr.  Cpl. V.C. Kennedy"
 pipessecndglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 pipessecndA = {
 \grg e8 |
  \grg a4 b8 \grg a16 [ \grip c16~ ] c4 |

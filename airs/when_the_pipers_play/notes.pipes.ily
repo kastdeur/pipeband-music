@@ -4,7 +4,7 @@
 composerPipes = ""
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
+	\key d \major
 }
 
 % Music

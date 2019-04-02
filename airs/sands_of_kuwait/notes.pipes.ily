@@ -4,7 +4,7 @@
 composerPipes = "L/Cpl Gordon MacKenzie, QOHLDRS, 1991"
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
+	\key d \major
 }
 % Music
 pipesAA = {

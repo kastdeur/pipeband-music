@@ -8,7 +8,7 @@
 \score {
     \new Staff {
 		\global
-		\bagpipeKey
+		\pipeglobal
 		<<
 			{\repeat volta 2 { \part \line } \break \part \line \break \line \bar "|."}
 			{\pipesA s16 \pipesBA \pipesBB}
@@ -25,7 +25,7 @@
 	\midi { \confTempo }
 	\new Staff {
 		\global
-		\bagpipeKey
+		\pipeglobal
 			\partial 16 
 			\pipesA
 			\pipesA

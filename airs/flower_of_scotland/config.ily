@@ -2,6 +2,7 @@
 %% Globals
 global = {
 	\time 6/8
+	\key d \major
 }
 confTempo = {
 	\tempo 2. = 60

@@ -5,7 +5,7 @@ global = {
 	\key b \minor
 }
 confTempo = {
-  \tempo 2. = 40
+	\tempo 2. = 40
 }
 part = {\partial 8 s8 }
 %% Format

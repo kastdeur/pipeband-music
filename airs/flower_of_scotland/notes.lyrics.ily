@@ -3,7 +3,7 @@
 \version "2.18.2"
 composerLyrics  = "Roy M.B. Williamson, the Corries"
 lyricsglobal = {
-	\bagpipeKey
+	\key d \major
 }
 % Music
 lyricsA = {

@@ -2,6 +2,7 @@
 %% Globals
 global = {
 	\time 4/4
+	\key a \mixolydian
 	}
 confTempo = { 
 	\tempo 4 = 80 

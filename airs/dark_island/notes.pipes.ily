@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipes = "I. McLaughlan"
 pipeglobal = {
-	\bagpipeKey
-	}
+	\key d \major
+}
 % Music
 pipesA = {
 	\grg a16. [ \grd b32 ] |

@@ -13,7 +13,7 @@
 	\new StaffGroup <<
 		\new Staff {
 			\global
-			\bagpipeKey
+			\pipeglobal
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<

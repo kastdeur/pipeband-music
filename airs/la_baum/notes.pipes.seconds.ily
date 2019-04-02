@@ -4,7 +4,7 @@
 composerPipesSecnd = "PM FJ de Boone"
 arrangerPipesSecnd = ""
 pipessecndglobal = {
-	\bagpipeKey
+	\key a \mixolydian
 }
 pipessecndA = {
 	\grg a16 [ b16 ] |

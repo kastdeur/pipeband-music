@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerPipesSecnd = "R. Mathieson"
 pipessecndglobal = {
-	\bagpipeKey
-	}
+	\key a \mixolydian
+}
 % Music
 pipessecndA = {
 	\grg a8. [ \grd c16 ] |
