@@ -1,7 +1,7 @@
 % 6/8 Flower of Scotland
 % Side
 \version "2.18.2"
-composerSide = ""
+composerSide = "E.T. de Boone, 2017"
 sideglobal = { \eighthCompoundBeaming } 
 snareA = \drummode {
 	g8 |

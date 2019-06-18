@@ -22,6 +22,8 @@
 				\repeat volta 2 { \part \halfline}
 				\alternative{ {\halfline} {\halfline}}
 
+				\bar "|."
+
 			}
 			{
 				\pipesA s8

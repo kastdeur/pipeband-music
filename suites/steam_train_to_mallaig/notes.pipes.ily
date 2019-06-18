@@ -4,7 +4,7 @@
 composerPipes = "Mary-Ann MacKinnon"
 arrangerPipes = ""
 pipeglobal = {
-	\bagpipeKey
+	\key a \mixolydian
 }
 % Music
 pipesIntro = {

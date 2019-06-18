@@ -47,13 +47,13 @@ pipesCA = {
 	\dble e8 [ g16 e16 ] \grg d16 [ b16 \grg c16 d16 ] | \break
 }
 pipesCBA = {
-	\grg e16 [ a16 \grg a16 \grd a16 ] A16 [ a16 \grg a16 g16 ] |
+	\grg e16 [ a16 \grg a16 \grd a16 ] A16 [ a16 \grg a16 g16 ]~ |
 	g16 [ a16 \grg f16 a16 ] \dble e8 [ \grg d16 b16 ] |
 	\grg G16 [ \grd G16 \grg b16 d16 ] \grg e16 [ d16 \grg b16 \grd G16 ] |
 	\grg a8 [ \wbirl a8 ] \grg a8
 }
 pipesCBB = {
-	\grg e16 [ a16 \grg a16 \grd a16 ] A16 [ a16 \grg a16 g16 ] |
+	\grg e16 [ a16 \grg a16 \grd a16 ] A16 [ a16 \grg a16 g16 ]~ |
 	g16 [ a16 \grg f16 a16 ] \dble e8 [ \grg d16 b16 ] |
 	\grg d16 [ \slurc d16 \grg e16 f16 ] \grA g16 [ f16 \grg e16 d16 ] |
 	\grg e8 [ \gra e8 ] \dble e8
@@ -73,8 +73,8 @@ pipesDBA = {
 	\grg a8 [ \wbirl a8 ] \grg a8
 }
 pipesDBB = {
-	\grg e16 [ a16 \grg a16 \grd a16 ] A16 [ a16 \grg a16 g16 ] |
+	\grg e16 [ a16 \grg a16 \grd a16 ] A16 [ a16 \grg a16 g16 ]~ |
 	g16 [ a16 \grg f16 a16 ] \dble e8 [ \grg d16 b16 ] |
 	\grg G16 [ \grd G16 \grg b16 d16 ] \grg e16 [ d16 \grg b16 \grd G16 ] |
-	\grg a8 [ \wbirl a8 ] \grg a4
+	\grg a8 [ \wbirl a8 ] \grg a8
 }
