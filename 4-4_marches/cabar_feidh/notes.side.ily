@@ -7,6 +7,12 @@ arrangerSideSimple = "E.T. de Boone, 2018"
 sideglobal = {
 	\eighthBeaming
 }
+
+%% Optional Flams in Ending
+optflamd = \drummode { \drumgrace { \parenthesize g8 } }
+optflamg = \drummode { \drumgrace { \parenthesize d8 } }
+optflam = #(autohandFunc optflamg optflamd)
+
 % Music
 simpleSnarepone = \drummode {
 	g8 |
@@ -43,9 +49,9 @@ simpleSnareEndingI = \drummode { \tutti {
 }}
 simpleSnareEndingII = \drummode {
   g8 |
-  \flam d16 g d \flam g
-  d16 g \flam d g
-  d16 \flam g d g
+  \flam d16 g \optflam d \flam g
+  d16 \optflam g \flam d g
+  \optflam d16 \flam g d \optflam g
   d4:32(
   |
   d8) \flam g8

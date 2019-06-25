@@ -27,9 +27,15 @@
 				\repeat volta 2 {
 					\partial 8
 					\pipesCA
+					\pipesCB
+				}
+				\break
+				\repeat volta 2 {
+					\partial 8
+					\pipesDA
 				} \alternative {
-					{\partial 8 \pipesCBA }
-					{\partial 8 \pipesCBB }
+					{\partial 8 \pipesDBA }
+					{\partial 8 \pipesDBB }
 				}
 				\bar "|."
 			}%Format
@@ -52,8 +58,11 @@
 				\pipesBA \pipesBBA
 				\pipesBA \pipesBBB
 
-				\pipesCA \pipesCBA
-				\pipesCA \pipesCBB
+				\pipesCA \pipesCB
+				\pipesCA \pipesCB
+
+				\pipesDA \pipesDBA
+				\pipesDA \pipesDBB
 	}
 	\midi { \confTempo }
 	\header {

@@ -3,8 +3,8 @@
 global = {
 	\time 2/4
 	}
-confTempo = { 
-	\tempo 4 = 50 
+confTempo = {
+	\tempo 4 = 80
 	}
 %% Format
 part = { \partial 8 \grace{s4.} s8 }
@@ -14,4 +14,4 @@ line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "Road to the Isles"
-meter = "Slow March"
+meter = "March"

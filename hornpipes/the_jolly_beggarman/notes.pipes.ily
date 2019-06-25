@@ -28,11 +28,17 @@ pipesPartB = {
 	\grA g16. [ f32 \grg e16. c32 ] \thrwd d8
 }
 pipesPartC = {
+	e8 |
+	\grg a16. e32 e16. a32	\grg e16. a32 a16. a32 |
+	\grg a16. e32 e16. c32	\thrwd d8
+}
+pipesPartD = {
 	\grg e16. f32 |
 	\dblg g16. f32 e16. f32	g8 A16. g32 |
 	\grA f16. d32 f16. e32	\thrwd d8
 }
 
+%A
 pipesAA = {
 	\pipesPartA
 	\pipesMid
@@ -41,7 +47,7 @@ pipesAB = {
 	\pipesPartA
 	\pipesEnd
 }
-
+% B
 pipesBA = {
 	\pipesPartB
 	\pipesMid
@@ -53,14 +59,24 @@ pipesBBA = {
 pipesBBB = {
 	\pipesAB
 }
+% C
 pipesCA = {
 	\pipesPartC
 	\pipesMid
 }
-pipesCBA = {
+pipesCB = {
 	\pipesPartC
 	\pipesEnd
 }
-pipesCBB = {
+% D
+pipesDA = {
+	\pipesPartD
+	\pipesMid
+}
+pipesDBA = {
+	\pipesPartD
+	\pipesEnd
+}
+pipesDBB = {
 	\pipesBBB
 }

@@ -3,7 +3,11 @@
 
   Not critical if missing. But there is complaining..
 %}
-% instrumentName
+
+%$(set-default-paper-size "a4" 'landscape)
+%$(set-default-paper-size "a4")
+
+%% instrumentName
 instrumentSide = "Side"
 instrumentTenor = "Tenor"
 instrumentBass = "Bass"
@@ -16,7 +20,7 @@ instrumentPipesthrd = \instrumentPipesThrd %TODO: Remove Me
 instrumentSecnd = "Seconds"
 instrumentThrd = "Thirds"
 
-% shortInstrumentName
+%% shortInstrumentName
 shortInstrumentLyrics = ""
 shortInstrumentSide = "S.D."
 shortInstrumentTenor = "T.D."
@@ -29,7 +33,7 @@ shortInstrumentPipesthrd = \shortInstrumentPipesThrd %TODO: Remove Me
 shortInstrumentSecnd = "2nd"
 shortInstrumentThrd = "3rd"
 
-% composer
+%% composer
 composerLyrics = ""
 composerSide  = ""
 composerTenor = ""
@@ -40,7 +44,7 @@ composerPipessecnd = \composerPipesSecnd %TODO: Remove Me
 composerPipesThrd = ""
 composerPipesthrd = \composerPipesThrd %TODO: Remove Me
 
-% arranger
+%% arranger
 arrangerLyrics = ""
 arrangerSide  = ""
 arrangerTenor = ""
