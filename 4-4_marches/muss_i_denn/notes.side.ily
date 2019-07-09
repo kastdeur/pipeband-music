@@ -16,11 +16,11 @@ snareA = \drummode {
 	d2:32(	d4)
 }
 snareBA = \drummode {
-	\flam d8 g8 |
+	\flamdr d8^"solo" g8 |
 	d4:32(	d8) g	d8:32([ g)]	\flam d8 d:32( |
 	g16.) d32-> g16. g32	\flam d8 \flam g	d4:32(	d8) d:32( |
 	g16.) d32-> g16. g32	\flam d8 g	\triplet { d16 g d } g16. g32	\flam d8 \flam g |
-	d2:32(	d4)
+	d2:32(	d4) \fr
 }
 snareBB = \drummode {
 	\snareA

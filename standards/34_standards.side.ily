@@ -39,7 +39,7 @@ pfour = \drummode {
 	\flamd d8 d8:32(	g8[) \flamd d8]	\tuplet 3/2 { d16 g16 d16 } \flamg g8 |
 }
 pfive = \drummode {
-	\flamd d8 d8:32(	g8[) \flamd d8]	d8:32( d8) |
+	\flamd d8 d8:32(	g8[) \flamd d8]	d8:32( g8) |
 }
 psix = \drummode {
 	\flamd d8 d8:32(	g16.[) g32 \flamd d16. g32]	d16. \flamg g32 d16. g32 |
@@ -76,7 +76,7 @@ pfifteen = \drummode {
 	\flamd d8 d8:32(		g8[) \flamg g8]		d16 d d d |
 }
 psixteen = \drummode {
-	\flamd d8 d8:32(		g8[) \flamg g8]		r8 \backstick d16 \backstick d |
+	\flamd d8 d8:32(		g8[) \flamg g8]		r8 \crossstick d16 \crossstick d |
 }
 pseventeen = \drummode {
 	\flam d8 d8:32(			g16.[) g32 d8:32(]	g8) \triplet { d16 g d } |
@@ -85,11 +85,24 @@ peighteen = \drummode {
 	\flam d8 d8:32(			g8[) \flam d8]		\triplet { d16-> g d } \triplet { g16-> d g } |
 }
 pnineteen = \drummode {
-	\flamd d8 d8:32(	g8[) d8:32(]	g16.) d32:64( d16.) g32 |
+	\flamd d8 d8:32(		g8[) d8:32(]		g16.) d32:64( d16.) g32 |
 }
+
 ptwenty = \drummode {
 	\flamd d16. g32 d16. \flam g32		d16. g32 \flam d16. g32		d16. \flam g32 d16. g32 |
 }
 ptwentyone = \drummode {
 	\flamd d8 d8:32(		g8[) \flam d8]		g16 g \crossstick d \crossstick d |
+}
+ptwentytwo = \drummode {
+	\flamd d8 d8:32(		g8[) d16.:64( d32)]		g16. d32:64( d16.) g32 |
+}
+ptwentythree = \drummode {
+	\flam d16. g32 d16. g32->	d32 g d g d16. g32	\triplet { d16 g d-> } \triplet { g16 d g-> } |
+}
+ptwentyfour = \drummode {
+	\flam d16. g32 d16. g32->	d32 g d g d16. d32	g16. d32-> g32 d g d |
+}
+ptwentyfive = \drummode {
+	\flamd d16. g32 d16. g32->	d32 g d g \triplet { d16-> g d16-> }	g16. d32-> g16. g32 |
 }
