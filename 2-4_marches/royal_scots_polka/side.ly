@@ -15,7 +15,7 @@ snare_royal_scots_polka = \drummode {
 
 	\repeat volta 2 {
 		\partial 8
-		\snareBApart \snareMid
+		\snareBApart \snareMidTwo
 
 	} \alternative {
 		{ \snareBApart \snareEnd }
@@ -33,7 +33,7 @@ snare_royal_scots_polka = \drummode {
 
 	\repeat volta 2 {
 		\partial 8
-		\snareDApart \snareMid
+		\snareDApart \snareMidTwo
 	} \alternative {
 		{ \snareDApart \snareEnd }
 		{ \snareDDpart \snareEnd }

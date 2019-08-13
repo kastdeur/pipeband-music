@@ -14,6 +14,11 @@ snareMid = \drummode {
 	g16.) d32 g16. \flam d32	r16. g32 d16. \flam g32 |
 	r16. d32 g16. g32	d32:64(-> d16.)
 }
+snareMidTwo = \drummode {
+	d4:32(-> |
+	g8) d16. g32	\tuplet 3/2 { d16 g d } g16. \flam g32 |
+	r16. d32 g16. g32	d32:64(-> d16.)
+}
 snareEnd = \drummode {
 	d8:32(-> g16.) d32 |
 	g8 \flam d16. g32	d16. g32 d32 g d g |
@@ -37,7 +42,7 @@ snareBDpart = \drummode {
 }
 
 snareCpart = \drummode {
-	r16. g32 |
+	g8 |
 	d8:32( g16.) d32:64(	\triplet { d16) g d } g16. d32 |
 	g16. \flam d32 g16. g32
 }

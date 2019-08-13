@@ -104,14 +104,14 @@
 
 			\snareApart \snareMid \snareApart \snareEnd s8
 
-			\snareBApart \snareMid s8
+			\snareBApart \snareMidTwo s8
 			\snareBApart \snareEnd s8
 			\snareBDpart \snareEnd s8
 
 
 			\snareCpart \snareMid \snareCpart \snareEnd s8
 
-			\snareDApart \snareMid s8
+			\snareDApart \snareMidTwo s8
 			\snareDApart \snareEnd s8
 			\snareDDpart \snareEnd s8
 
