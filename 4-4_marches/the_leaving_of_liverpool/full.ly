@@ -9,17 +9,23 @@
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff {
+		\new Staff \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
 					\repeat unfold 2 {
-						\partial 4 s4
+						\part
 						\line 
 						\break
 						\line \bar "|."
@@ -35,10 +41,11 @@
 				}%Pipes
 			>>
 		}
-		\new PipeBandDrumStaff = "side" {
+		\new PipeBandDrumStaff = "side" \with {
+			instrumentName = \markup { \instrumentSide }
+			shortInstrumentName = \markup{ \shortInstrumentSide }
+		} {
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 			\snareA
 			\snareA s4
 
@@ -46,10 +53,11 @@
 			\snareBB s4
 
 		}
-		\new PipeBandDrumStaff = "tenor" {
+		\new PipeBandDrumStaff = "tenor" \with {
+			instrumentName = \markup{ \instrumentTenor }
+			shortInstrumentName = \markup{ \shortInstrumentTenor }
+		} {
 			\tenorglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 			
 			\repeat unfold 2 {
 				\repeat unfold 2 {
@@ -59,12 +67,15 @@
 			}
 
 		}
-%	\new PipeBandDrumStaff = "bass" {
-%			\bassglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-%			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-%
-%		}
+%{
+		\new PipeBandDrumStaff = "bass" \with {
+			instrumentName = \markup{ \instrumentBass }
+			shortInstrumentName = \markup{ \shortInstrumentBass }
+		} {
+			\bassglobal
+
+		}
+%}
 	>>
 	\header {
 		title = \title

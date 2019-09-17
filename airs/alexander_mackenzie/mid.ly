@@ -6,6 +6,11 @@
 \include "./notes.bass.ily"
 \include "./notes.tenor.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new PipeBandDrumStaff = "tenor" {
@@ -15,13 +20,13 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 			<<
 				{
-					\repeat volta 2 { \partial 16 s16 \halfline \break \halfline } \break
+					\repeat volta 2 { \partial 8 s8 \halfline \break \halfline } \break
 					\repeat volta 2 { \part \halfline \break }
 						\alternative{ {\part \halfline \break}{\part \halfline \break} }
 					\bar "|."
 				}%Format
 				{ 
-					s16 \tenorAA r8
+					r8 \tenorAA r8
 					\tenorAB s8
 
 					\tenorBA s8
@@ -35,7 +40,7 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
-			s16 \bassAA \bassAB 
+			s8 \bassAA \bassAB
 			s8 \bassBA 
 			s8 \bassBB 
 			s8 \bassAB 
