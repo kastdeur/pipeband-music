@@ -15,8 +15,8 @@ snarePI = \drummode {
 snarePII = \drummode {
 		\flam \backstick g8\! \triplet { d16 g d }
 		\flam g8 \triplet { d16 g d }
-		\flam g8 \triplet { d16 g d }
-		\flam \triplet { g16\< d g } 	\flam \triplet { d16 g d \! }
+		\flam g8 \triplet { d16\< g d }
+		\flam \triplet { g16 d g } 	\flam \triplet { d16 g d \! }
 		|
 }
 snarePIII = \drummode {
