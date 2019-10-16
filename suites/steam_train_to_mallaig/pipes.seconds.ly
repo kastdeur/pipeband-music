@@ -3,32 +3,31 @@
 \include "bagpipe.ly"
 
 \include "./config.ily"
-\include "./notes.pipes.ily"
+\include "./notes.pipes.seconds.ily"
 
-#(set-default-paper-size "a4" 'portrait)
 \score {
     \new Staff {
 		\global
-		\pipeglobal
+		\pipessecndglobal
+		\compressFullBarRests
+  		\override Score.MultiMeasureRest.expand-limit = #1
 		\set Score.markFormatter = #format-mark-box-letters
 		<<
 			\new NullVoice = "format" {
 
 				\time 6/8
-				\repeat unfold 7 { \grace {s2} s2. }
+				s2.*7
 				\bar "||"
-				\break
 
 				\time 2/4
+				\bar "||"
 				\mark \default
-				<<
-					\repeat volta 2 { \halfline }
-					{ s2*2 \bar "--" \mark \markup { \box \tiny "2nd Piper" } }
-				>>
+				s2*4
+				\repeat unfold 1 { \halfline }
 				\break
 
 				\mark \default
-				\repeat volta 2 { \halfline }
+				\repeat volta 2 {\halfline }
 				\break
 
 				\mark \default
@@ -40,71 +39,77 @@
 				\repeat unfold 1 { \line }
 				\break
 
-				\bar "||"
 				\mark \default
-				\repeat unfold 1 { \line \line}
+				\repeat volta 2 { \halfline \break \halfline }
 				\break
 
-				\bar "||"
 				\mark \markup \box \bold "Fine"
 				\line \line
 				\bar "|."
 			}%Format
+			\new Voice = "seconds" {
+				\pipessecndIntro
 
-			\new Voice = "pipes" {
-				\pipesIntro
+				\pipessecndAA
+				\pipessecndAB
 
 				%\repeat volta 2 {
-					\pipesA
+					\pipessecndB
 				%}
-				%\repeat volta 2 {
-					\pipesB
-				%}
-				\pipesC
-				\pipesD
-				\pipesE
-				\pipesF
 
+				\pipessecndC
+
+				\pipessecndD
+
+				%\repeat volta 2 {
+					\pipessecndE
+				%}
+
+				\pipessecndF
 			}
 		>>
 	}
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
-		arranger = \arrangerPipes
+		instrument = \instrumentSecnd
+		composer = \composerPipesSecnd
+		arranger = \arrangerPipesSecnd
 	}
 }
-
 \score {
 	\unfoldRepeats \new Staff {
-		\global \pipeglobal
+		\global \pipessecndglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 		\tempo 4. = 40
 		\time 6/8
-		\pipesIntro
+		\pipessecndIntro
 
 		\time 2/4
 		\confTempo
 		\repeat unfold 1 {
-			\repeat volta 2 { \pipesA }
-			\repeat volta 2 { \pipesB }
-			\pipesC
-			\pipesD
-			\pipesE
+			\pipessecndAA
+			\pipessecndAB
+
+			\repeat volta 2 { \pipessecndB }
+
+			\pipessecndC
+
+			\pipessecndD
+
+			\repeat volta 2 { \pipessecndE }
 		}
 
-		\pipesF
+		\pipessecndF
 	}
 	\midi { \confTempo }
 	\header {
 		title = \title
 		meter = \meter
-		instrument = \instrumentPipes
-		composer = \composerPipes
-		arranger = \arrangerPipes
+		instrument = \instrumentSecnd
+		composer = \composerPipesSecnd
+		arranger = \arrangerPipesSecnd
 	}
 
 }

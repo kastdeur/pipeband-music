@@ -17,10 +17,13 @@ pipesIntro = {
 	\grg e16 c8. \grg c8		\grip c4. |
 	\grg d8 e8. d16			\grg G16 \grd a8.\grd b8\fermata |
 }
+pipesAA = {
+	\dble e8 \gra e16 d16		\grg d16 c16 \grg a8 |
+	\grg d16 c16 \grG c16 d16	\grg G16 \grd G16 \gre G16 \grd a16 |
+}
 pipesA = {
 	\repeat unfold 2 {
-		\dble e8 \gra e16 d16		\grg d16 c16 \grg a8 |
-		\grg d16 c16 \grG c16 d16	\grg G16 \grd G16 \gre G16 \grd a16 |
+		\pipesAA
 	}
 }
 pipesB = {
