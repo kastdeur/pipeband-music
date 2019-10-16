@@ -4,7 +4,7 @@ global = {
 	\time 2/4
 	}
 confTempo = {
-	\tempo 4 = 80
+	\tempo 4 = 60
 	}
 %% Format
 part = { \partial 8 \grace{s4.} s8 }
@@ -14,4 +14,6 @@ line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "Road to the Isles"
+alttitleI = "Burning Sands of Egypt"
+alttitleII = "Bens of Jura"
 meter = "March"
