@@ -122,9 +122,9 @@ peight = \drummode {
 }
 pnine = \drummode {
 	\tag #'upbeat { d16. g32 } |
-	d16.:64~ d32 g16. d32:128~
-	d16. g32 d16.:64~ d32
-	g16. d32:128~ d16. g32
+	d16.:64( d32) g16. d32:64(
+	d16.) g32 d16.:64( d32)
+	g16. d32:64( d16.) g32
 	\flam d8
 }
 pten = \drummode {
@@ -136,7 +136,7 @@ pten = \drummode {
 peleven = \drummode {
 	\tag #'upbeat { d16. g32 } |
 	\flam d16. g32 d16. g32:64(
-	g16.:64 d32) g16.-> d32:64(
+	g16.:64 d32)-> g16.-> d32:64(->
 	g16.:64 g32) d16. d32
 	\flam g8
 }

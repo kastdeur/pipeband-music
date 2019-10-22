@@ -11,7 +11,7 @@ pipesIntro = {
 	\grg a8. \grd c16 e8		\dblg g8. \grA f16 d8 |
 	\grg e16 c8. \grg c8		\grip c8. \grg c16 b8 |
 	\grg a8. \grd c16 e8		\dblg g8. \grA f16 d8 |
-	\dble e4.				\gra e4 \grg c16  b16 |
+	\dble e4.				\gra e4 \grg c32  b16. |
 
 	\grg a8. \grd c16 e8		\dblg g8.  \grA f16 d8 |
 	\grg e16 c8. \grg c8		\grip c4. |

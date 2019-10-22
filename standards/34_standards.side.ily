@@ -26,6 +26,8 @@ pempty = \drummode {
 	s8 |
 	s4 s4 s4 |
 }
+
+%% zero
 pone = \drummode {
 	\flamd d8 d8:32(	g8[) d8:32(]	d8:32)( d8) |
 }
@@ -57,6 +59,7 @@ pnine = \drummode {
 	\flamd d16 g16 d16 \flamg g16		d16 g16 \flamd d16 g16		d16 \flamg g16 d16 g16 |
 }
 
+%% ten
 pten = \drummode {
 	\flamd d8 \tuplet 3/2 {d16 g16 d16}		\flamd g8 \tuplet 3/2 {d16 g16 d16}		g16. d32-> g16. g32 |
 }
@@ -88,6 +91,7 @@ pnineteen = \drummode {
 	\flamd d8 d8:32(		g8[) d8:32(]		g16.) d32:64( d16.) g32 |
 }
 
+%% twenty
 ptwenty = \drummode {
 	\flamd d16. g32 d16. \flam g32		d16. g32 \flam d16. g32		d16. \flam g32 d16. g32 |
 }
