@@ -1,7 +1,7 @@
-% /6/8 10th Btn HLI Crossing the Rhine
+% 6/8 10th Btn HLI Crossing the Rhine
 % Pipes
 \version "2.18.2"
-composerPipes = ""
+composerPipes = "PM D.S. Ramsay"
 arrangerPipes = ""
 pipeglobal = {
 	\key d \major

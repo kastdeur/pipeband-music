@@ -6,54 +6,47 @@
 \include "./notes.pipes.ily"
 \include "./notes.pipes.seconds.ily"
 
+\layout {
+	indent = 8.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff = "pipes"  {
+		\new Staff = "pipes" \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\bagpipeKey
-			\set Staff.instrumentName = \markup{ \instrumentPipes }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
 					\repeat volta 2 {
-						\part \line
+						\part \halfline
+						\halfline
 					}\break
-	
+
 					\part \halfline \line
-	
-					\repeat volta 2 {
-						\halfline s2 s1
-						}
-					\alternative {
-						{ s2 }
-						{s2}
-					}
+					\bar "|."
 				}%Format
 				{
 					\pipesA s8
-	
+
 					\pipesB
 
-					\pipesC
-					\pipesCA
-					\pipesCB
 				}%Pipes
 			>>
 		}
-		\new Staff = "seconds" {
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentPipesSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
+		} {
 			\pipesSecglobal
-			\bagpipeKey
-			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
-			
+
 			\pipesSecA s8
 
 			\pipesSecB
 
-			\pipesSecC
-			\pipesSecCA
-			\pipesSecCB
 		}
 	>>
 	\header {

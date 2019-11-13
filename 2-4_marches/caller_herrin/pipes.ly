@@ -8,31 +8,24 @@
 \score {
     \new Staff {
 		\global
-		\bagpipeKey
 		<<
 			{
 				\repeat volta 2 {
 					\part \halfline
-				}\break
-
-				\part \halfline \line
-
-				\repeat volta 2 {
-					\halfline s2 s1
+					\halfline
 				}
-				\alternative {
-					{ s1 }
-					{s1}
-				}
+				\break
+
+				\part \halfline
+				\break
+				\line
+				\bar "|."
 			}
 			{
 			\pipesA s8
 
 			\pipesB
 
-			\pipesC
-			\pipesCA
-			\pipesCB
 			}
 		>>
 	}
@@ -41,5 +34,6 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }
