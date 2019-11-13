@@ -7,7 +7,7 @@ tenorglobal = {}
 % Music
 
 stfe = \drummode {
-  \stf<g d>2 
+  \stfd2 
 }
 xg = \drummode {
   g8^\markup{ "x" }

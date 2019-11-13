@@ -6,7 +6,8 @@
 \include "./standards.tenor.ily"
 
 \header {
-  title = \markup \center-column { "Standards" \smaller "Bass & Tenor"}
+	title = "Standards Tenor & Bass"
+	band = "Canadian Memorial Pipes and Drums"
 }
 
 \layout {
@@ -25,8 +26,19 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
 			\repeat volta 2 {
-				\tenorTwofoursOneA
-				\tenorTwofoursOneB
+				\tenorTwoFoursFII
+			}
+			\break
+			\repeat volta 2 {
+				\tenorTwoFoursFIII
+			}
+			\break
+			\repeat volta 2 {
+				\tenorTwoFoursFIV
+			}
+			\break
+			\repeat volta 2 {
+				\tenorTwoFoursFV
 			}
 		}
 		\new PipeBandDrumStaff = "bass" {
@@ -34,11 +46,11 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 			\bassTwofoursOne
-			\bassTwofoursOne
 		}
 	>>
 	\header {
-		title = "2/4 Standard"
+		title = "2/4 & 4/4 Standard"
+		band = "" % Make Sure the band is not displayed
 	}
 }
 
@@ -54,6 +66,8 @@
 
 			\repeat volta 2 {
 				\tenorThreefoursOneA
+				\bar "||"
+				\break
 				\tenorThreefoursOneB
 			}
 		}
@@ -67,37 +81,11 @@
 	>>
 	\header {
 		title = "3/4 Standard"
+		band = "" % Make Sure the band is not displayed
 	}
 }
 
-% ----------------------
-% Standard 4/4
-% ----------------------
-\score {
-	\new StaffGroup <<
-		\time 4/4
-		\new PipeBandDrumStaff = "tenor" {
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
-
-			\repeat volta 2 {
-				\tenorFourfoursOneA
-				\tenorFourfoursOneB
-			}
-		}
-		\new PipeBandDrumStaff = "bass" {
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-			\bassFourfoursOne
-			\bassFourfoursOne
-		}
-	>>
-	\header {
-		title = "4/4 Standard"
-	}
-}
-
+\pageBreak
 % ----------------------
 % Standard 6/8
 % ----------------------
@@ -110,6 +98,8 @@
 
 			\repeat volta 2 {
 				\tenorSixeightsOneA
+				\bar "||"
+				\break
 				\tenorSixeightsOneB
 			}
 		}
@@ -123,6 +113,7 @@
 	>>
 	\header {
 		title = "6/8 Standard"
+		band = "" % Make Sure the band is not displayed
 	}
 }
 
@@ -138,6 +129,8 @@
 
 			\repeat volta 2 {
 				\tenorNineeightsOneA
+				\bar "||"
+				\break
 				\tenorNineeightsOneB
 			}
 		}
@@ -151,5 +144,6 @@
 	>>
 	\header {
 		title = "9/8 Standard"
+		band = "" % Make Sure the band is not displayed
 	}
 }

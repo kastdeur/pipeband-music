@@ -5,7 +5,7 @@
 
 \include "./config.ily"
 %\include "./notes.bass.ily"
-%\include "./notes.tenor.ily"
+\include "./notes.tenor.ily"
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
 %\include "./notes.pipes.seconds.ily"
@@ -103,15 +103,21 @@
 		  }
 
 		}
-%{
 		\new PipeBandDrumStaff = "tenor" \with {
 			instrumentName = \markup{ \instrumentTenor }
 			shortInstrumentName = \markup{ \shortInstrumentTenor }
 		} {
 			\tenorglobal
 
+			\unfoldRepeats {
+				s4 \tenorA
+				\tenorA
+				s4 \tenorB
+
+				s4 \tenorC
+			}
+
 		}
-%}
 %{
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
