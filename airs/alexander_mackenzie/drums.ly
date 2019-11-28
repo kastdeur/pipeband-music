@@ -7,6 +7,11 @@
 \include "./notes.tenor.ily"
 \include "./notes.side.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new PipeBandDrumStaff = "side" {
@@ -36,9 +41,9 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			s8 \tenorAA \tenorAB s8
+			r8 \tenorAA \tenorAB s8
 
-			s8 \tenorBA s8
+			\tenorBA s8
 			\tenorBB s8
 			r8 \tenorAB s8
 		}

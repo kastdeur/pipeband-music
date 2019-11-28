@@ -11,13 +11,13 @@
 	\tenorglobal
 	<<
 			{
-			\repeat volta 2 { \line \break } \break
+			\repeat volta 2 { \part \line \break } \break
 			\repeat volta 2 { \part \halfline \break }
 				\alternative{ {\part \halfline \break}{\part \halfline \break} }
 			\bar "|."
 		}
 		{
-			\tenorAA s8
+			r8 \tenorAA
 			\tenorAB s8
 
 			\tenorBA s8

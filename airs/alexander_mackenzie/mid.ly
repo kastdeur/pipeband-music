@@ -26,7 +26,7 @@
 					\bar "|."
 				}%Format
 				{ 
-					r8 \tenorAA r8
+					r8 \tenorAA
 					\tenorAB s8
 
 					\tenorBA s8
