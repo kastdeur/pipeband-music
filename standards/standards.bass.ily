@@ -15,7 +15,15 @@ bassFourfoursOne = \drummode {
 }
 
 bassSixeightsOne = \drummode {
-	\repeat unfold 8 { d4. g4. }
+  d4.	g4. |
+  d4.	r4. |
+  d4.	g4 g8 |
+  d4 d8	g4. |
+
+  d4.	g4. |
+  d4.	r4. |
+  d4.	g4. |
+  d4.	d4. |
 }
 
 bassNineeightsOne = \drummode {

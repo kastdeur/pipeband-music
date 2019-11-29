@@ -1,53 +1,53 @@
 % 4/4 Rose of Kelvingrove
 % Tenor
 \version "2.18.2"
-composerTenor = ""
+composerTenor = "v0.5, 2019"
 arrangerTenor = ""
 tenorglobal = {}
 % Music
 
 stfe = \drummode {
-  \stfd2 
+  \stf d2 
 }
-xg = \drummode {
-  g8^\markup{ "x" }
+pianomotion = \drummode {
+  d8\startGroup^\markup{"piano"} g d  g8\stopGroup
 }
 
 tenorA = \drummode {
 	\repeat percent 3 {
-		g4 d4 \stfe |
+		d4 g4 \stf d2 |
 	}
-	g4 d4 d8 g d \xg |
+	d4 g4 \pianomotion|
 
 	\repeat percent 2 {
-		g4 d4 \stfe |
+		d4 g4 \stf d2 |
 	}
-	g4 d4 d8 g d \xg |
-	g4 d4 \stfe |
+	d4 g4 \pianomotion|
+	d4 g4 \stf d2 |
 }
 tenorB = \drummode {
 	\repeat percent 2 {
-		g4 d4 \stfe |
-		g4 d4 d8 g d \xg |
+		d4 g4 \stf d2 |
+		d4 g4 \pianomotion|
 	}
 
 	\repeat percent 2 {
-		g4 d4 \stfe |
+		d4 g4 \stf d2 |
 	}
-	g4 d4 d8 g d \xg |
-	g4 d4 \stfe |
+	d4 g4 \pianomotion|
+	d4 g4 \stf d2 |
 }
 tenorC = \drummode {
 	\tenorA
 }
 tenorD = \drummode {
 	\repeat percent 2 {
-		g4 d4 \stfe |
-		g4 d4 d8 g d \xg |
+		d4 g4 \stf d2 |
+		d4 g4 \pianomotion|
 	}
 
 	\repeat percent 3 {
-		g4 d4 \stfe |
+		d4 g4 \stf d2 |
 	}
-	\stfe \stfe \stfe
+	\stf d2 \stf d2 \stf d2
 }

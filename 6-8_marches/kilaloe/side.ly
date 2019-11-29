@@ -5,6 +5,7 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+part = {\partial 4. \grace{ s4 } s4. }
 \score {
     \new PipeBandDrumStaff {
         \global
@@ -21,40 +22,31 @@
 					\line
 				}
 				\break
-				
-				\part
-				\line
-				\break
-				\line
-				\measure
-				
-				\break
-				\part
-				\line
-				\break
-				\line
-				\measure
-				
+
+				\repeat volta 2 {
+					\part
+					\line
+					\break
+					\line
+					\measure
+				}
 
 			}%Format
-			
+
 			\new DrumVoice = "side" {
-				\snareA r4 s8
+				\snareA s4.
 
-				\snareB r4 s8
+				\snareB s4.
 
-				\snareCA r4
-				\snareCB r4 s8
+				\snareC
 
-				\snareDA r4
-				\snareDB r4 s8
-			
 			}
 		>>
 	}
 	\header {
 		title = \title
 		meter = \meter
+		info = \info
 		instrument = \instrumentSide
 		composer = \composerSide
 		arranger = \arrangerSide

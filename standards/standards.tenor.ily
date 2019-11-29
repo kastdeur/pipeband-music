@@ -29,8 +29,15 @@ tenorTwofoursOneB = \drummode {
 	d4\splitTheFeather r |
 
 }
+tenorTwoFoursPI = \drummode {
+	\repeat unfold 2 {
+		d4^\markup{"Swing"} \flourish { d4 g d } |
+	}
+	d4^\markup{"Swing"} \flourish { d4 g d } |
+	d4^\markup{"Swing"} d4 g4 \stf d4 |
+}
 
-tenorTwoFoursII = \drummode {
+tenorTwoFoursPII = \drummode {
 	d8-> g	d8 g |
 	d8-> g	d8 g |
 	d8^\markup{"M"} g^\markup{"L"}	\triplet { d8 g^\markup{"H"} d } g^\markup{"H"} |

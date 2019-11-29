@@ -18,6 +18,7 @@
 % ----------------------
 % Standard 2/4
 % ----------------------
+#(set-global-staff-size 18)
 \score {
 	\new StaffGroup <<
 		\time 2/4
@@ -25,21 +26,21 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			\repeat volta 2 {
-				\tenorTwoFoursFII
-			}
+			\tenorTwoFoursPI
+			\bar "||"
 			\break
-			\repeat volta 2 {
-				\tenorTwoFoursFIII
-			}
+			\tenorTwoFoursFII
+			\bar "||"
 			\break
-			\repeat volta 2 {
-				\tenorTwoFoursFIV
-			}
+			\tenorTwoFoursFIII
+			\bar "||"
 			\break
-			\repeat volta 2 {
-				\tenorTwoFoursFV
-			}
+			\tenorTwoFoursFIV
+			\bar "||"
+			\break
+			\tenorTwoFoursFV
+			\bar "||"
+
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
@@ -53,7 +54,6 @@
 		band = "" % Make Sure the band is not displayed
 	}
 }
-
 % ----------------------
 % Standard 3/4
 % ----------------------
@@ -75,7 +75,6 @@
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
-			\bassThreefoursOne
 			\bassThreefoursOne
 		}
 	>>
@@ -108,7 +107,6 @@
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 
 			\bassSixeightsOne
-			\bassSixeightsOne
 		}
 	>>
 	\header {
@@ -137,8 +135,7 @@
 		\new PipeBandDrumStaff = "bass" {
 			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-			\bassNineeightsOne
+			
 			\bassNineeightsOne
 		}
 	>>

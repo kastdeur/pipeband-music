@@ -2,44 +2,42 @@
 % Side
 \version "2.18.2"
 composerSide = ""
-arrangerSide = ""
+arrangerSide = "2018"
 sideglobal = {}
-\include "../../standards/68_standards.side.ily"
 
 % Music
-endfour = \drummode {
-	\flam d4. d4.:32(
-	|
+snareA = \drummode {
+	d4.:32(\< |
+	d4)\! g8	\flam d4 g8 |
+	d4.:32(	d4.:32)(\<|
+	d4) \!g8	\flam d8 g d |
+	g4.:32(	d4.:32)(\<|
+	d4)\! g8	\flam d4 d8:32( |
+	d8) g d	\flam g8 d g |
+	\flam d4.	d4.:32( |
 	d4.)
 }
-pone = \drummode {\pempty}
-ptwo = \drummode {\pone}
-pthree = \drummode { \pempty }
-pthreeb = \drummode {s8 | s2. | s4. \flam d4. |}
-pfour = \drummode { \pthree }
-pfourb = \drummode {\pthreeb}
+snareB = \drummode { \snareA }
 
+snareC = \drummode {
+	\flam d8\< g d |
+	\flam g4\! g8	\flam d4 g8 |
+	d4.:32(	d8)\< g d |
+	\flam g4\! g8	\flam d4 g8 |
+	d4.:32(	d8)\< g d |
+	\flam g4\! g8->	d8 g d-> |
+	g8 d g->	d g d-> |
+	\flam g4-> g8	d4.:32( |
+	d4.)
 
-snareA = \drummode {
-	\pone \midone \pone \endfour
+	d4.:32( |
+	d4) g8	\flam d4 g8 |
+	d2.:32( |
+	d4.)	\flam d8 g d |
+	g2.:32( |
+	d4) d8:32(	g4) d8:32( |
+	g8) d g	\flam d4. |
+	r4.^\markup{Yell}	r4 d8:32( |
+	g8) d g	\flam d4 g8 |
+	d4.:32(
 }
-
-snareB = \drummode {
-	\ptwo \midone \ptwo \endfour
-}
-
-snareCA = \drummode {
-	\pthree \midone \pthree \endfour
-}
-snareCB = \drummode {
-	\pthree \midone \pthreeb | r2.^\markup{Yell} \endfour
-}
-
-snareDA = \drummode {
-	\pfour \midone \pfour \endfour
-}
-snareDB = \drummode {
-	\pfour \midone \pfourb | r2.^\markup{Yell} \endfour
-}
-
-

@@ -3,6 +3,7 @@
 \version "2.18.2"
 sideglobal={}
 composerSide="2018, v1.1"
+arrangerSide = "E.T. de Boone"
 snareA = \drummode {
 	\flam d8 d8:32( g8)		\flam d8 r8 \flam d8 |
 	g8 d8:32( g8)		\flam d8 \tuplet 3/2 { d16 g d } g8 |

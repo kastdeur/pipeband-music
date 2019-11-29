@@ -12,21 +12,20 @@
 		\time 2/4
 
 		\drummode {
-			\repeat volta 2 {
-				\tenorTwoFoursFII
-			}
+			\tenorTwoFoursPI
+			\bar "||"
 			\break
-			\repeat volta 2 {
-				\tenorTwoFoursFIII
-			}
+			\tenorTwoFoursFII
+			\bar "||"
 			\break
-			\repeat volta 2 {
-				\tenorTwoFoursFIV
-			}
+			\tenorTwoFoursFIII
+			\bar "||"
 			\break
-			\repeat volta 2 {
-				\tenorTwoFoursFV
-			}
+			\tenorTwoFoursFIV
+			\bar "||"
+			\break
+			\tenorTwoFoursFV
+			\bar "||"
 		}
 	}
 

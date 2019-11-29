@@ -6,11 +6,11 @@ arrangerTenor = ""
 tenorglobal = {}
 % Music
 stfe = \drummode {
-	\stf <d g >2
+	\stf d2
 }
 
 tenorAA = \drummode {
-  \flourish { g8[ g] d8[ d] } \stfe |
+  \flourish { d8[ d] g8[ g] } \stfe |
 }
 tenorA = \drummode {
 	\repeat percent 8 {
@@ -24,8 +24,8 @@ tenorB = \drummode {
 		d4\< g\! d4 r4 |
 	}
 	d2 g2 |
-	g8 d g8 d g8 d g8 d |
-	g8 d g8 d g8 d g8 d |
+	d8 g d8 g d8 g d8 g |
+	d8 g d8 g d8 g d8 g |
 }
 
 tenorC = \drummode {

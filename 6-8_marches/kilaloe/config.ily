@@ -14,4 +14,5 @@ line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "Kilaloe"
-meter = "Regimental March Past of The Royal Irish Rangers"
+info = "Regimental March Past of The Royal Irish Rangers"
+meter = "March"

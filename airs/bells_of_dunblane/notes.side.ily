@@ -34,7 +34,8 @@ snarePIV = \drummode {
 				|
 }
 snarePV = \drummode {
-				\flamg \backstick g1
+	\mark \markup "Fine"
+	\flamg \backstick g1
 }
 
 snareA = \drummode {

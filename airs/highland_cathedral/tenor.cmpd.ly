@@ -20,11 +20,14 @@
 				\bar "||"
 				\break
 
-				\line 
+				\line
+				\break
 				\bar "||"
 				\line
 				\measure
 				\bar "|."
+				\break
+				\line
 			}%Format
 			\new DrumVoice = "tenor" {
 					\repeat percent 8 {
