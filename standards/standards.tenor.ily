@@ -31,10 +31,10 @@ tenorTwofoursOneB = \drummode {
 }
 tenorTwoFoursPI = \drummode {
 	\repeat unfold 2 {
-		d4^\markup{"Swing"} \flourish { d4 g d } |
+		d4^\markup{"Swing"} \flourish { g4 d g } |
 	}
-	d4^\markup{"Swing"} \flourish { d4 g d } |
-	d4^\markup{"Swing"} d4 g4 \stf d4 |
+	d4^\markup{"Swing"} \flourish { g4 d g } |
+	d4^\markup{"Swing"} g4 d4 \stf g4 |
 }
 
 tenorTwoFoursPII = \drummode {
