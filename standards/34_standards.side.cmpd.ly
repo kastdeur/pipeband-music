@@ -13,6 +13,7 @@
 			\repeat volta 2 { \ptwentyone | \midone | \ptwentyone | \endone } \break
 			\repeat volta 2 { \pnineteen | \midone | \pnineteen | \endone } \break
 			\repeat volta 2 { \ptwenty | \midone | \ptwenty | \endone } \break
+			\repeat volta 2 { \ptwentysix | \midone | \ptwentysix | \endone } \break
 
 		}% End of drums %
 	}

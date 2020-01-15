@@ -4,8 +4,9 @@
 
 % Midparts
 midone = \drummode {
+	\flam d8 
 	\tutti {
-	  \flamd d8 d8:32(	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8
+		d8:32(	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8
 	} |
 }
 midtwo = \drummode {
@@ -13,12 +14,23 @@ midtwo = \drummode {
 	  d8:32( 	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8
 	} |
 }
+midthree = \drummode {
+	\tutti {
+	  \flamd d8 d8:32(	\tuplet 3/2 { g16) d16 g16 } \flamd d16. g32	\tuplet 3/2 { d16 g16 d16 } \flamg g8
+	} |
+}
 % Endings
 endone = \drummode {
-	\flamd \tutti { d4 	d4:32(	d4)  }
+	\flam d4
+	\tutti {
+		d4:32(	d4)
+	}
 }
 endtwo = \drummode {
 	d4) \tutti { d4:32(  d4)  }
+}
+endthree = \drummode {
+	\tutti { \flam d4 	d4:32(	d4)  }
 }
 
 % Several Parts
@@ -35,7 +47,7 @@ ptwo = \drummode {
 	\flamd d8 d8:32(	g8[) d8:32(]	g16.) d32-> g16. g32 |
 }
 pthree = \drummode {
-	\flamd d8 d8:32(	g8[) \flamd d8]	d16 \flamg g8 d16 |
+	\flamd d8 d8:32(	g8[) \flamd d8]	d16 \flamg g8 g16 |
 }
 pfour = \drummode {
 	\flamd d8 d8:32(	g8[) \flamd d8]	\tuplet 3/2 { d16 g16 d16 } \flamg g8 |
@@ -109,4 +121,7 @@ ptwentyfour = \drummode {
 }
 ptwentyfive = \drummode {
 	\flamd d16. g32 d16. g32->	d32 g d g \triplet { d16-> g d16-> }	g16. d32-> g16. g32 |
+}
+ptwentysix = \drummode {
+	\tuplet 3/2 { g16 d g } d8:32(	g8) \tuplet 3/2 { g16 d g }	d8:32( g8) |
 }
