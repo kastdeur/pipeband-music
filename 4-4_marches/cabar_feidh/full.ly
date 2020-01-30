@@ -7,7 +7,6 @@
 %\include "./notes.bass.ily"
 %\include "./notes.tenor.ily"
 \include "./notes.side.ily"
-\include "../../standards/24_44_standards.side.ily"
 \include "./notes.pipes.ily"
 %\include "./notes.pipes.seconds.ily"
 %\include "./notes.lyrics.ily"
@@ -28,7 +27,14 @@
 			\pipeglobal
 			<<
 				\new NullVoice = "format" {
-					\repeat unfold 4 {
+					\repeat unfold 2 {
+						\part
+						\line
+						\bar "||"
+					 	\break
+					}
+					\pageBreak
+					\repeat unfold 2 {
 						\part
 						\line
 						\bar "||"
@@ -75,19 +81,17 @@
 		} {
 			\sideglobal
 
-			\simpleSnarepone \midone \simpleSnarepone \simpleSnareEndingI r8
-			\tutti { \simpleSnarepone \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
+			\snareAA r8
+			\snareAB s8
 
-			\simpleSnareptwo \midone \simpleSnareptwo \simpleSnareEndingI r8
-			\tutti { \simpleSnareptwo \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
+			\snareBA r8
+			\snareBB s8
 
-			\simpleSnarepthree \midone \simpleSnarepthree \simpleSnareEndingI r8
-			\tutti { \simpleSnarepthree \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
-			
-			\simpleSnarepfour \midone \simpleSnarepfour \simpleSnareEndingI r8
-			\tutti { \simpleSnarepfour \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
+			\snareCA r8
+			\snareCB s8
 
-
+			\snareDA r8
+			\snareDB s8
 		}
 %{
 		\new PipeBandDrumStaff = "tenor" \with {
