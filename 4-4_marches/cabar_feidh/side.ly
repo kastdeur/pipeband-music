@@ -4,44 +4,42 @@
 
 \include "./config.ily"
 \include "./notes.side.ily"
-\include "../../standards/24_44_standards.side.ily"
 
-#(set-global-staff-size 18)
+\paper {
+  system-system-spacing.padding = #2.3
+}
+
+halfbreak = {  \break }
+
 \score {
     \new PipeBandDrumStaff {
         \global
 		\sideglobal
 		<<
-			%\new NullVoice = "format" {
-			%  \repeat unfold 4 {
-			%	\repeat unfold 2 {
-			%	  \part s1*2
-			%	} \alternative {
-			%	  { s1*2 }
-			%	  { s1*2 }
-			%	}
-			% }
-			%}%Format
-			
-			\new DrumVoice = "side" {
-				\partial 8 \simpleSnarepone \midone \simpleSnarepone \simpleSnareEndingI r8
-				\tutti { \simpleSnarepone \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
-				\bar "||"
-				\break
-
-				\partial 8 \simpleSnareptwo \midone \simpleSnareptwo \simpleSnareEndingI r8
-				\tutti { \simpleSnareptwo \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
-				\bar "||"
-				\break
-
-				\partial 8 \simpleSnarepthree \midone \simpleSnarepthree \simpleSnareEndingI r8
-				\tutti { \simpleSnarepthree \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
-				\bar "||"
-				\break
-
-				\partial 8 \simpleSnarepfour \midone \simpleSnarepfour \simpleSnareEndingI r8
-				\tutti { \simpleSnarepfour \removeWithTag #'tutti \midone \simpleSnareEndingII s8 }
+			\new DrumVoice = "format" {
+					\voiceOne
+				\repeat unfold 4 {
+					s8
+					\halfline
+					\halfbreak
+					\halfline
+					\bar "||"
+					\break
+				}
 				\bar "|."
+			}
+			\new DrumVoice = "side" {
+				\partial 8 \snareAA r8
+				\snareAB s8
+
+				\partial 8 \snareBA r8
+				\snareBB s8
+
+				\partial 8 \snareCA r8
+				\snareCB s8
+
+				\partial 8 \snareDA r8
+				\snareDB s8
 			}
 		>>
 	}
@@ -50,6 +48,7 @@
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
-		arranger = \arrangerSideSimple
+		arranger = \arrangerSide
+		info = \info
 	}
 }

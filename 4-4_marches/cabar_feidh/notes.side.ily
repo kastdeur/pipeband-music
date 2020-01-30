@@ -2,8 +2,8 @@
 % Side
 \version "2.18.2"
 composerSide = "Seaforth Highlanders of Canada"
-arrangerSide = ""
-arrangerSideSimple = "E.T. de Boone, 2018"
+arrangerSide = "E.T. de Boone, 2018, v2.0"
+arrangerSideOrig = ""
 sideglobal = {
 	\eighthBeaming
 }
@@ -19,30 +19,29 @@ simpleSnarepone = \drummode {
 	\flam d16. g32 \triplet { d16 g d }
 	\flam g8 g
 	d4:32~
-	d8
+	d4
 }
 simpleSnareptwo = \drummode {
 	g8 |
 	d8:32( \triplet { g16) d g }
 	d8-> d8:32(
 	\triplet { g16) d g } d16. d32
-	\flam g8
+	\flam g4
 }
 simpleSnarepthree = \drummode {
 	g8 |
 	\flam d8 g16. d32->
 	\triplet { g16 d g } \flam d16. g32
 	d16. d32-> \triplet { g16 d g }
-	d8->
+	d4->
 }
 simpleSnarepfour = \drummode {
 	d8:32( |
 	g16.) g32-> \triplet { d16 g d }
 	\flam g16. d32-> g16. g32
 	\flam d16. g32-> \triplet { d16 g d }
-	g8
+	g4
 }
-
 simpleSnareEndingI = \drummode { \tutti {
 	g8 |
 	\flam d4 d4:32~ d4
@@ -78,8 +77,208 @@ snareEndingII = \drummode { \tutti {
 	}
 }
 
+snareAA = \drummode {
+	g8 |
+	\flam d16. g32 \triplet { d16 g d }
+	\flam g8 g
+	d4:32(  \<
+	d4) \! 
+	|
+	\tutti { 
+		r8 \triplet { g16 d g }	
+		\flam d16. d32 \flam g16. g32
+		d16.[ \drag d32 \triplet { d16 g d ] }
+		g8\v
+	}
 
-snareA = \drummode {
+	g8 |
+	\flam d16. g32 \triplet { d16 g d }
+	\flam g8 g
+	d4:32( \<
+	d8) \!
+
+	\simpleSnareEndingI
+}
+snareAB = \drummode {
+	\tutti {
+		g8 |
+		\flam d16. g32 \triplet { d16 g d }
+		\flam g8 g
+		d4:32( \<
+		d4) \! 
+		|
+		r8 \triplet { g16 d g }
+		\flam d16. d32 \flam g16. g32
+		d16.[ \drag d32 \triplet { d16 g d ] }
+		g8\v
+
+		%% \simpleSnareEndingII
+		%% used verbose because of a problem with tutti
+		g8 |
+		\flam d16 g \optflam d \flam g
+		d16 \optflam g \flam d g
+		\optflam d16 \flam g d \optflam g
+		d4:32(
+		|
+		d8) \flam g8
+		d32 g d g d16.-> g32
+		d8[ d8]:32(
+		g8)
+	}
+}
+
+snareBA = \drummode {
+	g8 |
+	d8:32( \triplet { g16) d g }
+	d8-> d8:32(
+	\triplet { g16) d g } d16. d32
+	\flam g4
+	\tutti {
+		r16. g32 d16. g32
+		d32 g d g d16.\v g32
+		d16.[ \drag d32 \triplet { d16 g d ] }
+		g8\v
+	}
+
+	g8 |
+	d8:32( \triplet { g16) d g }
+	d8-> d8:32(
+	\triplet { g16) d g } d16. d32
+	\flam g8
+
+	\simpleSnareEndingI
+}
+snareBB = \drummode {
+	
+	\tutti {
+	g8 |
+	d8:32( \triplet { g16) d g }
+	d8-> d8:32(
+	\triplet { g16) d g } d16. d32
+	\flam g4
+		|
+		r16. g32 d16. g32	
+		d32 g d g d16.\v g32
+		d16.[ \drag d32 \triplet { d16 g d ] }
+		g8\v
+
+		%% \simpleSnareEndingII
+		%% used verbose because of a problem with tutti
+		g8 |
+		\flam d16 g \optflam d \flam g
+		d16 \optflam g \flam d g
+		\optflam d16 \flam g d \optflam g
+		d4:32(
+		|
+		d8) \flam g8
+		d32 g d g d16.-> g32
+		d8[ d8]:32(
+		g8)
+	}
+}
+
+snareCA = \drummode {
+	g8 |
+	\flam d8 g16. d32->
+	\triplet { g16 d g } \flam d16. g32
+	d16. d32-> \triplet { g16 d g }
+	d4->
+|
+	\tutti {
+		r16 d8:32(-> g16)\v
+		d8:32(-> g)\v
+		d16.[ \drag d32 \triplet { d16 g d ] }
+		g8\v
+	}
+
+	g8 |
+	\flam d8 g16. d32->
+	\triplet { g16 d g } \flam d16. g32
+	d16. d32-> \triplet { g16 d g }
+	d8->
+
+	\simpleSnareEndingI
+}
+snareCB = \drummode {
+	\tutti {
+		g8 |
+		\flam d8 g16. d32->
+		\triplet { g16 d g } \flam d16. g32
+		d16. d32-> \triplet { g16 d g }
+		d4->
+		|
+		r16 d8:32(-> g16)\v
+		d8:32(-> g)\v
+		d16.[ \drag d32 \triplet { d16 g d ] }
+		g8\v
+
+		%% \simpleSnareEndingII
+		%% used verbose because of a problem with tutti
+		g8 |
+		\flam d16 g \optflam d \flam g
+		d16 \optflam g \flam d g
+		\optflam d16 \flam g d \optflam g
+		d4:32(
+		|
+		d8) \flam g8
+		d32 g d g d16.-> g32
+		d8[ d8]:32(
+		g8)
+	}
+}
+
+snareDA = \drummode {
+	d8:32( |
+	g16.) g32-> \triplet { d16 g d }
+	\flam g16. d32-> g16. g32
+	\flam d16. g32-> \triplet { d16 g d }
+	g16. g32 d16. d32
+	|
+
+	\tutti {
+		\flam g8. d16\p\<
+		d16 d d d
+		d16-\v\! \flam g d16-\v d16-\v
+		\flam g8
+	}
+
+	d8:32( |
+	g16.) g32-> \triplet { d16 g d }
+	\flam g16. d32-> g16. g32
+	\flam d16. g32-> \triplet { d16 g d }
+	g8
+
+	\simpleSnareEndingI
+}
+snareDB = \drummode {
+	\tutti {
+		d8:32( |
+		g16.) g32-> \triplet { d16 g d }
+		\flam g16. d32-> g16. g32
+		\flam d16. g32-> \triplet { d16 g d }
+		g16. g32 d16. d32
+		|
+		\flam g8. d16\p\<
+		d16 d d d
+		d16-\v\! \flam g16 d16-\v d16-\v
+		\flam g8
+
+		%% \simpleSnareEndingII
+		%% used verbose because of a problem with tutti
+		g8 |
+		\flam d16 g \optflam d \flam g
+		d16 \optflam g \flam d g
+		\optflam d16 \flam g d \optflam g
+		d4:32(
+		|
+		d8) \flam g8
+		d32 g d g d16.-> g32
+		d8[ d8]:32(
+		g8)
+	}
+}
+
+snareOrigA = \drummode {
   g8 |
   \flam d16. g32 \triplet { d16 g d }	\flam g8 g	d4:32( d4) |
   \tutti { r8 \triplet { g16 d g }	\flam d16. d32 \flam g16. g32	d16.[ \drag d32 d32 g d g]	d8\v }
@@ -96,7 +295,7 @@ snareA = \drummode {
   }
 }
 
-snareB = \drummode {
+snareOrigB = \drummode {
   g8 |
   \flam d8:32( \triplet { g16) d g\v }	d16.\v g32 d8:32(	\triplet { g16) d g\v } d16.\v d32	\flam g4 |
   \tutti {
@@ -114,7 +313,7 @@ snareB = \drummode {
   }
 }
 
-snareC = \drummode {
+snareOrigC = \drummode {
   g8 |
   \flam d8 g16. d32:64(	\triplet { d16) g d } \flam g16. g32	d16.[ \drag d32 d32 g d g] d4\v |
   \tutti {
@@ -132,7 +331,7 @@ snareC = \drummode {
   }
 }
 
-snareD = \drummode {
+snareOrigD = \drummode {
 	d8:32( |
 	g16.) g32 d32 g d g	d16. g32 d16. d32	\flam g16. g32 d32 g d g	d16. g32 d16. d32 |
 	\flam g8. d16\p\<	d16 d d d	d16-\v\! \flam g d16-\v d16-\v \flam g8
@@ -148,7 +347,7 @@ snareD = \drummode {
 	}
 }
 
-snareDOrig = \drummode {
+snareOrigDOrig = \drummode {
 	d8:32( |
 	g16.) g32 \triplet { d32 d g g d16 } g16. d32 g16. g32	\flam g16. g32 \triplet { d32 d g g d16 } g16.\v d32\v g16. g32 |
 	\flamdr g8. d16\p\<	d16 d d d	d16-\v\! \flam g d16-\v d16-\v \flam g8 \fr

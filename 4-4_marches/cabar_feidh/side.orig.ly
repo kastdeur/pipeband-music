@@ -24,13 +24,13 @@ halfbreak = \break
 			}%Format
 
 			\new DrumVoice = "side" {
-			  \snareA s8
+			  \snareOrigA s8
 
-			  \snareB s8
+			  \snareOrigB s8
 
-			  \snareC s8
+			  \snareOrigC s8
 
-			  \snareD s8
+			  \snareOrigD s8
 
 			}
 		>>

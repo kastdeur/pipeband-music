@@ -15,5 +15,7 @@ line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "Cabar Feidh"
+alttitleI = "Deer's Horn"
 title = "Cabar Fèidh"
-meter = "Regimental March of the Seaforth Highlanders"
+meter = "March"
+info = "Regimental March of the Seaforth Highlanders"
