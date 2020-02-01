@@ -9,28 +9,11 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			\new NullVoice = "format" {
-				\repeat unfold 4 {
-				  	\part
-					\halfline
-					\break
-					\halfline
-					\bar "||"
-				  \break
-				}
-				\bar "|."
-			}%Format
-			\new Voice = "pipes" {
-				\pipesAgiraA s8
 
-				\pipesAgiraB s8
-
-				\pipesAgiraC s8
-
-				\pipesAgiraD s8
-			}
-		>>
+		\partial 8 \pipesAgiraA \bar "||" \break
+		\partial 8 \pipesAgiraB \bar "||" \break
+		\partial 8 \pipesAgiraC \bar "||" \break
+		\partial 8 \pipesAgiraD \bar "|." \break
 	}
 	\header {
 		title = \titleAgira

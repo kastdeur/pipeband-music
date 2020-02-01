@@ -49,7 +49,7 @@ pipesD = {
  \grg A8 [ c8 ] \thrwd d4 \dblA A4 | 
 
  f8. [ g16 ] \dblA A4 \thrwd d4 |
- \grg d16 [ e16 ] \grg d16 [ b16 ] \dblc c4 \dblA A4 |
+ \grg d16 [ e16 \grg d16 b16 ] \dblc c4 \dblA A4 |
  \grg A8 [ c8 ] \grip c4 \dblA A4 |
  \grg A16 [ g16 f16 e16 ] \thrwd d4 \dbld d4
 }
