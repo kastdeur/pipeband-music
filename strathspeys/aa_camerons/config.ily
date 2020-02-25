@@ -2,7 +2,10 @@
 %% Globals
 global = {
 	\time 4/4
-	}
+}
+confTempo = {
+	\tempo 4 = 120
+}
 
 %% Format
 part = { \partial 8 s8 }
@@ -11,5 +14,5 @@ halfline = { \repeat unfold 2 { \measure } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "A. A. Cameron's Strathspey"
+title = "A. A. Cameron's"
 meter = "Strathspey"
