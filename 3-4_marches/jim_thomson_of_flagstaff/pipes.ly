@@ -22,7 +22,10 @@
 				\break
 
 				\repeat volta 2 {
-					\halfline
+					\part |
+					\measure |
+					\measure |
+					\measure |
 				}\alternative{
 					{
 					  \measure
@@ -39,10 +42,10 @@
 			\new Voice = "pipes" {
 				\pipesA
 				\pipesABA
-				\pipesABB
+				\pipesABB s8
 
 				\pipesBA
-				\pipesBBA
+				\pipesBBA s8
 				\pipesBBB
 			}
 		>>
@@ -63,7 +66,6 @@
 
 		\pipesBA \pipesBBA
 		\pipesBA \pipesBBB
-
 
 	}
 	\midi { \confTempo }
