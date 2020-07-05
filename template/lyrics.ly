@@ -28,6 +28,7 @@
 	}
 	\header {
 		title = \title
+		subtitle = \subtitle
 		meter = \meter
 		instrument = \instrumentLyrics
 		composer = \markup \large {

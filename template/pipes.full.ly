@@ -47,6 +47,7 @@
 	>>
 	\header {
 		title = \title
+		subtitle = \subtitle
 		meter = \meter
 		composer = \markup \large {
 			\column \right-align {
@@ -96,6 +97,7 @@
 	\midi { \confTempo }
 	\header {
 		title = \title
+		subtitle = \subtitle
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes

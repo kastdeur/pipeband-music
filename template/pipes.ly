@@ -21,6 +21,7 @@
 	}
 	\header {
 		title = \title
+		subtitle = \subtitle
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
@@ -36,6 +37,7 @@
 	\midi { \confTempo }
 	\header {
 		title = \title
+		subtitle = \subtitle
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes

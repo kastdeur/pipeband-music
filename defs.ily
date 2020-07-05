@@ -7,6 +7,9 @@
 %$(set-default-paper-size "a4" 'landscape)
 %$(set-default-paper-size "a4")
 
+% Default Subtitle is Empty
+subtitle = ""
+
 %% instrumentName
 instrumentSide = "Side"
 instrumentTenor = "Tenor"

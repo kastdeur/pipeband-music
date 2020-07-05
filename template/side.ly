@@ -21,6 +21,7 @@
 	}
 	\header {
 		title = \title
+		subtitle = \subtitle
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide

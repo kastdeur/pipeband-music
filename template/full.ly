@@ -80,6 +80,7 @@
 	>>
 	\header {
 		title = \title
+		subtitle = \subtitle
 		meter = \meter
 		composer = \markup \large {
 			\column \right-align {
