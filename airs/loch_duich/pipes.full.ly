@@ -7,35 +7,31 @@
 \include "./notes.pipes.seconds.ily"
 %\include "./notes.pipes.thirds.ily"
 
+\layout {
+	indent = 8.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff = "pipes"  {
+		\new Staff \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes }
-			<<
-			  	\new Voice = "format"
-				{ 
-				  \repeat unfold 3 {
-					  \repeat volta 2 {
-						\part \line
-						\break
-					  }
-					}
-				  }%Format
-				\new Voice = "pipes"
-				{
-					\pipesA s8
-					\pipesB s8
-					\pipesC s8
-				}%Pipes
-			>>
+
+			\repeat volta 2 { \partial 8 \pipesA s8 }
+			\break
+			\repeat volta 2 { \partial 8 \pipesB s8 }
+			\break
+			\repeat volta 2 { \partial 8 \pipesC s8 }
 		}
-		\new Staff = "seconds" {
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd }
+		} {
 			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
 			
 				\pipessecndA s8
 				\pipessecndB s8
@@ -64,6 +60,18 @@
 				$(if (not (string=? "" composerPipesthrd))  #{ \markup {\line { \instrumentPipesthrd }}#} )
 			}
 		}
+		arranger = \markup \large {
+			\column \right-align {
+				$(if (not (string=? "" arrangerPipes))  #{ \markup {\line { \arrangerPipes  ":" }} #} )
+				$(if (not (string=? "" arrangerPipessecnd))  #{ \markup {\line { \arrangerPipessecnd ":" }} #} )
+				$(if (not (string=? "" arrangerPipesthrd))  #{ \markup {\line { \arrangerPipesthrd  ":" }} #} )
+			}
+			\column \right-align {
+				$(if (not (string=? "" arrangerPipes))  #{ \markup {\line { \instrumentPipes }}#} )
+				$(if (not (string=? "" arrangerPipessecnd))  #{ \markup {\line { \instrumentPipessecnd }}#} )
+				$(if (not (string=? "" arrangerPipesthrd))  #{ \markup {\line { \instrumentPipesthrd }}#} )
+			}
+		}
 	}
 }
 \score {
@@ -73,6 +81,7 @@
 			\pipeglobal
 			\set Staff.midiInstrument = #"bagpipe"
 			%%Tune
+			\partial 8
 			\pipesA
         	\pipesB
         	\pipesC
@@ -82,6 +91,7 @@
 			\pipessecndglobal
 			\set Staff.midiInstrument = #"bagpipe"
 			%% Seconds
+			\partial 8
 			\pipessecndA
 			\pipessecndB
 			\pipessecndC
@@ -100,5 +110,6 @@
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
+		arranger = \arrangerPipes
 	}
 }

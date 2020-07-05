@@ -8,24 +8,17 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
-			{
-				\repeat volta 2 { \line \break}
-				\repeat volta 2 { \line \break}
-				\repeat volta 2 { \halfline s2. s2. s2. }
-					\alternative {
-					  { \grace {s1} s2.} {\grace{s1}s2.}
-				}
-				\bar "|."
-			}
-			{
-				\snareA
-				\snareB
-				\snareCA
-				\snareCBA
-				\snareCBB
-			}
-		>>
+
+		\repeat volta 2 { \snareA }
+		\break
+		\repeat volta 2 { \snareB }
+		\break
+		\repeat volta 2 { \snareCA }
+		\alternative {
+			\snareCBA
+			\snareCBB
+		}
+		\bar "|."
 	}
 	\header {
 		title = \title

@@ -11,38 +11,32 @@
 \include "./notes.pipes.seconds.ily"
 %\include "./notes.lyrics.ily"
 
+\layout {
+	indent = 8.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff {
+		\new Staff \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
+
+			\repeat volta 2 { \partial 8 \pipesA s8 }
+			\break
+			\repeat volta 2 { \partial 8 \pipesB s8 }
+			\break
+			
+			\partial 8 \pipesC
 			<<
-				\new Voice = "format"
-			  	{
-					\repeat unfold 2 {
-					  	\repeat volta 2 {
-						  	\part \line
-							\break
-						}
-					}
-					  \part \line \bar "||"
-					  \break
-					  \part \line \bar "|."
-				
-				}%Format
-
-				\new Voice = "pipes"
-				{
-					\pipesA s8
-					\pipesB s8
-
-					\pipesC s8
-					\pipesC s8
-				
-				}%Pipes
+				{ \pipesC }
+				{ s8 \bar "||" \measure }
 			>>
+			s8
+			\bar "|."
 		}
 %		\new Lyrics = "verse1" {
 %		  \lyricsglobal
@@ -50,34 +44,39 @@
 %			\verseA
 %		  }
 %		}
-		\new Staff = "seconds" {
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentPipes \instrumentSecnd }
+			shortInstrumentName = \markup{ \shortInstrumentPipes \shortInstrumentSecnd }
+		} {
 			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
+
 			\pipessecndA s8
+
 			\pipessecndB s8
 
-			\pipessecndC s8
+			\pipessecndC
 			\pipessecndC s8
 
 		}
-		\new PipeBandDrumStaff = "side" {
+		\new PipeBandDrumStaff = "side" \with {
+			instrumentName = \markup { \instrumentSide }
+			shortInstrumentName = \markup{ \shortInstrumentSide }
+		} {
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
-				s8 \snareA
-				s8 \snareB
 
-				s8 \snareCA
-				s8 \snareCBA
+			s8 \snareA
+			s8 \snareB
 
-				s8 \snareCA 
-				s8 \snareCBB
+			s8 \snareCA
+			\snareCBA
+
+			\snareCA 
+			\snareCBB
 
 		}
 %		\new PipeBandDrumStaff = "tenor" {
 %			\tenorglobal
-%			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
+%			\set PipewBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
 %			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 %
 %		}
@@ -107,6 +106,24 @@
 				$(if (not (string=? "" composerSide))  #{ \markup {\line { \instrumentSide }}#} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \instrumentTenor }}#} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \instrumentBass }}#} )
+			}
+		}
+		arranger = \markup \large {
+			\column \right-align {
+				$(if (not (string=? "" arrangerLyrics)) #{ \markup { \line { \arrangerLyrics ":" } } #} )
+				$(if (not (string=? "" arrangerPipes))  #{ \markup {\line { \arrangerPipes  ":" }} #} )
+				$(if (not (string=? "" arrangerPipessecnd))  #{ \markup {\line { \arrangerPipessecnd ":" }} #} )
+				$(if (not (string=? "" arrangerSide))  #{ \markup {\line { \arrangerSide  ":" }} #} )
+				$(if (not (string=? "" arrangerTenor)) #{ \markup {\line { \arrangerTenor  ":" }} #} )
+				$(if (not (string=? "" arrangerBass))  #{ \markup {\line { \arrangerBass  ":" }} #} )
+			}
+			\column \right-align {
+				$(if (not (string=? "" arrangerLyrics)) #{ \markup { \line { "Lyrics" } } #} )
+				$(if (not (string=? "" arrangerPipes))  #{ \markup {\line { \instrumentPipes }}#} )
+				$(if (not (string=? "" arrangerPipessecnd))  #{ \markup {\line { \instrumentPipessecnd }}#} )
+				$(if (not (string=? "" arrangerSide))  #{ \markup {\line { \instrumentSide }}#} )
+				$(if (not (string=? "" arrangerTenor)) #{ \markup {\line { \instrumentTenor }}#} )
+				$(if (not (string=? "" arrangerBass))  #{ \markup {\line { \instrumentBass }}#} )
 			}
 		}
 	}

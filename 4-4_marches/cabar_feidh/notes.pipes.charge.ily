@@ -31,6 +31,6 @@ pipesChargeB = {
 
 	\hdblb b8. [ \gre G16 ] \hdbld d8. [ \gre G16 ] \dblb b8. [ \gre G16 ] \hdbld d8. [ \gre G16 ] |
 	\hdblb b8. [ \gre G16 ] \hdbld d8. [ \gre G16 ] \dblb b8. [ a16 ] \grg G8. [ \grd b16 ] |
-	\grg a8. [ b16 c8. ] d16 ] \grg e8. [ f16 ] \dblg g8. [ f16 ] |
+	\grg a8. [ b16 ] c8. [ d16 ] \grg e8. [ f16 ] \dblg g8. [ f16 ] |
 	\grg e16 [ A8. ] \hdble e8 [ A8 ] \hdblc c8. [ b16 ] \grg a8
 }

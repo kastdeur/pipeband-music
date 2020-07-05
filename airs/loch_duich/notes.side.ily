@@ -38,10 +38,13 @@ snareCA = \drummode {
 
 	d8 \tuplet 3/2 { d16 g d } \flam g8		d8:32( \tuplet 3/2 { d16) g d } \flam g8 |
 	d4:32( d8)		\drag d16 d-> g g \flam d8 |
+	
+	\flam g8 d8:32( d8)		r8 d8:32( d8) |
+	\drag d16 d-> g g \flam d8
 }
 snareCBA = \drummode {
-	\drag d16 d-> g g \flam d8		d4.:32(\< |
+	d4.:32(\< |
 }
 snareCBB = \drummode {
-	\drag d16)\! d-> g g \flam d8		\flam d4. |
+	\flam d4.) \! |
 }
