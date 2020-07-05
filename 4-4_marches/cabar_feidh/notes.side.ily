@@ -8,11 +8,6 @@ sideglobal = {
 	\eighthBeaming
 }
 
-%% Optional Flams in Ending
-optflamd = \drummode { \drumgrace { \parenthesize g8 } }
-optflamg = \drummode { \drumgrace { \parenthesize d8 } }
-optflam = #(autohandFunc optflamg optflamd)
-
 % Music
 simpleSnarepone = \drummode {
 	g8 |
