@@ -41,3 +41,13 @@ sidePII = \drummode {
   d16.:64(-> d32) \tuplet 3/2 { g16 d g }	d16.:64(-> d32) \tuplet 3/2 { g16 d g } |
   d16.:64(-> d32) g16.:64(-> g32)	d8
 }
+sidePIII = \drummode {
+	s8 |
+	s2 |
+	s4 s8
+}
+sidePIV = \drummode {
+	s8 |
+	s2 |
+	s4 s8
+}

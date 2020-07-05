@@ -16,6 +16,9 @@
 	short-indent = 2.0
 }
 
+% Force a Break between the Voltas
+mbreak = { \break }
+
 \score {
 	\new StaffGroup <<
 		\new Staff \with {
@@ -31,12 +34,46 @@
 						\line
 					}
 					\break
-					\repeat unfold 2 {
+
+					\repeat volta 2 {
 						\part
 						\halfline
 					} \alternative {
-						{ \halfline \break \bar "||" }
-						{ \halfline }
+						{
+							\mbreak
+							\part
+							\halfline
+						}
+						{
+							\mbreak
+							\part
+							\halfline
+						}
+					}
+					\bar "||"
+					\break
+
+					\repeat volta 2 {
+						\part
+						\halfline
+					} \alternative {
+						{
+							\mbreak
+							\part
+							\halfline
+						}
+						{
+							\mbreak
+							\part
+							\halfline
+						}
+					}
+					\bar "||"
+					\break
+
+					\repeat volta 2 {
+						\part
+						\line
 					}
 				}%Format
 
@@ -44,11 +81,16 @@
 					\pipesAA
 					\pipesAB s8
 
-					\pipesBA
+					\pipesBA s8
 					\pipesBBA s8
-					\pipesBA
-					\pipesBBB
+					\pipesBBB s8
 
+					\pipesCA s8
+					\pipesCBA s8
+					\pipesCBB s8
+
+					\pipesDA
+					\pipesDB s8
 				}%Pipes
 			>>
 		}
@@ -74,45 +116,15 @@
 
 		}
 %}
-		\new PipeBandDrumStaff = "side" \with {
-			instrumentName = \markup { \instrumentSide }
-			shortInstrumentName = \markup{ \shortInstrumentSide }
-		} {
-			\sideglobal
-			\sidePI
-			<<
-				\sideMid
-				\context PipeBandDrumStaff = "sideLD" {
-					\sideMidII
-				}
-			>>
-			\sidePI
-			<<
-				\sideEnd
-				\context PipeBandDrumStaff = "sideLD" {
-					\sideEndII
-				}
-			>> s8
+		<<
+			\new PipeBandDrumStaff = "side" \with {
+				instrumentName = \markup { \instrumentSide }
+				shortInstrumentName = \markup{ \shortInstrumentSide }
+			} {
+				\sideglobal
 
-			%%
-			\sidePII
-			<<
-				\sideMid
-				\context PipeBandDrumStaff = "sideLD" {
-					\sideMidII
-				}
-			>>
-			\sidePII
-			<<
-				\sideEnd
-				\context PipeBandDrumStaff = "sideLD" {
-					\sideEndII
-				}
-			>> s8
-			%
-			<>\dr
-			\removeWithTag #'tutti {
-				\sidePII
+				%% Part 1
+				\sidePI
 				<<
 					\sideMid
 					\context PipeBandDrumStaff = "sideLD" {
@@ -125,17 +137,87 @@
 					\context PipeBandDrumStaff = "sideLD" {
 						\sideEndII
 					}
-				>> s8 \fr
+				>> s8
+
+				%% Part 2
+				\sidePII
+				<<
+					\sideMid
+					\context PipeBandDrumStaff = "sideLD" {
+						\sideMidII
+					}
+				>> s8
+				\sidePII
+				<<
+					\sideEnd
+					\context PipeBandDrumStaff = "sideLD" {
+						\sideEndII
+					}
+				>> s8
+				%
+				<>\dr
+				\removeWithTag #'tutti {
+					\sidePI
+					<<
+						\sideEnd
+						\context PipeBandDrumStaff = "sideLD" {
+							\sideEndII
+						}
+					>>
+				} s8 \fr
+
+				%% Part 3
+				\sidePIII
+				<<
+					\sideMid
+					\context PipeBandDrumStaff = "sideLD" {
+						\sideMidII
+					}
+				>> s8
+				\sidePIII
+				<<
+					\sideEnd
+					\context PipeBandDrumStaff = "sideLD" {
+						\sideEndII
+					}
+				>> s8
+				%
+				<>\dr
+				\removeWithTag #'tutti {
+					\sidePII
+					<<
+						\sideEnd
+						\context PipeBandDrumStaff = "sideLD" {
+							\sideEndII
+						}
+					>>
+				} s8 \fr
+
+				%% Part 4
+				\sidePIV
+				<<
+					\sideMid
+					\context PipeBandDrumStaff = "sideLD" {
+						\sideMidII
+					}
+				>>
+				\sidePIV
+				<<
+					\sideEnd
+					\context PipeBandDrumStaff = "sideLD" {
+						\sideEndII
+					}
+				>> s8
+
 			}
-		}
-		\new PipeBandDrumStaff = "sideLD" \with {
-			instrumentName = \markup \center-column { LD \instrumentSide }
-			shortInstrumentName = \markup{ L.D. }
-			\RemoveAllEmptyStaves
-		} {
-			s8 | s1*4
-			s8 | s1*4
-		}
+			\new PipeBandDrumStaff = "sideLD" \with {
+				instrumentName = \markup \center-column { L.D. \instrumentSide }
+				shortInstrumentName = \markup{ L.D. }
+				\RemoveEmptyStaves
+			} {
+				s8 | s1
+			}
+		>>
 %{
 		\new PipeBandDrumStaff = "tenor" \with {
 			instrumentName = \markup{ \instrumentTenor }
