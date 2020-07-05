@@ -5,37 +5,58 @@
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
+% Force a Break between the Voltas
+mbreak = { \break }
+
 \score {
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			\new NullVoice = "format" {
-				\repeat volta 2 {
-					\part
-					\line
-				}
-				\break
-				\repeat volta 2 {
-					\part
-					\halfline
-				} \alternative {
-					{ \part \halfline }
-					{ \part \halfline }
-				}
-				\bar "|."
-			}%Format
 
-			\new Voice = "pipes" {
-				\pipesAA
-				\pipesAB s8
+		\repeat volta 2 {
+			\partial 8
+			\pipesAA
+			\pipesAB
+		}
+		\break
 
-				\pipesBA s8
-				\pipesBBA s8
-				\pipesBBB s8
-
+		\repeat volta 2 {
+			\partial 8
+			\pipesBA
+		} \alternative {
+			{
+				\mbreak
+				\pipesBBA
 			}
-		>>
+			{
+				\mbreak
+				\pipesBBB
+			}
+		}
+		\bar "||"
+		\break
+
+		\repeat volta 2 {
+			\partial 8
+			\pipesCA
+		} \alternative {
+			{
+				\mbreak
+				\pipesCBA
+			}
+			{
+				\mbreak
+				\pipesCBB
+			}
+		}
+		\bar "||"
+		\break
+
+		\repeat volta 2 {
+			\partial 8
+			\pipesDA
+			\pipesDB s8
+		}
 	}
 	\header {
 		title = \title
@@ -55,6 +76,12 @@
 
 		\pipesBA \pipesBBA
 		\pipesBA \pipesBBB
+
+		\pipesCA \pipesCBA
+		\pipesCA \pipesCBB
+
+		\pipesDA \pipesDB
+		\pipesDA \pipesDB
 	}
 	\midi { \confTempo }
 	\header {
