@@ -22,12 +22,15 @@
 				
 				\repeat volta 2 { \part \halfline}
 				\alternative{ {\halfline} {\halfline}}	\break
+				\bar "||"
 
 				\repeat volta 2 { \part \halfline}
 				\alternative{ {\halfline} {\halfline}}	\break
+				\bar "||"
 
 				\repeat volta 2 { \part \halfline}
 				\alternative{ {\halfline} {\halfline}}
+				\bar "|."
 				}%Format
 				{
 				\pipesA s8
@@ -56,11 +59,15 @@
 			
 			\snareBA 
 			\snareBBA s8
-			\snareAB s8
+			\snareBBB s8
 
 			\snareCA
 			\snareCBA s8
-			\snareBBA s8
+			\snareCBB s8
+
+			\snareDA
+			\snareDBA s8
+			\snareDBB s8
 		}
 		\new PipeBandDrumStaff = "bass" {
 			\bassglobal
