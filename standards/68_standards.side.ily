@@ -121,3 +121,14 @@ pthirteen = \drummode { %C. Ooms
 	g8.) \! d16 \flam g8->	d8. g16 \flam d8-> |
 	g8. \flam g16 d8	\flam d8. d16 \flam g8-> |
 }
+
+pfourteen = \drummode {
+	g8 |
+	d16 g d g d8	g16 d g d g8 |
+	\flam d8. d16:64( d8)	g16 d g d g8 |
+}
+pfifteen = \drummode {
+	g8 |
+	d8. g8.	d4 d8:32( |
+	g4) g8	d8.:32( d16) g8 |
+}
