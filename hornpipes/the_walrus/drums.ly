@@ -21,12 +21,15 @@
 				\break
 					\repeat volta 2 { \part \halfline}
 					\alternative{ {\halfline} {\halfline}}
+				\bar "||"
 				\break
 					\repeat volta 2 { \part \halfline}
 					\alternative{ {\halfline} {\halfline}}
+				\bar "||"
 				\break
 					\repeat volta 2 { \part \halfline}
 					\alternative{ {\halfline} {\halfline}}
+				\bar "|."
 }%Format
 				{
 					\snareAA
@@ -34,26 +37,38 @@
 
 					\snareBA
 					\snareBBA s8
-					\snareAB s8
+					\snareBBB s8
 
 					\snareCA
 					\snareCBA s8
-					\snareBBA
+					\snareCBB s8
+
+					\snareDA
+					\snareDBA s8
+					\snareDBB s8
 				
 				}%Music
 			>>
 		}
-		\new PipeBandDrumStaff = "bass" {
-			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
-
-		}
-		\new PipeBandDrumStaff = "tenor" {
+%{		\new PipeBandDrumStaff = "tenor" \with {
+			instrumentName = \markup{ \instrumentTenor }
+			shortInstrumentName = \markup{ \shortInstrumentTenor }
+		} {
 			\tenorglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
+		} %}
+		\new PipeBandDrumStaff = "bass" \with {
+			instrumentName = \markup{ \instrumentBass }
+			shortInstrumentName = \markup{ \shortInstrumentBass }
+		} {
+			\bassglobal
+
+			\bassAA
+			\bassAB s8
+
+			\bassBA
+			\bassBBA s8
+			\bassAB s8
 		}
 	>>
 	\header {

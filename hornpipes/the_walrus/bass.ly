@@ -8,7 +8,7 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-	\bassglobal
+		\bassglobal
 		<<
 			{\repeat volta 2 { \part \line }
 				\break
@@ -21,7 +21,14 @@
 					\repeat volta 2 { \part \halfline}
 					\alternative{ {\halfline} {\halfline}}
 			}
-			{ }
+			{
+				\bassAA
+				\bassAB s8
+
+				\bassBA
+				\bassBBA s8
+				\bassAB s8
+			}
 		>>
 	}
 	\header {

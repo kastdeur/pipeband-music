@@ -1,7 +1,7 @@
 % 2/4 The Walrus
 % Side
 \version "2.18.2"
-composerSide = "E.T. de Boone, v0.7, 2016"
+composerSide = "E.T. de Boone, v0.8, 2016"
 sideglobal = {
 	\eighthBeaming
 }
@@ -108,7 +108,7 @@ snareCBB = \drummode {
 snareDA = \drummode {
 	d16 g |
 	\flam d8 d16 g
-	\flam d32 g d g d16 g
+	\drag d32 d g d g16 g
 	|
 	\flam d16 g32-> d g d g16->
 	d8:32(-> g16) g
@@ -121,7 +121,7 @@ snareDA = \drummode {
 }
 snareDBA = \drummode {
 	\flam d8 d16 g
-	\flam d32 g d g d16 g
+	\drag d32 d g d g16 g
 	|
 	\flam d16 g32-> d g d g16->
 	\triplet { d16 g16 d16 } \flam g16. g32
