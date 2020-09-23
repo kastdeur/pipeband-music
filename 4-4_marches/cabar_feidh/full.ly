@@ -115,6 +115,7 @@
 	\header {
 		title = \title
 		meter = \meter
+		info  = \info
 		composer = \markup \large {
 			\column \right-align {
 				$(if (not (string=? "" composerLyrics)) #{ \markup { \line { \composerLyrics ":" } } #} )
