@@ -14,6 +14,12 @@ midtwo = \drummode {%Stonehaven PnD
 		d8. g16 d8	\flam d4
 	}
 }
+midthree = \drummode {% 48th HoC
+	\tutti {
+	  \flam d8. g16 \flam d8	d8.:32(\> g16)\! d8:32(\< |
+		d8.)\! g16 d8	\flam d4
+	}
+}
 
 % Endings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,7 +42,12 @@ endthree = \drummode {%Stonehaven PnD
 		d4.:32(		d4)
 	}
 }
-
+endfour = \drummode { %48th HoC
+	\tutti {
+		d16 g d g d8	\flamg8. d16:64( d8) |
+		d4.:32(		d4)
+	}
+}
 % Parts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 pempty = \drummode {
@@ -132,3 +143,4 @@ pfifteen = \drummode {
 	d8. g8.	d4 d8:32( |
 	g4) g8	d8.:32( d16) g8 |
 }
+

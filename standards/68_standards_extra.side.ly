@@ -7,12 +7,12 @@
 	\new PipeBandDrumStaff {
 		\time 6/8
 
-        \drummode {
-	       	\repeat volta 2 { \partial 8 \pseven \midone \peight \endone}	\break
-	       	\repeat volta 2 { \partial 8 \pnine \midtwo \pten \endtwo}	\break
-    		\repeat volta 2 { \partial 8 \peleven \midone \ptwelve \endthree}	\break
-    		\repeat volta 2 { \partial 8 \pthirteen \midone \pfourteen \endthree}	\break
-    		\repeat volta 2 { \partial 8 \pfifteen \midone \pempty \endthree}	\break
+		\drummode {
+			\repeat volta 2 { \partial 8 \pseven \midone \peight \endone}	\break
+			\repeat volta 2 { \partial 8 \pnine \midtwo \pten \endtwo}	\break
+			\repeat volta 2 { \partial 8 \peleven \midtwo \ptwelve \endthree}	\break
+			\repeat volta 2 { \partial 8 \pthirteen \midthree \pfourteen \endfour}	\break
+			\repeat volta 2 { \partial 8 \pfifteen \midone \pempty \endfour}	\break
 		}% End of drums %
 	}
 	\header{

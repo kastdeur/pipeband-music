@@ -16,9 +16,11 @@
 				\line \bar "|."
 			}
 			{
-				\pipesA
+				\pipesAA
+				\pipesAB
 
-				\pipesB
+				\pipesBA
+				\pipesAB
 			}
 		>>
 	}
@@ -33,9 +35,11 @@
 	\new Staff { \global \pipeglobal
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
-		\pipesA
+		\pipesAA
+		\pipesAB
 
-		\pipesB
+		\pipesBA
+		\pipesAB
 	}
 	\midi { \confTempo }
 }
