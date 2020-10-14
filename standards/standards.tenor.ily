@@ -170,9 +170,9 @@ tenorNineeightsOneA = \drummode {
 	|
 	\flourish d4.	\flourish g4.	 <d g>4.
 	|
-	d4 g8	d4.	\flourish g4.
+	d4 g8	d4.	\flourish d4.
 	|
-	\flourish d4.	d2.^\splitTheFeather
+	\flourish g4.	d2.^\splitTheFeather
 }
 
 tenorNineeightsOneB = \drummode {
