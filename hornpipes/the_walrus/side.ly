@@ -15,12 +15,15 @@
 				\break
 					\repeat volta 2 { \part \halfline}
 					\alternative{ {\halfline} {\halfline}}
+					\bar "||"
 				\break
 					\repeat volta 2 { \part \halfline}
 					\alternative{ {\halfline} {\halfline}}
+					\bar "||"
 				\break
 					\repeat volta 2 { \part \halfline}
 					\alternative{ {\halfline} {\halfline}}
+					\bar "|."
 			}
 			{
 				\snareAA 

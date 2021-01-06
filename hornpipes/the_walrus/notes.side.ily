@@ -96,7 +96,7 @@ snareCBB = \drummode {
 	d8:32( g16) \flam g16 \<
 	|
 	r16 \flam d8\! g16
-	d8:32( \triplet { d16) g16 d16 }
+	d8:32( \triplet { g16) d16 g16 }
 	|
 	d16 g32 g d16 \flam g
 	d32 g d g       d16 g16
