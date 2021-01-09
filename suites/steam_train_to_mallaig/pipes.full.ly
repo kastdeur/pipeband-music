@@ -106,22 +106,24 @@
 		} {
 			\pipessecndglobal
 			%%Tune
-			R2.*7
+			\pipessecndIntro
 
 			\repeat unfold 1 {
-				R2*2 \pipesAA \pipesA
+				\pipessecndAA \pipessecndAB
 
 				%\repeat volta 2 {
-					\pipesB
+					\pipessecndB
 				%}
 
-				\pipesC
+				\pipessecndC
 
-				\pipesD
+				\pipessecndD
 
-				\pipesE
+				\repeat unfold 2 {
+					\pipessecndE
+				}
 			}
-			\pipesF
+			\pipessecndF
 
 		}
 		\new Staff = "piper4 - thirds" \with {
