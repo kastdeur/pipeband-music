@@ -1,13 +1,25 @@
-% 4/4 Rustic Bridge
+% 4/4 Old Rustic Bridge
 % Tenor
 \version "2.18.2"
-composerTenor = ""
+composerTenor = "E.T. de Boone, 2021"
 tenorglobal = {}
 %%music
-tenorA = \drummode {
-	g16 |
-	d4 g8 d g4 d8. g16 |
-	d8 g d4 g r |
-	d4 g8[ d] g[ d] g[ d] |
-	g4 r4 d4
+tenorAA = \drummode {
+  % g8 |
+  d8 g8	d8 g8	d4	r8. g16 |
+  d8. g16	d8 g8	d4	r8 g8 |
+}
+tenorABA = \drummode {
+  d4	g4	d8 g	d8 g8 |
+  d16 g d g	d8 g8	d4	% r4 |
+}
+tenorABB = \drummode {
+	d4	g4	d4	g4 |
+	d4	g4	d4	% r4 |
+}
+tenorBA = \drummode {
+	d4	g4	d4	g4 |
+	d8 g->	d g->	d g	d g |
+	d16. g32 d8	g8 d	d16. g32 d8	g8 d8 |
+	d16 g d g	d8 g8	d4	g4 |
 }

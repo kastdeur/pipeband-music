@@ -10,16 +10,29 @@
 		\global
         <<
 			{
-				\repeat unfold 2 {
-					\repeat volta 2 { 
-						\part \line 
-					} \break 
+				\part \repeat volta 2 {
+					\halfline
+				} \alternative {
+					\halfline
+					{
+						\halfline
+						\fine
+					}
 				}
+				\bar "||"
+				\break
+
+				\line
+				\dcalfine
+				\bar "||"
 			}
 			{
-				\repeat unfold 2 {
-					r8. \tenorA s4
-				}
+			  \drummode { g4 | } 
+			  \tenorAA
+			  \tenorABA r4
+			  \tenorABB r4
+
+			  \tenorBA
 			}
 		>>
 	}
