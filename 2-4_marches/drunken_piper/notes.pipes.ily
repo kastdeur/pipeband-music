@@ -4,7 +4,7 @@
 composerPipes = "A. MacLeod"% Alexander MacLeod (1862)
 arrangerPipes = ""
 pipeglobal = {
-	\key a \major
+	\key a \mixolydian
 }
 % Music
 pipesAA = {
@@ -60,7 +60,7 @@ pipesDA = {
 }
 pipesDBA = {
 	\tag #'upbeat { 	g8 | }
-	A16. [ e32 ] \gra e16. [ A32 ] g16. [ e32 ] \dbld d16. [ b32 ] |
+	A16. [ e32 \gra e16. A32 ] g16. [ e32 \dbld d16. b32 ] |
 	\grip e8 [ \grg f16. d32 ] \dble e8 [ A8 ] |
 	\grf g8 [ \grA e32 A16. ] \grg e16. [ f32 \dble e16. d32 ] |
 	\dblb b8 [ \gre a8 ] \wbirl a8

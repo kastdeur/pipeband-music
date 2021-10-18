@@ -31,7 +31,7 @@
 				{ \partial 8 \pipesBBA }
 				{ \partial 8 \pipesBBB }
 			}
-			\bar "||"
+			\bar ".|:-||"
 			\break
 
 
@@ -87,7 +87,7 @@
 				{ \partial 8 \pipesBBA }
 				{ \partial 8 \pipesBBB }
 			}
-			\bar "||"
+			\bar ".|:-||"
 			\break
 
 

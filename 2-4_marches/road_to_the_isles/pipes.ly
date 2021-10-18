@@ -33,7 +33,7 @@ mbreak = { \break }
 				\pipesBBB
 			}
 		}
-		\bar "||"
+		\bar ".|:-||"
 		\break
 
 		\repeat volta 2 {
@@ -49,7 +49,7 @@ mbreak = { \break }
 				\pipesCBB
 			}
 		}
-		\bar "||"
+		\bar ".|:-||"
 		\break
 
 		\repeat volta 2 {

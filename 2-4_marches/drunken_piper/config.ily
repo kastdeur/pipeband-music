@@ -1,7 +1,7 @@
 \version "2.19.0"
 %% Globals
 global = {
-	\key d \major
+	\key a \mixolydian
 	\time 2/4
 	}
 confTempo = {
