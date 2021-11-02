@@ -12,6 +12,11 @@ strathspeys/lady_mackenzie_of_fairburn/$f.ly \
 reels/the_mackenzies_reel/$f.ly \
 ;
 
+$COM $D/accordion_return.ly -t "Accordion Man / The Soldier's Return" \
+4-4_marches/accordion_man/$f.ly \
+4-4_marches/soldiers_return/$f.ly \
+;
+
 $COM $D/set_1.$f.ly -t "Set 1: Bonnie Galloway / We're no awa' tae bide awa'" \
 4-4_marches/bonnie_galloway/$f.ly \
 4-4_marches/were_no_awa_tae_bide_awa/$f.ly \
@@ -109,9 +114,10 @@ $COM $D/set_18.$f.ly -t "Set 18: MacKenzie Highlanders / Black Bear" \
 2-4_marches/black_bear/$f.ly \
 ;
 
-$COM $D/set_19.$f.ly -t "Set 19: Molly Connell / Keel Row" \
+$COM $D/set_19.$f.ly -t "Set 19: Molly Connell / Keel Row / Orange and Blue" \
 strathspeys/molly_connell/$f.ly \
 strathspeys/keel_row/$f.ly \
+strathspeys/orange_and_blue/$f.ly \
 ;
 
 $COM $D/set_20.$f.ly -t "Set 20: Heights of Dargai / Battle of the Somme" \
