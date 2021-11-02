@@ -3,7 +3,7 @@
 midone = \drummode {
   \tutti {
 	d8.:32(-> g16)
-	\triplet { d8 g \flam g }
+	\triplet { d8 g \flam d }
 	\triplet { d16 g d g d8 }
 	\flam g4
   }
