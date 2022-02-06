@@ -3,7 +3,7 @@
 \version "2.18.2"
 %composerSide = "E.T. de Boone, 08/07/2019"
 % Written while giving blood
-composerSide = "E.T. de Boone, v0.1 (2019)"
+composerSide = "E.T. de Boone, v0.8, 2019"
 arrangerSide = ""
 sideglobal = {
 	\sixteenthBeaming
@@ -22,7 +22,7 @@ snareMidTwo = \drummode {
 snareEnd = \drummode {
 	d8:32(-> g16.) d32 |
 	g8 \flam d16. g32	d16. g32 d32 g d g |
-	d8 d16.:32( d32)	g8
+	d8 d8:32( 	g8)
 }
 snareApart = \drummode {
 	d16. g32 |
