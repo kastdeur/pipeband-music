@@ -13,4 +13,4 @@ line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
 title = "Mairi's Wedding"
-meter = "Meter"
+meter = "March"

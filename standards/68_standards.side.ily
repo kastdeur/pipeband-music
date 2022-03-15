@@ -138,9 +138,15 @@ pfourteen = \drummode {
 	d16 g d g d8	g16 d g d g8 |
 	\flam d8. d16:64( d8)	g16 d g d g8 |
 }
+
 pfifteen = \drummode {
 	g8 |
 	d8. g8.	d4 d8:32( |
 	g4) g8	d8.:32( d16) g8 |
 }
 
+psixteen = \drummode {
+	g8 |
+	d8:32(-> \tuplet 3/2 { g8) d g }	\tuplet 3/2 { d8 g d } g8:32(-> |
+	\tuplet 3/2 { d8) g d } \flam g8	g8. d16 \flam g8 |
+}

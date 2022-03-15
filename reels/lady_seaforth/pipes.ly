@@ -11,16 +11,16 @@
 		\pipeglobal
 
 		\repeat volta 2 {
-			\partial 16
-			\pipesA s16
+			\partial 8
+			\pipesA s8
 		}
 		\break
 		\repeat volta 2 {
-			\partial 16
+			\partial 8
 			\pipesBA
 		} \alternative {
 			{ \pipesBBA }
-			{ \pipesBBB s16 }
+			{ \pipesBBB s8 }
 		}
 		\bar "|."
 	}

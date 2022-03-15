@@ -9,30 +9,19 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			\new NullVoice = "format" {
-				\repeat volta 2 {
-					\line
-				}
-				\break
-				\repeat volta 2 {
-					\halfline
-				}
-				\alternative {
-					{ \halfline }
-					{ \halfline }
-				}
-				\bar "|."
-			}%Format
 
-			\new Voice = "pipes" {
-				\pipesA
+		\repeat volta 2 {
+			\pipesA
+		}
+		\break
+		\repeat volta 2 {
+			\pipesA
+		} \alternative {
+			\pipesBA
+			\pipesBB
+		}
+		\bar "|."
 
-				\pipesB
-				\pipesBA
-				\pipesBB
-			}
-		>>
 	}
 	\header {
 		title = \title

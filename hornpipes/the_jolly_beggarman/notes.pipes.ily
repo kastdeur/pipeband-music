@@ -29,7 +29,7 @@ pipesPartB = {
 }
 pipesPartC = {
 	e8 |
-	\grg a16. e32 e16. a32	\grg e16. a32 a16. a32 |
+	\grg a16. e32 e16. a32	\grg e16. a32 a16. b32 |
 	\grg a16. e32 e16. c32	\thrwd d8
 }
 pipesPartD = {
