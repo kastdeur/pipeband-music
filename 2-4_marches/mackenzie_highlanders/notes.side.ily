@@ -1,14 +1,14 @@
 % 2/4 MacKenzie Highlanders
 % Snare
 \version "2.18.2"
-composerSide = "v1.4, 2019"
+composerSide = "v1.5, 2022"
 sideglobal = { \eighthBeaming }
 %%music
 snareEnd = \drummode {
 	\tutti {
 		d8:32)(-> \tuplet 3/2 { g16) d g } |
 
-		d8[-> \drag d8]	r16 \drag d16 d16. g32 |
+		d8[-> \drag d16 d16->]	r16 \drag d16 d16. g32 |
 		d4:32(	d8)
 	}
 }

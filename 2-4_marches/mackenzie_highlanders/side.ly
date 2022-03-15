@@ -5,6 +5,10 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+% we need a partial without \grace{} here, otherwise
+% the LD part gets a new line after the \break
+part = { \partial 8 s8 }
+
 \layout {
   \context {
 	\Score
@@ -13,38 +17,42 @@
 }
 
 \score {
-	\new StaffGroup <<
-		\new PipeBandDrumStaff {
-			\global
-			\sideglobal
+	\new PipeBandDrumStaff = "side" \with {
+		\remove "System_start_delimiter_engraver"
+	} {
+		\global
+		\sideglobal
+		<<
+		{
+			\repeat volta 2 { \part \line } \break
+			\part \line \break
+			\line \bar "|."
+		}
+		{
+			s8 | s2*5 | s4
 			<<
-			{
-				\repeat volta 2 { \part \line } \break
-				\part \line \bar "||" \break
-				\line \bar "|."
-			}
-			{
-				\snareA s8
-				\snareBA s8
-				\snareBB s8
-			}
-			{
-				s8 | s2*5 | s4 <<
-				  { s4 | s2 | s2 }
-				  \new PipeBandDrumStaff = "LD" \with {
+				{ s4 | s2 | s2 }
+				\context PipeBandDrumStaff = "LD" \with {
 					fontSize = #-3
 					\override StaffSymbol #'staff-space = #(magstep -3)
 					\override StaffSymbol #'thickness = #(magstep -3)
-					\remove "Time_signature_engraver"
-					alignAboveContext = #"main"
-				  } {
-					\removeWithTag #'tutti {\snareEndLD } s8
-				  }
-				>>
-			}
+					\omit TimeSignature
+
+					alignAboveContext = "side"
+				} {
+					\startStaff
+					\removeWithTag #'tutti { \snareEndLD } s8
+					\stopStaff
+				}
 			>>
 		}
+		{
+			\snareA s8
+			\snareBA
+			\snareBB s8
+		}
 		>>
+	}
 	\header {
 		title = \title
 		meter = \meter
