@@ -8,7 +8,6 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-		\sideglobal
 		<<
 			\new NullVoice = "format" {
 				\line
@@ -19,6 +18,7 @@
 			}%Format
 			
 			\new DrumVoice = "side" {
+				\sideglobal
 				\snareA
 
 				\snareB
