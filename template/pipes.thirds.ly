@@ -8,15 +8,14 @@
 \score {
     \new Staff {
 		\global
-		\pipesthrdglobal
 		<<
 			\new NullVoice = "format" {
 
 			}%Format
-
 			\new Voice = "thirds" {
+				\pipesthrdglobal
 
-			}
+			}%Pipes
 		>>
 	}
 	\header {

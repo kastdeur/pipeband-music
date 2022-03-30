@@ -23,13 +23,12 @@
 			shortInstrumentName = \markup{ \shortInstrumentPipes }
 		} {
 			\global
-			\pipeglobal
 			<<
 				\new NullVoice = "format" {
 
 				}%Format
-
 				\new Voice = "pipes" {
+					\pipeglobal
 
 				}%Pipes
 			>>

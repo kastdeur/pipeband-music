@@ -8,15 +8,14 @@
 \score {
     \new PipeBandDrumStaff {
 		\global
-		\tenorglobal
 		<<
 			\new NullVoice = "format" {
 			
 			}%Format
-			
 			\new DrumVoice = "tenor" {
+				\tenorglobal
 			
-			}
+			}%Tenor
 		>>
 	}
 	\header {

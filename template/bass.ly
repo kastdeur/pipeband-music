@@ -8,15 +8,14 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-		\bassglobal
 		<<
-			\new NullVoice = "format"
-			{
+			\new NullVoice = "format" {
 
 			}%Format
-			\new DrumVoice {
+			\new DrumVoice = "bass" {
+				\bassglobal
 
-			}
+			}%Bass
 		>>
 	}
 	\header {

@@ -8,15 +8,14 @@
 \score {
     \new Staff {
 		\global
-		\pipessecndglobal
 		<<
 			\new NullVoice = "format" {
 			
 			}%Format
-			
 			\new Voice = "seconds" {
+				\pipessecndglobal
 			
-			}
+			}%Pipes
 		>>
 	}
 	\header {

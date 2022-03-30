@@ -17,16 +17,15 @@
 			instrumentName = \markup{ \instrumentTenor }
 			shortInstrumentName = \markup{ \shortInstrumentTenor }
 		} {
-			\tenorglobal
 			\global
 			<<
-				{
+				\new NullVoice = "format" {
 
 				}%Format
-				{
+				\new Voice = "tenor" {
+					\tenorglobal
 
-				}%Music
-			>>
+				}%Tenor
 		}
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }

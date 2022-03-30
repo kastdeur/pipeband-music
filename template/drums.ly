@@ -20,12 +20,12 @@
 			shortInstrumentName = \markup{ \shortInstrumentSide }
 		} {
 			\global
-			\sideglobal
 			<<
 				\new NullVoice = "format" {
 					
 				}%End of Format
 				\new DrumVoice = "side" {
+					\sideglobal
 					
 				}%End of side
 			>>

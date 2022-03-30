@@ -9,7 +9,6 @@
 \score {
     \new Staff {
 		\global
-		\lyricsglobal
 		<<
 %{		  	\new NullVoice = "format"{
 
@@ -18,8 +17,8 @@
 			\new Voice = "tune" {
 
 			}
-
 			\new Lyrics = "lyrics" {
+				\lyricsglobal
 				\lyricsto "tune" {
 
 				}
