@@ -2,6 +2,11 @@
 
 \include "lilydrum.ly"
 % Midpart
+midempty = \drummode {
+	\tutti {
+		s4. s4
+	}
+}
 midone = \drummode {
 	\tutti {
 		\flam d8.\v g16 d8		d4.:32( |
@@ -22,7 +27,11 @@ midthree = \drummode {% 48th HoC
 }
 
 % Endings
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+endempty = \drummode {
+	\tutti {
+		s4. s4
+	}
+}
 endone = \drummode {
 	\tutti {
 		\flam d8.\v d16:64( d8)		d4.:32( |
@@ -52,7 +61,7 @@ endfour = \drummode { %48th HoC
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 pempty = \drummode {
 	s8 |
-	s1. |
+	s4. s4. |
 }
 pone = \drummode {
 	g8 |

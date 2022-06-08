@@ -13,6 +13,7 @@
 			\repeat volta 2 { \partial 8 \peleven \midtwo \ptwelve \endthree}	\break
 			\repeat volta 2 { \partial 8 \pthirteen \midthree \pfourteen \endfour}	\break
 			\repeat volta 2 { \partial 8 \pfifteen \midone \psixteen \endfour}	\break
+			\repeat volta 2 { \partial 8 \pseventeen \midempty \pempty \endempty}	\break
 		}% End of drums %
 	}
 	\header{
