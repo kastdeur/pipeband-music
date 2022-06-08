@@ -9,16 +9,11 @@
 		\time 4/4
 
 		\drummode{
-
-
-			\partial 8
-				\peleven
-				\bar "||"
-				\midfour
-				\bar "||"
-				\ptwelve
-
-
+			\repeat volta 2 { \partial 8 \peleven	\midone	\ptwelve	\endone }	\break
+			\repeat volta 2 { \partial 8 \pthirteen	\midtwo	\pfourteen	\endtwo }	\break
+			\repeat volta 2 { \partial 8 \pfifteen	\midthree	\psixteen	\endthree }	\break
+			\repeat volta 2 { \partial 8 \pempty	\midfour	\pempty	\endfour }	\break
+			\repeat volta 2 { \partial 8 \pempty	\midfive	\pempty	\endempty }	\break
 		}% End of drums %
 	}
 	\header {

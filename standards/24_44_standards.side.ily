@@ -3,6 +3,12 @@
 \include "lilydrum.ly"
 
 % Midparts
+midempty = \drummode {
+	\tutti {
+		s8 |
+		s2..
+	}
+}
 midone = \drummode {
 	\tutti {
 		d8:32( |
@@ -42,6 +48,12 @@ midfive = \drummode {
 	}
 }
 % Endings
+endempty = \drummode {
+	\tutti {
+		\tag #'upbeat s8 |
+		s2.
+	}	\tag #'endrest s8
+}
 endone = \drummode {
 	\tutti {
 		\tag #'upbeat g8 |
