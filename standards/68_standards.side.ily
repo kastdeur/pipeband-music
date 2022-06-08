@@ -150,3 +150,8 @@ psixteen = \drummode {
 	d8:32(-> \tuplet 3/2 { g8) d g }	\tuplet 3/2 { d8 g d } g8:32(-> |
 	\tuplet 3/2 { d8) g d } \flam g8	g8. d16 \flam g8 |
 }
+pseventeen = \drummode {
+	d16:64( g16)|
+	d16 g d g d8:32(->	d4.:32)(->\< |
+	d16)\! g d g d8:32(->	g8.:32)(-> d16) g8 |
+}
