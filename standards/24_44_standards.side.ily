@@ -155,8 +155,25 @@ pthirteen = \drummode {
 	\flam d8
 }
 pfourteen = \drummode {
-	s8 |
-	s2..
+	\tag #'upbeat { d16. g32 } |
+	d8.:32( g16)
+	d16. d32:128~ d16. g32
+	d8:32(-> g8:32)(->
+	d8)
+}
+pfifteen = \drummode {
+	\tag #'upbeat { d8:32( |
+	<>)	} g16. d32 g16. g32
+	\flam d32 d16. g16. d32:128~
+	d16. g32-> d16. d32
+	\flam g8
+}
+psixteen = \drummode {
+	\tag #'upbeat { d16. g32 } |
+	\flam d32 d16. g16. d32
+	\flam g32 g16. d16.:32( g32:128~
+	g16.) d32-> g16. g32
+	\flam d32 d16.
 }
 
 %% Standard thingies
