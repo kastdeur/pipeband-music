@@ -6,6 +6,12 @@
 \include "./notes.pipes.ily"
 \include "./notes.lyrics.ily"
 
+% From Svenax's bagpipemusic
+markText = #(define-music-function (parser location text) (string?) #{
+    \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+    \mark \markup $text
+#})
+
 \score {
     \new Staff {
 		\global
@@ -28,13 +34,13 @@
 					\repeat unfold 4 {
 					  \measure
 					}
-					\once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-					\mark \markup { \small "D.C. al fine" }
+
 					\measure
 					\break
 
 				}
 				% Dunno
+				\markText "Fine"
 				\repeat unfold 6 {
 				  \measure
 				}

@@ -39,13 +39,12 @@
 						  \measure
 						}
 
-						\once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-						\mark \markup { \small "D.C. al fine" }
 						\measure
 						\break
 
 					}
 					% Dunno
+					\markText "Fine"
 					\repeat unfold 6 {
 					  \measure
 					}
