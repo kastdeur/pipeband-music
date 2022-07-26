@@ -2,7 +2,7 @@
 % Side
 \version "2.18.2"
 composerSide = ""
-arrangerSide = ""
+arrangerSide = "v1.1"
 sideglobal = {}
 % Music
 % Refrain
@@ -13,10 +13,11 @@ snareA = \drummode {
 		|
 	}
 	\flam d8 g16. d32-> g16. g32
-	\flam  d8 \flamd \triplet { d16 g d } \flamd \triplet { d16 g d }
+	\flam  d8 \flam \triplet { d16 g d } \flam \triplet { g16 d g }
 	|
-	\flam  d8 \flamd \triplet { d16 g d } \flamd \triplet { d16 g d }
-	\flam  d8 \flamd \triplet { d16 \p\< g d } \flamd \triplet { d16 g d\mp } 
+	\flam  d8 \flam \triplet { d16 g d } \flam \triplet { g16 d g }
+	\flam  d8 \flam \triplet { d16 \p\< g d } \flam \triplet { g16 d g}
+	<> \mp
 }
 % Couplet
 snareB = \drummode {
@@ -30,15 +31,16 @@ snareB = \drummode {
 		\flam d8 g16. d32-> g16. g32
 		|
 		\flam d8 g16. d32-> g16. g32
-		\flam  d8 \p \flamd \triplet { d16 g d } \flamd \triplet { d16 g d }
+		\flam  d8 \flam \triplet { d16\p g d } \flam \triplet { g16 d g }
 		|
 	}
 	\alternative {
-		{ }
+		{ <> \mp }
 		{
-			\flam  d8 \flamd \triplet { d16 g d } \flamd \triplet { d16 g d }
-			\flam  d8 \flamd \triplet { d16 \< g d } \flamd \triplet { d16 g d \mp }
+			\flam  d8 \flam \triplet { d16 g d } \flam \triplet { g16 d g }
+			\flam  d8 \flam \triplet { d16 \< g d } \flam \triplet { g16 d g }
 			|
+			<> \mp
 		}
 	}
 }
@@ -56,11 +58,10 @@ snareE = \drummode {
 		\flam d8 g16. d32-> g16. g32
 		d4.:32(
 		|
-		d8) \flamd \triplet { d16 g d } \flamd \triplet { d16 g d }
-		\flam  d8 \flamd \triplet { d16 g d } \flamd \triplet { d16 g d }
+		d8) \flam \triplet { d16 \p g d } \flam \triplet { g16 d g }
+		\flam  d8 \flam \triplet { d16 \mp g d } \flam \triplet { g16 d g }
 		|
-		\flam  d8 \flamd \triplet { d16 \< g d } \flamd \triplet { d16 g d }
-		\flam d4. \mf
+		\flam  d8 \flam \triplet { d16 \mf\< g d } \flam \triplet { g16 d g }
+		\flam d4. \f
 		|
 }
-
