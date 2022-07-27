@@ -15,15 +15,21 @@
 					\line \break
 					\line \break
 					\line \break
-					\line \break
+					\halfline
 				}
+				\alternative {
+					{ \halfline }
+					{ \halfline }
+				}
+				\bar "|."
 			}
 			{
 				\snarePart
 				\snareAA
 				\snareAB
 				\snareAC
-				\snareAD
+				\keepWithTag #'with-volta \snareAD
+				\snareADendB
 			}
 		>>
 	}
@@ -32,5 +38,6 @@
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
+		arranger = \arrangerSide
 	}
 }

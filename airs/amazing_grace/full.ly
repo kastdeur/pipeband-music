@@ -9,17 +9,23 @@
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
-		\new Staff {
+		\new Staff \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
+					\part
 					\repeat volta 2 {
-					  \part
 					  \line \break
 					  \line \break
 					  \line \break
@@ -38,18 +44,17 @@
 				}%Pipes
 			>>
 		}
-		\new PipeBandDrumStaff = "side" {
+		\new PipeBandDrumStaff = "side" \with {
+			instrumentName = \markup { \instrumentSide }
+			shortInstrumentName = \markup{ \shortInstrumentSide }
+		} {
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
 				\snarePart
 				\snareAA
 				\snareAB
 				\snareAC
-				\snareAD
-
-				\snareADendA
+				\keepWithTag #'with-volta \snareAD
 				\snareADendB
 		}
 %		\new PipeBandDrumStaff = "tenor" {
