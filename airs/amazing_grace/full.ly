@@ -8,6 +8,7 @@
 %\include "./notes.tenor.ily"
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
+\include "./notes.lyrics.ily"
 
 \layout {
 	indent = 5.0
@@ -23,7 +24,7 @@
 			\global
 			\pipeglobal
 			<<
-				{
+				\new Voice = "format" {
 					\part
 					\repeat volta 2 {
 					  \line \break
@@ -37,12 +38,20 @@
 					 }
 					 \bar "|."
 				}%Format
-				{
+				\new Voice = "pipes" {
 					\pipesA
 					\pipesAendA s4
 					\pipesAendB s4
 				}%Pipes
+				\new NullVoice = "lyrics-aligner" {
+					\lyricsA
+				}
 			>>
+		}
+		\new Lyrics = "lyrics1" {
+			\lyricsto  "lyrics-aligner" {
+				\verseA
+			}
 		}
 		\new PipeBandDrumStaff = "side" \with {
 			instrumentName = \markup { \instrumentSide }
@@ -55,7 +64,7 @@
 				\snareAB
 				\snareAC
 				\keepWithTag #'with-volta \snareAD
-				\snareADendB
+				\snareADendB s4
 		}
 %		\new PipeBandDrumStaff = "tenor" {
 %			\tenorglobal
@@ -75,17 +84,20 @@
 		meter = \meter
 		composer = \markup \large {
 			\column \right-align {
-				$(if (not (string=? "" composerPipes))  #{ \markup {\line { \composerPipes  ":" }} #} )
+				$(if (not (string=? "" composerLyrics)) #{ \markup { \line { \composerLyrics ":" } } #} )
+				$(if (not (string=? "" composerPipes))  #{ \markup {\line { \composerPipes  \arrangerPipes ":" }} #} )
 				$(if (not (string=? "" composerSide))  #{ \markup {\line { \composerSide  ":" }} #} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \composerTenor  ":" }} #} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \composerBass  ":" }} #} )
 			}
 			\column \right-align {
+				$(if (not (string=? "" composerLyrics)) #{ \markup { \line { "Lyrics" } } #} )
 				$(if (not (string=? "" composerPipes))  #{ \markup {\line { \instrumentPipes }}#} )
 				$(if (not (string=? "" composerSide))  #{ \markup {\line { \instrumentSide }}#} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \instrumentTenor }}#} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \instrumentBass }}#} )
 			}
 		}
+
 	}
 }
