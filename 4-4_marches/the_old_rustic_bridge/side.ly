@@ -5,6 +5,8 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+fine = {\mark \markup "Fine" }
+
 \score {
     \new PipeBandDrumStaff {
         \global
@@ -13,12 +15,13 @@
 			\new NullVoice = "format" {
 				\part
 				\repeat volta 2 {
-					\halfline \measure s2.
+				  \halfline \measure << s2. { s2 \fine } >>
 				} \alternative {
 				  { s4 | }
+				  {
+				  }
 				}
-				\fine
-				\bar "||"
+				%\bar "||"
 				\break
 
 				\part \line
@@ -26,9 +29,9 @@
 				\bar "||"
 			}%Format
 			\new DrumVoice = "side" {
-				\drummode { \flam d8. g16 | }
+				\snareAupbeatA
 				\snareA
-				\drummode { r8 d16. g32 | }
+				r8 \snareAupbeatB
 
 				r8 \snareBA
 			}

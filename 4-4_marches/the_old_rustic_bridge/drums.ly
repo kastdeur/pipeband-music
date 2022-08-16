@@ -24,10 +24,12 @@
 				\new NullVoice = "format" {
 					\part
 					\repeat volta 2 {
-						\halfline
+						\measure
+						s2.
 					} \alternative {
-						\halfline
+						{ s4 | \halfline }
 						{
+						  s4 |
 						  \halfline
 						  \fine
 						}
@@ -35,17 +37,17 @@
 					\bar "||"
 					\break
 
-					\part 
+					\part
 					\line
 					\dcalfine
 					\bar "||"
-					
+
 				}%End of Format
 				\new DrumVoice = "side" {
-					\drummode { \flam d8. g16 | }
+					\snareAupbeatA
 					\snareAA
-					\snareAB \drummode { r8 d16. g32 | }
-					\snareAB s4
+					\snareAB r8 \snareAupbeatB
+					\removeWithTag #'tutti { r8. \snareAB s4 }
 
 					r8 \snareBA
 				}%End of side
@@ -60,9 +62,9 @@
 			\drummode { g4 | }
 			\tenorAA
 			\tenorABA r4
-			\tenorABB r4
+			r8 g8 | \tenorABB s4
 
-			s4 \tenorBA
+			r4 \tenorBA
 		}
 %{		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }

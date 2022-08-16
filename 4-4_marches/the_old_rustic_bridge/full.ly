@@ -46,13 +46,11 @@
 			shortInstrumentName = \markup{ \shortInstrumentSide }
 		} {
 			\sideglobal
-
-					\drummode { \flam d8. g16 | }
-					\snareA \drummode { r8 d16. g32 | }
-					\snareA s4
+					\snareAupbeatA \snareA
+					r8 \removeWithTag #'tutti { \snareAupbeatB \snareA } s4
 
 					r8 \snareBA
-					\snareA s4
+					\removeWithTag #'tutti { \snareA s4 }
 		}
 		\new PipeBandDrumStaff = "tenor" \with {
 			instrumentName = \markup{ \instrumentTenor }
@@ -62,9 +60,9 @@
 
 			\drummode { g4 | }
 			\tenorAA \tenorABA r4
-			\tenorAA \tenorABB r4
+			\tenorAA \tenorABB s4
 
-			s4 \tenorBA
+			r4 \tenorBA
 			\tenorAA \tenorABB s4
 
 		}
