@@ -37,7 +37,7 @@ pthree = \drummode {
 	d8.) d16:64(
 	d8.) g16
 	\flam d8. g16
-}	
+}
 pfour = \drummode {
 	\flam d8. d16
 	\flam g8. g16
@@ -55,4 +55,13 @@ psix = \drummode {
 	d16:64( d8.)
 	g8.[	\drag d16]
 	g8. g16
+}
+pseven = \drummode {
+  \tupletSpan 4
+	\triplet {
+	  d8:32~ d g
+	  d8:32~ d g
+	  d8 g d:32~
+	  d8 g d
+	}
 }

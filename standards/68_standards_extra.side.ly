@@ -12,8 +12,8 @@
 			\repeat volta 2 { \partial 8 \pnine \midtwo \pten \endtwo}	\break
 			\repeat volta 2 { \partial 8 \peleven \midtwo \ptwelve \endthree}	\break
 			\repeat volta 2 { \partial 8 \pthirteen \midthree \pfourteen \endfour}	\break
-			\repeat volta 2 { \partial 8 \pfifteen \midone \psixteen \endfour}	\break
-			\repeat volta 2 { \partial 8 \pseventeen \midempty \pempty \endempty}	\break
+			\repeat volta 2 { \partial 8 \pfifteen \midone \psixteen \endfive}	\break
+			\repeat volta 2 { \partial 8 \pseventeen \removeWithTag #'endroll \midfour \peighteen \endsix}	\break
 		}% End of drums %
 	}
 	\header{

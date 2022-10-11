@@ -25,6 +25,13 @@ midthree = \drummode {% 48th HoC
 		d8.)\! g16 d8	\flam d4
 	}
 }
+midfour = \drummode {% FM Montgomery
+	\tutti {
+		d16->  g d g d-> g	d g d4:32( |
+		d16)-> g d g d-> g	d g \tag #'endroll { d4:32( } \tag #'endtap { d8 }
+	}
+}
+
 
 % Endings
 endempty = \drummode {
@@ -57,11 +64,22 @@ endfour = \drummode { %48th HoC
 		d4.:32(		d4)
 	}
 }
+endfive = \drummode { % FM Montgomery
+	\tutti {
+		\flam d8. d16 \flam g16 d:64(	\triplet { d8[) g \drag d} d]-> |
+		d4.:32(		d4)
+	}
+}
+endsix = \drummode { % FM Montgomery
+	\flamdr d8. \fr	g16:64( g8)	\flamdr d8. \fr d16 \flamdr g8 \fr |
+	d8.:64( d16) \flamdr g8	\flam d4 \fr
+}
+
 % Parts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 pempty = \drummode {
 	s8 |
-	s4. s4. |
+	s2. s2. |
 }
 pone = \drummode {
 	g8 |
@@ -114,7 +132,7 @@ peight = \drummode { %Stonehaven PnD
 
 pnine = \drummode { %Stonehaven PnD
 	d16 g |
-	\flam d4 g8	d8.( g16) \flam d8 |
+	\flam d4 g8	d8.:32( g16) \flam d8 |
 	r8. d16:64( d8)	\flam d8. g16 d8 |
 }
 
@@ -163,4 +181,9 @@ pseventeen = \drummode {
 	d16:64( g16)|
 	d16 g d g d8:32(->	d4.:32)(->\< |
 	d16)\! g d g d8:32(->	g8.:32)(-> d16) g8 |
+}
+peighteen = \drummode {
+	\triplet { g16 d g } |
+	\flam d4 d8:32(	g8.) d16 g8 |
+	r8. \drag d16 d32 g d g	d8.-> g16 d8 |
 }

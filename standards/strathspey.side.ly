@@ -20,6 +20,8 @@
 		  \break
 		  \repeat volta 2 { \psix \midone \psix \endone }
 		  \break
+		  \repeat volta 2 { \pseven \midone \pseven \endone }
+		  \break
 		}% End of drums %
 	}
 	\header {
