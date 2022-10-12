@@ -10,11 +10,11 @@
 		\global
 		<<
 			\new NullVoice = "format" {
-			
+				% \line	
 			}%Format
 			\new Voice = "seconds" {
 				\pipessecndglobal
-			
+				\repeat unfold 8 { \pipessecndA | \break } % Remove me
 			}%Pipes
 		>>
 	}

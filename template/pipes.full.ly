@@ -21,11 +21,11 @@
 			\global
 			<<
 			  	\new NullVoice = "format" {
-
+					% \line
 				}%Format
 				\new Voice = "pipes" {
 					\pipeglobal
-
+					\repeat unfold 4 { \pipesA | \break } % Remove me
 				}%Pipes
 			>>
 		}
@@ -34,7 +34,7 @@
 			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
 		} {
 			\pipessecndglobal
-
+			\repeat unfold 4 { \pipessecndA | \break } % Remove me
 		}
 %{		\new Staff = "thirds" \with {
 			instrumentName = \markup{ \instrumentPipesThrd }

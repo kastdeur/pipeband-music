@@ -22,11 +22,11 @@
 			\global
 			<<
 				\new NullVoice = "format" {
-					
+					% \line
 				}%End of Format
 				\new DrumVoice = "side" {
 					\sideglobal
-					
+					\repeat unfold 4 { \snareA | \break } % Remove me
 				}%End of side
 			>>
 		}
@@ -35,14 +35,14 @@
 			shortInstrumentName = \markup{ \shortInstrumentTenor }
 		} {
 			\tenorglobal
-
+			\repeat unfold 4 { \tenorA }
 		}
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
-			shortInstrumentName = \markup{ \shortInstrumentBass}
+			shortInstrumentName = \markup{ \shortInstrumentBass }
 		} {
 			\bassglobal
-
+			\repeat unfold 4 { \bassA }
 		}
 	>>
 	\header {

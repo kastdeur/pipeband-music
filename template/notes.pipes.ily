@@ -8,4 +8,5 @@ pipeglobal = {
 }
 % Music
 pipesA = {
+	s1
 }

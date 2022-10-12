@@ -6,4 +6,5 @@ arrangerTenor = ""
 tenorglobal = {}
 % Music
 tenorA = \drummode {
+	s1
 }

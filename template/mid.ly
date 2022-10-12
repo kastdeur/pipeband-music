@@ -20,19 +20,20 @@
 			\global
 			<<
 				\new NullVoice = "format" {
-
-				}%Format
-				\new Voice = "tenor" {
+					% \line
+				}%End of Format
+				\new DrumVoice = "tenor" {
 					\tenorglobal
-
-				}%Tenor
+					\repeat unfold 6 { \tenorA | \break } % Remove me
+				}%End of Tenor
+			>>
 		}
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
 			shortInstrumentName = \markup{ \shortInstrumentBass }
 		} {
 			\bassglobal
-
+			\repeat unfold 6 { \bassA }
 		}
 	>>
 	\header {

@@ -10,11 +10,11 @@
         \global
 		<<
 			\new NullVoice = "format" {
-			
+				% \line
 			}%Format
 			\new DrumVoice = "side" {
 				\sideglobal
-			
+				\repeat unfold 8 { \snareA | \break } % Remove me
 			}%Side
 		>>
 	}

@@ -8,5 +8,5 @@ pipesthrdglobal = {
 }
 % Music
 pipesthrdA = {
-
+	s1
 }

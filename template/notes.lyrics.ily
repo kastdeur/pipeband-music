@@ -5,5 +5,8 @@ composerLyrics  = ""
 arrangerLyrics  = ""
 lyricsglobal = {}
 % Music
-lyricsA = \drummode {
+songA = {
+	s1
+}
+lyricsA = \lyricmode {
 }

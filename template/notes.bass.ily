@@ -6,4 +6,5 @@ arrangerBass  = ""
 bassglobal = {}
 % Music
 bassA = \drummode {
+	s1
 }

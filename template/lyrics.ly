@@ -15,12 +15,12 @@
 			}%Format
 %}
 			\new Voice = "tune" {
-
+				\repeat unfold 4 { \songA | \break } % Remove me
 			}
 			\new Lyrics = "lyrics" {
 				\lyricsglobal
 				\lyricsto "tune" {
-
+					\repeat unfold 4 { \lyricsA }
 				}
 			}
 		>>

@@ -10,11 +10,11 @@
 		\global
 		<<
 			\new NullVoice = "format" {
-			
+				% \line
 			}%Format
 			\new DrumVoice = "tenor" {
 				\tenorglobal
-			
+				\repeat unfold 8 { \tenorA | \break } % Remove me
 			}%Tenor
 		>>
 	}

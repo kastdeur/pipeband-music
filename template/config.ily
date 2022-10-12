@@ -14,5 +14,5 @@ halfline = { \repeat unfold 4 \measure }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers
-title = "Title"
-meter = "Meter"
+title = " "
+meter = " "

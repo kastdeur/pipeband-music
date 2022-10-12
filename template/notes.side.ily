@@ -8,4 +8,5 @@ sideglobal = {
 }
 % Music
 snareA = \drummode {
+	s1
 }

@@ -10,11 +10,11 @@
         \global
 		<<
 			\new NullVoice = "format" {
-
+				%\line
 			}%Format
 			\new DrumVoice = "bass" {
 				\bassglobal
-
+				\repeat unfold 8 { \bassA | \break } % Remove me
 			}%Bass
 		>>
 	}
