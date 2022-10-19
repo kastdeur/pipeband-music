@@ -5,7 +5,7 @@
 
 \include "./config.ily"
 %\include "./notes.bass.ily"
-%\include "./notes.tenor.ily"
+\include "./notes.tenor.ily"
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
 %\include "./notes.pipes.seconds.ily"
@@ -27,10 +27,15 @@
 			<<
 				\new NullVoice = "format" {
 					\part |
-					\line
+					\halfline
+					\break
+					\halfline
 					\bar "||" \break
+					\pageBreak
 
-					\line
+					\halfline
+					%\break
+					\halfline
 					\bar "|."
 				}
 				\new Voice = "pipes" {
@@ -73,15 +78,16 @@
 
 			\snareB
 		}
-%{
 		\new PipeBandDrumStaff = "tenor" \with {
 			instrumentName = \markup{ \instrumentTenor }
 			shortInstrumentName = \markup{ \shortInstrumentTenor }
 		} {
 			\tenorglobal
+			s16 |
+			\tenorA
+			\tenorB
 
 		}
-%}
 %{
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
