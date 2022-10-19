@@ -23,8 +23,8 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 					\part \line \markTextEol "D.C. al Fine" \bar "||"
 			}
 			{
-				\pipesA s8
-				\pipesB
+				\pipesFacsimileA s8
+				\pipesFacsimileB
 			}
 		>>
 	}
@@ -32,8 +32,7 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 		title = \title
 		meter = \meter
 		instrument = \instrumentPipes
-		composer = \composerPipes
-		arranger = \arrangerPipes
+		composer = \composerFacsimilePipes
 	}
 }
 \score {
@@ -41,10 +40,10 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 		\set Staff.midiInstrument = #"bagpipe"
 		%%Tune
 		\partial 8
-		\pipesA
-		\pipesA
-		\pipesB
-		\removeWithTag #'upbeat \pipesA
+		\pipesFacsimileA
+		\pipesFacsimileA
+		\pipesFacsimileB
+		\removeWithTag #'upbeat \pipesFacsimileA
 	}
 	\midi { \confTempo }
 	\header {
