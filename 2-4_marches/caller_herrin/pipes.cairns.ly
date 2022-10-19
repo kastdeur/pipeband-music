@@ -48,9 +48,9 @@ dsalfine = {\markTextEolDown "D.S. al Fine" }
 				%\bar "|."
 			} % Format
 			\new Voice = "pipes" {
-				\pipesA s8
+				\pipesAvI s8
 
-				\removeWithTag #'fine \pipesB
+				\removeWithTag #'fine \pipesBvI
 			} % Pipes
 		>>
 	}
@@ -59,7 +59,7 @@ dsalfine = {\markTextEolDown "D.S. al Fine" }
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
-		arranger = \arrangerPipes
+		arranger = \arrangerPipesvI
 	}
 }
 \score {
@@ -69,10 +69,10 @@ dsalfine = {\markTextEolDown "D.S. al Fine" }
 		\partial 8
 		\unfoldRepeats {
 			\repeat volta 2 {
-				\pipesA
+				\pipesAvI
 			}
-			\removeWithTag #'fine \pipesB
-			\removeWithTag #'fineRemove \pipesA
+			\removeWithTag #'fine \pipesBvI
+			\removeWithTag #'fineRemove \pipesAvI
 		}
 
 	}
@@ -83,6 +83,6 @@ dsalfine = {\markTextEolDown "D.S. al Fine" }
 		meter = \meter
 		instrument = \instrumentPipes
 		composer = \composerPipes
-		arranger = \arrangerPipes
+		arranger = \arrangerPipesvI
 	}
 }
