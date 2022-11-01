@@ -19,12 +19,12 @@
 			shortInstrumentName = \markup{ \shortInstrumentPipes }
 		} {
 			\global
+			\pipeglobal
 			<<
 			  	\new NullVoice = "format" {
 					% \line
 				}%Format
 				\new Voice = "pipes" {
-					\pipeglobal
 					\repeat unfold 4 { \pipesA | \break } % Remove me
 				}%Pipes
 			>>

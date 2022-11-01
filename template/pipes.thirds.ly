@@ -8,12 +8,12 @@
 \score {
     \new Staff {
 		\global
+		\pipesthrdglobal
 		<<
 			\new NullVoice = "format" {
 				% \line
 			}%Format
 			\new Voice = "thirds" {
-				\pipesthrdglobal
 				\repeat unfold 8 { \pipesthrdA | \break } % Remove me
 			}%Pipes
 		>>
