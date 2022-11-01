@@ -1,4 +1,4 @@
-% 3/4 God Save The Queen
+% 3/4 God Save The King
 % Pipes
 \version "2.18.2"
 composerPipes = ""
