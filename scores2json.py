@@ -6,9 +6,17 @@
 
 #{{{ Functions
 import os
+import re
 
-def walk_through_files(path, file_extension='.ly'):
+def walk_through_files(path, file_extension='.ly', exclude_dirs=[]):
 	for (dirpath, dirnames, filenames) in os.walk(path):
+		if os.path.basename(dirpath) in exclude_dirs:
+			continue
+
+		if '.ignore_scores2json' in filenames:
+			dirnames = []
+			continue
+
 		if file_extension:
 			for filename in filenames:
 				if filename.endswith(file_extension):
@@ -21,13 +29,9 @@ def rreplace(s, old, new, occurrence):
 	return new.join(li)
 
 
-def read_config(config_path):
-	''' return a dict created from the configfile '''
-	import re
-	config = {}
-
-	textsearches = ['title', 'meter']
-	with open(config_path, 'r') as fh:
+def search_file_for_tuneinfo(fname, textsearches = [], keywords = []):
+	data = {}
+	with open(fname, 'r') as fh:
 		for line in fh:
 			if line.startswith('\\version'):
 				continue
@@ -36,50 +40,90 @@ def read_config(config_path):
 				continue
 
 			for t in textsearches:
-				if not t in config:
-					result = re.search(t +' = (?P<quote>[\'\"])(.*?)(?P=quote)', line)
+				if not t in data:
+					result = re.search(t +'\s*=\s*(?P<quote>[\'\"])(.*?)(?P=quote)', line)
 					if result:
-						config[t] = result.group(2)
+						data[t] = result.group(2)
 
-			for keyword in ['\\\\tempo', '\\\\time', '\\\\partial']:
-				if not keyword in config:
+			for keyword in keywords:
+				if not keyword in data:
 					result = re.search(keyword+'\s*(.*)', line)
 
 					if result:
-						config[keyword.replace('\\','')] = result.group(1).strip()
-	return config	
+						data[keyword.replace('\\','')] = result.group(1).strip().replace('\\', '')
+	return data
+
+def read_config(config_path):
+	''' return a dict created from the configfile '''
+	tuneinfo = search_file_for_tuneinfo(
+			config_path,
+			textsearches = ['title', 'meter', 'instrument'],
+			keywords = ['\\\\tempo', '\\\\time', '\\\\partial', '\\\\key'],
+			)
+
+	if 'partial' in tuneinfo:
+		tuneinfo['partial'] = tuneinfo['partial'].split(' ')[0]
+
+	return tuneinfo
+
+def read_lilypond(fname):
+	''' return a dict from file'''
+	data = read_config(fname)
+
+	return data
 
 def analyse_tune_ly(tune_file):
 	''' return a dict created from the tune file'''
 	data = read_lilypond(tune_file)
 
+	if 'instrument' not in data:
+		data['instrument'] = os.path.splitext(os.path.basename(tune_file))[0]
+	elif data['instrument']:
+		candidate = os.path.splitext(os.path.basename(tune_file))[0]
+		if data['instrument'].lower() in candidate.lower():
+			low_candidate = candidate.lower().split(sep=data['instrument'].lower(), maxsplit=1)
+			if len(low_candidate) > 1:
+				data['instrument'] += candidate[len(low_candidate[0]) + len(data['instrument']):]
+
+	data['instrument'] = data['instrument'].lower()
+
 	data['path'] = tune_file
 
 	return data
 
-def read_lilypond(fname):
-	''' return a dict from file'''
-	data = {}
 
-	if not os.path.exists(fname):
-	    return data
+def merge_data_and_config(data={}, config={}):
+	"""
+	Merge two dictionaries.
+	data is from the file itself, config is from the configfile
 
-	return data
+	replaces data['title'] = 'My \\title' with 'My '+config['title']
+	"""
 
-def merge_data_and_config(data, config):
-	if 'title' in data and '\\title' in data['title'] and 'title' in config:
-		data['title'].replace('\\title',config['title'])
+	for k in config.keys():
+		if k in data and '\\'+k in data[k]:
+			data[k].replace('\\'+k, config[k])
 
+	# overwrite config values with data
 	newdata = { **config, **data }
 
 	return newdata
 
-def config_from_lypath(lypath):
+def config_from_lypath(lypath, default_name='config.ily'):
 	''' return the configpath belonging to the lypath '''
 	li = lypath.rsplit("/", 1)[0]
-	return os.path.join(li,"config.ily")
 
-def read_path(music_paths):
+	if False:
+		# determine config path from file
+		pass
+	else:
+		configpath = os.path.join(li, default_name)
+	return configpath
+
+def read_path(music_paths, exclude_dirs=[]):
+	"""
+	Return a dictionary of tunes with tune info from music_paths
+	"""
 	tunes = {}
 
 	# Music Directory to work on
@@ -87,19 +131,16 @@ def read_path(music_paths):
 		music_paths = [music_paths]
 
 	for path in music_paths:
-		for f in walk_through_files(path, '.ly'):
-			if os.path.basename(os.path.dirname(f)) == 'template':
-				continue;
+		for f in walk_through_files(path, '.ly', exclude_dirs=exclude_dirs):
 
 			data = analyse_tune_ly(f)
 			config_path = config_from_lypath(f)
 
 			if os.path.exists(config_path):
 				config = read_config(config_path)
-				# merge them 
+				# merge them
 				data = merge_data_and_config(data, config)
 
-			data['instrument'] = os.path.splitext(os.path.basename(f))[0]
 			data['files'] = {}
 			data['files']['lilypond'] = f.replace(path,'',1)
 			for ext in ['pdf', 'midi', 'preview.pdf', 'preview.png']:
@@ -126,7 +167,6 @@ def read_path(music_paths):
 # ================================================================
 if __name__ == "__main__":
 	import argparse
-
 	import json
 
 	parser = argparse.ArgumentParser(description="Read a music directory into a JSON file")
@@ -134,4 +174,4 @@ if __name__ == "__main__":
 
 	args = parser.parse_args()
 
-	print(json.dumps(read_path( args.music_paths )))
+	print(json.dumps(read_path( args.music_paths, exclude_dirs=['template'] ), indent=0))
