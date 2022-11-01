@@ -5,7 +5,7 @@ global = {
 	\key a \mixolydian
 }
 confTempo = { 
-	\tempo 2. = 90 
+	\tempo 4. = 90 
 }
 %% Format
 part = { \partial 8 \grace { s4 } s8 }

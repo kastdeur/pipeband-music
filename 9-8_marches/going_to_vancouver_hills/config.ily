@@ -5,7 +5,7 @@ global = {
 	\key a \mixolydian
 }
 confTempo = { 
-	\tempo 2. = 80 
+	\tempo 4. = 90 
 }
 %% Format
 measure = { \grace {s1} s4.*3 | }

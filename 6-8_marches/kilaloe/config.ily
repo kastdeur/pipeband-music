@@ -5,7 +5,7 @@ global = {
 	\key d \major
 }
 confTempo = { 
-	\tempo 4. = 80 
+	\tempo 4. = 90 
 }
 %% Format
 part = { \partial 8 \grace {s4} s8 }

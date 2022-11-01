@@ -2,10 +2,11 @@
 %% Globals
 global = {
 	\time 9/8
-	}
+	\key d \major
+}
 confTempo = { 
-	\tempo 4. = 80 
-	}
+	\tempo 4. = 90 
+}
 %% Format
 part = { \partial 8 s8 }
 measure = { \grace {s1} s4.*3 | }
