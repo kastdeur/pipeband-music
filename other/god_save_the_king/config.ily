@@ -2,10 +2,11 @@
 %% Globals
 global = {
 	\time 3/4
-	}
+	\key d \major
+}
 confTempo = { 
 	\tempo 4 = 60 
-	}
+}
 %% Format
 measure = { \grace {s1} s2. | }
 halfline = { \repeat unfold 2 \measure }

@@ -3,13 +3,14 @@
 \include "bagpipe.ly"
 
 \include "./config.ily"
-%\include "./notes.pipes.ily"
+\include "./notes.pipes.ily"
 \include "./notes.lyrics.ily"
 
 \score {
     \new Staff {
 		\global
 		\lyricsglobal
+		\pipeglobal
 		<<
 		  	\new NullVoice = "format"{
 				\line \halfline
@@ -20,10 +21,14 @@
 				\bar "|."
 			}%Format
 
-			\new Voice = "tune" {
+			\new NullVoice = "tune" {
 				\songA
 			}
-
+			\new Voice = "pipes" {
+				\pipesA
+				\pipesB
+				\pipesC
+			}
 			\new Lyrics = "lyrics" {
 				\lyricsto "tune" { 
 					\lyricsA
@@ -49,18 +54,20 @@
 	}
 }
 \markup {
-  \line{
-	\column {
-	  \verseA
-	  \combine \null \vspace #0.5
-	  \verseC
-	  \combine \null \vspace #0.5
-	  \verseE
+	\combine \null \vspace #0.5
+	\fill-line {
+		\column {
+			\verseB
+			\combine \null \vspace #0.5
+			\verseC
+		}
+		\column {
+			\verseD
+			\combine \null \vspace #0.5
+			\verseE
+		}
+		\column {
+			\verseF
+		}
 	}
-	\column {
-	  \verseB
-	  \combine \null \vspace #0.5
-	  \verseD
-	}
-  }
 }
