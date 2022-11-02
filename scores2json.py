@@ -63,6 +63,8 @@ def read_config(config_path):
 
 	if 'partial' in tuneinfo:
 		tuneinfo['partial'] = tuneinfo['partial'].split(' ')[0]
+	if 'time' in tuneinfo:
+		tuneinfo['time'] = tuneinfo['time'].split(' ')[0]
 
 	return tuneinfo
 
