@@ -1,4 +1,4 @@
-% 2/4 Caller Herrini
+% 2/4 Caller Herrin
 % Pipes
 \version "2.18.2"
 composerPipes = "Trad."
@@ -12,9 +12,9 @@ pipesAvI = {
 		\tag #'upbeat {\grg a8 |}
 		\grg d4 \grg d8 [ \grG e8 ] |
 		\dblc c4 \thrwd d8. [ e16 ] |
+		\dblf f8 [ b8 ] \dble e8. [ d16 ] |
+		\dblc c8 [ \gre a8 ] \dblb b8 [ c8 ] |
 	}
-	\dblf f8 [ b8 ] \dble e8. [ d16 ] |
-	\dblc c8 [ \gre a8 ] \dblb b8 [ c8 ] |
 
 	\grg d4 \grg d8 [ \grG e8 ] |
 	\dblc c4 \thrwd d8. [ e16 ] |
@@ -26,9 +26,9 @@ pipesAvII = {
 		\tag #'upbeat {\grg a16. b32 |}
 		\thrwd d4 \slurd d8 [ \grg e16. d32 ] |
 		\dblc c4 \thrwd d8. [ e16 ] |
+		\grg f8 [ \hdblb b8 ] \dble e8. [ d16 ] |
+		\dblc c8 [ \gre a8 ] \grg b8 [ c8 ] |
 	}
-	\grg f8 [ \hdblb b8 ] \dble e8. [ d16 ] |
-	\dblc c8 [ \gre a8 ] \grg b8 [ c8 ] |
 
 	\thrwd d4 \slurd d8 [ \grg e16. d32 ] |
 	\dblc c4 \thrwd d8. [ e16 ] |
@@ -46,6 +46,8 @@ pipesBvI = {
 	A8 ] |
 	\grf g8 [ f8 ] \dble e8 [ d8 ] |
 	\dbld d8 [ c8 ] \grg d8. [ e16 ] |
+	\dblf f8 [ b8 ] \dble e8. [ d16 ] |
+	\dblc c8 [ \gre a8 ] \dblb b8 [ c8 ] |
 	\tag #'fine {
 	  \removeWithTag #'fineRemove \pipesAvII
 	}
@@ -62,6 +64,8 @@ pipesBvII = {
 	A8 ] |
 	\grf g8 [ f8 ] \dble e8 [ d8 ] |
 	\grg c4 \thrwd d8. [ e16 ] |
+	\grg f8 [ \hdblb b8 ] \dble e8. [ d16 ] |
+	\dblc c8 [ \gre a8 ] \grg b8 [ c8 ] |
 	\tag #'fine {
 		\removeWithTag #'fineRemove \pipesAvII
 	}

@@ -23,22 +23,18 @@ dsalfine = {\markTextEolDown "D.S. al Fine" }
 		<<
 			\new NullVoice = "format" {
 				\repeat volta 2 {
-					\part 
-					\measure
-					\measure
+					\part
+					\halfline
 					\mark \markup { \musicglyph "scripts.segno"}
-					%\inStaffSegno 
-					\measure
-					\measure
+					%\inStaffSegno
 					\halfline
 					\fine
 				}
 				\break
 
-				\part 
+				\part
 				\halfline
-				\measure
-				\measure
+				\halfline
 				\dsalfine
 				\bar "||"
 				%\break
