@@ -41,7 +41,7 @@ snareBA = \drummode {
 	\tutti {
 		d8.:32)(-> g16:64)(->	g16:64 d8:32)(-> g16) |
 
-		\flam d16. g32 d16. \flam d32		d16. \flam g32 d32 g d g |
+		\flam d16. g32 d16. \flam g32		d16. \flam g32 d32 g d g |
 		d8->
 	} \triplet { d16 \< d g } \triplet { d16 g g } d8-> \!
 }
