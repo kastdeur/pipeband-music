@@ -1,7 +1,7 @@
 % 2/4 Caller Herrin
 % Side
 \version "2.18.2"
-composerSide = "E.T. de Boone, v0.1"
+composerSide = "E.T. de Boone, v0.2"
 arrangerSide = ""
 sideglobal = {
 	\sixteenthBeaming
@@ -11,9 +11,9 @@ sideA = \drummode {
 	\tag #'fineRemove {
 		\tutti {
 			\tag #'upbeat { d8:32( | }
-			g4)
+			d4)
 		} d4(:32 |
-		d8) \flam g8	\flam d8
+		d8) \flam d8	\flam g8
 		\tutti { d8:32( |
 			\triplet { g16) d g } \flam d16. g32	 d16. d32:64( d16.) d32 |
 			g8->
@@ -23,11 +23,11 @@ sideA = \drummode {
 	}
 
 	d4)\!\fr d4:32( |
-	d8) \flam g8	\flam d8 d8:32( |
-	\triplet { g16) d g } \flam d16. g32	d16.
+	d8) \flam d8	\flam g8 d8:32( |
+	\triplet { g16) d g } \flam d16.
 	\tutti {
-		d32 \triplet { g16 g d } |
-		\flam g8 d8:32(	g8)
+		g32	d16.:64( d32) \triplet { g16 d g } |
+		\flam d8 d8:32(	g8)
 	}
 }
 
@@ -49,8 +49,8 @@ sideB = \drummode {
 
 	%\tutti {
 		<> \dr
-		d2:32( -\parenthesize -> |
-		d4:32)(\<->	d8:32)(-> g8:32)(-> <>\!)
+		d2:32( -! |
+		d4:32)(\<-.	d8:32)(-> g8:32)(-> <>\!)
 
 		\tag #'fine {
 			\removeWithTag #'fineRemove \removeWithTag #'tutti \sideA
