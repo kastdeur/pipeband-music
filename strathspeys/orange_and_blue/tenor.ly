@@ -10,13 +10,15 @@
 		\global
 		<<
 			\new NullVoice = "format" {
-				\repeat volta 2 {
+				\repeat volta 1 {
 					\line
 				}
+				\bar "||"
 				\break
-				\repeat volta 2 {
+				\repeat volta 1 {
 					\line
 				}
+				\bar "|."
 			}%Format
 			\new DrumVoice = "tenor" {
 				\tenorglobal
