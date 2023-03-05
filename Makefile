@@ -22,3 +22,7 @@ all: $(PDFOBJS)
 # Pattern rules
 %.pdf %.preview.pdf %.preview.png &: %.ly
 	$(LILY) $<
+
+.PHONY: dist
+dist: $(LYSRCS) $(PDFOBJS) $(AUX)
+	@tar -zhvcf pipeband-music.tar.gz $(SRCDIRS) $(AUX)
