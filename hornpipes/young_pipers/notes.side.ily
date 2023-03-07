@@ -66,8 +66,8 @@ snareCB = \drummode {
 }
 
 snareDC = \drummode {
-	\flam d16 \flam g \flam d8
-	g16 d:64( d) g
+	\flam d16 \fr \flam g \flam d8
+	g16 d:64( d) g\dr
 	|
 	d32 g d g d16 g:64(
 	g16:64 d) g g
@@ -78,10 +78,10 @@ snareDA = \drummode {
 	\snareDC
 }
 snareDB = \drummode {
-	d16 g32 g d16 g
+	d16\fr g32 g d16 g
 	d32 g d g d16 g32 g
 	|
-	d16 g8.:32(
+	d16 \dr g8.:32(
 	d16) g d32 g d g 
 	|
 }

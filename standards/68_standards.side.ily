@@ -100,8 +100,8 @@ pthree = \drummode {
 
 pfour = \drummode {
 	d8:32( |
-	g8.) g16 \flamd d8		d8. d16 \flamg g8 |
-	d8. g16 \flamd d8		\flamd d8. g16 d8 |
+	g8.) g16 \flam d8		d8. d16 \flam g8 |
+	d8. g16 \flam d8		\flam g8. d16 g8 |
 }
 
 pfive = \drummode {

@@ -27,18 +27,18 @@ intro = \drummode {% by Dean Hall, 2006
 }
 snareA = \drummode {
 	\tutti {
-		\flamd d4 	\flam g8.[
+		\flam d4 	\flam g8.[
 	} d16:64(]		d8.[) \tutti {
 		\drag d16]		d8.[
 	}
 	
-	g16] |		d8.:64[(-> g16])	\triplet  { d16[ g d g d8]}		\triplet  { g8[ d8 \flamd g8] }		\flam d8.[  g16] |
+	g16] |		d8.:64[(-> g16])	\triplet  { d16[ g d g d8]}		\triplet  { g8[ d8 \flam g8] }		\flam d8.[  g16] |
 
 	\tutti {
 		d16:64[( d8.])		g8.[ \drag d16]
 	}	\triplet  { d16[ g d g d8] }		g8.[ g16] |
-	\flamddr \triplet  { d8 \fr g d }		\tutti {
-		\flamd g8.[ \flam g16]		\triplet  { d16 g d g d8 } g8
+	\flamdr \triplet  { d8 \fr g d }		\tutti {
+		\flam g8.[ \flam g16]		\triplet  { d16 g d g d8 } g8
 	}
 }
 
@@ -53,9 +53,9 @@ snareBA = \drummode {
 	} \triplet  { d16[ g d g d8] }		\triplet  { g8[ d g] } |
 
 	\tutti {
-		\flamd \triplet  { d8[ g16 g16 d8] }		g8.[
+		\flam \triplet  { d8[ g16 g16 d8] }		g8.[
 		} g16]		\triplet  { d8[ g16 g16 d8] }		g8.[ g16] |
-	\flamddr \triplet  { d8[ \fr  g d] }		\tutti {
+	\flamdr \triplet  { d8[ \fr  g d] }		\tutti {
 		\flam g8.[ \flam g16]		\triplet  { d16[ g d g d8] } g8
 	}
 }
@@ -67,6 +67,6 @@ snareBB = \drummode {
 		\drag d16[ d8.]		\flam d8.[ \flam g16]		\triplet  { d16[ g d g d8] }		\triplet  { g8[\mf\> d g]\p  } |
 
 		\flam d4\f		\flam g8.[ d16:64](		d8.[) \drag d16]		d8.[ g16] |
-		\flamd \triplet  { d8[ g d] }		\flam g8.[ \flam g16]		\triplet  { d16[ g d g d8] } g8
+		\flam \triplet  { d8[ g d] }		\flam g8.[ \flam g16]		\triplet  { d16[ g d g d8] } g8
 	}
 }
