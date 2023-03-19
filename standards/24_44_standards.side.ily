@@ -229,6 +229,14 @@ ptwenty = \drummode {
 	d32 g d g
 }
 
+ptwentyone = \drummode { % Music Show
+	\tag #'upbeat { d8:32( }
+	g8)\v d16 g16->
+	d16:64( d16) g8->
+	\flam d16 \v g \> d \! \flam g
+	\flam d8
+}
+
 
 %% Standard thingies
 midstd = \drummode { \midone }
