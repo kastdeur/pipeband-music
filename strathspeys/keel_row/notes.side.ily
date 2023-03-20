@@ -1,32 +1,22 @@
 % 4/4 Keel Row
 % Side
 \version "2.18.2"
-composerSide = "E.T. de Boone, 2018" %26-09-2018
+composerSide = "E.T. de Boone, v2.0, 2018 (2023)" %26-09-2018, feedback from C. Ooms on 2023-03-05
 arrangerSide = ""
 sideglobal = {
 	\sixteenthBeaming
 }
 % Music
 snareA = \drummode {
-	\flamdr d4 \fr  d8. g16  d4:32->(  g8.)
-	\tutti {
-		d16-\v |
-		\flam g4  d8. g16  \triplet { d8 g d }  \flam d8.
-	}  d16:64( \< |
-	d8.[)\! \dragdr d16] \fr  r8. g16  \triplet { d16 g d g d8 }  \triplet { g8 d g }
-	\tutti {
-		\flam \triplet { d8 g d-> }  g8. g16  d4:32( d4)
-	}
+	d4:32(\ff \dr	d8.[) \mf \fr \drag d16]	d4	d4:32(\< |
+	d4)\! g8.[ \dragdr d16]	\triplet { d16 g d g d8 }	\triplet { g8-> d16 g d g } |
+	d4->\fr	\triplet { d8 g \flam d }	\triplet { g8[ \drag d d] }	\flam g8. \flamdr g16 \v |
+	\triplet { d8[ g \drag d] }	\triplet { d16 g d g d8-> }	\triplet { g8 d \flam g }	\flam d4 ->\fr
 }
 
 snareB = \drummode {
-	d16 \flam g8.  g8. d16  g4:32->( g8.)
-	\tutti {
-		d16-\v |
-		\flam g4  d8. g16  \triplet { d8 g d }  \flam d8.
-	}  g16 |
-	\drag d16 d8.  d16[ \drag g8.]  d4:32->(  d8.) g16
-	\tutti {
-		\flam \triplet { d8 g d-> }  g8. g16  d4:32( d4)
-	}
+	\dragdr d16 d8.\fr	g8. [ \drag d16 ]	d4	d4:32(\< |
+	d4)\! g8.[ \dragdr d16]	\triplet { d16 g d g d8 }	\triplet { g8-> d16 g d g } |
+	d4->\fr	g8.:32->( d16:32)(->  \triplet { g8:32 g) d:64( }  d8.) \flamdr g16 \v |
+	\triplet { d8[ g \drag d] }	\triplet { d16 g d g d8-> }	\triplet { g8 d \flam g }	\flam d4 ->\fr
 }
