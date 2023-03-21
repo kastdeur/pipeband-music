@@ -14,7 +14,6 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 \score {
     \new PipeBandDrumStaff {
         \global
-		\sideglobal
 		<<
 			\new NullVoice = "format" {
 				\repeat volta 2 {
@@ -22,16 +21,15 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 				}
 				\break
 				\part
-				\halfline 
+				\halfline
 				\markTextEol "D.C. al Fine"
 				\bar "||"
 			}%Format
-			
 			\new DrumVoice = "side" {
+				\sideglobal
 				s8 \snareA r8 s8
 
 				s8 r8 \snareB r8 s8
-			
 			}
 		>>
 	}
