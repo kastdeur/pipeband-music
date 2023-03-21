@@ -14,7 +14,6 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 \score {
     \new PipeBandDrumStaff {
         \global
-		\sideglobal
 		<<
 			\new NullVoice = "format" {
 				\repeat volta 2 {
@@ -25,6 +24,7 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 			}%Format
 			
 			\new DrumVoice = "side" {
+				\sideglobal
 				\snareA s4
 
 				\snareBA

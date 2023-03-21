@@ -1,7 +1,7 @@
 % 4/4 Scotland the Brave
 % Snare
 \version "2.18.2"
-composerSide = ""
+composerSide = "v1.0"
 sideglobal = {
 	\eighthBeaming
 	}

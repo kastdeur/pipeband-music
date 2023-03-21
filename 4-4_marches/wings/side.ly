@@ -14,7 +14,6 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 \score {
     \new PipeBandDrumStaff {
         \global
-		\sideglobal
 		<<
 			\new NullVoice = "format" {
 				\partial 8 s8
@@ -35,6 +34,7 @@ markTextEol = #(define-music-function (parser location text) (string?) #{
 			}%Format
 			
 			\new DrumVoice = "side" {
+				\sideglobal
 				\snareAA
 					\snareABA
 					\snareABB r8 s8

@@ -8,21 +8,21 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-		\sideglobal
         <<
 			\new NullVoice = "format" {
 				\partial 8 s8 \line \bar "||"
-				\line \bar "||"
 				\break
-				\partial 8 s8 \line \bar "||"
-				\line \bar "|."
+				\partial 8 s8 \halfline \bar "||"
+				\halfline \bar "|."
 			}%Format
 
 			\new DrumVoice = "side" {
 				\snareAA	\snareABA
-					\removeWithTag #'tutti { \snareAAI \snareABB r8 s8 }
-				\snareBA 
-					\removeWithTag #'tutti { \snareAAI \snareABB r8 s8 }
+				<>\dr
+					\removeWithTag #'tutti { \snareAAI \snareABB r8 s8 } \fr
+				\snareBA
+				<>\dr \mf
+					\removeWithTag #'tutti { \snareAAI \snareABB r8 s8 } \fr
 			}
 		>>
 	}
