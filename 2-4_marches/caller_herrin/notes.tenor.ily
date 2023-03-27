@@ -1,7 +1,7 @@
 % 2/4 Caller Herrin
 % Tenor
 \version "2.18.2"
-composerTenor = "E.T. de Boone, v0.1"
+composerTenor = "E.T. de Boone, v0.2"
 arrangerTenor = ""
 tenorglobal = {}
 % Music
@@ -32,7 +32,8 @@ tenorB = \drummode {
 	r4. g8
 
 	\stf d2 |
-	\flourish { d4 g4 } |
+	r2 |
+	%\flourish { d4 g4 } |
 
 
 	\flourish { d4 g4 } |
