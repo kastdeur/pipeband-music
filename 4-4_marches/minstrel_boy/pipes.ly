@@ -5,6 +5,8 @@
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
+part = { \grace{s1} \partial 8 s8 }
+
 \score {
     \new Staff {
 		\global
