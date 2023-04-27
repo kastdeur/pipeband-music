@@ -62,7 +62,7 @@ pipesCBB = {
 pipesDA = {
 	\grg f16. g32 |
 	A16. a32 \grg f16. e32	\grg d16. [ a32 \grg b16. c32 ] |
-	\thrwd d16. e32 \grg d16. c32	\grg b32 [ \grd a16. b16. c32 ] |
+	\thrwd d16. e32 \grg d16. c32	\grg b32 [ \grd G16. b16. c32 ] |
 	\grg d16. c32 \grg d16. e32	\grg f16. [ d32 \grg f32 A16. ] |
 	\hdble e4	\gra e8
 

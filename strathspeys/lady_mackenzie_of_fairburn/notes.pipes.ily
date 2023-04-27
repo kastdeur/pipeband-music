@@ -25,7 +25,7 @@ pipesA = {
 	\thrwd d8. e16
 	\dblg g8. d16
 	\dblb b8. a16
-	\grg a8.
+	\grg G8.
 }
 pipesBA = {
 	d16 |
@@ -57,13 +57,13 @@ pipesBB = {
 	\dble e4
 	|
 	\grg a8. \grd c16
-	\dble d8. d16
+	\dble e8. d16
 	\dblc c8. b16
 	\grg a16 A8.
 	|
 	a8. \grd c16
 	\grg e16 A8.
-	\hdblf g16 d8.
+	\hdblf f16 d8.
 	\dble e8. c16
 	|
 	\thrwd d8. e16
