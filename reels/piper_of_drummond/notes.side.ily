@@ -7,9 +7,6 @@ sideglobal = {
 	\eighthReelBeaming
 }
 % Music
-snareA = \drummode {
-}
-
 snareAA = \drummode {
 	\flam d4-> d8. g16
 	d4:32( g8.) d16:64(
@@ -33,7 +30,7 @@ snareABB = \drummode {
 	\flam d8. g16 d4:32(\<
 	|
 	d8.)->\! g16 d8. \flam g16
-	d8. g16 d16 g d g
+	d8. g16 g16 d g g
 	|
 }
 
@@ -41,8 +38,8 @@ snareBA = \drummode {
 	d4:32(-> g8.) g16
 	d4:32(\< \triplet { g8)\!\staccato d g }
 	|
-	d8.-> g16 d8. g16:64(
-	d8.:32 d16)-> g8. g16
+	d8.-> g16 d8. g16:64(->
+	d8.:32 d16) g8. g16
 	|
 }
 snareBBA = \drummode {
@@ -50,7 +47,7 @@ snareBBA = \drummode {
 	\flam \triplet { g8 d g } \flam d8. g16
 	|
 	\flam d8.-> g16 d8. \flam g16
-	d4 d16 g d g
+	d4 g16 d g g
 	|
 }
 snareBBB = \drummode {
@@ -59,4 +56,24 @@ snareBBB = \drummode {
 	|
 	\flam d8.-> g16 \triplet { d8 d \flam g }
 	\triplet { d8 g g } d4\staccato
+}
+
+snareA = \drummode {
+	\repeat volta 2 {
+		\snareAA
+		\alternative {
+			\snareABA
+			\snareABB
+		}
+	}
+}
+
+snareB = \drummode {
+	\repeat volta 2 {
+		\snareBA
+		\alternative {
+			\snareBBA
+			\snareBBB
+		}
+	}
 }
