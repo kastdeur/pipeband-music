@@ -1,10 +1,9 @@
 % 2/2 Piper of Drummond
 % Side
 \version "2.18.2"
-composerSide = "E.T. de Boone, v0, 2023" % 2023-05-05
+composerSide = "E.T. de Boone, v0.5, 2023" % 2023-05-05 Wageningen
 arrangerSide = ""
 sideglobal = {
-	\eighthReelBeaming
 }
 % Music
 snareAA = \drummode {
@@ -24,13 +23,13 @@ snareABA = \drummode {
 }
 
 snareABB = \drummode {
-	g8. g16 \flam d8.-> g16
+	g8. g16 \flam d4
 	|
 	d4:32( d8.) g16
 	\flam d8. g16 d4:32(\<
 	|
 	d8.)->\! g16 d8. \flam g16
-	d8. g16 g16 d g g
+	d4 d16 g d g
 	|
 }
 
@@ -47,11 +46,11 @@ snareBBA = \drummode {
 	\flam \triplet { g8 d g } \flam d8. g16
 	|
 	\flam d8.-> g16 d8. \flam g16
-	d4 g16 d g g
+	d4 d16 g d g
 	|
 }
 snareBBB = \drummode {
-	\flam d8.-> g16 d8. \flam g16
+	\flam d8.\v g16 d8. \flam g16
 	d8. g16 \flam d8.\staccato g16
 	|
 	\flam d8.-> g16 \triplet { d8 d \flam g }
