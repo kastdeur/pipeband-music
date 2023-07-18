@@ -42,8 +42,8 @@
 			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
 			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 
-				\sideA 
-				\sideB
+				\snareA
+				\snareB
 		}
 		\new PipeBandDrumStaff = "tenor" {
 			\tenorglobal

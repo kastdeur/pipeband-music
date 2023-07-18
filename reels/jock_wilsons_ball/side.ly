@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.24.2"
 
 \include "lilydrum.ly"
 
@@ -8,33 +8,20 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-	\sideglobal
-		<<
-			{ 
-				\partial 16 s16
-				\halfline
+			\unfoldRepeats \new DrumVoice = "side" {
+				\sideglobal
+				\snareA
 				\break
-				\halfline
-				\bar "|."
-
-				\break
-				\partial 16 s16
-				\halfline
-				\break
-				\halfline
-				\bar "|."
-			}%Format
-			{
-			\sideA s16
-
-			\sideB
+				\section
+				\snareB
+				\fine
 			}
-		>>
 	}
 	\header {
 		title = \title
 		meter = \meter
 		instrument = \instrumentSide
 		composer = \composerSide
+		arranger = \arrangerSide
 	}
 }
