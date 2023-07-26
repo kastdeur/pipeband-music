@@ -33,12 +33,14 @@
 					\line
 					\break
 					\line
+					\bar "||"
 					\section
 					\break
 					\part
 					\line
 					\break
 					\line
+					\bar "|."
 					\fine
 				}%Format
 				\new Voice = "pipes" {
@@ -79,11 +81,10 @@
 		} {
 			\sideglobal
 
-			s16 \snareAA \snareABA
-			\snareAA \snareABB |
+			s16 \snareA |
 
-			s16 \snareBA \snareBBA
-			\snareBA \snareBBB
+			s16 \snareB |
+			\fine
 		}
 %{
 		\new PipeBandDrumStaff = "tenor" \with {

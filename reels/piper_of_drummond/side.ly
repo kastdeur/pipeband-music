@@ -11,23 +11,10 @@
 			\unfoldRepeats \new DrumVoice = "side" {
 				\sideglobal
 
-				\repeat volta 2 {
-					\snareAA
-					\alternative {
-						\snareABA
-						\snareABB
-					}
-				}
+				\snareA
 				\break
 				\section
-
-				\repeat volta 2 {
-					\snareBA
-					\alternative {
-						\snareBBA
-						\snareBBB
-					}
-				}
+				\snareB
 				\fine
 			}%Side
 	}
