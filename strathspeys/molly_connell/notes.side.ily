@@ -3,8 +3,8 @@
 \version "2.18.2"
 composerSide  = "C. Ooms, v1.2, 2015"
 sideglobal = {}
-intro = \drummode {% by Dean Hall, 2006
-	\flam d4
+intro = \drummode {% inspired by Dean Hall, 2006
+	\flam d4\v
 	\triplet { d8:32( g8:32 g8) }
 	d8. d16
 	\flam g8. d16:64(
@@ -14,14 +14,14 @@ intro = \drummode {% by Dean Hall, 2006
 	g8. g16
 	d4:32(\<
 	|
-	d4)-> \!
-	\triplet { d8:32( g8:32 g8) }
-	\triplet { d8 d g }
-	\triplet { d8 g g }
+	d4)\v \!
+	\triplet { d8:32( d) g-> }
+	\triplet { d8 g \flam d }
+	\flam g8.-> \triplet { g32 d d }
 	|
-	\flam d8.-> g16
-	\tuplet 3/2 { d16 g d g d8 }
-	g4:32(
+	g8.\v g16
+	\triplet { d16[ g d g \drag d8] }
+	d4:32(
 	d4)
 	|
 }

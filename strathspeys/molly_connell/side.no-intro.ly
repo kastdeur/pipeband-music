@@ -10,14 +10,8 @@
         \global
 		\sideglobal
 
-		\mark \markup { \normalsize {Intro } }
-		\intro
-		\break
-
-
-		\mark \markup { \normalsize {Tune } }
 		\repeat volta 2 { \snareA s8 }
-		\snareBA s8
+		\snareBA s8 
 		\snareBB s8
 		\bar "|."
 	}
