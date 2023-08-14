@@ -8,22 +8,22 @@ pipeglobal = {
 % Music
 pipesAA = {
 	\thrwd d4 c4 \dblb b4 \grg f4 |
-	\grg b8. [ c16 d8.  e16 ] \grg f8. [ b16 b8.  c16 ] |
+	\grg b8. [ c16 d8.  e16 ] \grg f8. [ b16 \grG b8.  c16 ] |
 	\thrwd d4 c4 \dblb b4 \grg f4 |
-	\birl a4 \grg e8. [ a16 ] \grg c8. [ \grd a16 a8.  b16 ] | 
+	\birl a4 \grg e8. [ a16 ] \grg c8. [ \grd a16 \gre a8.  b16 ] |
 }
 pipesAB = {
 	\thrwd d4 c4 \dblb b4 \grg f4 |
-	\grg b8. [ c16 d8.  e16 ] \grg f8. [ b16 b8. c16 ] |
+	\grg b8. [ c16 d8.  e16 ] \grg f8. [ b16 \grG b8. c16 ] |
 	\grg d8. [ b16 \grg c16 \grd a8. ] \gbirl a4 \grg e4 |
-	\birl a4 \grg e8. [ a16 ] \grg c8. [ \grd a16 a8.  b16 ]
+	\birl a4 \grg e8. [ a16 ] \grg c8. [ \grd a16 \gre a8.  b16 ]
 }
 
 pipesBA = {
 	\thrwd d4 A4 \hdblf f4 \grg e8. [ f16 ] |
-	\thrwd d4 \grg f8. [ e16 ] \grg f8. [ b16 b8. c16 ] |
+	\thrwd d4 \grg f8. [ e16 ] \grg f8. [ b16 \grG b8. c16 ] |
 	\thrwd d4 A4 \hdblf f4 \grg e8. [ f16 ] |
-	\birl a4 \grg e8. [ a16 ] \grg c8. [ \grd a16 a8.  b16 ] | 
+	\birl a4 \grg e8. [ a16 ] \grg c8. [ \grd a16 \gre a8.  b16 ] |
 }
 
 pipesBB = {
