@@ -9,6 +9,11 @@
 \include "./notes.side.ily"
 \include "./notes.pipes.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
 \score {
 	\new StaffGroup <<
 		\new Staff \with {
@@ -42,7 +47,7 @@
 			shortInstrumentName = \markup{\shortInstrumentSide}
 		} {
 			\sideglobal
-			r8 \snareA s4
+			\snareA s4
 
 			\snareB s4
 		}

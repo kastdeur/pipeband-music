@@ -4,7 +4,16 @@
 composerSide = "E.T. de Boone, v2.0, 2016"
 sideglobal = {
 	\eighthBeaming
-	}
+}
+
+lddr = #(define-event-function (parser location) () #{
+	-\tweak HorizontalBracket.bracket-flare #'(0.5, 0.5)
+	-\tweak HorizontalBracketText.text "LD"
+	-\tweak HorizontalBracketText.parent-alignment-X -1
+	-\tweak HorizontalBracketText.self-alignment-X -1
+	\dr
+#})
+
 %%music
 snareAA = \drummode {
 	\tutti {
@@ -54,7 +63,7 @@ snareAB = \drummode {
 	d8-> \tutti {
 		g16. g32
 		|
-		d8:32( g8:32)(->
+		d8:32(\staccato g8:32)(->
 		d8:32)( g8:32)(->
 		d8)->
 	} \tuplet 3/2 { g16 d g}
@@ -63,8 +72,10 @@ snareAB = \drummode {
 		\flam d8. g16
 		d8:32(-> g8:32)(->
 		d8.)->
-	} d16:64(
-	d8)
+	}
+
+	  d16:64( \lddr
+		d8)\fr
 }
 snareBA = \drummode {
 	d16. g32
@@ -82,7 +93,7 @@ snareBA = \drummode {
 	g8) g8
 	|
 	\tutti {
-		d8:32( g8:32)(->
+		d8:32(\staccato g8:32)(->
 		d8:32)( g8:32)(->
 		d8)->
 	} d32 g d g
@@ -97,7 +108,7 @@ snareBA = \drummode {
 	|
 }
 snareBB = \drummode {
-	\flam d8\f \flam g8
+	\tutti { \flam d8-> \flam g8-> }
 	r8 d8:32(
 	g16.) d32-> g16. g32
 	\flam d8 \tutti {
@@ -127,7 +138,7 @@ snareBB = \drummode {
 snareBC = \drummode {
 	d16. g32 |
 	\tutti {
-		\flam d8\f \flam g8
+		\flam d8-> \flam g8->
 		r8 d8:32(
 		g16.) d32-> g16. g32
 		\flam d8 d8:32(

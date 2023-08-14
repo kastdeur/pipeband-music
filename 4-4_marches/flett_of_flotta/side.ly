@@ -8,6 +8,7 @@
 \score {
     \new PipeBandDrumStaff {
         \global
+        \sideglobal
         <<
 			{
 				\repeat volta 2 { \part \line \break \line }
@@ -15,9 +16,9 @@
 				\repeat volta 2 { \part \line \break \line }
 			}
 			{
-			 r8 \snareA s4
+			 \snareA s4
 
-			 \snareB s8
+			 \snareB s4
 			}
 		>>
 	}
