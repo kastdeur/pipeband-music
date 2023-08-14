@@ -7,29 +7,29 @@ sideglobal = {
 }
 %%music
 snareA = \drummode {
-	r8 d16. g32 |
-	\flamd d8 \tuplet 3/2 { d16 g d }		\flamg g8 d8:32(		g16.) d32-> g16. g32		\flamd d8 d8:32( |
-	\tuplet 3/2 { g16) d g } \flamd d16. g32		\tuplet 3/2 { d16 g d } \flamg g16. g32		d16. g32 \tuplet 3/2 { d16 g d }		\flamg g8 d16. g32 |
+	d16. g32 |
+	\flam d8 \triplet { d16 g d }		\flam g8 d8:32(		g16.) d32-> g16. g32		\flam d8 d8:32(\dr |
+	\triplet { g16) d g } \flam d16. g32		\triplet { d16 g d } \flam g16. g32		d16. g32 \triplet { d16 g d }		\flam g8\fr d16. g32 |
 
-	\flamd d8 \tuplet 3/2 { d16 g d }		\flamg g8 d8:32(		g16.) d32-> g16. g32		\flamd d8 d8 |
-	\flamd d4	d4:32(		d4)
+	\flam d8 \triplet { d16 g d }		\flam g8 d8:32(		g16.) d32-> g16. g32		\flam d8 d8 |
+	\flamdr d4	d4:32(		d4)\fr
 }
 % Part 2
 snareBA = \drummode {
-	\flamd d4 |
-	d4:32(\<		d4:32)(->		d8)\! d32 g d g		d8-> d8:32( |
-	\tuplet 3/2 { g16) d g } \flamd d16. g32		\tuplet 3/2 { d16 g d } \flamg g16. g32		d16. g32 \tuplet 3/2 { d16 g d }		\flamg g8 d16. g32 |
+	\flam d4\v |
+	d4:32(\<		d4:32)(->		d8)\! d32 g d g		d8-> d8:32(\dr |
+	\triplet { g16) d g } \flam d16. g32		\triplet { d16 g d } \flam g16. g32		d16. g32 \triplet { d16 g d }		\flam g8\fr d16. g32 |
 
 	d4:32(\<		d4:32)(->		d8)\! d32 g d g		d8-> g8 |
-	\flamd d4	d4:32(		d4)
+	\flamdr d4	d4:32(		d4)
 }
 snareBB = \drummode{
-	\flamd d4 |
+	\flam d4\v |
 	d4:32(\<		d4:32)(->		d8)\! d32 g d g		d8-> d8:32( |
 
-	\tuplet 3/2 { g16) d g } \flamd d16. g32		\tuplet 3/2 { d16 g d } \flamg g16. g32		d16. g32 \tuplet 3/2 { d16 g d }		\flamg g8 d16. g32 |
+	\triplet { g16) d g } \flam d16. g32		\triplet { d16 g d } \flam g16. g32		d16. g32 \triplet { d16 g d }		\flam g8 d16. g32 |
 
-	\flamg g16. d32:128( d16.) g32		d16.:64( d32) \tuplet 3/2 { g16 d g }		\flamd d16. g32-> d32 g d g		d16. g32-> d32 g d g |
+	\flam g16. d32:128( d16.) g32		d16.:64( d32) \triplet { g16 d g }		\flam d16. g32-> d32 g d g		d16. g32-> d32 g d g |
 
-	d4	d4:32(		d4)
+	d4	d4:32(		d4)\fr
 }

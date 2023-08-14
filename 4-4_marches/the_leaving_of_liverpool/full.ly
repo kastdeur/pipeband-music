@@ -28,9 +28,11 @@
 						\part
 						\line 
 						\break
-						\line \bar "|."
+						\line
+						\bar "||"
 						\break
 					}
+					\bar "|."
 				}%Format
 				{
 					\pipesAA
@@ -46,7 +48,7 @@
 			shortInstrumentName = \markup{ \shortInstrumentSide }
 		} {
 			\sideglobal
-			\snareA
+			r8 \snareA s8
 			\snareA s4
 
 			\snareBA

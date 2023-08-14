@@ -8,20 +8,16 @@
 \score {
     \new PipeBandDrumStaff {
         \global
-        <<
-			{
-				\repeat volta 2 { \part \line } \break
-				\part \line \break
-				\line \bar "|."
-
-			}
-			{
-			 \snareA s4
-
-			 \snareBA
-			 \snareBB
-			}
-		>>
+		\sideglobal
+		\repeat volta 2 {
+			\partial 4 r8
+			\snareA s4
+		}
+		\break
+		\partial 4
+		\snareBA
+		\snareBB
+		\fine
 	}
 	\header {
 		title = \title
