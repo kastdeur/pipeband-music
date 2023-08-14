@@ -5,15 +5,22 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+mbreak = { \break }
 \score {
     \new PipeBandDrumStaff {
         \global
 			\unfoldRepeats \new DrumVoice = "side" {
 				\sideglobal
-				\snareA
+				<<
+					\snareA
+					{ s1*4 \mbreak | \grace{s8} s1}
+				>>
 				\break
 				\section
-				\snareB
+				<<
+					\snareB
+					{ s1*4 \mbreak | \grace{s8} s1 }
+				>>
 				\fine
 			}
 	}
