@@ -16,6 +16,7 @@
 	short-indent = 2.0
 }
 
+pBreak = {\break}
 \score {
 	\new StaffGroup <<
 		\new Staff \with {
@@ -30,17 +31,15 @@
 					%	\part \line
 					%}
 					\part
-					\line
-					\break
-					\line
-					\bar "||"
+					\halfline
+					\pBreak
+					\halfline
 					\section
 					\break
 					\part
-					\line
-					\break
-					\line
-					\bar "|."
+					\halfline
+					\pBreak
+					\halfline
 					\fine
 				}%Format
 				\new Voice = "pipes" {

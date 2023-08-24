@@ -12,13 +12,13 @@
 		<<
 			\new NullVoice = "format" {
 				\repeat volta 2 {
-					\part \line
+					\part \halfline
 				}
 				\break
 				\part
-				\line
+				\halfline
 				\break
-				\line
+				\halfline
 				\fine
 			}%Format
 			\new Voice = "pipes" {
