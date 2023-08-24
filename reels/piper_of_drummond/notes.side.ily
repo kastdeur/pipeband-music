@@ -1,7 +1,7 @@
 % 2/2 Piper of Drummond
 % Side
 \version "2.18.2"
-composerSide = "E.T. de Boone, v0.6, 2023" % 2023-05-05 Wageningen, unisons 202-07-23 AR, Maastricht
+composerSide = "E.T. de Boone, v0.6, 2023" % 2023-05-05 Wageningen, unisons 2023-07-23 AR, Maastricht
 arrangerSide = ""
 sideglobal = {
 }
@@ -30,8 +30,8 @@ snareAAB = \drummode {% only different for unisons
 snareABB = \drummode {
 	g8. g16 \flam d4\fr
 	|
-	d4:32( g8.) g16\dr
-	\flam d4 d4:32(\<
+	d4:32( g4)
+	\flamdr d4 d4:32(\<
 	|
 	d8.)->\! g16 d8. \flam g16
 	d4\fr d16 g d g

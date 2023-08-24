@@ -5,17 +5,21 @@
 \include "./config.ily"
 \include "./notes.bass.ily"
 
+pBreak = {\break}
 \score {
     \new PipeBandDrumStaff {
         \global
 	\bassglobal
 		<<
 			{
-				\line 
-				\bar "|."
-				\break
-				\line
-				\bar "|."
+				\halfline
+				\pBreak
+				\halfline
+				\section
+				\halfline
+				\pBreak
+				\halfline
+				\fine
 			}%Format
 			{
 			\bassA

@@ -10,19 +10,19 @@
 		\global
 		\pipeglobal
 		<<
-			{ 
+			{
 				\halfline
 				\break
 				\halfline
 				\bar "|."
 				\break
 
-				\halfline 
+				\halfline
 				\break
 				\halfline
 				\bar "|."
 			}%Format
-			{ 
+			{
 				\pipesAA
 				\pipesAB
 

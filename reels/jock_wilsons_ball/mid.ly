@@ -5,7 +5,6 @@
 \include "./config.ily"
 \include "./notes.bass.ily"
 \include "./notes.tenor.ily"
-\include "./notes.side.ily"
 
 \layout {
 	indent = 5.0
@@ -15,9 +14,9 @@
 pBreak = {\break}
 \score {
 	\new StaffGroup <<
-		\new PipeBandDrumStaff = "side" \with {
-			instrumentName = \markup{ \instrumentSide }
-			shortInstrumentName = \markup{ \shortInstrumentSide }
+		\new PipeBandDrumStaff = "tenor" \with {
+			instrumentName = \markup{ \instrumentTenor }
+			shortInstrumentName = \markup{ \shortInstrumentTenor }
 		} {
 			\global
 			<<
@@ -32,20 +31,12 @@ pBreak = {\break}
 					\halfline
 					\fine
 				}%End of Format
-				\new DrumVoice = "side" {
-					\sideglobal
-					\snareA
-					\snareB
-				}%End of side
+				\new DrumVoice = "tenor" {
+					\tenorglobal
+					\tenorAA \tenorAB
+					\tenorBA \tenorBB
+				}%End of Tenor
 			>>
-		}
-		\new PipeBandDrumStaff = "tenor" \with {
-			instrumentName = \markup{ \instrumentTenor }
-			shortInstrumentName = \markup{ \shortInstrumentTenor }
-		} {
-			\tenorglobal
-			\tenorAA \tenorAB
-			\tenorBA \tenorBB
 		}
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
@@ -62,12 +53,10 @@ pBreak = {\break}
 		meter = \meter
 		composer = \markup {
 			\column \right-align {
-				$(if (not (string=? "" composerSide))  #{ \markup {\line { \composerSide  ":" }} #} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \composerTenor  ":" }} #} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \composerBass  ":" }} #} )
 			}
 			\column \right-align {
-				$(if (not (string=? "" composerSide))  #{ \markup {\line { \instrumentSide }}#} )
 				$(if (not (string=? "" composerTenor)) #{ \markup {\line { \instrumentTenor }}#} )
 				$(if (not (string=? "" composerBass))  #{ \markup {\line { \instrumentBass }}#} )
 			}
