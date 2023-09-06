@@ -1,40 +1,34 @@
-\version "2.18.2"
+\version "2.24.1"
 
 \include "lilydrum.ly"
 
 \include "./config.ily"
 \include "./notes.tenor.ily"
 
+mBreak = {\break}
 \score {
-    \new PipeBandDrumStaff {
+	\new PipeBandDrumStaff {
 		\global
-        <<
-			{
-				\part \repeat volta 2 {
-					\halfline
-				} \alternative {
-					\halfline
-					{
-						\halfline
-						\fine
-					}
+		\tenorglobal
+		\partial 4 \drummode { g4 } |
+		\repeat segno 2 {
+			\repeat volta 2 {
+				\tenorAA
+				\alternative {
+					{ \tenorABA r4 }
+					{ \tenorABB r4 }
 				}
-				\bar "||"
-				\break
-
-				\line
-				\dcalfine
-				\bar "||"
 			}
-			{
-			  \drummode { g4 | } 
-			  \tenorAA
-			  \tenorABA r4
-			  \tenorABB r4
-
-			  \tenorBA
+			\volta 2 {\fine}
+			\volta 1 {
+				\allowBreak
+				\mBreak
+				\section
+				\tenorBA
+				\section
 			}
-		>>
+		}
+		
 	}
 	\header {
 		title = \title

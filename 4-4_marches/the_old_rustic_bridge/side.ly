@@ -1,41 +1,32 @@
-\version "2.18.2"
+\version "2.24.1"
 
 \include "lilydrum.ly"
 
 \include "./config.ily"
 \include "./notes.side.ily"
 
-fine = {\mark \markup "Fine" }
-
 \score {
-    \new PipeBandDrumStaff {
-        \global
+	\new PipeBandDrumStaff {
+		\global
 		\sideglobal
-		<<
-			\new NullVoice = "format" {
-				\part
-				\repeat volta 2 {
-				  \halfline \measure << s2. { s2 \fine } >>
-				} \alternative {
-				  { s4 | }
-				  {
-				  }
-				}
-				%\bar "||"
-				\break
-
-				\part \line
-				\dcalfine
-				\bar "||"
-			}%Format
-			\new DrumVoice = "side" {
-				\snareAupbeatA
+		\partial 4 \snareAupbeatA
+		\repeat segno 2 {
+			\repeat volta 2 {
 				\snareA
-				r8 \snareAupbeatB
+				\volta 2 \fine
+				\alternative {
+					\volta 1 { r8 \snareAupbeatB }
+				}
+			}
 
+			\volta 1 {
+				\allowBreak
+				\break
+				\section
+				\partial 4
 				r8 \snareBA
 			}
-		>>
+		}
 	}
 	\header {
 		title = \title

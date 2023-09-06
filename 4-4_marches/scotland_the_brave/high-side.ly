@@ -1,31 +1,28 @@
-\version "2.18.2"
+\version "2.24.1"
 
 \include "lilydrum.ly"
 
 \include "./config.ily"
 \include "./notes.side.ily"
 
-markTextEol = #(define-music-function (parser location text) (string?) #{
-	\once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
-	\mark \markup $text
-#})
-
 \score {
-    \new PipeBandDrumStaff {
-        \global
-	\sideglobal
-        <<
-			{
-				\repeat volta 2 {\part \line \markTextEol "Fine" \break }
-				\part \line \markTextEol "D.C. al Fine" \bar "||"
+	\new PipeBandDrumStaff {
+		\global
+		\sideglobal
+		%\unfoldRepeats
+		\repeat segno 2 {
+			\repeat volta 2 {
+				\partial 8 \snareA
 			}
-			{
-			 \snareA s8
-
-			 \snareBAhigh
+			\volta 2 \fine
+			\volta 1 {
+				\allowBreak
+				\section
+				\partial 8 \snareBAhigh
+				\section
+				\allowBreak
 			}
-		>>
+		}
 	}
 	\header {
 		title = #(string-append title " (high)" )

@@ -1,34 +1,30 @@
-\version "2.18.2"
+\version "2.24.1"
 
 \include "lilydrum.ly"
 
 \include "./config.ily"
 \include "./notes.side.ily"
 
-markTextEol = #(define-music-function (parser location text) (string?) #{
-	\once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
-	\mark \markup $text
-#})
-
-
 \score {
-    \new PipeBandDrumStaff {
-        \global
-		\sideglobal
+	\new PipeBandDrumStaff {
+		\global
 		<<
 			\new NullVoice = "format" {
-				\repeat volta 2 {
-					\part \halfline
+				\repeat segno 2 {
+					\repeat volta 2 {
+						\part \halfline
+						\volta 2 {
+							\fine
+						}
+					}
+					\break
+					\section
+					\part \repeat unfold 4 \measure
+					\section
 				}
-				\markTextEol "Fine"
-				\break
-				\part \repeat unfold 4 \measure
-				\markTextEol "D.C. al Fine"
-				\bar "|."
 			}%Format
-			
 			\new DrumVoice = "side" {
+				\sideglobal
 				\snareA s4
 
 				\snareBA s4

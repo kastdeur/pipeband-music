@@ -6,8 +6,8 @@
 \include "./notes.side.ily"
 
 \score {
-    \new PipeBandDrumStaff {
-        \global
+	\new PipeBandDrumStaff {
+		\global
 		\sideglobal
 		\repeat volta 2 {
 			\partial 4 r8

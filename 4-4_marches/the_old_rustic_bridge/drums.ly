@@ -1,4 +1,4 @@
-\version "2.19.0"
+\version "2.24.1"
 
 \include "lilydrum.ly"
 
@@ -11,6 +11,7 @@
 	indent = 5.0
 	short-indent = 2.0
 }
+mBreak = {\break}
 
 \score {
 	\new StaffGroup <<
@@ -19,31 +20,35 @@
 			shortInstrumentName = \markup{ \shortInstrumentSide }
 		} {
 			\global
-			\sideglobal
 			<<
 				\new NullVoice = "format" {
 					\part
-					\repeat volta 2 {
-						\measure
-						s2.
-					} \alternative {
-						{ s4 | \halfline }
-						{
-						  s4 |
-						  \halfline
-						  \fine
+					\repeat segno 2 {
+						\repeat volta 2 {
+							\measure
+							s2.
+						} \alternative {
+							{ s4 | \halfline }
+							{
+							  s4 |
+							  \halfline
+							  \fine
+							}
+						}
+
+						\volta 2 \fine
+						\volta 1 {
+							\allowBreak
+							\mBreak
+							\section
+							\part
+							\line
+							\section
 						}
 					}
-					\bar "||"
-					\break
-
-					\part
-					\line
-					\dcalfine
-					\bar "||"
-
 				}%End of Format
 				\new DrumVoice = "side" {
+					\sideglobal
 					\snareAupbeatA
 					\snareAA
 					\snareAB r8 \snareAupbeatB
@@ -59,12 +64,13 @@
 		} {
 			\tenorglobal
 
-			\drummode { g4 | }
+			s4 |
 			\tenorAA
 			\tenorABA r4
 			r8 g8 | \tenorABB s4
 
 			r4 \tenorBA
+			\section
 		}
 %{		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
