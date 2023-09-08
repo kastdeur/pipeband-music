@@ -6,33 +6,28 @@
 \include "./notes.side.ily"
 
 \score {
+	\unfoldRepeats
     \new PipeBandDrumStaff {
         \global
-        <<
-			{
-			\repeat unfold 2 {
-				\line
-				\bar "||"
-				\break
-				\line
-				\bar "|."
-				\break
-				}
-			\bar "|."
-			}
-			{
+		\sideglobal
+		\repeat volta 2 {
 			\snareAA
-			\snareABA
-			\snareAA
-			\snareABB
-
-
-			\snareBA
-			\snareBBA
-			\snareBA
-			\snareBBB
+			\alternative {
+				\snareABA
+				\snareABB
 			}
-		>>
+		}
+		\section
+		\break
+		\repeat volta 2 {
+			\snareBA
+			\alternative {
+				\snareBBA
+				\snareBBB
+			}
+		}
+		\fine
+		\fine
 	}
 	\header {
 		title = \title
