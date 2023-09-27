@@ -57,3 +57,6 @@ arrangerPipesSecnd = ""
 arrangerPipessecnd = \arrangerPipesSecnd %TODO: Remove Me
 arrangerPipesThrd = ""
 arrangerPipesthrd = \arrangerPipesThrd %TODO: Remove Me
+
+
+commitUrl = "https://git.deboone.nl/kastdeur/pipeband-music/commit/"
