@@ -17,11 +17,11 @@ mbreak = {\break}
 				\repeat segno 2 {
 					\repeat volta 2 {
 						\quartline
-					} \alternative {
-						\quartline
-						{	\quartline
-							\fine
+						\alternative {
+							\quartline
+							\quartline
 						}
+						\volta 2 { \fine }
 					}
 
 					\volta 1 {

@@ -28,7 +28,7 @@ snareABB = \drummode {
 % Part 2
 snareBA = \drummode {
 	d8:32(\dr |
-	g8) d16. g32	\flam d16. d32:128( d8)	\flam d8 d16. g32	d8:32(-> \< g8:32)(-> |
+	g8) d16. g32	\flam d16. d32:128( d8)	\flam d8 d16.\p\< g32	d8:32(-> g8:32)(-> |
 	d8.)->\fr \! g16	d8:32( g16.) g32	d8:32( g16.) g32	\sextuplet { d16[ g d-> g d g] } |
 
 	\flamdr d8 d16. g32->	d16. d32 \flam g8	\flam d4	\triplet { <> \p d16 g d } \flam g8 |

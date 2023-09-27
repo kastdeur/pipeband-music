@@ -6,17 +6,19 @@
 \include "./notes.side.ily"
 
 \score {
-    \new PipeBandDrumStaff {
-        \global
-        <<
+	\new PipeBandDrumStaff {
+		\global
+		<<
 			\new NullVoice = "format" {
 				\partial 8 s8 \line \bar "||"
 				\break
 				\partial 8 s8 \halfline \bar "||"
-				\halfline \bar "|."
+				\halfline
+				\fine
 			}%Format
 
 			\new DrumVoice = "side" {
+			\sideglobal
 				\snareAA	\snareABA
 				<>\dr
 					\removeWithTag #'tutti { \snareAAI \snareABB r8 s8 } \fr

@@ -1,7 +1,7 @@
 % 4/4 Rowan Tree
 % Snare
 \version "2.18.2"
-composerSide = "v1.1"
+composerSide = "v1.2"
 sideglobal = { \eighthBeaming }
 
 %%music
@@ -10,9 +10,9 @@ snareEnding = \drummode {
 	d8:32(
 	g8[) d8]:32(
 	\tuplet 3/2 { g16) d g } \flam d16. g32
-	d16.\fr g32-> d g d g
+	d16. g32-> d g d g
 	|
-	\flamdr d4	d4:32(	d4) \fr
+	d4	d4:32(	d4)
 }
 snareA = \drummode {
 	r8 \tutti {
@@ -29,15 +29,14 @@ snareA = \drummode {
 	|
 	\flamdr d8
 	\snareEnding
+	\fr
 }
 % Part 2
 snareBA = \drummode {
 	d8. g16 |
-	\tutti {
-		d8[:32(->
-		g8]:32)(->	d8[:32)( g8]:32)(->	d8[:32)( g8]:32)(->	d8[)->
-	} d8]:32( \pp |
-	g8.) g16	d8:32( g8)	\flam d8 d8:32(	g8.) g16\mf\dr |
+	\tutti{d8[:32(->} \tutti{g8]:32)(->}	d8[:32)( \tutti{g8]:32)(->}	d8[:32)( \tutti{g8]:32)(->}	\tutti{ d8[)-> d8]:32( |
+	g8.) }  g16\pp	d8:32( g8)	\flam d8 d8:32(	g8.) g16\mf\dr |
 	\flam d8\v
 	\snareEnding
+	\fr
 }
