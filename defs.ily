@@ -60,3 +60,11 @@ arrangerPipesthrd = \arrangerPipesThrd %TODO: Remove Me
 
 
 commitUrl = "https://git.deboone.nl/kastdeur/pipeband-music/commit/"
+
+\layout {
+	\context {
+		\Score
+		segnoStyle = #'bar-line
+		\numericTimeSignature
+	}
+}
