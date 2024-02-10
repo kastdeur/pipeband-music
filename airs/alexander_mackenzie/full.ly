@@ -10,13 +10,20 @@
 \include "./notes.pipes.ily"
 \include "./notes.pipes.seconds.ily"
 
+\layout {
+	indent = 5.0
+	short-indent = 2.0
+}
+
+
 \score {
 	\new StaffGroup <<
-		\new Staff {
+		\new Staff \with {
+			instrumentName = \markup{ \instrumentPipes }
+			shortInstrumentName = \markup{ \shortInstrumentPipes }
+		} {
 			\global
 			\pipeglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentPipes }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentPipes }
 			<<
 				{
 					\repeat volta 2 {
@@ -47,10 +54,15 @@
 				}%Pipes
 			>>
 		}
-		\new Staff = "seconds" {
-			\pipessecndglobal
-			\set Staff.instrumentName = \markup{ \instrumentPipes Seconds }
-			\set Staff.shortInstrumentName = \markup{ \shortInstrumentPipes 2nd}
+		\new Staff = "seconds" \with {
+			instrumentName = \markup{ \instrumentPipesHarmony }
+			shortInstrumentName = \markup{ \shortInstrumentPipesSecnd }
+		} <<
+		    {
+				\global
+				\pipessecndglobal
+				\part
+			} {
 			\pipessecndA s8
 
 			\pipessecndBA
@@ -58,35 +70,40 @@
 
 			\pipessecndBA
 			\pipessecndBBB s8
-		}
-		\new PipeBandDrumStaff = "side" {
+		    }
+		>>
+		\new PipeBandDrumStaff = "side" \with {
+			instrumentName = \markup \column {\instrumentSide}
+			shortInstrumentName = \markup{\shortInstrumentSide}
+		} {
 			\sideglobal
-			\set PipeBandDrumStaff.instrumentName = \markup \column {\instrumentSide}
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{\shortInstrumentSide}
 			\snareAA \snareAB s8
 
 			\snareBA 
 			\snareBB s8
 			
+			\removeWithTag #'tutti {
 			\snareBA \snareAB s8
-
+			}
 		}
-		\new PipeBandDrumStaff = "tenor" {
+		\new PipeBandDrumStaff = "tenor" \with {
+			instrumentName = \markup{ \instrumentTenor }
+			shortInstrumentName = \markup{ \shortInstrumentTenor }
+		} {
 			\tenorglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentTenor }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentTenor }
 
-			s8 \tenorAA r8 \tenorAB s8
+			s8 \tenorAA \tenorAB s8
 
 			\tenorBA 
 			\tenorBB s8
 			
 			\tenorBA r8 \tenorAB s8
 		}
-		\new PipeBandDrumStaff = "bass" {
+		\new PipeBandDrumStaff = "bass" \with {
+			instrumentName = \markup{ \instrumentBass }
+			shortInstrumentName = \markup{ \shortInstrumentBass}
+		} {
 			\bassglobal
-			\set PipeBandDrumStaff.instrumentName = \markup{ \instrumentBass }
-			\set PipeBandDrumStaff.shortInstrumentName = \markup{ \shortInstrumentBass}
 			
 			s8 \bassAA \bassAB
 			s8 \bassBA \bassBB

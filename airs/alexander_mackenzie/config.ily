@@ -9,8 +9,8 @@ confTempo = {
 }
 
 %% Format
-part = { \partial 8 s8 }
-halfline = { \repeat unfold 4 { s2. | } }
+part = { \partial 8 \grace {s1} s8 }
+halfline = { \repeat unfold 4 { \grace {s1} s2. | } }
 line = { \repeat unfold 2 { \halfline } }
 
 %% Headers

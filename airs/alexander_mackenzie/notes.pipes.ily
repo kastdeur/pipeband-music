@@ -1,7 +1,7 @@
 % 6/8 Alexander MacKenzie
 % Pipes
 \version "2.18.2"
-composerPipes = ""
+composerPipes = "PM Don M. Carigan"
 pipeglobal = {
 	\key a \mixolydian
 }
