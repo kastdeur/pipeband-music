@@ -13,6 +13,29 @@
 	short-indent = 2.0
 }
 
+mbreak = {\break}
+
+timing = \new NullVoice = "format" {
+			\repeat segno 2 {
+				\repeat volta 2 {
+					\part
+					\halfline
+					\volta 2 { \segnoMark \default }
+					\halfline
+					\volta 2 { \fine }
+				}
+
+				\volta 1 {
+					\allowBreak
+					\mbreak
+					\part
+					\halfline
+					\halfline
+					\bar "||"
+				}
+			}
+		} % Format
+
 \score {
 	\new StaffGroup <<
 		\new PipeBandDrumStaff = "side" \with {
@@ -21,28 +44,7 @@
 		} {
 			\global
 			<<
-				\new NullVoice = "format" {
-					\repeat volta 2 {
-						\part
-						\halfline
-						\mark \markup { \musicglyph "scripts.segno"}
-						\inStaffSegno
-						\halfline
-						\fine
-					}
-					\break
-
-					\part
-					\halfline
-					\halfline
-					\dsalfine
-					\bar "||"
-					%\break
-					%\halfline
-					%\break
-					%\halfline
-					%\bar "|."
-				}%End of Format
+				\timing
 				\new DrumVoice = "side" {
 					\sideglobal
 					\sideA s8
@@ -55,16 +57,22 @@
 			shortInstrumentName = \markup{ \shortInstrumentTenor }
 		} {
 			\tenorglobal
-			\tenorA s8
-			\removeWithTag #'fine \tenorB
+			<< \timing
+			{
+				\tenorA s8
+				\removeWithTag #'fine \tenorB
+			} >>
 		}
 		\new PipeBandDrumStaff = "bass" \with {
 			instrumentName = \markup{ \instrumentBass }
 			shortInstrumentName = \markup{ \shortInstrumentBass }
 		} {
 			\bassglobal
-			s8 \bassA
-			s8 \removeWithTag #'fine \bassB
+			<< \timing
+			{
+				s8 \bassA
+				s8 \removeWithTag #'fine \bassB
+			} >>
 		}
 	>>
 	\header {

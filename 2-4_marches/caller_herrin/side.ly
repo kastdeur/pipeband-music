@@ -5,26 +5,30 @@
 \include "./config.ily"
 \include "./notes.side.ily"
 
+mbreak = {\break}
 \score {
     \new PipeBandDrumStaff {
         \global
 		<<
 			\new NullVoice = "format" {
-				\repeat volta 2 {
-					\part
-					\halfline
-					\mark \markup { \musicglyph "scripts.segno"}
-					%\inStaffSegno
-					\halfline
-					\fine
-				}
-				\break
+				\repeat segno 2 {
+					\repeat volta 2 {
+						\part
+						\halfline
+						\volta 2 { \segnoMark \default }
+						\halfline
+						\volta 2 { \fine }
+					}
 
-				\part
-				\halfline
-				\halfline
-				\dsalfine
-				\bar "||"
+					\volta 1 {
+						\allowBreak
+						\mbreak
+						\part
+						\halfline
+						\halfline
+						\bar "||"
+					}
+				}
 			} % Format
 			\new DrumVoice = "side" {
 				\sideglobal

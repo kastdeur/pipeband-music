@@ -5,16 +5,7 @@
 \include "./config.ily"
 \include "./notes.pipes.ily"
 
-markTextEolDown = #(define-music-function (parser location text) (string?) #{
-    \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-    \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
-    \once \override Score.RehearsalMark #'direction = #DOWN
-    \mark \markup $text
-#})
-
-fine = {\markTextEolDown "Fine" }
-dsalfine = {\markTextEolDown "D.S. al Fine" }
-
+mbreak = {\break}
 
 \score {
     \new Staff {
@@ -22,26 +13,24 @@ dsalfine = {\markTextEolDown "D.S. al Fine" }
 		\pipeglobal
 		<<
 			\new NullVoice = "format" {
+				\repeat segno 2 {
 				\repeat volta 2 {
 					\part
 					\halfline
-					\mark \markup { \musicglyph "scripts.segno"}
-					%\inStaffSegno
+					\volta 2 { \segnoMark \default}
 					\halfline
-					\fine
+					\volta 2 { \fine }
 				}
-				\break
 
-				\part
-				\halfline
-				\halfline
-				\dsalfine
-				\bar "||"
-				%\break
-				%\halfline
-				%\break
-				%\halfline
-				%\bar "|."
+				\volta 1 {
+					\allowBreak
+					\mbreak
+					\part
+					\halfline
+					\halfline
+					\bar "||"
+				}
+				}
 			} % Format
 			\new Voice = "pipes" {
 				\pipesA s8

@@ -1,15 +1,28 @@
 % 2/4 Caller Herrin
 % Tenor
 \version "2.18.2"
-composerTenor = "E.T. de Boone, v0.2"
+composerTenor = "E.T. de Boone, v0.3"
 arrangerTenor = ""
 tenorglobal = {}
+
+startRPiano = #(define-event-function (parser location) () #{
+    -\tweak HorizontalBracketText.text "R"
+    \startGroup
+#})
+
+startTPiano = #(define-event-function (parser location) () #{
+    -\tweak HorizontalBracketText.text "T"
+    \startGroup
+#})
+
 % Music
 tenorA = \drummode {
 	\tag #'fineRemove {
 		\tag #'upbeat { d8 | }
-		g4\up	d8 g |
-		d8 g	d4 |
+		g4\up 
+			
+			d8\startRPiano g |
+		d8 g	d4\stopGroup |
 		g4\up d8.\up
 		g16 |
 		d4	g8
@@ -17,8 +30,8 @@ tenorA = \drummode {
 		d8 |
 	}
 
-	g4\up	d8 g |
-	d8 g	d4 |
+	g4\up	d8\startRPiano g |
+	d8 g	d4\stopGroup |
 	g4	\scoop { d8. g16 |
 	d4 } r8
 }

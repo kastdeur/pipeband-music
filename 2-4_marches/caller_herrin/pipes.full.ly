@@ -45,7 +45,7 @@
 
 			\pipesSecA s8
 
-			\pipesSecB
+			\pipesSecB s8
 
 		}
 	>>
