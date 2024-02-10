@@ -9,21 +9,12 @@
     \new Staff {
 		\global
 		\pipeglobal
-		<<
-			{
-				\repeat unfold 4 {
-				\repeat volta 2 {
-					\line
-				}\break
-				}
-			}%Format
-			{
-				\pipesA
-				\pipesB
-				\pipesC
-				\pipesD
-			}
-		>>
+		\new Voice = "pipes" {
+			\repeat volta 2 { \pipesA } \break
+			\repeat volta 2 { \pipesB } \break
+			\repeat volta 2 { \pipesC } \break
+			\repeat volta 2 { \pipesD } \break
+		}
 	}
 	\header {
 		title = \title
@@ -40,8 +31,12 @@
 		%% Tune
 
 		\pipesA
+		\pipesA
+		\pipesB
 		\pipesB
 		\pipesC
+		\pipesC
+		\pipesD
 		\pipesD
 	}
 	\midi { \confTempo }
