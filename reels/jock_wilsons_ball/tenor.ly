@@ -16,6 +16,7 @@ pBreak = {\break}
 				\pBreak
 				\halfline
 				\section
+				\break
 				\halfline
 				\pBreak
 				\halfline
