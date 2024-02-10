@@ -3,3 +3,4 @@ sets
 **/*.midi
 **/*.png
 **/*.bww
+**/rec/
