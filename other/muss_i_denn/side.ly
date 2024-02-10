@@ -7,19 +7,20 @@
 
 \score {
     \new PipeBandDrumStaff {
-        \global
-		<<
-			\new NullVoice = "format" {
-				\repeat volta 2 {
-					\part \line
-				}
-			}%Format
-			
 			\new DrumVoice = "side" {
-		\sideglobal
-				\snareA
+				\global
+				\sideglobal
+				\repeat volta 2 {
+					\partial 4
+					<>\dr \snareAA \fr
+				}
+				\break
+
+				\partial 4
+				\snareBA
+				<>\dr \snareAA \fr
+				\bar "|."
 			}
-		>>
 	}
 	\header {
 		title = \title
