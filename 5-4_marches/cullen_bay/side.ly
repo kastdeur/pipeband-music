@@ -9,19 +9,11 @@
     \new PipeBandDrumStaff {
         \global
         \sideglobal
-		<<
-			{
-				\repeat unfold 4 {
-					\repeat volta 1 { \line } \break
-				}
-			}
-			{
-				\snareA
-				\snareB
-				\snareC
-				\snareD
-			}
-		>>
+
+		\repeat volta 2 { \snareA } \break
+		\repeat volta 2 { \snareB } \break
+		\repeat volta 2 { \snareC } \break
+		\repeat volta 2 { \snareD } \break
 	}
 	\header {
 		title = \title
