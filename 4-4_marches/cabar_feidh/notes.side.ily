@@ -2,7 +2,7 @@
 % Side
 \version "2.18.2"
 composerSide = "Seaforth Highlanders of Canada"
-arrangerSide = "E.T. de Boone, 2018, v2.0"
+arrangerSide = "E.T. de Boone, 2018, v2.0.1"
 arrangerSideOrig = ""
 sideglobal = {
 	\eighthBeaming
@@ -82,7 +82,7 @@ snareAA = \drummode {
 	\tutti { 
 		r8 \triplet { g16 d g }	
 		\flam d16. d32 \flam g16. g32
-		d16.[ \drag d32 \triplet { d16 g d ] }
+		d16.[ \drag d32 d8  ]
 		g8\v
 	}
 
@@ -104,7 +104,7 @@ snareAB = \drummode {
 		|
 		r8 \triplet { g16 d g }
 		\flam d16. d32 \flam g16. g32
-		d16.[ \drag d32 \triplet { d16 g d ] }
+		d16.[ \drag d32 d8  ]
 		g8\v
 
 		%% \simpleSnareEndingII
@@ -131,7 +131,7 @@ snareBA = \drummode {
 	\tutti {
 		r16. g32 d16. g32
 		d32 g d g d16.\v g32
-		d16.[ \drag d32 \triplet { d16 g d ] }
+		d16.[ \drag d32 d8 ]
 		g8\v
 	}
 
@@ -154,7 +154,7 @@ snareBB = \drummode {
 		|
 		r16. g32 d16. g32	
 		d32 g d g d16.\v g32
-		d16.[ \drag d32 \triplet { d16 g d ] }
+		d16.[ \drag d32 d8 ]
 		g8\v
 
 		%% \simpleSnareEndingII
@@ -182,7 +182,7 @@ snareCA = \drummode {
 	\tutti {
 		r16 d8:32(-> g16)\v
 		d8:32(-> g)\v
-		d16.[ \drag d32 \triplet { d16 g d ] }
+		d16.[ \drag d32 d8 ]
 		g8\v
 	}
 
@@ -204,7 +204,7 @@ snareCB = \drummode {
 		|
 		r16 d8:32(-> g16)\v
 		d8:32(-> g)\v
-		d16.[ \drag d32 \triplet { d16 g d ] }
+		d16.[ \drag d32 d8 ]
 		g8\v
 
 		%% \simpleSnareEndingII
