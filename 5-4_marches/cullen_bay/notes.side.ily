@@ -49,9 +49,9 @@ snareB = \drummode{
 snareC = \drummode{
 	\flamdr d8-> \flam d16->\fr g->
 	d16 d \flam g8
-	g8 [ d8:32(]\dr
+	d8 [ d8:32(]\dr
 	\triplet { g16[) d g } \flam d16. g32]
-	\triplet { g16[ d g } \flam g8]
+	\triplet { d16[ g d } \flam d8]
 	|
 	\snareEnd
 }
