@@ -1,21 +1,23 @@
 % 5/4 Cullen Bay
 % Side
 \version "2.18.2"
-composerSide  = ""
+composerSide  = "v1.2"
 sideglobal = {
 	\eighthBeaming
 }
 
 % Music
 snareEnd = \drummode {
-	d8[:32)(-> g16.) \fr g32]->
-	d8[:32(->\<  g8]:32)(->
-	d8[:32)(   g8]:32)(->\>
+	d8[:32)(-> g16.) g32]->
+	d8[:32(->\<	g8]:32)(->\>
+	d8[:32)( g8]:32)(->
 	d4)\!
-	d4:32( \< \dr
+	d4:32(
+		-\tweak Hairpin.to-barline #f
+		\<
 	|
-	d8) \!        d8:32(
-	\triplet { g16)[ d g } \flam d8] \fr
+	d8) \! \fr        d8:32(
+	\triplet { g16)[ d g } \flam d8]
 	g16.[ d32-> g16. g32]
 	\flam d8 [ d16. g32->]
 	d16.[ d32 \flam g8 ]
