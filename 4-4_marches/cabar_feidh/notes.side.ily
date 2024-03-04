@@ -74,7 +74,7 @@ snareEndingII = \drummode { \tutti {
 
 snareAA = \drummode {
 	g8 |
-	\flam d16. g32 \triplet { d16 g d }
+	\flam d16.\v g32 \triplet { d16 g d }
 	\flam g8 g
 	d4:32(  \<
 	d4) \! 
@@ -87,7 +87,7 @@ snareAA = \drummode {
 	}
 
 	g8 |
-	\flam d16. g32 \triplet { d16 g d }
+	\flam d16.\v g32 \triplet { d16 g d }
 	\flam g8 g
 	d4:32( \<
 	d8) \!
@@ -97,7 +97,7 @@ snareAA = \drummode {
 snareAB = \drummode {
 	\tutti {
 		g8 |
-		\flam d16. g32 \triplet { d16 g d }
+		\flam d16.\v g32 \triplet { d16 g d }
 		\flam g8 g
 		d4:32( \<
 		d4) \! 
@@ -223,23 +223,23 @@ snareCB = \drummode {
 }
 
 snareDA = \drummode {
-	d8:32( |
-	g16.) g32-> \triplet { d16 g d }
-	\flam g16. d32-> g16. g32
+	d8:32(\> |
+	g16.)\! g32-> \triplet { d16 g d }
+	\flam g16. d32\v g16. g32
 	\flam d16. g32-> \triplet { d16 g d }
 	g16. g32 d16. d32
 	|
 
 	\tutti {
-		\flam g8. d16\p\<
+	    \flam g8.-> d16\p\<
 		d16 d d d
 		d16-\v\! \flam g d16-\v d16-\v
 		\flam g8
 	}
 
-	d8:32( |
-	g16.) g32-> \triplet { d16 g d }
-	\flam g16. d32-> g16. g32
+	d8:32(\> |
+	g16.)\! g32-> \triplet { d16 g d }
+	\flam g16. d32\v g16. g32
 	\flam d16. g32-> \triplet { d16 g d }
 	g8
 
@@ -247,13 +247,13 @@ snareDA = \drummode {
 }
 snareDB = \drummode {
 	\tutti {
-		d8:32( |
-		g16.) g32-> \triplet { d16 g d }
-		\flam g16. d32-> g16. g32
+		d8:32(\> |
+		g16.)\! g32-> \triplet { d16 g d }
+		\flam g16. d32\v g16. g32
 		\flam d16. g32-> \triplet { d16 g d }
 		g16. g32 d16. d32
 		|
-		\flam g8. d16\p\<
+		\flam g8.-> d16\p\<
 		d16 d d d
 		d16-\v\! \flam g16 d16-\v d16-\v
 		\flam g8
