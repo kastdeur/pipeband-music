@@ -58,3 +58,13 @@ SUBDIRS := $(sort $(SUBDIRS))
 .PHONY: $(SUBDIRS)
 $(SUBDIRS) : % :
 	@$(MAKE) $(filter $(@D)/%.pdf,$(PDFOBJS))
+
+# Special target for setting modification times back to commit time
+.PHONY: gitmtime
+gitmtime:
+	@# From https://stackoverflow.com/a/30143117
+	for FILE in $$(git ls-files); do \
+	    TIME=$$(git log --pretty=format:%cd -n 1 --date=iso $$FILE); \
+	    TIME2=$$(echo $$TIME | sed 's/-//g;s/ //;s/://;s/:/\./;s/ .*//'); \
+	    touch -m -t $$TIME2 $$FILE; \
+	done
